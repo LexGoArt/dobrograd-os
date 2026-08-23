@@ -21,12 +21,9 @@ const active = (i) => i.exact ? path === i.href : path.startsWith(i.href);
 <aside id="sidebar"
   class="fixed inset-y-0 left-0 z-50 flex w-[248px] -translate-x-full flex-col border-r border-(--color-line) bg-white transition-transform duration-200 lg:translate-x-0"
   aria-label="Навігація порталу">
-  <a href={L('')} class="flex items-center gap-3 px-5 pb-5 pt-6">
-    <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-(--color-brand) text-[12px] font-extrabold text-white">ОС</span>
-    <span class="leading-tight">
-      <span class="block font-[family-name:var(--font-display)] text-[15px] font-bold text-(--color-brand)">{t(lang, 'site.short')}</span>
-      <span class="block text-[10px] font-semibold uppercase tracking-widest text-(--color-mute)">{t(lang, 'site.org')}</span>
-    </span>
+  <a href={L('')} class="block px-5 pb-5 pt-6">
+    <img src={`${base}img/dobrograd-logo.svg`} alt="Доброград" width="835" height="196" class="h-9 w-auto" />
+    <span class="mt-2.5 block text-[10px] font-bold uppercase tracking-[0.14em] text-(--color-mute)">{t(lang, 'site.short')} · Iron Invest</span>
   </a>
 
   <nav class="flex-1 space-y-0.5 overflow-y-auto px-3">
