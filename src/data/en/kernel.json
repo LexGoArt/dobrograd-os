@@ -1,0 +1,2366 @@
+{
+ "title": "Client's Service Regulation",
+ "subtitle": "Structure, roles, authority, KPIs, regulations, document flow and reporting for the technical division",
+ "chapters": [
+  {
+   "num": "1",
+   "title": "SERVICE ORGANIZATION",
+   "blocks": [
+    {
+     "t": "h",
+     "text": "SERVICE STRUCTURE",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "General Director"
+    },
+    {
+     "t": "h",
+     "text": "Head of Client's Service"
+    },
+    {
+     "t": "table",
+     "header": null,
+     "rows": [
+      [
+       "CLIENT'S SERVICE",
+       "PROJECT TEAM"
+      ],
+      [
+       "Head of PTD",
+       "Project Manager"
+      ],
+      [
+       "Cost Engineer",
+       "Site Manager"
+      ],
+      [
+       "Technical Supervision",
+       "Site Foreman"
+      ],
+      [
+       "Mechanic",
+       "Work Crews"
+      ],
+      [
+       "HSE Engineer (outsourced)",
+       "Contractor Organizations"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "text": "Lab Technician (outsourced)"
+    },
+    {
+     "t": "p",
+     "text": "Design Team (outsourced)"
+    },
+    {
+     "t": "p",
+     "text": "Interaction with related departments: Procurement Dept (supply as an internal contractor) · Finance · Development Director (concept)."
+    },
+    {
+     "t": "h",
+     "text": "SERVICE OBJECTIVE",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "Design, permitting documentation, obtaining technical specifications for projects"
+    },
+    {
+     "t": "p",
+     "text": "Optimization of design solutions, timely issuance of design documentation, minimization of errors."
+    },
+    {
+     "t": "p",
+     "text": "Ensuring an uninterrupted construction process."
+    },
+    {
+     "t": "p",
+     "text": "Use of new technologies, technical solutions and materials in the construction process, control of their quality."
+    },
+    {
+     "t": "p",
+     "text": "Quality control of completed works, compliance with design solutions."
+    },
+    {
+     "t": "p",
+     "text": "Working for results (reputation and a satisfied client are the main goals)."
+    },
+    {
+     "t": "p",
+     "text": "Healthy atmosphere in the team."
+    },
+    {
+     "t": "h",
+     "text": "ROLES AND AREAS OF RESPONSIBILITY",
+     "major": true
+    },
+    {
+     "t": "h",
+     "text": "CLIENT'S SERVICE"
+    },
+    {
+     "t": "h",
+     "text": "HEAD OF CLIENT'S SERVICE"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Organizes the work of the Client's Service and allocates responsibility among the structure's participants.",
+      "Receives tasks from the General Director and ensures their execution through the Service and the Project Team.",
+      "Responsible for the preparation, organization, control and support of project implementation.",
+      "Controls deadlines, budget, quality, volumes, inventory items, equipment and document flow.",
+      "Records deviations, causes, responsible persons and correction deadlines."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Organize the development and approval of design documentation.",
+      "Organize obtaining technical specifications and permitting documentation.",
+      "Ensure the preparation and approval of the cost estimate, works schedule and financing schedule.",
+      "Form teams for project implementation.",
+      "Coordinate and control the work of project managers.",
+      "Organize the work of PTD, the Cost Engineer, Technical Supervision, the Design Team and occupational safety.",
+      "Ensure control of deadlines, budget, quality, volumes, documentation and the validity of payments.",
+      "Organize inventory taking, fixed asset accounting, and control of inventory items until project completion."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "General Director - receiving tasks, approving decisions, reporting.",
+      "Design Team - design solutions, changes, optimization.",
+      "PTD / Cost Engineer / Technical Supervision - documents, cost estimate, volumes, quality, deviations.",
+      "Project Team - task assignment, execution control, receiving certificates and reports.",
+      "Finance Dept - confirmed volumes, certificates, payment register, budget deviations.",
+      "Marketing and Sales Dept - readiness timelines, site status, information for sales."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "DESIGN TEAM (OUTSOURCED)"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Prepares design solutions, drawings, changes and clarifications.",
+      "Provides the technical basis for the cost estimate, works schedule and work execution.",
+      "Works out optimization of design solutions by cost, timelines and practicality of execution.",
+      "Provides explanations on technical solutions for PTD, the Cost Engineer and the Project Team.",
+      "Prepares updated documentation in case of changes or adjustments."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Develop design and working documentation for the site.",
+      "Develop pre-design solutions and the architectural section.",
+      "Engage related specialists (chief project architect, chief project engineer, ventilation, electrical, fire safety).",
+      "Obtain technical specifications for related sections.",
+      "Make changes to the project through a registered Change Request."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Head of Service - tasks, approval of decisions, changes.",
+      "PTD - design documentation, technical solutions, clarifications.",
+      "Cost Engineer - volumes, solutions, materials, changes.",
+      "Project Team - documentation for work execution on site.",
+      "Technical Supervision - compliance of works with design solutions."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "HEAD OF PTD"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Organizes the preparation of design-technical, cost-estimate, contractual and as-built documentation.",
+      "Prepares or verifies work volumes, rates, cost estimates and grounds for payments.",
+      "Ensures maintenance of works schedules, control of deadlines and technical documentation.",
+      "Checks certificates, work orders, volume confirmations and compliance of documents with actual works.",
+      "Maintains the Cumulative Works Register for works and materials - ensures no volume is closed twice.",
+      "Prepares information for the Head of Service, the Finance Dept and the Project Team."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Organization, maintenance and completeness control of design, technical and as-built documentation.",
+      "Organize the preparation, verification and support of contracts with contractors and suppliers.",
+      "Ensure documentation of all construction processes.",
+      "Organize verification of volumes, cost of works and materials together with the Cost Engineer and Technical Supervision.",
+      "Maintain registers of contracts, certificates, changes, as-built documentation and remarks.",
+      "Control that changes to the project, cost estimate and schedules are documented exclusively in writing.",
+      "Ensure timely transfer of documentation between the Client's Service, the Project Team and external participants.",
+      "Compile and hand over the complete documentation package after completion of each project."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Design Team - design documentation, changes, technical solutions.",
+      "Cost Engineer - volumes, rates, cost estimates, deviations.",
+      "Technical Supervision - quality, volumes, certificates, remarks.",
+      "Project Team - schedules, work orders, certificates, as-built documentation, monthly packages.",
+      "Head of Service - reporting, issues, decisions."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "COST ENGINEER (UNDER HEAD OF PTD)"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Prepares cost estimates based on design documentation.",
+      "Checks the cost of works, materials, machinery and services.",
+      "Forms the basis for the budget, financing schedule and payment register.",
+      "Checks deviations of actual costs from the approved cost estimate.",
+      "Prepares explanations for disputed or unjustified amounts."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Prepare project cost estimates (local, site-level, consolidated).",
+      "Check contractors' cost estimates for compliance with market prices.",
+      "Control prices for materials and works together with PTD.",
+      "Recalculate the cost estimate when the project or work volumes change.",
+      "Prepare comparative calculations for tenders and contractor selection.",
+      "Maintain a database of current prices for materials and works."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "PTD - work volumes, technical data, cost-estimate database.",
+      "Design Team - design solutions, changes, clarifications.",
+      "Finance Dept - budget, financing schedule, payment register.",
+      "Head of Service - deviations, risks, proposals.",
+      "Project Team - actual volumes, clarifications on works, confirmation of execution."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "TECHNICAL SUPERVISION"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Controls the quality of work execution on site.",
+      "Checks compliance of works with design documentation, DBN (Ukrainian building codes), technical requirements and execution technology.",
+      "Confirms or does not confirm actually completed works.",
+      "Records remarks, defects, technology violations and deadlines for their correction.",
+      "Provides confirmation for certificates, volumes and subsequent payments."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Confirm actually completed works and sign KB-2v certificates weekly.",
+      "Control compliance of completed works with design documentation.",
+      "Control the quality and volumes of completed works.",
+      "Inspect concealed works and record violations and deviations in the remarks register.",
+      "Maintain the technical supervision log and the concealed works log.",
+      "Without a certificate signed by Technical Supervision, no payments to contractors or wages are made."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Site Foreman / Site Manager - control of works, remarks, correction of deficiencies.",
+      "PTD - volume confirmation, certificates, as-built documentation.",
+      "Cost Engineer - actually completed volumes.",
+      "Head of Service - critical violations, risks, quality, decisions.",
+      "Finance Dept - confirmation of work completion as grounds for payment."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "MECHANIC"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Controls the use of equipment, machines, mechanisms and equipment on site.",
+      "Records engine hours, fuel, downtime, technical condition and need for repair.",
+      "Checks the justification for assigning equipment to specific works.",
+      "Controls the handover of equipment into custody and its return.",
+      "Prepares data on equipment costs for PTD, the Cost Engineer and the Head of Service."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Keep records of engine hours and actual equipment operating time on sites.",
+      "Control fuel turnover: balance at the start and end of shift, refueling, consumption.",
+      "Control fuel and lubricant consumption in accordance with approved norms.",
+      "Organize equipment ordering for the site linked to the works schedule.",
+      "Ensure serviceability and maintenance of equipment and mechanisms.",
+      "Maintain the equipment downtime log, carry out fleet inventory."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Site Manager / Site Foreman - actual use of equipment on site.",
+      "PTD - equipment confirmation in certificates, work orders, registers.",
+      "Cost Engineer - equipment cost, engine hours, deviations.",
+      "Head of Service - equipment problems, downtime, inefficient use.",
+      "Contractors / Crews - equipment handover, use, responsibility."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "OCCUPATIONAL SAFETY / HSE ENGINEER (OUTSOURCED)"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Controls compliance with occupational safety and HSE requirements on site.",
+      "Organizes briefings, clearances and verification of workers' readiness to perform works.",
+      "Records violations, risks, hazardous conditions and deadlines for their elimination.",
+      "Checks the availability of necessary protective equipment, logs and confirmations.",
+      "Initiates work stoppage in case of critical safety violations."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Conduct initial and repeat safety briefings.",
+      "Open and maintain HSE and occupational safety logs.",
+      "Control the availability of contracts and HSE documents for each worker.",
+      "Control the availability of PPE and workers' clearance, maintain the incident and accident log.",
+      "Periodically visit the site, investigate accidents."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Site Manager / Site Foreman - daily safety control of works.",
+      "Contractors / Crews - briefings, clearances, compliance with requirements.",
+      "Head of Service - critical risks, violations, decisions.",
+      "PTD - logs, certificates, confirmations, HSE documents.",
+      "General Director - in case of critical risks or work stoppage."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "LAB TECHNICIAN (OUTSOURCED)"
+    },
+    {
+     "t": "p",
+     "text": "Independent confirmation of the quality of materials and structures. The valuable end product is test reports confirming that materials and structures comply with the project."
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Independent quality control of materials and structures on site.",
+      "Testing of concrete, soils, mortars per the works schedule (3 / 7 / 28 days).",
+      "Test reports as grounds for closing concealed works and accepting structures."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Incoming control of the concrete mix and sampling at each concrete pour.",
+      "Testing of concrete strength at 3 / 7 / 28 days; forecast of strength shortfall at early stages.",
+      "Control of rebar and embedded parts (certificates, testing if needed), masonry mortar and aerated concrete blocks.",
+      "Control of soil compaction during backfilling.",
+      "Inspections of waterproofing and other concealed works upon request of Technical Supervision.",
+      "Presence on site at least once a week; reports go to Technical Supervision and the Head of CS, copies to PTD for as-built documentation."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Technical Supervision - test reports as grounds for closing concealed works certificates.",
+      "Site Foreman / Site Manager - concreting schedule, access to structures, sampling.",
+      "PTD - reports for as-built documentation and the Technical Verification Note.",
+      "Head of CS - immediate notification of critical non-conformities."
+     ]
+    },
+    {
+     "t": "p",
+     "text": "A structure that has not reached the design strength per the lab technician's report is not accepted; reinforcement or demolition only through a Change Request (App. Г1)."
+    },
+    {
+     "t": "h",
+     "text": "PROJECT TEAM"
+    },
+    {
+     "t": "h",
+     "text": "PROJECT MANAGER"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Takes the project into execution after preparation by the Client's Service.",
+      "Organizes project implementation within approved documentation, cost estimate, schedule and budget.",
+      "Ensures the launch of works and engagement of contractors, crews and necessary resources.",
+      "Coordinates the work of the Site Manager, Site Foreman, contractors and related departments.",
+      "Prepares reports for the Head of Client's Service on execution, deviations and decisions."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Participate in the development and approval of the construction project.",
+      "Forming the project team and organizing its work.",
+      "Participates in preparing the project cost estimate and ensures its execution.",
+      "Prepare and ensure execution of the works and financing schedule.",
+      "Participates in tenders, contractor selection and their coordination.",
+      "Ensure quality control of work execution and confirmation of volumes.",
+      "Ensure documentary support of the project.",
+      "Ensure timely supply of materials, equipment and other resources.",
+      "Ensure project completion and commissioning of the site within established deadlines."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Head of Service - tasks, control, approval of decisions, reporting.",
+      "Site Manager / Site Foreman - organization of works, issues, resources, reports.",
+      "PTD / Cost Engineer - schedules, volumes, certificates, cost estimates, documents.",
+      "Finance Dept - financing needs, confirmed volumes, payment registers.",
+      "Marketing and Sales - readiness timelines, presentation condition of the site, impact on sales."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "SITE MANAGER"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Organizes daily work on the construction site.",
+      "Coordinates site foremen, contractors, crews, equipment, materials and work fronts.",
+      "Ensures work execution in accordance with the schedule, work orders and approved tasks.",
+      "Controls the handover, use and preservation of inventory items on site.",
+      "Passes information on execution, issues, needs and deviations to the Project Manager."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Organize and coordinate the daily progress of construction works on sites.",
+      "Control the execution of the approved works schedule.",
+      "Control of works against design documentation.",
+      "Organization and maintenance of the technical documentation section and its execution.",
+      "Verification of completed works before signing KB-2v certificates.",
+      "Organization of incoming control of materials and structures (incoming control log).",
+      "Conducting daily inspections with contractors.",
+      "Interaction with project managers on technical matters on sites.",
+      "Ensuring supporting occupational safety activities.",
+      "Compiling as-built documentation in parallel with completed works."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Project Manager - tasks, schedule, issues, reporting.",
+      "Site Foreman - daily work execution, crews, quality, volumes.",
+      "Mechanic - equipment, fuel, engine hours, downtime.",
+      "PTD - work orders, certificates, as-built documentation, volumes, monthly packages (by the 25th and by the 5th).",
+      "Contractors / Crews - work front, inventory items, deadlines, responsibility."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "SITE FOREMAN"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Directly manages work execution on site.",
+      "Organizes the work of crews, contractors, equipment and materials within the assigned task.",
+      "Controls quality, technology, volumes and daily work execution.",
+      "Records actually completed works, needs, issues and deviations.",
+      "Passes data to the Site Manager and PTD for certificates, work orders, volumes and reporting."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Direct execution of construction works by crews.",
+      "Deployment of crews and on-site control of work execution.",
+      "Maintain HSE and occupational safety logs.",
+      "Maintain the works execution log (daily).",
+      "Submit requests for materials and equipment, receive materials on site."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Site Manager - tasks, organization of works, issues, daily report.",
+      "Crews / Contractors - work execution, deadlines, quality, inventory items.",
+      "Technical Supervision - quality, remarks, correction of deficiencies.",
+      "PTD - actual volumes, work orders, certificates, as-built documentation.",
+      "Mechanic - equipment, engine hours, fuel, downtime."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "PERFORMERS"
+    },
+    {
+     "t": "h",
+     "text": "WORK CREWS"
+    },
+    {
+     "t": "h",
+     "text": "Area of Responsibility"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Perform works in accordance with the contract, work order, technical assignment or set task.",
+      "Comply with design documentation, work execution technology, deadlines and quality requirements.",
+      "Receive inventory items, equipment or work fronts into custody in accordance with the established procedure.",
+      "Provide actual data on completed works, materials used and needs.",
+      "Correct remarks, defects and violations within specified deadlines."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Duties"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Execution of construction works according to the project and assignments.",
+      "Compliance with work execution technology.",
+      "Compliance with HSE and occupational safety requirements.",
+      "Following instructions of the Site Foreman and Site Manager.",
+      "Maintaining the workplace and preserving materials."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Interaction"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Site Foreman / Site Manager - receiving tasks, work front, inventory items and equipment.",
+      "Technical Supervision - quality inspection, remarks, confirmation of execution.",
+      "PTD - documents, certificates, work orders, volumes.",
+      "Mechanic - equipment, machinery, engine hours, fuel.",
+      "Project Manager - critical issues, changes, deadlines, responsibility."
+     ]
+    },
+    {
+     "t": "p",
+     "text": "A detailed list of duties for each position is defined by the job description.\nUpon appointment, the person signs the position contract and acknowledgment of this Regulation."
+    },
+    {
+     "t": "h",
+     "text": "KPI BY ROLE",
+     "major": true
+    },
+    {
+     "t": "table",
+     "header": [
+      "Role",
+      "Key Indicators"
+     ],
+     "rows": [
+      [
+       "Head of Client's Service",
+       "Projects prepared (documentation, permits, cost estimate, schedules); projects on time and on budget; quality, volumes and payments confirmed."
+      ],
+      [
+       "Project Manager",
+       "Adherence to budget and schedule; number of delays; control of quality, volumes and document flow."
+      ],
+      [
+       "Head of PTD",
+       "Completeness and up-to-dateness of documentation without delays; document issuance deadlines; up-to-dateness of registers."
+      ],
+      [
+       "Technical Supervision",
+       "Certificates verified before signing - 100%; remarks issued no later than 1 business day after inspection; concealed works with a Concealed Works Acceptance Certificate - 100%."
+      ],
+      [
+       "Site Manager",
+       "Schedule compliance, deviations up to 5 business days; as-built documentation in parallel with works; plan by the 25th and report package by the 5th - no violations."
+      ],
+      [
+       "Mechanic",
+       "Machinery timesheet for 100% of equipment; fuel and lubricant consumption within norms; downtime recorded with cause."
+      ],
+      [
+       "Cost Engineer",
+       "Cost estimate issued within the standard deadline; 100% of actual/estimate deviations explained; price database current (updated monthly)."
+      ],
+      [
+       "Site Foreman",
+       "Works execution log filled in daily; material requests submitted before the need date; 0 works without current design documentation."
+      ],
+      [
+       "HSE Engineer",
+       "100% of workers briefed and cleared; 0 workers without a contract and HSE documents; regular site visits."
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "text": "AUTHORITY MATRIX",
+     "major": true
+    },
+    {
+     "t": "table",
+     "header": [
+      "Process",
+      "Initiator",
+      "Executor",
+      "Concurs",
+      "Approves"
+     ],
+     "rows": [
+      [
+       "Contract with contractor",
+       "PM",
+       "PTD",
+       "Legal / CS",
+       "CEO"
+      ],
+      [
+       "Payment",
+       "PM",
+       "Finance",
+       "PTD / Technical Supervision",
+       "CEO"
+      ],
+      [
+       "Project change",
+       "PM",
+       "Design Team",
+       "PTD",
+       "Head of CS"
+      ],
+      [
+       "Tender / procurement",
+       "PM",
+       "Client's Service",
+       "PTD / Cost Engineer",
+       "CEO"
+      ],
+      [
+       "Acceptance of works (certificate)",
+       "Contractor / PM",
+       "Technical Supervision",
+       "PTD",
+       "Head of CS"
+      ],
+      [
+       "Equipment order",
+       "Site Manager / Site Foreman",
+       "Mechanic",
+       "PM",
+       "Head of CS"
+      ],
+      [
+       "Materials supply",
+       "PM",
+       "Procurement Dept",
+       "PTD",
+       "Head of CS"
+      ],
+      [
+       "Cost estimate approval",
+       "Cost Engineer / PTD",
+       "Cost Engineer",
+       "Head of CS",
+       "CEO"
+      ],
+      [
+       "Works schedule approval",
+       "PM",
+       "PM / PTD",
+       "PTD",
+       "Head of CS"
+      ],
+      [
+       "Acceptance of concealed works (Concealed Works Acceptance Certificate)",
+       "Site Manager",
+       "Site Manager / Site Foreman",
+       "PTD",
+       "Technical Supervision"
+      ],
+      [
+       "Write-off of materials (M-29)",
+       "Site Manager / Site Foreman",
+       "PTD",
+       "Technical Supervision",
+       "Head of CS"
+      ],
+      [
+       "Claim against contractor",
+       "PM / Technical Supervision",
+       "PTD + Legal",
+       "Head of CS",
+       "CEO"
+      ],
+      [
+       "Work stoppage",
+       "Technical Supervision / HSE Engineer / Head of CS",
+       "-",
+       "-",
+       "Head of CS (notifies CEO)"
+      ],
+      [
+       "Resumption of works",
+       "PM",
+       "Site Manager",
+       "Technical Supervision",
+       "Head of CS"
+      ],
+      [
+       "Warranty case",
+       "PM / PTD",
+       "Contractor",
+       "Technical Supervision",
+       "Head of CS"
+      ],
+      [
+       "Commissioning",
+       "PM",
+       "PTD",
+       "Head of CS",
+       "CEO"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "text": "Payment approval limits (amounts approved by the CEO upon approval of this Regulation)"
+    },
+    {
+     "t": "table",
+     "header": [
+      "Payment condition",
+      "Approves"
+     ],
+     "rows": [
+      [
+       "Payment within the approved cost estimate - up to the limit (amount set by the CEO)",
+       "Head of Client's Service"
+      ],
+      [
+       "Payment within the estimate - above the limit (amount set by the CEO)",
+       "General Director"
+      ],
+      [
+       "Any payment outside the approved cost estimate",
+       "General Director, only against a Change Request"
+      ],
+      [
+       "Advance payment to contractor above the norm (percentage set by the CEO)",
+       "General Director"
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "text": "RESPONSIBILITY",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "• Each participant is responsible for action and inaction within their role."
+    },
+    {
+     "t": "p",
+     "text": "• Starting works without an approved project, cost estimate or contract is prohibited."
+    },
+    {
+     "t": "p",
+     "text": "• Absence of a contract or HSE documents for a worker is the responsibility of the PM and the HSE Engineer."
+    },
+    {
+     "t": "p",
+     "text": "• Failure to comply with the requirements of this Regulation is grounds for disciplinary action."
+    },
+    {
+     "t": "p",
+     "text": "• Absence of documentary confirmation of work completion is equated to non-completion."
+    },
+    {
+     "t": "p",
+     "text": "• Any verbal agreements must be recorded in writing."
+    }
+   ]
+  },
+  {
+   "num": "2",
+   "title": "PROJECT AND WORKS MANAGEMENT",
+   "blocks": [
+    {
+     "t": "h",
+     "text": "PRE-PROJECT PREPARATION: PROJECT STARTUP PACKAGE",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "Before starting any works, a complete project startup package must be assembled. Checklist - Appendix Д1. Colors on the right: green - always mandatory; yellow - if building in-house; red - performed by the general contractor when one is engaged."
+    },
+    {
+     "t": "table",
+     "header": [
+      "No.",
+      "Document / material",
+      "Prepared by",
+      "Approved by"
+     ],
+     "rows": [
+      [
+       "1",
+       "Project passport / project brief (goal, budget, timeline, KPIs, areas of responsibility, risks)",
+       "Head of CS",
+       "CEO"
+      ],
+      [
+       "2",
+       "Title documents for the land plot / asset (asset - an existing facility: built or under construction)",
+       "Lawyer",
+       "CEO"
+      ],
+      [
+       "3",
+       "Urban planning conditions and restrictions",
+       "Design team",
+       "Head of CS"
+      ],
+      [
+       "4",
+       "Utility connection specifications (power, water, gas, sewerage)",
+       "Design team",
+       "Head of CS"
+      ],
+      [
+       "5",
+       "Design documentation: site plan, architectural and structural sections, engineering sections",
+       "Design team",
+       "Head of CS (reviewed by PTD)"
+      ],
+      [
+       "6",
+       "Design documentation review (expertise) - mandatory for every facility",
+       "Design team",
+       "-"
+      ],
+      [
+       "7",
+       "Construction works permit",
+       "Head of CS",
+       "-"
+      ],
+      [
+       "8",
+       "Approved cost estimate: local estimates for each type of work + facility estimates + consolidated cost calculation",
+       "Cost Engineer + PTD",
+       "CEO"
+      ],
+      [
+       "9",
+       "Works Schedule with responsible persons assigned",
+       "PM + PTD",
+       "Head of CS"
+      ],
+      [
+       "10",
+       "Funding schedule synchronized with the Works Schedule",
+       "PM + Finance Dept",
+       "CEO"
+      ],
+      [
+       "11",
+       "Contractor portfolio: tender, 3 proposals, draft contracts",
+       "PM + PTD",
+       "CEO"
+      ],
+      [
+       "12",
+       "Occupational safety: HSE engineer (outsourced, reports to the client); order appointing the on-site HSE-responsible person - upon works commencement (Site Manager / Site Foreman)",
+       "HSE Engineer",
+       "Head of CS"
+      ],
+      [
+       "13",
+       "Order appointing the PM and project team",
+       "Head of CS",
+       "CEO"
+      ]
+     ]
+    },
+    {
+     "t": "note",
+     "text": "GATE: without a complete startup package, the project is not passed into execution. Works started without the package are considered unauthorized; payment is not guaranteed."
+    },
+    {
+     "t": "h",
+     "text": "PROJECT EXECUTION SEQUENCE",
+     "major": true
+    },
+    {
+     "t": "table",
+     "header": [
+      "No.",
+      "Stage",
+      "Stage outcome (gate document)",
+      "Responsible",
+      "Gate: approved by"
+     ],
+     "rows": [
+      [
+       "1",
+       "Project initiation",
+       "Project passport approved",
+       "Head of CS",
+       "CEO"
+      ],
+      [
+       "2",
+       "Project design",
+       "Design documentation (site plan, architectural, structural sections) issued, reviewed by PTD",
+       "Design team",
+       "Head of CS"
+      ],
+      [
+       "3",
+       "Obtaining technical specifications and permits",
+       "Complete package of technical specifications and permits",
+       "Head of CS",
+       "CEO"
+      ],
+      [
+       "4",
+       "Team formation",
+       "Order appointing the PM and team",
+       "Head of CS",
+       "CEO"
+      ],
+      [
+       "5",
+       "Preparation of the cost estimate, Works Schedule and project funding schedule",
+       "Cost estimate, works schedule, funding schedule approved",
+       "Cost Engineer / PM / PTD",
+       "CEO"
+      ],
+      [
+       "6",
+       "Conducting tenders",
+       "Contracts signed (min. 3 proposals)",
+       "CS (PM participates)",
+       "CEO"
+      ],
+      [
+       "7",
+       "Works execution",
+       "Works per schedule, monthly plan/report cycle",
+       "PM",
+       "Head of CS - monthly gate"
+      ],
+      [
+       "8",
+       "Quality and volume control",
+       "Volumes and quality confirmed by Technical Supervision",
+       "Technical Supervision",
+       "Head of CS"
+      ],
+      [
+       "9",
+       "Signing of acceptance certificates",
+       "KB-2v / KB-3 signed, payments made",
+       "PM / PTD",
+       "Head of CS / CEO per limits"
+      ],
+      [
+       "10",
+       "Project closeout",
+       "Final documentation package, commissioning, warranties registered",
+       "PTD / PM",
+       "CEO"
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "text": "WORK MECHANICS AND REGULATIONS",
+     "major": true
+    },
+    {
+     "t": "h",
+     "text": "MONEY AND PAYMENTS"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Payments to contractors and wages - only after Technical Supervision signs the certificates. In plain words: until Technical Supervision signs the certificate, nobody gets paid. No exceptions and no \"we'll submit the rest later.\"",
+      "Every payment - only from the payment register, with the \"contract\" column filled in and the initiator visible. A payment without a contract is not processed in the register.",
+      "Monthly payment - only after the PTD technical verification note (see \"Monthly cycle\"). PTD is a filter: it catches overruns and unexplained works BEFORE money goes out."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "DOCUMENTS AND DECISIONS"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Verbal agreements do not exist. If it was said, record it in Worksection or in the minutes. If it is not recorded, the agreement does not exist and cannot be referenced.",
+      "Every meeting ends with minutes: date, attendees, decisions made, assignee, due date. A decision not entered into the decision register is considered not made.",
+      "Any change to the project, cost estimate or schedule - only in writing, via a Change Request (App. Г1). \"Let's just do it a bit differently here\" without paperwork is unauthorized work that is not paid for.",
+      "Every document has a status and a version. We work only with the current version; using an outdated version is the mistake of whoever picked it up.",
+      "Design documentation reaches the site only through PTD, stamped \"Issued for Construction.\" Drawings \"from the architect's phone\" are not a document."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "PROCUREMENT AND CONTRACTORS"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "A contract - with everyone: contractor, crew, even a single individual. No contract - the person does not work on site.",
+      "Any procurement - a minimum of 3 commercial offers and a comparison table: price / lead time / warranty / who was chosen and why (App. В7).",
+      "Tenders are organized by the Client's Service, with the Project Manager participating. Material supply goes through the Procurement Dept as an internal contractor, not \"someone we know will bring it.\"",
+      "Prices for materials and works are controlled by PTD together with the Cost Engineer - continuously, not only when something \"seems expensive.\""
+     ]
+    },
+    {
+     "t": "h",
+     "text": "MACHINERY AND MATERIALS"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Machinery is ordered for the site tied to the Works Schedule (App. В2, В3). Responsible - Site Manager and mechanic. Idle machinery is money burning every day.",
+      "Fuel consumption norms are approved; tracking is instrument-based (engine hours, fuel sensors, GPS), cash use is minimal. A Machinery Timesheet is kept for every unit - every shift.",
+      "Inventory items and fixed assets are tracked and inventoried through project completion. Everything handed over goes through a transfer certificate of responsibility (App. В6)."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "DAILY RHYTHM AND CONTROL"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "A daily site summary instead of a daily meeting: headcount by 8:30, photos throughout the day, progress and issues - in the Telegram chat with Head of CS.",
+      "Photo documentation - per checklist (App. Д4): general view, concealed works, reinforcement, engineering systems, details, dated. Mandatory before closing a Concealed Works Acceptance Certificate.",
+      "The monthly cycle is the law: plan by the 25th, reporting package by the 5th, PTD verification note by the 10th (see \"Monthly cycle\").",
+      "Reports are generated from system exports for the period, not rewritten by hand - less manual work, fewer errors.",
+      "A request left unanswered within the standard term is escalated automatically (see \"Overdue escalation\") - no need to \"remind anyone personally.\"",
+      "A project without a complete startup package is not passed into execution (see \"Startup package\"). Started without the package - the works are unauthorized."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "CONCEALED WORKS AND LABORATORY CONTROL",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "Baseline list of concealed works closure certificates and interim acceptance certificates for critical structures. The list may be amended or supplemented by the project author and at the request of the client's Technical Supervision. Certificate form - App. Г2, preparation and submission procedure - App. Е6."
+    },
+    {
+     "t": "h",
+     "text": "Earthworks"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Excavation works, embankments and backfilling in the pit."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Bases and foundations"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Preparation of the foundation base (indicating dimensions, pit bottom elevations, and conformity of actual soil layering and properties with the design).",
+      "Verification of the base soils for absence of disturbance to their natural properties, or compaction quality, against the design data."
+     ]
+    },
+    {
+     "t": "p",
+     "text": "Monolithic concrete and reinforced concrete structures"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Formwork installation and preparation for concreting.",
+      "Installation of reinforcement products and embedded parts.",
+      "Welding works.",
+      "Anti-corrosion protection of joints.",
+      "Surface preparation of walls and columns supporting monolithic structures (elevations, surface slopes).",
+      "Installation of shrinkage and expansion joints in structures.",
+      "Acceptance of completed concrete and reinforced concrete structures (interim acceptance certificates for critical structures)."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Masonry structures"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Preparation of supporting structural elements for masonry work.",
+      "Brick wall masonry.",
+      "Brick partition walls.",
+      "Aerated concrete block partitions.",
+      "Installation of shrinkage and expansion joints.",
+      "Waterproofing of masonry.",
+      "Installation of ventilation ducts and flues in masonry walls."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Waterproofing works"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Waterproofing of foundations and basement walls (coating, membrane) - each layer before applying the next.",
+      "Horizontal waterproofing under walls and partitions.",
+      "Waterproofing of bathrooms, showers, balconies, loggias and other wet zones - before the screed or tiling.",
+      "Roof waterproofing - the base and each membrane layer before the next.",
+      "Abutments, utility penetrations, expansion joints in the waterproofing."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Thermal and vapor insulation"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Facade insulation - before the finishing layer.",
+      "Thermal and vapor insulation of the roof and enclosure structures - before the upper layers.",
+      "Floor and slab insulation - before the screed."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Floors and screeds"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Preparation of the floor base, compaction of the sub-base layers.",
+      "Screed reinforcement - before pouring."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Utility networks (before closing)"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "External networks (water supply, sewerage, stormwater, drainage) - before backfilling, with testing.",
+      "Internal concealed pipelines (heating, water supply) - pressure testing before embedding or enclosing.",
+      "Concealed electrical wiring - insulation resistance measurement before finishing.",
+      "Sleeves, penetrations, embedded parts in structures.",
+      "Ventilation ducts and flues - before closing."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Embedding and fastening"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Embedding of openings, lintels, balconies, embedded structures.",
+      "Fastening of structural elements, anchoring."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Protective coatings"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Anti-corrosion protection of steel structures, welded joints and embedded parts.",
+      "Fireproofing treatment of structures."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Rules for closing concealed works"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "A Concealed Works Acceptance Certificate may be issued for a structure as a whole or for part of it within specific axes.",
+      "Before closing any Concealed Works Acceptance Certificate - photo documentation is mandatory per the photo documentation procedure (App. Е5).",
+      "Original material certificates (concrete, rebar, wire, etc.) used in the certificate's works are attached to each Concealed Works Acceptance Certificate. If one material batch is closed by several certificates - the original goes to one certificate, copies to the related ones.",
+      "The Site Manager submits delivery notes for received materials to PTD weekly.",
+      "Concealed works are not accepted without a lab technician's report (where required) and without photo documentation."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "RIGHT TO STOP WORKS",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "The Client's Service and Technical Supervision have the right to stop works in the event of:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "safety violations;",
+      "deviation from the design;",
+      "missing documentation;",
+      "poor quality of works;",
+      "use of unapproved materials."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Procedure for stopping and resuming works"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "The initiator (Technical Supervision / HSE engineer / Head of CS) draws up a stoppage certificate: grounds, scope of stopped works, requirements for remediation.",
+      "The certificate is submitted the same day to the PM, Site Manager and Head of CS; the Head of CS notifies the CEO.",
+      "The contractor remedies the violations and notifies in writing of readiness for inspection.",
+      "Resumption of works - only with the initiator's written permission, approved by the Head of CS.",
+      "Downtime caused by the contractor is not compensated; losses are recorded in the claims register."
+     ]
+    }
+   ]
+  },
+  {
+   "num": "3",
+   "title": "INTERACTION AND EXECUTION CONTROL",
+   "blocks": [
+    {
+     "t": "h",
+     "text": "STANDARD TURNAROUND TIMES BETWEEN DEPARTMENTS",
+     "major": true
+    },
+    {
+     "t": "table",
+     "header": [
+      "Process / Document",
+      "Deadline"
+     ],
+     "rows": [
+      [
+       "Contract approval",
+       "3 business days"
+      ],
+      [
+       "Review of KB-2v act",
+       "2 business days"
+      ],
+      [
+       "Response to a Change Request",
+       "5 business days"
+      ],
+      [
+       "Issuance of documentation",
+       "1 business day"
+      ],
+      [
+       "Cost estimate approval (after submission of the complete package)",
+       "5 business days"
+      ],
+      [
+       "Payment after initiation with a complete set of documents",
+       "3 business days"
+      ],
+      [
+       "Response to a materials request",
+       "2 business days"
+      ],
+      [
+       "Response to an equipment request",
+       "1 business day"
+      ],
+      [
+       "Technical Supervision remark after works inspection",
+       "1 business day"
+      ],
+      [
+       "Claim review",
+       "5 business days"
+      ],
+      [
+       "Response to any request in Worksection (unless otherwise specified)",
+       "2 business days"
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "text": "REQUEST ROUTES: WHO REQUESTS WHAT FROM WHOM",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "Every request is logged in Worksection. No response within the deadline triggers automatic escalation per the \"Overdue Escalation\" section."
+    },
+    {
+     "t": "table",
+     "header": [
+      "What is requested",
+      "Who has the right to request",
+      "From whom",
+      "Response deadline"
+     ],
+     "rows": [
+      [
+       "Design documentation: site plan, architectural, structural, engineering sections (current version)",
+       "PM, Site Manager, Site Foreman, Technical Supervision, Cost Engineer",
+       "PTD",
+       "1 business day"
+      ],
+      [
+       "Clarification of a design decision, drawing error",
+       "PM, PTD, Site Manager, Technical Supervision",
+       "Design team (via PTD)",
+       "3 business days"
+      ],
+      [
+       "Cost estimate, rate, cost verification",
+       "PM, Head of CS, CEO, Financial Dept",
+       "Cost Engineer (via Head of PTD)",
+       "3 business days"
+      ],
+      [
+       "Technical specifications and permit documentation (copies)",
+       "PM, PTD, Design team",
+       "Head of Client's Service",
+       "1 business day"
+      ],
+      [
+       "Current works schedule",
+       "Any project participant",
+       "PM / PTD",
+       "1 business day"
+      ],
+      [
+       "Cumulative Works Register: completed / remaining works and materials",
+       "PM, Head of CS, CEO, Financial Dept",
+       "PTD",
+       "2 business days"
+      ],
+      [
+       "Acts, as-built documentation (copies, status)",
+       "PM, Head of CS, Technical Supervision",
+       "PTD",
+       "2 business days"
+      ],
+      [
+       "Equipment data: engine hours, fuel, downtime",
+       "PTD, PM, Financial Dept",
+       "Mechanic",
+       "2 business days"
+      ],
+      [
+       "Payment status",
+       "PM; contractor - via PM",
+       "Financial Dept (via Head of CS)",
+       "2 business days"
+      ],
+      [
+       "Contract, contract approval status",
+       "PM, Site Manager",
+       "PTD (contract register)",
+       "1 business day"
+      ],
+      [
+       "Inventory balances on site",
+       "PM, PTD, Head of CS",
+       "Site Manager",
+       "2 business days"
+      ],
+      [
+       "Occupational safety status, worker clearances",
+       "Head of CS, PM",
+       "Safety Engineer",
+       "1 business day"
+      ],
+      [
+       "Laboratory test reports (concrete 3/7/28 days)",
+       "Technical Supervision, PM, PTD",
+       "Lab Technician",
+       "1 business day"
+      ],
+      [
+       "Photo documentation of a specific work / date",
+       "Head of CS, PM, PTD, Technical Supervision",
+       "Site Manager",
+       "1 business day"
+      ],
+      [
+       "Copies of Concealed Works Acceptance Certificates",
+       "PM, Head of CS, PTD",
+       "Technical Supervision / Site Manager",
+       "2 business days"
+      ],
+      [
+       "Tender status, bid comparison table",
+       "PM, CEO",
+       "Head of CS / PTD",
+       "2 business days"
+      ],
+      [
+       "Change Request (CR) status",
+       "Change initiator",
+       "Head of Client's Service (via WS)",
+       "2 business days"
+      ],
+      [
+       "Material write-off norms and coefficients",
+       "Site Manager, Site Foreman, Cost Engineer",
+       "PTD",
+       "1 business day"
+      ],
+      [
+       "Project budget variance report",
+       "Head of CS, CEO, Financial Dept",
+       "Cost Engineer",
+       "2 business days"
+      ],
+      [
+       "Extract from the works log",
+       "Technical Supervision, PM, PTD",
+       "Site Foreman",
+       "1 business day"
+      ],
+      [
+       "Status of resolving a Technical Supervision remark",
+       "Technical Supervision, PM",
+       "Site Manager",
+       "1 business day"
+      ],
+      [
+       "Delivery notes and certificates (copies)",
+       "PTD, Technical Supervision, Lab Technician",
+       "Site Manager",
+       "2 business days"
+      ],
+      [
+       "Meeting minutes / extract from the decision register",
+       "Any participant",
+       "Meeting secretary / Head of CS",
+       "1 business day"
+      ]
+     ]
+    },
+    {
+     "t": "note",
+     "text": "PTD is the single point for issuing documentation. A document obtained bypassing PTD is considered unregistered and is not grounds for works or payments."
+    },
+    {
+     "t": "h",
+     "text": "INTERACTION WITH RELATED DEPARTMENTS",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "The rule is simple: every touchpoint with another department has a specific form, a specific deadline, and a specific answer. Below are typical situations."
+    },
+    {
+     "t": "p",
+     "text": "Procurement Dept (supply) - our internal contractor for materials"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Materials needed → Site Foreman / Site Manager submits a request (App. В1) tied to the monthly plan → response within 2 business days → delivery by the deadline stated in the request.",
+      "Together with the monthly plan (by the 25th), the site submits a consolidated materials requirement with delivery deadlines - Procurement orders in advance, not \"yesterday\".",
+      "Every delivery arrives with quality documents (certificates, data sheets). Without documents, material is not accepted into works under acceptance certificates."
+     ]
+    },
+    {
+     "t": "p",
+     "text": "Financial Dept - money moves only against confirmed documents"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "We provide: acts signed by Technical Supervision, payment register, funding schedule, PTD Technical Verification Note. Without this package, Financial Dept does not process the payment.",
+      "They provide: payments within 3 business days after initiation with the complete package, a monthly budget execution report, project limits.",
+      "The question \"where is my payment?\" - request via Head of CS, response within 2 business days (see \"Request Routes\" section)."
+     ]
+    },
+    {
+     "t": "p",
+     "text": "Legal Dept - contracts, claims, permit documentation"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Every contract with a contractor or supplier undergoes legal review before signing (approval deadline - 3 business days).",
+      "A claim against a contractor is prepared by PTD together with the legal counsel (App. Г8), approved by Head of CS, and confirmed by the CEO.",
+      "Title documents for land plots and assets are the legal counsel's domain; copies for the starter package are provided to Head of CS upon request within 1 business day."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Development Director - project input data"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "We receive the concept and initial data at the initiation and design stages; we return feedback on feasibility and cost before the cost estimate is approved."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Marketing and Sales - deadlines and site status"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Monthly we provide: current readiness deadlines and site status (based on weekly status updates and photo reports).",
+      "Client requests do NOT go directly to the site - only through a Change Request (App. Г1) with an assessment of impact on budget and deadline."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "OVERDUE ESCALATION",
+     "major": true
+    },
+    {
+     "t": "table",
+     "header": [
+      "Overdue period",
+      "Action"
+     ],
+     "rows": [
+      [
+       "Up to 1 business day",
+       "Reminder to the responsible person in Worksection"
+      ],
+      [
+       "2-3 business days",
+       "Escalation to the department head"
+      ],
+      [
+       "4-10 business days",
+       "Escalation to the Head of Client's Service; the matter is raised at the weekly meeting"
+      ],
+      [
+       "More than 10 business days",
+       "Escalation to the General Director (CEO)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "num": "4",
+   "title": "DOCUMENT FLOW, PLANNING AND REPORTING",
+   "blocks": [
+    {
+     "t": "h",
+     "text": "DOCUMENT FLOW",
+     "major": true
+    },
+    {
+     "t": "table",
+     "header": [
+      "Document",
+      "From → to",
+      "Deadline"
+     ],
+     "rows": [
+      [
+       "Project passport (cost estimate, timelines, responsible parties, KPIs, areas of responsibility, risks, status)",
+       "Client's Service → CEO",
+       "before start"
+      ],
+      [
+       "Design (architectural, working documentation)",
+       "Design Team → PM",
+       "before start"
+      ],
+      [
+       "Project Change Request",
+       "PM → PTD → CS",
+       "as needed"
+      ],
+      [
+       "Permitting documentation, technical specifications",
+       "Head of Client's Service → PTD, PM",
+       "before start"
+      ],
+      [
+       "Cost estimate",
+       "PTD + Cost Engineer → CS, PM",
+       "before start"
+      ],
+      [
+       "Procurement request + comparison table (3 quotes)",
+       "PM → PTD, CS",
+       "before procurement"
+      ],
+      [
+       "Works and funding schedule",
+       "PM / PTD → Client's Service",
+       "weekly"
+      ],
+      [
+       "Contracts with contractors",
+       "PM / PTD → PTD (register)",
+       "before works start"
+      ],
+      [
+       "Meeting minutes",
+       "Meeting secretary → participants",
+       "after the meeting"
+      ],
+      [
+       "Equipment request / engine-hours timesheet / fuel and lubricants log",
+       "Site Manager, mechanic → PTD, Finance",
+       "every shift"
+      ],
+      [
+       "Logs (work performance, safety, concealed works, incoming inspection)",
+       "Site Foreman, Site Manager → Technical Supervision, PTD",
+       "daily"
+      ],
+      [
+       "KB-2v, KB-3 certificates",
+       "PM → Technical Supervision → PTD",
+       "upon occurrence"
+      ],
+      [
+       "Work orders, M-29 (materials write-off)",
+       "Site Manager / Site Foreman → PTD",
+       "upon occurrence"
+      ],
+      [
+       "As-built documentation (+ register)",
+       "PM / Site Manager → PTD",
+       "in parallel"
+      ],
+      [
+       "Photo documentation per checklist",
+       "Site Manager → PM, Client's Service",
+       "daily"
+      ],
+      [
+       "Payment register (\"contract\" column)",
+       "Initiator → Finance function",
+       "before payment"
+      ],
+      [
+       "Monthly work plan + execution schedule",
+       "Site Manager → PTD",
+       "by the 25th"
+      ],
+      [
+       "Monthly reporting package (certificate, equipment timesheet, as-built documentation)",
+       "Site Manager → PTD",
+       "by the 5th"
+      ],
+      [
+       "Concealed Works Acceptance Certificate",
+       "Site Manager → Technical Supervision → PTD",
+       "before closing the works"
+      ],
+      [
+       "Handover certificate for inventory / equipment (custody transfer)",
+       "Site Manager → PTD",
+       "upon handover"
+      ],
+      [
+       "Claim to contractor",
+       "PM / PTD → Contractor",
+       "upon occurrence"
+      ],
+      [
+       "Laboratory test report",
+       "Lab technician → Technical Supervision, Head of CS, PTD",
+       "after testing"
+      ],
+      [
+       "Weekly photo report",
+       "Site Manager → Head of CS, PM",
+       "every Friday by 17:00"
+      ],
+      [
+       "Delivery notes + material certificates",
+       "Site Manager → PTD",
+       "weekly"
+      ],
+      [
+       "Monthly technical verification note",
+       "PTD → Head of Client's Service",
+       "by the 10th"
+      ],
+      [
+       "Equipment relocation certificate",
+       "Mechanic → PTD",
+       "upon relocation"
+      ],
+      [
+       "Order appointing person responsible for safety on site",
+       "Head of CS → Site",
+       "before works start"
+      ],
+      [
+       "Memo (escalation)",
+       "Initiator → manager up the chain",
+       "upon occurrence"
+      ],
+      [
+       "Comparative tender table (3 quotes)",
+       "PM / PTD → Head of CS, CEO",
+       "before contractor selection"
+      ],
+      [
+       "Budget variance report",
+       "Cost Engineer → Head of CS",
+       "monthly"
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "text": "REGISTERS AND LOGS",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "Not to be confused with the appendix register: appendices are TEMPLATES (blank forms taken from the Drive and filled in), while registers and logs are LIVE documents maintained on an ongoing basis. Whoever maintains a document is responsible for keeping it up to date."
+    },
+    {
+     "t": "p",
+     "text": "Registers (maintained in Worksection / approved tables)"
+    },
+    {
+     "t": "table",
+     "header": [
+      "Register",
+      "Maintained by",
+      "Update"
+     ],
+     "rows": [
+      [
+       "Contract register",
+       "PTD",
+       "on every status change"
+      ],
+      [
+       "Payment register (with \"contract\" column and initiator)",
+       "Finance function; initiator - PM",
+       "before every payment"
+      ],
+      [
+       "Project change register (Change Requests)",
+       "PTD",
+       "upon each change"
+      ],
+      [
+       "Approvals register (document / version / approved by / date)",
+       "PTD",
+       "as it happens"
+      ],
+      [
+       "Meeting decisions register",
+       "Meeting secretary",
+       "after every meeting"
+      ],
+      [
+       "CEO directives register",
+       "Head of Client's Service",
+       "continuously"
+      ],
+      [
+       "Project risk register",
+       "PM",
+       "weekly"
+      ],
+      [
+       "Snag/defect register",
+       "Technical Supervision",
+       "daily, as they occur"
+      ],
+      [
+       "Claims register (contractor / substance / amount / status)",
+       "PTD",
+       "as it happens"
+      ],
+      [
+       "Budget variance register (line item / plan / actual / reason)",
+       "Cost Engineer",
+       "monthly"
+      ],
+      [
+       "Contractor register (rating: quality, timelines, claims, warranties)",
+       "PTD",
+       "monthly"
+      ],
+      [
+       "Equipment and inventory register",
+       "Site Manager + mechanic",
+       "on every inventory movement"
+      ],
+      [
+       "Warranty obligations register",
+       "PTD",
+       "at project closeout, then quarterly"
+      ],
+      [
+       "As-built documentation register",
+       "PTD",
+       "in parallel with the works"
+      ],
+      [
+       "Keys and access register",
+       "Site Manager",
+       "on every issuance"
+      ],
+      [
+       "Cumulative works and materials register",
+       "PTD",
+       "monthly, by the 10th"
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Logs (maintained on site)"
+    },
+    {
+     "t": "table",
+     "header": [
+      "Log",
+      "Maintained by",
+      "Frequency",
+      "Template"
+     ],
+     "rows": [
+      [
+       "Work performance log",
+       "Site Foreman",
+       "daily",
+       "-"
+      ],
+      [
+       "Safety and labor protection logs",
+       "Site Foreman + safety engineer",
+       "daily",
+       "-"
+      ],
+      [
+       "Technical supervision log",
+       "Technical Supervision",
+       "daily, upon inspections",
+       "-"
+      ],
+      [
+       "Concealed works log",
+       "Technical Supervision",
+       "before closing each stage",
+       "App. Г2"
+      ],
+      [
+       "Incoming materials inspection log",
+       "Site Manager",
+       "on every delivery",
+       "-"
+      ],
+      [
+       "Equipment operation log",
+       "Mechanic",
+       "as downtime occurs",
+       "App. В5"
+      ],
+      [
+       "Incident and accident log",
+       "Safety engineer",
+       "upon occurrence",
+       "-"
+      ],
+      [
+       "Quality non-conformance log",
+       "Technical Supervision",
+       "upon occurrence",
+       "-"
+      ],
+      [
+       "Photo documentation (archive by date and work type)",
+       "Site Manager",
+       "daily / weekly",
+       "App. Е5, Д4"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "text": "A register or log that is not kept up to date is considered unreliable: data from it is not accepted for certificates or payments until it is updated."
+    },
+    {
+     "t": "h",
+     "text": "REPORTING SYSTEM",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "Every report answers four questions: who prepares it, who it goes to, when, and in what form. The full calendar with sanctions is in Appendix А."
+    },
+    {
+     "t": "table",
+     "header": [
+      "Report",
+      "Prepared by",
+      "To whom",
+      "When and what's inside",
+      "Form"
+     ],
+     "rows": [
+      [
+       "Daily site summary",
+       "Site Manager / Site Foreman",
+       "Head of CS (Telegram chat)",
+       "Daily: headcount by 8:30, photos of 3-5 zones, progress/issues",
+       "App. А"
+      ],
+      [
+       "Work performance log",
+       "Site Foreman",
+       "Technical Supervision, PTD (on request)",
+       "Filled in daily",
+       "Log"
+      ],
+      [
+       "Schedule plan-vs-actual",
+       "Site Manager",
+       "Project Manager",
+       "Every Friday by 17:00; delays - reasons in writing",
+       "App. Б2"
+      ],
+      [
+       "Machinery timesheets",
+       "Mechanic / driver (signed by Site Manager)",
+       "PTD",
+       "Filled in every shift, submitted every Friday by 18:00",
+       "App. В5"
+      ],
+      [
+       "Weekly photo report",
+       "Site Manager",
+       "Head of CS, PM",
+       "Every Friday by 17:00, per photo documentation procedure",
+       "App. Е5, Д4"
+      ],
+      [
+       "Delivery notes + certificates",
+       "Site Manager",
+       "PTD",
+       "Weekly",
+       "-"
+      ],
+      [
+       "Portfolio schedule performance report",
+       "PM",
+       "Head of CS",
+       "Weekly",
+       "-"
+      ],
+      [
+       "Risk and budget variance register",
+       "PM / Cost Engineer",
+       "Head of CS",
+       "Weekly / monthly",
+       "Registers"
+      ],
+      [
+       "Next month's work plan + schedule + material requirements",
+       "Site Manager",
+       "PTD",
+       "By the 25th",
+       "App. Б1, Б2, В1"
+      ],
+      [
+       "Monthly reporting package (certificate + timesheets + as-built docs + delivery notes, certificates)",
+       "Site Manager",
+       "PTD",
+       "By the 5th of the following month",
+       "App. Б3, В5"
+      ],
+      [
+       "Monthly technical verification note",
+       "PTD",
+       "Head of Client's Service",
+       "By the 10th; without it the month's payment is not confirmed",
+       "-"
+      ],
+      [
+       "Laboratory test reports",
+       "Lab technician",
+       "Technical Supervision, Head of CS, PTD",
+       "After each test (3/7/28 days)",
+       "App. Г7"
+      ],
+      [
+       "CEO directives and meeting decisions register (statuses)",
+       "Head of CS / secretary",
+       "CEO, participants",
+       "Continuously / after meetings",
+       "Registers"
+      ],
+      [
+       "Final project documentation package",
+       "PTD",
+       "Head of CS, CEO",
+       "At project completion",
+       "-"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "text": "Rule: a report not submitted on time is considered not submitted. From there, escalation applies (section \"Overdue Escalation\") along with the sanctions in Appendix А."
+    },
+    {
+     "t": "h",
+     "text": "MONTHLY PLANNING AND CLOSEOUT CYCLE",
+     "major": true
+    },
+    {
+     "t": "p",
+     "text": "This is the main rhythm of site work. It's simple: record the facts daily, reconcile the schedule weekly, plan next month by the 25th, submit last month by the 5th, PTD checks it by the 10th, then payment follows. Skip a step and the money stops."
+    },
+    {
+     "t": "h",
+     "text": "DAILY"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "By 8:30 - the Site Manager posts in the Telegram chat with the Head of CS: how many people showed up on site (by crew).",
+      "During the day - 3-5 photos of key zones in the same chat, showing what is actually being done.",
+      "The Site Foreman fills in the work performance log. The driver / mechanic fills in the timesheet for each piece of equipment (App. В5)."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "WEEKLY (FRIDAY)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "By 17:00 - schedule plan-vs-actual: if everything is on schedule, the schedule is submitted marked as compliant. If there is a delay, the Site Manager explains the reasons to the PM in writing (free form) and what is being done to catch up.",
+      "By 17:00 - weekly photo report per procedure (App. Е5): every job of the week is on a photo that clearly shows WHAT was done.",
+      "By 18:00 - the week's equipment timesheets go to PTD (signed by the Site Manager).",
+      "Along with the timesheets - delivery notes and certificates for materials received during the week."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "MONTHLY CLOSEOUT"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "By the 25th - the Site Manager submits to PTD the work plan for the next month (App. Б1) + schedule (App. Б2) + material requirements with delivery dates. No plan means the next month is not funded and materials are not ordered.",
+      "By the 28th - PTD reconciles the plan against the design, cost estimate and cumulative works register, and forwards the material requirements to Procurement.",
+      "By the 5th of the following month - the Site Manager submits the reporting package for the past month (App. Б3): work completion certificate signed by the Site Manager and Technical Supervision + equipment timesheets + as-built documentation (concealed works acceptance certificates, certificates, drawings) + delivery notes. If one document is missing, the package is not accepted.",
+      "By the 10th - PTD checks the package, reconciles it with the cumulative works register, and sends the technical verification note to the Head of Client's Service. This is a filter: if PTD finds overruns or unexplained work, the package is sent back for revision.",
+      "After the technical verification note - the Head of Client's Service approves the certificates, and Finance processes payment (within the limits set out in the \"Authority Matrix\" section)."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "PTD technical verification note - payment filter"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "The technical verification note is PTD's final monthly reconciliation: completed works against the plan and cost estimate, materials written off against norms, equipment operation against timesheets.",
+      "PTD checks the site's full reporting package (work completion certificate + equipment timesheets + as-built documentation + delivery notes and certificates) and submits the technical verification note to the Head of Client's Service by the 10th.",
+      "Certificates go to the Head of Client's Service for approval only after PTD review. The month's payment is not confirmed without the technical verification note."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Unforeseen Works"
+    },
+    {
+     "t": "ol",
+     "items": [
+      "Any unforeseen work (dismantling, rework, reinforcement) is carried out only through a Change Request (App. Г1) issued before the work begins.",
+      "Chain: the Site Foreman records the issue → the Site Manager initiates the change → the Head of Client's Service approves it. The schedule is adjusted at the same time, with the reason stated.",
+      "Work performed without a registered change is considered unauthorized and is not paid for.",
+      "The impact on budget and schedule is recorded in the change form and in the budget variance register."
+     ]
+    }
+   ]
+  },
+  {
+   "num": "5",
+   "title": "REFERENCE MATERIALS",
+   "blocks": [
+    {
+     "t": "h",
+     "text": "FINAL PROVISIONS",
+     "major": true
+    },
+    {
+     "t": "table",
+     "header": null,
+     "rows": [
+      [
+       "•",
+       "This Regulation takes effect from the date of approval by the General Director.",
+       "",
+       ""
+      ],
+      [
+       "•",
+       "Changes to this Regulation are made via a Change Request and approved by the General Director.",
+       "",
+       ""
+      ],
+      [
+       "•",
+       "Appendices (forms, checklists, regulations) are maintained as separate files on Google Drive; the list is on the \"Appendix Register\" sheet.",
+       "",
+       ""
+      ],
+      [
+       "•",
+       "Every employee of the technical division reviews this Regulation and signs off on it.",
+       "",
+       ""
+      ],
+      [
+       "Version",
+       "Date",
+       "Change description",
+       "Author"
+      ],
+      [
+       "1.0",
+       "07.2026",
+       "First edition",
+       "Operations division"
+      ],
+      [
+       "2.0",
+       "30.07.2026",
+       "Terms, starter package, stage gates, request routing, role interaction, KPIs, limits, monthly cycle, stop procedure, adjacent divisions",
+       "Operations division"
+      ]
+     ]
+    },
+    {
+     "t": "h",
+     "text": "TERMS AND ABBREVIATIONS",
+     "major": true
+    },
+    {
+     "t": "table",
+     "header": [
+      "Abbreviation",
+      "Meaning"
+     ],
+     "rows": [
+      [
+       "CS / Head of CS",
+       "Client's Service / Head of Client's Service"
+      ],
+      [
+       "PTD",
+       "Production & Technical Department; headed by the PTD Manager"
+      ],
+      [
+       "PM / CEO",
+       "Project Manager / General Director"
+      ],
+      [
+       "PD / AS / SS",
+       "Project documentation / Architectural solutions / Structural solutions"
+      ],
+      [
+       "Site Plan",
+       "Site master plan of the project (part of the PD)"
+      ],
+      [
+       "Works Schedule / TC",
+       "Works Schedule / Technical Conditions for utility connections"
+      ],
+      [
+       "KB-2v / KB-3",
+       "Certificate of Accepted Works / Certificate of Cost of Works Performed"
+      ],
+      [
+       "M-29 / CWA",
+       "Material write-off report / Concealed works inspection certificate"
+      ],
+      [
+       "POL / PPE / Inventory Items",
+       "Fuels and lubricants / Personal protective equipment / Inventory items (goods and materials)"
+      ],
+      [
+       "Change Request (CR)",
+       "Change Request: budget / schedule / scope / design decision"
+      ],
+      [
+       "Worksection (WS)",
+       "Corporate task management system - single source of truth"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

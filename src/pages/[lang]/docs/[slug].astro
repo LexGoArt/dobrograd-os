@@ -1,0 +1,106 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Blocks from '../../../components/Blocks.astro';
+import DocChip from '../../../components/DocChip.astro';
+import StatusBadge from '../../../components/StatusBadge.astro';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) =>
+    getData(lang).docs.map((doc) => ({ params: { lang, slug: doc.slug }, props: { doc } }))
+  );
+}
+const { lang } = Astro.params;
+const { doc } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const { docs } = getData(lang);
+const L = (p) => `${base}${lang}/${p}`;
+const related = doc.related.map((idx) => docs.find((d) => d.index === idx)).filter(Boolean);
+const isChecklistDoc = ['Д1','Д2','Д3','Д4'].includes(doc.index);
+const checklistId = { 'Д1': 'd1', 'Д2': 'd2', 'Д3': 'd3', 'Д4': 'd4' }[doc.index];
+---
+<Base lang={lang} title={`${doc.index} · ${doc.name} - ${t(lang, 'site.short')}`} description={doc.purpose} crumbs={[{ label: t(lang, 'nav.docs'), href: L('docs/') }, { label: `${doc.index} · ${doc.name}` }]}>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:px-6">
+    <a href={L('docs/')} class="text-[13px] font-semibold text-(--color-mute) hover:text-(--color-accent)">← {t(lang, 'misc.backToDocs')}</a>
+
+    <!-- Шапка документа -->
+    <div class="mt-4 flex items-start gap-4">
+      <DocChip index={doc.index} size="lg" />
+      <div class="min-w-0">
+        <div class="flex flex-wrap items-center gap-2.5">
+          <h1 class="text-2xl font-extrabold leading-tight text-(--color-brand) md:text-3xl">{doc.name}</h1>
+          <StatusBadge status={doc.status} lang={lang} size="lg" />
+        </div>
+        <p class="mt-2 text-[15px] leading-relaxed text-(--color-ink-2)">{doc.purpose}</p>
+      </div>
+    </div>
+
+    <!-- Хто → кому → коли -->
+    <div class="mt-6 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-(--color-line) bg-(--color-line) sm:grid-cols-3">
+      {[[t(lang,'docs.who'), doc.from], [t(lang,'docs.whom'), doc.to], [t(lang,'docs.when'), doc.term]].map(([k, v]) => (
+        <div class="bg-white p-4">
+          <p class="text-[11px] font-bold uppercase tracking-wider text-(--color-mute)">{k}</p>
+          <p class="mt-1 text-[14px] font-semibold leading-snug text-(--color-brand)">{v}</p>
+        </div>
+      ))}
+    </div>
+
+    {doc.sanction && (
+      <div class="mt-3 rounded-2xl border-l-4 border-(--color-stop) bg-(--color-stop-bg) p-4">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-(--color-stop)">{t(lang, 'docs.sanction')}</p>
+        <p class="mt-1 text-[14px] font-medium leading-snug">{doc.sanction}</p>
+      </div>
+    )}
+
+    <!-- Кнопки -->
+    <div class="no-print mt-6 flex flex-wrap items-center gap-3">
+      {doc.drive ? (
+        <a href={doc.drive} target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 rounded-xl bg-(--color-accent) px-5 py-3 text-[14.5px] font-bold text-white shadow-sm transition-all hover:bg-(--color-accent-2) hover:shadow-md active:scale-[0.98]">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5M7 3h7l5 5v13H7z"/></svg>
+          {t(lang, 'docs.openForm')}
+        </a>
+      ) : doc.status === 'ready' && (
+        <span class="inline-flex items-center gap-2 rounded-xl border border-dashed border-(--color-line) px-5 py-3 text-[13.5px] font-medium text-(--color-mute)">{t(lang, 'docs.noDrive')}</span>
+      )}
+      {isChecklistDoc && (
+        <a href={L(`checklists/${checklistId}/`)}
+           class="inline-flex items-center gap-2 rounded-xl border-2 border-(--color-line) bg-white px-5 py-3 text-[14.5px] font-bold text-(--color-brand) transition-all hover:border-(--color-accent) hover:text-(--color-accent)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+          {t(lang, 'docs.openChecklist')}
+        </a>
+      )}
+    </div>
+
+    {doc.status === 'dev' && (
+      <div class="mt-8 rounded-2xl border border-(--color-line) bg-(--color-warn-bg) p-6">
+        <p class="text-[15px] font-bold text-(--color-warn)">{t(lang, 'docs.devNotice')}</p>
+        <p class="mt-2 text-[14px] leading-relaxed text-(--color-ink-2)">{t(lang, 'docs.devText')}</p>
+        {doc.devOwner && <p class="mt-3 text-[13px] font-semibold text-(--color-ink)">{t(lang, 'docs.devOwner')}: {doc.devOwner}</p>}
+      </div>
+    )}
+
+    <!-- Контент листів -->
+    {doc.sections.map((sec) => (
+      <section class="mt-10" data-pagefind-body>
+        <h2 class="mb-4 border-b border-(--color-line) pb-2 text-lg font-extrabold text-(--color-brand)">{sec.title}</h2>
+        <Blocks blocks={sec.blocks} lang={lang} selfIndex={doc.index} skipFirst={sec.blocks[0]?.text?.startsWith('Додаток') || sec.blocks[0]?.text?.startsWith(doc.index) ? 1 : 0} />
+      </section>
+    ))}
+
+    <!-- Повʼязані документи -->
+    {related.length > 0 && (
+      <section class="mt-12">
+        <h2 class="mb-3 text-[13px] font-bold uppercase tracking-widest text-(--color-mute)">{t(lang, 'docs.related')}</h2>
+        <div class="flex flex-wrap gap-2.5">
+          {related.map((r) => (
+            <a href={L(`docs/${r.slug}/`)} class="group flex items-center gap-2.5 rounded-xl border border-(--color-line) bg-white py-2 pl-2 pr-4 transition-all hover:border-(--color-accent) hover:shadow-sm">
+              <DocChip index={r.index} size="sm" />
+              <span class="text-[13px] font-semibold text-(--color-brand) group-hover:text-(--color-accent)">{r.name}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</Base>

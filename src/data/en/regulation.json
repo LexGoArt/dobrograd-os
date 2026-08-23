@@ -1,0 +1,159 @@
+{
+ "title": "REGULATION on the interaction of structural units in the preparation, performance, support, and acceptance of construction and installation works",
+ "blocks": [
+  {
+   "t": "h",
+   "text": "1. GENERAL PROVISIONS"
+  },
+  {
+   "t": "table",
+   "header": null,
+   "rows": [
+    [
+     "1.1",
+     "The Regulation defines a unified procedure for interaction between the Head of Client's Service, the Construction Site Unit, Technical Supervision, the Production & Technical Dept (PTD), the Procurement Dept, and the laboratory (outsourced)."
+    ],
+    [
+     "1.2",
+     "The purpose is to control the quality, scope, and timing of construction and installation works (CIW), ensure rational use of funds and materials, and timely payment for completed works."
+    ],
+    [
+     "1.3",
+     "The requirements are mandatory for all officials of the involved units. Full details are in the \"Regulation on the Technical Division\" and its appendices (sheet \"Document Register\")."
+    ]
+   ]
+  },
+  {
+   "t": "h",
+   "text": "2. STRUCTURE AND AREAS OF RESPONSIBILITY"
+  },
+  {
+   "t": "table",
+   "header": null,
+   "rows": [
+    [
+     "2.1",
+     "The reporting structure and areas of responsibility for each role are on the \"Scheme\" sheet (expand with the \"+\" button). Full job responsibilities are in the \"Roles and Areas of Responsibility\" section of the Regulation."
+    ]
+   ]
+  },
+  {
+   "t": "h",
+   "text": "3. PLANNING AND PROCUREMENT OF MATERIALS (by the 25th)"
+  },
+  {
+   "t": "table",
+   "header": null,
+   "rows": [
+    [
+     "3.1",
+     "Monthly, by the 25th, the Site Manager submits to the PTD the works plan (form Б1), the schedule (Б2), and the material requirements with delivery dates (В1) for the following month."
+    ],
+    [
+     "3.2",
+     "The PTD reviews the plan by the 28th: item names and quantities against the cost estimate, compliance with the design, feasibility of the schedule, and materials against norms. If there are issues, the plan is returned to the Site Manager for correction within 1 business day. Without an approved plan, the month is not financed."
+    ],
+    [
+     "3.3",
+     "Based on the approved plan, the PTD prepares a specification for the Procurement Dept: material quantities, the delivery schedule to the site, and maximum prices."
+    ],
+    [
+     "3.4",
+     "Procurement Dept: if the price is within budget, it purchases and delivers on schedule; if the price exceeds the budget, written re-approval from the Head of Client's Service is required, and no purchase is made until approved."
+    ],
+    [
+     "3.5",
+     "The Site Manager accepts materials by quantity and quality, signing the waybills (TTN) and delivery notes. Delivery notes and certificates are submitted to the PTD every Friday by 18:00. Material without quality documents is not used in works covered by acceptance certificates."
+    ],
+    [
+     "3.6",
+     "Ongoing requests during the month are made using form В1, no later than the delivery lead time before the date the material is needed. Unplanned materials (due to a change in scope or design) may only be requested via a Change Request (Г1)."
+    ]
+   ]
+  },
+  {
+   "t": "h",
+   "text": "4. QUALITY CONTROL AND ACCEPTANCE OF WORKS"
+  },
+  {
+   "t": "table",
+   "header": null,
+   "rows": [
+    [
+     "4.1",
+     "Concealed works are presented to Technical Supervision BEFORE being covered by subsequent works; the call-out is made in advance, via Worksection. Technical Supervision signs the Concealed Works Acceptance Certificates (Г2) and as-built diagrams, or issues a Supervision Directive (Г3) - works with an outstanding issue are not closed until it is resolved."
+    ],
+    [
+     "4.2",
+     "The laboratory (outsourced) takes samples at every concrete pour, tests them at 3/7/28 days, and issues reports (Г7) - the basis for closing Concealed Works Acceptance Certificates. The procedure for working with the laboratory is set out in Regulation Е7."
+    ],
+    [
+     "4.3",
+     "By the 5th of the following month, the Site Manager submits to the PTD the handover package (Б3): the certificate of completed works, a report on materials used, the full set of as-built documentation and Concealed Works Acceptance Certificates signed by Technical Supervision, and machinery timesheets (В5). The PTD does not accept documents without Technical Supervision's signature for review."
+    ],
+    [
+     "4.4",
+     "By the 10th, the PTD checks the actual quantities against the cost estimate and the Cumulative Works Register, and the completeness of documents; prepares the KB-2v certificate and M-29 form; and, for the month, the Technical Verification Note by the 10th. Errors or missing documents are returned in writing to the Site Manager for rework (2 business days)."
+    ]
+   ]
+  },
+  {
+   "t": "h",
+   "text": "5. PAYMENT"
+  },
+  {
+   "t": "table",
+   "header": null,
+   "rows": [
+    [
+     "5.1",
+     "The Head of Client's Service compiles the payment register only from certificates verified by the PTD and approves payments within their limit."
+    ],
+    [
+     "5.2",
+     "The General Director approves payments above the limit and any payments outside the approved cost estimate (only upon a Change Request Г1); the finance department processes payments within 3 business days. The detailed payment procedure, package contents, and stop conditions are set out in Regulation Е3."
+    ],
+    [
+     "5.3",
+     "Payment is not made if: there is no contract in the register; there is no Technical Supervision signature; there is no Technical Verification Note for the month; works were performed in suspended zones (Г4) or without a Change Request (Г1); or a claim-related withholding (Г8) is in effect."
+    ]
+   ]
+  },
+  {
+   "t": "h",
+   "text": "6. COMMUNICATION"
+  },
+  {
+   "t": "table",
+   "header": null,
+   "rows": [
+    [
+     "6.1",
+     "All requests, approvals, and statuses go through Worksection. Daily site reporting (headcount by 8:30, photos, summary) goes to the Telegram chat with the Head of Client's Service. If it is not recorded in Worksection or in the minutes, the agreement does not exist."
+    ]
+   ]
+  },
+  {
+   "t": "h",
+   "text": "7. RESPONSIBILITY AND CONTROL"
+  },
+  {
+   "t": "table",
+   "header": null,
+   "rows": [
+    [
+     "7.1",
+     "Unit heads bear personal responsibility for meeting deadlines (the 25th and the 5th). Delays are escalated automatically: 1 day - reminder; 2-3 days - unit head; 4-10 days - Head of Client's Service and a meeting; over 10 days - General Director."
+    ],
+    [
+     "7.2",
+     "Submitting inaccurate quantities, working without documents, or violating the procedure entail disciplinary and financial liability; violations are recorded and affect the bonus portion of pay."
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Approved: General Director ______________ / __________     Agreed: Head of Client's Service ______________     Head of PTD ______________"
+  }
+ ]
+}

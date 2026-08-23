@@ -1,0 +1,6242 @@
+[
+ {
+  "index": "А",
+  "slug": "a",
+  "name": "Reporting Calendar",
+  "purpose": "Who submits what, to whom, and when + sanctions",
+  "group": "А",
+  "groupName": "Calendar",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1bgxmLu24dO003_kGXk3t0dgDm84HChvb1aZg8a4mCJk/edit",
+  "from": "PTD / Head of Client's Service",
+  "to": "all roles of the technical block",
+  "term": "permanent reference document",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": "A report not submitted on time is considered not submitted - automatic escalation.",
+  "sections": [
+   {
+    "title": "Reporting Calendar",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Appendix А. Reporting calendar of the technical block"
+     },
+     {
+      "t": "p",
+      "text": "Who submits what, to whom, and when. Sanctions are in the right-hand column. Violations are recorded and affect the bonus component (Motivation Policy)."
+     },
+     {
+      "t": "h",
+      "text": "DAILY"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Report / Event",
+       "Submitted by",
+       "To whom / where",
+       "Deadline",
+       "Form",
+       "Consequence of non-submission"
+      ],
+      "rows": [
+       [
+        "1",
+        "Daily Headcount: number of workers on site (by crew)",
+        "Site Manager",
+        "Telegram chat with the Head of Client's Service",
+        "by 8:30",
+        "chat",
+        "A day without a report = a day without confirmed attendance; the day's volumes are accepted only after an explanation"
+       ],
+       [
+        "2",
+        "Photos of 3-5 key site zones",
+        "Site Manager / Site Foreman",
+        "Telegram chat with the Head of CS",
+        "during the day",
+        "chat",
+        "The day's work is not confirmed until photo-documented"
+       ],
+       [
+        "3",
+        "Daily summary: progress, issues, needs",
+        "Site Manager",
+        "Telegram chat with the Head of CS",
+        "by 18:00",
+        "chat",
+        "An issue not stated in the summary is not accepted as a reason for delay"
+       ],
+       [
+        "4",
+        "Works execution log",
+        "Site Foreman",
+        "at the site; Technical Supervision and PTD - upon request",
+        "daily",
+        "log",
+        "Work without a log entry is not confirmed by acceptance certificates"
+       ],
+       [
+        "5",
+        "Machinery Timesheet - separate for each unit",
+        "Driver / Mechanic",
+        "at the site",
+        "every shift",
+        "В5",
+        "Engine hours and fuel are not written off without a timesheet; unexplained downtime is charged to the mechanic"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Daily photos and summaries go to the Telegram chat (we do not load photos into Worksection). The chat with the Head of CS is the official channel for daily reporting."
+     },
+     {
+      "t": "h",
+      "text": "WEEKLY (FRIDAY)"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Report / Event",
+       "Submitted by",
+       "To whom / where",
+       "Deadline",
+       "Form",
+       "Consequence of non-submission"
+      ],
+      "rows": [
+       [
+        "6",
+        "Schedule plan-fact: on schedule - mark \"On track\"; if behind - written explanation of causes and a catch-up plan (free form)",
+        "Site Manager",
+        "Project Manager (PM)",
+        "by 17:00",
+        "Б2 + explanation",
+        "A week without a status - the week's work is not accepted for closing; the matter is raised at a meeting with mandatory personal attendance"
+       ],
+       [
+        "7",
+        "Weekly photo report: every work item of the week photographed with date and zone reference",
+        "Site Manager",
+        "Head of CS, PM",
+        "by 17:00",
+        "Е5, Д4",
+        "Work without a photo report is not accepted for closing"
+       ],
+       [
+        "8",
+        "Weekly machinery timesheets, signed by the Site Manager",
+        "Site Manager",
+        "PTD",
+        "by 18:00",
+        "В5",
+        "Machinery time and fuel are not written off until timesheets are submitted"
+       ],
+       [
+        "9",
+        "Delivery notes + certificates for the week's materials",
+        "Site Manager",
+        "PTD",
+        "by 18:00",
+        "originals",
+        "Materials without documents are not credited to work under acceptance certificates; Concealed Works Acceptance Certificates (CWAC) are not closed"
+       ],
+       [
+        "10",
+        "Schedule performance report for the portfolio",
+        "Project Manager (PM)",
+        "Head of Client's Service",
+        "by 18:00",
+        "summary",
+        "Escalation under the \"Overdue Escalation\" section"
+       ],
+       [
+        "11",
+        "Risk register update",
+        "Project Manager (PM)",
+        "Head of Client's Service",
+        "weekly",
+        "register",
+        "A risk not in the register is not accepted as justification for a failure"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "A week on schedule = only the \"On track\" mark. Explanations are written only in case of delay."
+     },
+     {
+      "t": "h",
+      "text": "MONTHLY (CLOSING CYCLE)"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Report / Event",
+       "Submitted by",
+       "To whom / where",
+       "Deadline",
+       "Form",
+       "Consequence of non-submission"
+      ],
+      "rows": [
+       [
+        "12",
+        "Work plan for the next month + schedule + material needs with deadlines",
+        "Site Manager",
+        "PTD",
+        "by the 25th",
+        "Б1, Б2, В1",
+        "No plan - the month is not funded, materials are not ordered"
+       ],
+       [
+        "13",
+        "Plan review: cross-check against the project, cost estimate, and cumulative register; ordering materials",
+        "PTD",
+        "Procurement Dept",
+        "by the 28th",
+        "-",
+        "Supply failure - PTD's responsibility"
+       ],
+       [
+        "14",
+        "Reporting package: certificate (2 signatures) + timesheets + as-built documentation + delivery notes and certificates",
+        "Site Manager",
+        "PTD",
+        "by the 5th",
+        "Б3 + В5",
+        "If one document or signature is missing - the package is not accepted, payment is not considered"
+       ],
+       [
+        "15",
+        "Technical Verification Note: cross-check of works, materials, and machinery against the plan and norms",
+        "PTD",
+        "Head of Client's Service",
+        "by the 10th",
+        "note",
+        "Without a Technical Verification Note, the month's payment is not confirmed"
+       ],
+       [
+        "16",
+        "Budget variance report: line item / plan / actual / reason",
+        "Cost Engineer",
+        "Head of Client's Service",
+        "by the 10th",
+        "register",
+        "A variance without explanation - payments under the line item are blocked"
+       ],
+       [
+        "17",
+        "Cumulative Works Register update",
+        "PTD",
+        "-",
+        "by the 10th",
+        "Г5",
+        "Protection against duplicate closings - PTD's responsibility"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Payment chain: package (by the 5th) → PTD review (by the 10th) → Technical Verification Note → approval by the Head of CS → payment within the Policy's limits."
+     },
+     {
+      "t": "h",
+      "text": "EVENT-BASED (AS-NEEDED)"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Report / Event",
+       "Submitted by",
+       "To whom / where",
+       "Deadline",
+       "Form",
+       "Consequence of non-submission"
+      ],
+      "rows": [
+       [
+        "18",
+        "Laboratory testing report (concrete at 3/7/28 days, soil, mortar)",
+        "Lab Technician",
+        "Technical Supervision, Head of CS; copy - PTD",
+        "1 business day",
+        "Г7",
+        "Concealed Works Acceptance Certificates (CWAC) and structure acceptance are not closed without the report"
+       ],
+       [
+        "19",
+        "Concealed Works Acceptance Certificate + photos + original certificates",
+        "Site Manager → Technical Supervision",
+        "PTD",
+        "before closing the works",
+        "Г2",
+        "Works closed without authorization; possible reopening at the contractor's expense"
+       ],
+       [
+        "20",
+        "Change Request (unforeseen works, change of budget / deadline / project)",
+        "Initiator",
+        "Head of Client's Service",
+        "before work starts",
+        "Г1",
+        "Work without a change request - unauthorized, not paid"
+       ],
+       [
+        "21",
+        "Technical Supervision Directive / remark",
+        "Technical Supervision",
+        "Site Manager, PM; register - PTD",
+        "1 business day",
+        "Г3",
+        "-"
+       ],
+       [
+        "22",
+        "Status of remedying the remark",
+        "Site Manager",
+        "Technical Supervision, PM",
+        "deadline per the Directive",
+        "mark",
+        "Escalation; repeat violation - internal memo (Г9)"
+       ],
+       [
+        "23",
+        "Machinery relocation certificate",
+        "Mechanic",
+        "PTD",
+        "upon relocation",
+        "В4",
+        "Logistics and relocation time are not written off"
+       ],
+       [
+        "24",
+        "Internal memo (violation escalation)",
+        "Initiator",
+        "Manager up the chain",
+        "as it occurs",
+        "Г9",
+        "-"
+       ],
+       [
+        "25",
+        "Meeting minutes: decisions, assignments, deadlines",
+        "Meeting Secretary",
+        "Participants; decision register",
+        "1 business day",
+        "minutes",
+        "Decisions without minutes are considered not adopted"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "General rule: a report not submitted on time is considered not submitted. Escalation is triggered automatically (the \"Overdue Escalation\" section of the Policy), and the violation is recorded and affects the bonus component."
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б1",
+   "Б2",
+   "Б3",
+   "В1",
+   "В4",
+   "В5",
+   "Г1",
+   "Г2",
+   "Г3",
+   "Г5",
+   "Г7",
+   "Г9",
+   "Д4",
+   "Е3",
+   "Е5"
+  ]
+ },
+ {
+  "index": "Б1",
+  "slug": "b1",
+  "name": "Monthly Work Plan",
+  "purpose": "Form + instructions + example; submission by the 25th",
+  "group": "Б",
+  "groupName": "Monthly Cycle",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1BqHMu1SLLR8uvjpplNh43OtYMjzkiPDHlJAYN53XwkA/edit",
+  "from": "Site Manager",
+  "to": "PTD",
+  "term": "by the 25th monthly",
+  "rhythm": [
+   "щомісяця"
+  ],
+  "sanction": "No plan - the next month is not financed and materials are not ordered.",
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Б2",
+  "slug": "b2",
+  "name": "Works Schedule (Monthly)",
+  "purpose": "Monthly grid for 30/31 days, A4 format; submitted together with Б1",
+  "group": "Б",
+  "groupName": "Monthly Cycle",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1Mdr2S6kWn4ch6DRMl0EEcv1fsKIHP2oyNXRqAJf2Qzg/edit",
+  "from": "Site Manager",
+  "to": "PTD (reviews), Head of Client's Service (approves)",
+  "term": "by the 25th; plan-fact status - every Friday by 17:00",
+  "rhythm": [
+   "щомісяця",
+   "щотижня"
+  ],
+  "sanction": "A week without status - the week's work is not accepted until month-end closing.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Appendix Б2. Monthly works schedule - instructions"
+     },
+     {
+      "t": "p",
+      "text": "Monthly grid for 31 days, A4 print (landscape). Submitted to PTD by the 25th together with the work plan (Б1). Yellow cells are filled in by the Site Manager."
+     },
+     {
+      "t": "h",
+      "text": "Who and when"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Prepared by the Site Manager together with the Б1 plan, submitted to PTD by the 25th - for the next month.",
+       "Reviewed by PTD, approved by the Head of Client's Service. Without an approved schedule, the month's works are not financed."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "How to fill in"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "In the header, fill in the yellow fields: site, month/year, full name of the Site Manager.",
+       "Each work item is one row; name per the cost estimate (same as in Б1); unit, monthly volume, person responsible.",
+       "Row \"П\" (plan): shade the days when the work is planned. Row \"Ф\" (fact): mark completion daily (shade or X).",
+       "Downtime with cause - letter in row \"Ф\": Пг weather, М no material, Т no equipment, Р no decision/design, І other (explain in the status)."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Weekly status - Friday by 17:00"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Everything on plan - mark \"On track\", no explanation needed.",
+       "There is a delay - mark \"Delay\" and submit a written explanation to the PM in free form: the work, how many days, the reason, how you are catching up.",
+       "Chain: Site Foreman → Site Manager → Project Manager. If budget/schedule/design is affected - submit a change request (Г1) immediately."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Sanction"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "A week without status - the week's work is not accepted until month-end closing; the matter is raised at a meeting requiring the Site Manager's personal attendance. Violation affects the bonus portion."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "WORKS SCHEDULE FOR ______________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Site Manager:",
+        "Approved by (Head of Client's Service):",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Work item (per cost estimate)",
+        "Unit",
+        "Monthly volume",
+        "Responsible",
+        "P/F",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31"
+       ],
+       [
+        "1",
+        "П",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "П"
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "П"
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "П"
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "П"
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "П"
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "П"
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "П"
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "p",
+      "text": "Weekly status (Fri by 17:00):   Week 1: ☐ On track ☐ Delay    Week 2: ☐ ☐    Week 3: ☐ ☐    Week 4: ☐ ☐    If delayed - written explanation to the PM."
+     },
+     {
+      "t": "p",
+      "text": "Yellow cells are filled in by the Site Manager. Marking in row \"Ф\": shaded/X - work performed · Пг - weather · М - no material · Т - no equipment · Р - no decision/design · І - other."
+     },
+     {
+      "t": "p",
+      "text": "Site Manager ______________ / __________       Reviewed by PTD ______________ / __________       Approved by Head of Client's Service ______________ / __________"
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "WORKS SCHEDULE FOR MARCH 2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Residential Complex \"Example\", section 1",
+        "Site Manager:",
+        "Ivanenko I.I.",
+        "Approved by (Head of Client's Service):",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Work item (per cost estimate)",
+        "Unit",
+        "Monthly volume",
+        "Responsible",
+        "P/F",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31"
+       ],
+       [
+        "1",
+        "Reinforcement of the foundation slab (rebar A500C)",
+        "t",
+        "12,4",
+        "Site Foreman Petrenko",
+        "П",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "2",
+        "Concreting of the foundation slab, concrete B30",
+        "m3",
+        "185",
+        "Site Foreman Petrenko",
+        "П"
+       ],
+       [
+        "Ф",
+        "М",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "Foundation waterproofing (coating type, 2 layers)",
+        "m2",
+        "320",
+        "Koval's crew",
+        "П"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Ф"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "4",
+        "Masonry of walls from D400 aerated concrete block, 1st floor",
+        "m3",
+        "96",
+        "Subcontractor \"BudServis\"",
+        "П"
+       ],
+       [
+        "Ф",
+        "Пг",
+        "Пг",
+        "",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Weekly status (Fri by 17:00):   Week 1: ☐ On track ☐ Delay    Week 2: ☐ ☐    Week 3: ☐ ☐    Week 4: ☐ ☐    If delayed - written explanation to the PM."
+     },
+     {
+      "t": "p",
+      "text": "Yellow cells are filled in by the Site Manager. Marking in row \"Ф\": shaded/X - work performed · Пг - weather · М - no material · Т - no equipment · Р - no decision/design · І - other."
+     },
+     {
+      "t": "p",
+      "text": "Site Manager ______________ / __________       Reviewed by PTD ______________ / __________       Approved by Head of Client's Service ______________ / __________"
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б1",
+   "Г1"
+  ]
+ },
+ {
+  "index": "Б3",
+  "slug": "b3",
+  "name": "Monthly Reporting Package",
+  "purpose": "Package contents + certificate of completed works; submission by the 5th together with В5, delivery notes and certificates",
+  "group": "Б",
+  "groupName": "Monthly Cycle",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1J5yTIhO9cYom3OzQWsGd_npZX1rs98Li2KrbZYJzrDQ/edit",
+  "from": "Site Manager",
+  "to": "PTD",
+  "term": "by the 5th of the following month",
+  "rhythm": [
+   "щомісяця"
+  ],
+  "sanction": "One missing document or signature - the package is not accepted, payment is not considered.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Appendix Б3. Monthly reporting package - instructions"
+     },
+     {
+      "t": "p",
+      "text": "Everything the site uses to prove the work performed. Submitted to PTD by the 5th of the following month. This is the basis for payment. Yellow cells are filled in by the Site Manager."
+     },
+     {
+      "t": "h",
+      "text": "Package contents - all 6 items are mandatory"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Certificate of completed works for the month (\"Акт\" sheet) with signatures of the Site Manager and Technical Supervision.",
+       "Machinery timesheets - a separate one per unit (В5), signed by the Site Manager.",
+       "As-built documentation for the month's works: CWAC (Г2), as-built drawings, laboratory test reports (Г7).",
+       "Original certificates and quality data sheets linked to the CWAC.",
+       "Delivery/expense notes for the month (if not submitted weekly).",
+       "Links to the month's weekly photo reports."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "How to fill in the certificate"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Works are listed row by row, names per the cost estimate (same as in Б1 and Б2).",
+       "\"Completed for the month\" - only what is confirmed by Technical Supervision. \"Cumulative\" - together with previous months. \"Remaining\" - up to the full volume per the cost estimate.",
+       "Partial completion - in the note, indicate the axes and attach a drawing of the actual volume completed.",
+       "Before submission, go through the \"Checklist\" sheet: every item needs a checkmark. No checkmark - the package is not submitted."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "What happens next"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "By the 10th, PTD reconciles the package against the cumulative works register, the cost estimate and the plan; prepares a technical verification note for the Head of Client's Service.",
+       "After the technical verification note, the Head of CS approves the certificates and the finance department processes payment."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Sanction"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "One missing document or signature - the package is not accepted: certificates are not reviewed or paid until the set is complete."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Certificate (form)",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "CERTIFICATE OF COMPLETED WORKS FOR ______________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Site Manager:",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Work item (per cost estimate)",
+        "Unit",
+        "Volume per cost estimate",
+        "Completed for the month",
+        "Completed cumulative",
+        "Remaining",
+        "Note (CWAC, drawings, partial completion)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "The total completed for the month is confirmed by Technical Supervision. Works without the Technical Supervision signature are not accepted for payment."
+     },
+     {
+      "t": "p",
+      "text": "Site Manager ______________ / __________        Technical Supervision ______________ / __________        Accepted by PTD \"___\" ________ 20__ ______________"
+     },
+     {
+      "t": "p",
+      "text": "Yellow cells are filled in by the Site Manager. Work names - exactly per the cost estimate, same as in the plan (Б1) and the schedule (Б2)."
+     }
+    ]
+   },
+   {
+    "title": "Certificate (example)",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "CERTIFICATE OF COMPLETED WORKS FOR MARCH 2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Residential Complex \"Example\", section 1",
+        "Site Manager:",
+        "Ivanenko I.I.",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Work item (per cost estimate)",
+        "Unit",
+        "Volume per cost estimate",
+        "Completed for the month",
+        "Completed cumulative",
+        "Remaining",
+        "Note (CWAC, drawings, partial completion)"
+       ],
+       [
+        "1",
+        "Reinforcement of the foundation slab (rebar A500C)",
+        "t",
+        "24,8",
+        "12,4",
+        "24,8",
+        "0",
+        "CWAC No.3 dated 09.03; lab report No.12"
+       ],
+       [
+        "2",
+        "Concreting of the foundation slab, concrete B30",
+        "m3",
+        "370",
+        "185",
+        "370",
+        "0",
+        "CWAC No.4 dated 12.03; test reports at 3/7/28 days"
+       ],
+       [
+        "3",
+        "Foundation waterproofing (coating type, 2 layers)",
+        "m2",
+        "320",
+        "320",
+        "320",
+        "0",
+        "CWAC No.5 dated 19.03; before/after photos"
+       ],
+       [
+        "4",
+        "Masonry of walls from D400 aerated concrete block, 1st floor",
+        "m3",
+        "210",
+        "96",
+        "96",
+        "114",
+        "Within axes 1-4/А-В; drawing of actual volume attached"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "The total completed for the month is confirmed by Technical Supervision. Works without the Technical Supervision signature are not accepted for payment."
+     },
+     {
+      "t": "p",
+      "text": "Site Manager ______________ / __________        Technical Supervision ______________ / __________        Accepted by PTD \"___\" ________ 20__ ______________"
+     },
+     {
+      "t": "p",
+      "text": "Yellow cells are filled in by the Site Manager. Work names - exactly per the cost estimate, same as in the plan (Б1) and the schedule (Б2)."
+     }
+    ]
+   },
+   {
+    "title": "Package checklist",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Package checklist before submission to PTD"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "Item",
+       "Form"
+      ],
+      "rows": [
+       [
+        "1",
+        "☐",
+        "Certificate of completed works with the Site Manager's signature",
+        "\"Акт\" sheet"
+       ],
+       [
+        "2",
+        "☐",
+        "Certificate of completed works with the Technical Supervision signature",
+        "\"Акт\" sheet"
+       ],
+       [
+        "3",
+        "☐",
+        "Machinery timesheets for the month - one per unit, signed",
+        "В5"
+       ],
+       [
+        "4",
+        "☐",
+        "Concealed works acceptance certificates for the month's works",
+        "Г2"
+       ],
+       [
+        "5",
+        "☐",
+        "Photo documentation for each CWAC",
+        "Е5, Д4"
+       ],
+       [
+        "6",
+        "☐",
+        "Laboratory test reports (concrete 3/7/28 days, etc.)",
+        "Г7"
+       ],
+       [
+        "7",
+        "☐",
+        "Original material certificates (linked to the CWAC)",
+        "-"
+       ],
+       [
+        "8",
+        "☐",
+        "As-built drawings, including for partial completion",
+        "-"
+       ],
+       [
+        "9",
+        "☐",
+        "Delivery/expense notes for the month (if not submitted weekly)",
+        "-"
+       ],
+       [
+        "10",
+        "☐",
+        "Links to the month's weekly photo reports",
+        "Е5"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "If even one checkmark is missing, the package is not submitted to PTD. An incomplete package is returned without review."
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б1",
+   "Б2",
+   "В5",
+   "Г2",
+   "Г5",
+   "Г7",
+   "Д4",
+   "Е5"
+  ]
+ },
+ {
+  "index": "В1",
+  "slug": "v1",
+  "name": "Materials Request (Inventory Items)",
+  "purpose": "Linked to the works plan and delivery lead time",
+  "group": "В",
+  "groupName": "Resources & Procurement",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1b2LjAsCA2rJ8_-8H9XxGQeBj9vVH3T65OgvsRj3pJqo/edit",
+  "from": "Site Foreman / Site Manager",
+  "to": "PTD → Procurement Dept",
+  "term": "consolidated need - by the 25th; current requests - per delivery lead time",
+  "rhythm": [
+   "щомісяця",
+   "за фактом"
+  ],
+  "sanction": "A late request does not guarantee the material arrives on time - resulting downtime is charged to the requester.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Appendix В1. Materials Request (Inventory Items) - Instructions"
+     },
+     {
+      "t": "p",
+      "text": "The request is linked to the monthly works plan (Б1). Procurement Dept response time - 2 business days. Yellow cells are filled in by the requester."
+     },
+     {
+      "t": "h",
+      "text": "Who and when"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "The request is submitted by the site foreman or site manager. The consolidated monthly need is submitted together with plan Б1 - by the 25th.",
+       "Current requests during the month are submitted no later than the material's delivery lead time (see example) before the need date.",
+       "Route: requester → PTD (cross-check against plan and cost estimate) → Procurement Dept. Response on delivery lead time - 2 business days."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "How to fill in"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Each material on a separate line: exact name with grade/class (not \"concrete\" but \"concrete B30 P3\"), unit, quantity.",
+       "In the \"For which work\" column, specify the work from plan Б1 - a request not linked to the plan is returned.",
+       "\"Needed on site by\" - the date the material must be on site, factoring in the delivery lead time.",
+       "Material outside the monthly plan - only with justification in the note; if it is a change in volumes or the project - first a change request (Г1)."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Delivery acceptance"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Each delivery is accepted with a delivery note and quality documents (certificates, data sheets). Without documents, the material is not used in works covered by acceptance certificates.",
+       "Once accepted - log it in the incoming inspection register; delivery notes and certificates go to the PTD weekly (Friday by 18:00)."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Sanction"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "A request submitted later than the delivery lead time before the need date does not guarantee the material arrives on time - resulting downtime is charged to the requester, not the Procurement Dept."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "MATERIALS REQUEST No.____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Requester:",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Material (exact name, grade/class)",
+        "Unit",
+        "Quantity",
+        "For which work (from plan Б1)",
+        "Needed on site by",
+        "Note"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Materials are released to the site only with a delivery note and quality documents. A request not linked to plan Б1 is returned unfulfilled."
+     },
+     {
+      "t": "p",
+      "text": "Requester ______________ / __________     Approved by PTD (cross-check with plan and cost estimate) ______________ / __________     Accepted by Commercial Dept \"___\" ________, delivery lead time: __________"
+     },
+     {
+      "t": "p",
+      "text": "Yellow cells are filled in by the requester. Exact material names - per the cost estimate; write-off norms - per Appendix Е9."
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "MATERIALS REQUEST No.14 dated 05.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Residential Complex \"Example\", Section 1",
+        "Requester:",
+        "Site Foreman Petrenko P.P.",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Material (exact name, grade/class)",
+        "Unit",
+        "Quantity",
+        "For which work (from plan Б1)",
+        "Needed on site by",
+        "Note"
+       ],
+       [
+        "1",
+        "Concrete B30 P3 (mixer-truck delivery)",
+        "m3",
+        "45",
+        "Casting the floor slab at el. +9.850",
+        "18.03.2026",
+        "supply 2 mixer trucks at a time, from 8:00"
+       ],
+       [
+        "2",
+        "Rebar A500S d12",
+        "t",
+        "3,15",
+        "Casting the floor slab at el. +9.850",
+        "08.03.2026",
+        ""
+       ],
+       [
+        "3",
+        "Aerated concrete block D400 600×200×300",
+        "m3",
+        "96",
+        "Laying 1st floor walls",
+        "12.03.2026",
+        "delivered in batches of 30 m3"
+       ],
+       [
+        "4",
+        "Aerated block adhesive",
+        "25 kg bag",
+        "120",
+        "Laying 1st floor walls",
+        "12.03.2026",
+        ""
+       ],
+       [
+        "5",
+        "Bituminous waterproofing mastic",
+        "kg",
+        "640",
+        "Foundation waterproofing (2 layers)",
+        "13.03.2026",
+        "consumption rate 2 kg/m2"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Materials are released to the site only with a delivery note and quality documents. A request not linked to plan Б1 is returned unfulfilled."
+     },
+     {
+      "t": "p",
+      "text": "Requester ______________ / __________     Approved by PTD (cross-check with plan and cost estimate) ______________ / __________     Accepted by Commercial Dept \"___\" ________, delivery lead time: __________"
+     },
+     {
+      "t": "p",
+      "text": "Yellow cells are filled in by the requester. Exact material names - per the cost estimate; write-off norms - per Appendix Е9."
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б1",
+   "Г1",
+   "Е9"
+  ]
+ },
+ {
+  "index": "В2",
+  "slug": "v2",
+  "name": "In-House Equipment Request",
+  "purpose": "Ordering company equipment linked to the schedule",
+  "group": "В",
+  "groupName": "Resources & Procurement",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1slgDgEoJIGYesyzgVXXpg8OXEXbgIyjweNbvC-EZEIc/edit",
+  "from": "Site Foreman / Site Manager",
+  "to": "mechanic → Project Manager",
+  "term": "response - 1 business day",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Downtime of ordered equipment due to the requester's fault is logged in the timesheet and investigated.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "В2. In-House Equipment Request - Instructions"
+     },
+     {
+      "t": "p",
+      "text": "Ordering company equipment for the site, linked to the works schedule (Б2). Response time - 1 business day. Yellow cells are filled in by the requester."
+     },
+     {
+      "t": "h",
+      "text": "Who and how"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "The request is submitted by the site foreman or site manager - for a specific job from schedule Б2.",
+       "Route: requester → mechanic (equipment availability and condition) → Project Manager (approval). Response - 1 business day.",
+       "The consolidated equipment need is submitted together with the monthly plan - the mechanic plans the fleet in advance."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Rules"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Equipment is ordered for the duration of the work, not \"just in case\": a unit standing idle burns money every day.",
+       "If the work finishes early, notify the mechanic immediately: the equipment is released or reassigned (relocation between sites - via certificate В4).",
+       "From the moment it arrives on site - timesheet В5 every shift for each unit."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Sanction"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Downtime of ordered equipment without work due to the requester's fault is logged in the timesheet and investigated; a request not linked to the schedule is returned."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "IN-HOUSE EQUIPMENT REQUEST No.____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Requester:",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Equipment (type / name)",
+        "Qty",
+        "For which work (from schedule Б2)",
+        "Needed from",
+        "to",
+        "Mode (shifts/day, h)",
+        "Note"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "From arrival on site - timesheet В5 every shift. If work finishes early - notify the mechanic immediately. Relocation between sites - only via certificate В4."
+     },
+     {
+      "t": "p",
+      "text": "Requester ______________ / __________     Mechanic (availability, condition) ______________ / __________     Approved by PM ______________ / __________"
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "IN-HOUSE EQUIPMENT REQUEST No.8 dated 10.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Residential Complex \"Example\", Section 1",
+        "Requester:",
+        "Site Manager Ivanenko I.I.",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Equipment (type / name)",
+        "Qty",
+        "For which work (from schedule Б2)",
+        "Needed from",
+        "to",
+        "Mode (shifts/day, h)",
+        "Note"
+       ],
+       [
+        "1",
+        "Backhoe loader (JCB 3CX type)",
+        "1",
+        "Backfilling foundation trenches",
+        "14.03",
+        "16.03",
+        "1 shift, 8 h",
+        "hydraulic hammer not required"
+       ],
+       [
+        "2",
+        "Truck crane 25 t",
+        "1",
+        "Erecting formwork for the floor slab",
+        "17.03",
+        "17.03",
+        "0,5 shift",
+        "arrival from 8:00"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "From arrival on site - timesheet В5 every shift. If work finishes early - notify the mechanic immediately. Relocation between sites - only via certificate В4."
+     },
+     {
+      "t": "p",
+      "text": "Requester ______________ / __________     Mechanic (availability, condition) ______________ / __________     Approved by PM ______________ / __________"
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б2",
+   "В4",
+   "В5"
+  ]
+ },
+ {
+  "index": "В3",
+  "slug": "v3",
+  "name": "External Equipment & Labor Request",
+  "purpose": "Hiring specialized equipment (concrete pump, etc.) and engaging outside labor",
+  "group": "В",
+  "groupName": "Resources & Procurement",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/12D7EkejhuoVAA_YagtFF6xsR6QCV7uqVZdjksKzZBzs/edit",
+  "from": "Site Foreman / Site Manager",
+  "to": "PM → PTD → Procurement Dept",
+  "term": "specialized equipment - together with the concrete request; general laborers - 2 business days in advance",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Work by external contractors without a contract or vouchers is not paid.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "В3. External Equipment & Labor Request - Instructions"
+     },
+     {
+      "t": "p",
+      "text": "Hiring specialized equipment (concrete pump, truck crane, lowboy trailer) and engaging outside labor. Everything external - only under contract. Yellow cells are filled in by the requester."
+     },
+     {
+      "t": "h",
+      "text": "Who and how"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "The request is submitted by the site foreman or site manager for a specific job from plan Б1 / schedule Б2.",
+       "Route: requester → Project Manager → PTD (cross-check against the cost estimate) → Procurement Dept (sourcing, contract, order).",
+       "Submission deadline: specialized equipment for concreting - together with the concrete request (В1); general laborers - no later than 2 business days in advance."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Rules"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "External equipment and people work only under a contract (even a single individual) - without a contract they are not admitted to the site.",
+       "Payment - for actually confirmed hours / trips / volumes: the waybill or voucher is signed by the site foreman on the day of the work.",
+       "If the cost exceeds the single-purchase limit - the Procurement Dept collects 3 quotes with a comparison table (В7).",
+       "General laborers: safety briefing and clearance - before work starts (safety engineer); without clearance - no work."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Sanction"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Work by external contractors without a contract or without confirmed vouchers is not paid; responsibility lies with the requester who allowed it."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "EXTERNAL EQUIPMENT / LABOR REQUEST No.____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Requester:",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "What is needed (equipment with specs / people with qualification)",
+        "Unit (hour / trip / shift)",
+        "Volume",
+        "For which work",
+        "Date and time of arrival",
+        "Est. cost, UAH",
+        "Note"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Only under contract. Payment - based on vouchers / waybills confirmed by the site foreman. Above the single-purchase limit - 3 quotes with a comparison table (В7). General laborers - only after a safety briefing and clearance."
+     },
+     {
+      "t": "p",
+      "text": "Requester ______________ / _______   Approved by PM ______________ / _______   PTD (cost estimate) ______________ / _______   Accepted by Commercial Dept \"___\" ______, contract No.______"
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "EXTERNAL EQUIPMENT / LABOR REQUEST No.4 dated 12.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Residential Complex \"Example\", Section 1",
+        "Requester:",
+        "Site Foreman Petrenko P.P.",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "What is needed (equipment with specs / people with qualification)",
+        "Unit (hour / trip / shift)",
+        "Volume",
+        "For which work",
+        "Date and time of arrival",
+        "Est. cost, UAH",
+        "Note"
+       ],
+       [
+        "1",
+        "Truck-mounted concrete pump, boom 36 m+",
+        "hour",
+        "5",
+        "Casting the floor slab, 45 m3",
+        "18.03, from 8:00",
+        "14 000",
+        "synchronized with mixer trucks per В1"
+       ],
+       [
+        "2",
+        "General laborers, 4 people",
+        "shift",
+        "2",
+        "Unloading and stacking aerated blocks",
+        "12-13.03, from 9:00",
+        "9 600",
+        "safety briefing before start"
+       ],
+       [
+        "3",
+        "Lowboy trailer up to 20 t",
+        "trip",
+        "1",
+        "Transporting the excavator to М-18 (certificate В4)",
+        "22.03, 14:00",
+        "4 800",
+        "carrier under contract"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Only under contract. Payment - based on vouchers / waybills confirmed by the site foreman. Above the single-purchase limit - 3 quotes with a comparison table (В7). General laborers - only after a safety briefing and clearance."
+     },
+     {
+      "t": "p",
+      "text": "Requester ______________ / _______   Approved by PM ______________ / _______   PTD (cost estimate) ______________ / _______   Accepted by Commercial Dept \"___\" ______, contract No.______"
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б1",
+   "Б2",
+   "В1",
+   "В4",
+   "В7"
+  ]
+ },
+ {
+  "index": "В4",
+  "slug": "v4",
+  "name": "Equipment Relocation Certificate",
+  "purpose": "Equipment relocation between sites: who, what, from where, to where, logistics",
+  "group": "В",
+  "groupName": "Resources & Procurement",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1CIYqyUDE1tFE_mMHxAgJRR9fHapej9XLRzrbd5Lw3h8/edit",
+  "from": "Mechanic",
+  "to": "PTD",
+  "term": "at every equipment relocation",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Logistics costs and relocation time are not written off without the certificate.",
+  "sections": [
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "EQUIPMENT RELOCATION CERTIFICATE No.____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "p",
+      "text": "Equipment (name, inventory / plate No.):"
+     },
+     {
+      "t": "p",
+      "text": "From (site):"
+     },
+     {
+      "t": "p",
+      "text": "To (site):"
+     },
+     {
+      "t": "p",
+      "text": "Date and time of relocation:"
+     },
+     {
+      "t": "p",
+      "text": "Engine hours at time of relocation:"
+     },
+     {
+      "t": "p",
+      "text": "Fuel at time of relocation, L:"
+     },
+     {
+      "t": "p",
+      "text": "Method of relocation:"
+     },
+     {
+      "t": "p",
+      "text": "Logistics cost, UAH (if any):"
+     },
+     {
+      "t": "p",
+      "text": "Initiator and reason:"
+     },
+     {
+      "t": "p",
+      "text": "Without this certificate, relocation time and logistics costs are not written off. Timesheet (В5) is kept for the new site starting from the next shift. Condition and fuel are cross-checked by the mechanic at both points."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Released by (site manager / site 1)",
+        "Mechanic",
+        "Received by (site manager / site 2)",
+        "Registered by PTD"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "EQUIPMENT RELOCATION CERTIFICATE No.5 dated 22.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Equipment (name, inventory / plate No.):",
+        "Excavator JCB 3CX, АА1234ВС"
+       ],
+       [
+        "From (site):",
+        "Residential Complex \"Example\", Section 1"
+       ],
+       [
+        "To (site):",
+        "Site \"М-18\", plot 2"
+       ],
+       [
+        "Date and time of relocation:",
+        "22.03.2026, 14:00-16:30"
+       ],
+       [
+        "Engine hours at time of relocation:",
+        "1871,5"
+       ],
+       [
+        "Fuel at time of relocation, L:",
+        "42"
+       ],
+       [
+        "Method of relocation:",
+        "Lowboy trailer (carrier LLC \"TransBud\")"
+       ],
+       [
+        "Logistics cost, UAH (if any):",
+        "4 800, invoice No.217"
+       ],
+       [
+        "Initiator and reason:",
+        "PM Sydorenko O.O.; completion of earthworks on Section 1, start of the excavation pit at М-18"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Without this certificate, relocation time and logistics costs are not written off. Timesheet (В5) is kept for the new site starting from the next shift. Condition and fuel are cross-checked by the mechanic at both points."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Released by (site manager / site 1)",
+        "Mechanic",
+        "Received by (site manager / site 2)",
+        "Registered by PTD"
+       ],
+       [
+        "Ivanenko I.I. / 22.03",
+        "Koval M.M. / 22.03",
+        "Tkachenko R.R. / 22.03",
+        "Pavlenko S.S. / 23.03"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "related": [
+   "В5"
+  ]
+ },
+ {
+  "index": "В5",
+  "slug": "v5",
+  "name": "Machinery Timesheet",
+  "purpose": "For EACH unit separately; filled in daily by the driver/mechanic, submitted to PTD - every Friday by 18:00; signatures: site manager + mechanic. Legend (Р/П/Рем codes) at the bottom of the form, per standard norms",
+  "group": "В",
+  "groupName": "Resources & Procurement",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1Jpz8iQr2nECqIsVLxaxQMahFHKxXx7KVfdVwyisC6C0/edit",
+  "from": "Driver / mechanic (signed by site manager)",
+  "to": "PTD",
+  "term": "filled in every shift; submitted to PTD every Friday by 18:00",
+  "rhythm": [
+   "щодня",
+   "щотижня"
+  ],
+  "sanction": "Engine hours and fuel are not written off without the timesheet.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Appendix В5. Machinery Timesheet - Instructions"
+     },
+     {
+      "t": "p",
+      "text": "A separate timesheet for EACH piece of equipment. Filled in daily by the driver / operator. Submitted to PTD every Friday by 18:00, signed by the site manager."
+     },
+     {
+      "t": "h",
+      "text": "Who and when"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "The driver / operator fills in the row for their day at the end of each shift: engine hours, fuel, work code.",
+       "The mechanic checks the timesheet weekly (cross-check against fuel norms and the actual situation on site) and signs it.",
+       "The site manager signs and submits the timesheets to PTD every Friday by 18:00."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "How to fill in"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Engine hours: meter reading at the start and end of the shift; \"hours worked\" = the difference.",
+       "Fuel: balance at the start, refueled during the shift (with a receipt/voucher), balance at the end; \"consumption\" = start + refueled - end.",
+       "Day code: W - worked · D - downtime (reason mandatory!) · R - repair · O - day off / not on site.",
+       "Downtime without a stated reason is the mechanic's responsibility. Relocation to another site - via the relocation certificate (В4)."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Sanction"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Engine hours and fuel are not written off without the timesheet. Consumption above the norm without explanation - review with the mechanic, possible deduction."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "MACHINERY TIMESHEET FOR ______________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Equipment (name, inventory/plate No.):",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Driver / operator:",
+        "Fuel consumption norm, L/EH:",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Date",
+        "Engine hrs start",
+        "Engine hrs end",
+        "Worked, EH",
+        "Fuel start, L",
+        "Refueled, L",
+        "Fuel end, L",
+        "Consumption, L",
+        "Code",
+        "Downtime reason / note",
+        "Driver's signature"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Total"
+     },
+     {
+      "t": "p",
+      "text": "Codes: W - worked · D - downtime (reason mandatory) · R - repair · O - day off / not on site. Consumption = fuel start + refueled - fuel end. Deviations from the norm are explained by the mechanic."
+     },
+     {
+      "t": "p",
+      "text": "Checked by mechanic ______________ / __________        Approved by site manager ______________ / __________        Accepted by PTD \"___\" ________ 20__"
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "MACHINERY TIMESHEET FOR MARCH 2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Residential Complex \"Example\", Section 1",
+        "Equipment (name, inventory/plate No.):",
+        "Excavator JCB 3CX, АА1234ВС",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Driver / operator:",
+        "Koval M.M.",
+        "Fuel consumption norm, L/EH:",
+        "6,5",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Date",
+        "Engine hrs start",
+        "Engine hrs end",
+        "Worked, EH",
+        "Fuel start, L",
+        "Refueled, L",
+        "Fuel end, L",
+        "Consumption, L",
+        "Code",
+        "Downtime reason / note",
+        "Driver's signature"
+       ],
+       [
+        "1",
+        "1842,0",
+        "1849,5",
+        "7,5",
+        "38",
+        "60",
+        "52",
+        "46",
+        "W",
+        "",
+        ""
+       ],
+       [
+        "2",
+        "1849,5",
+        "1857,0",
+        "7,5",
+        "52",
+        "0",
+        "4",
+        "48",
+        "W",
+        "",
+        ""
+       ],
+       [
+        "3",
+        "1857,0",
+        "1857,0",
+        "0",
+        "4",
+        "0",
+        "4",
+        "0",
+        "D",
+        "no work front - rebar delivery delayed",
+        ""
+       ],
+       [
+        "4",
+        "1857,0",
+        "1864,0",
+        "7,0",
+        "4",
+        "80",
+        "39",
+        "45",
+        "W",
+        "",
+        ""
+       ],
+       [
+        "5",
+        "1864,0",
+        "1864,0",
+        "0",
+        "39",
+        "0",
+        "39",
+        "0",
+        "R",
+        "replacing the hydraulic hose",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Total",
+        "22,0",
+        "140",
+        "146"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Codes: W - worked · D - downtime (reason mandatory) · R - repair · O - day off / not on site. Consumption = fuel start + refueled - fuel end. Deviations from the norm are explained by the mechanic."
+     },
+     {
+      "t": "p",
+      "text": "Checked by mechanic ______________ / __________        Approved by site manager ______________ / __________        Accepted by PTD \"___\" ________ 20__"
+     }
+    ]
+   }
+  ],
+  "related": [
+   "В4"
+  ]
+ },
+ {
+  "index": "В6",
+  "slug": "v6",
+  "name": "Inventory / Equipment Custody Transfer Certificate",
+  "purpose": "Who received it, what, and in what condition",
+  "group": "В",
+  "groupName": "Resources & Procurement",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1YaxD7DZI4MWtzDKAxcyfNplwIuShBV6oPaKj1wqD7Ok/edit",
+  "from": "Site Manager",
+  "to": "PTD",
+  "term": "at every transfer of inventory items / equipment",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": null,
+  "sections": [
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "INVENTORY / EQUIPMENT CUSTODY TRANSFER CERTIFICATE No.____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "p",
+      "text": "Site:"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Released by (name, position):",
+        "Received by (name, position / organization):",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Item name (inventory item / equipment, inv. No.)",
+        "Unit",
+        "Qty",
+        "Condition (new / working / defects)",
+        "Note"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "The recipient is responsible for safekeeping and proper use. Return is made under this certificate with a condition check; write-off of materials - via M-29. Loss or damage due to the responsible party's fault - reimbursement. The certificate is registered in the inventory register (PTD)."
+     },
+     {
+      "t": "p",
+      "text": "Released by ______________ / __________        Received by ______________ / __________        Registered by PTD (inventory register) \"___\" ________"
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "INVENTORY CUSTODY TRANSFER CERTIFICATE No.11 dated 15.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Residential Complex \"Example\", Section 1",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Released by (name, position):",
+        "Site Manager Ivanenko I.I.",
+        "Received by (name, position / organization):",
+        "Foreman Koval D.D., crew No.2",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Item name (inventory item / equipment, inv. No.)",
+        "Unit",
+        "Qty",
+        "Condition (new / working / defects)",
+        "Note"
+       ],
+       [
+        "1",
+        "Panel formwork 1,2×3,0 m, inv. ОП-014...ОП-037",
+        "pcs",
+        "24",
+        "working, no deformation",
+        "return by 30.04"
+       ],
+       [
+        "2",
+        "Immersion vibrator ІВ-117, inv. ІН-052",
+        "pcs",
+        "1",
+        "working",
+        "with a 15 m cable"
+       ],
+       [
+        "3",
+        "Telescopic props 3,1 m",
+        "pcs",
+        "60",
+        "working, 4 pcs - bends up to 5 mm",
+        "defective ones marked"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "The recipient is responsible for safekeeping and proper use. Return is made under this certificate with a condition check; write-off of materials - via M-29. Loss or damage due to the responsible party's fault - reimbursement. The certificate is registered in the inventory register (PTD)."
+     },
+     {
+      "t": "p",
+      "text": "Released by ______________ / __________        Received by ______________ / __________        Registered by PTD (inventory register) \"___\" ________"
+     }
+    ]
+   }
+  ],
+  "related": []
+ },
+ {
+  "index": "В7",
+  "slug": "v7",
+  "name": "Tender Offers Comparison Table",
+  "purpose": "Min. 3 quotes: price / lead time / warranty / selection + justification",
+  "group": "В",
+  "groupName": "Resources & Procurement",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1S099FntEfcTf7XEPoDKdPe4RvGS8aOOT8p5WsvpppGU/edit",
+  "from": "PM + PTD",
+  "to": "Head of CS (approves) → CEO (confirms)",
+  "term": "before selecting the contractor",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "A purchase without 3 quotes or a selection without justification - the contract is not signed.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "В7. Tender Offers Comparison Table - Instructions"
+     },
+     {
+      "t": "p",
+      "text": "Any purchase of works, materials, or services requires a minimum of 3 commercial quotes. This table is a mandatory attachment to the contractor or supplier selection."
+     },
+     {
+      "t": "h",
+      "text": "Who and how"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Quotes are collected by the Project Manager together with PTD; the tender is organized by the Client's Service.",
+       "All participants receive the same terms of reference and the same conditions - otherwise the comparison is meaningless.",
+       "Fill in the table for each criterion. Prices should be on a single basis (VAT-inclusive or exclusive - the same for everyone)."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Selection"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "The cheapest does not always win: lead time, warranty, experience, and payment terms also matter.",
+       "If the selection is NOT the lowest price - justification in the block below is mandatory.",
+       "Approval: PM/PTD prepared → Head of Client's Service approved → CEO confirmed. Next - the contract (legal review 3 business days)."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Sanction"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "A purchase without 3 quotes or a selection without justification - the contract is not signed, payment is not made."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "OFFERS COMPARISON TABLE dated \"___\" ________ 20___"
+     },
+     {
+      "t": "p",
+      "text": "Procurement subject:"
+     },
+     {
+      "t": "p",
+      "text": "Site:"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Criterion",
+        "Offer 1",
+        "Offer 2",
+        "Offer 3"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Participant (name, EDRPOU code)"
+     },
+     {
+      "t": "p",
+      "text": "Total price, UAH incl. VAT"
+     },
+     {
+      "t": "p",
+      "text": "Unit price, UAH/m3"
+     },
+     {
+      "t": "p",
+      "text": "Lead time"
+     },
+     {
+      "t": "p",
+      "text": "Works warranty"
+     },
+     {
+      "t": "p",
+      "text": "Payment terms"
+     },
+     {
+      "t": "p",
+      "text": "Experience / references"
+     },
+     {
+      "t": "p",
+      "text": "Compliance with ToR"
+     },
+     {
+      "t": "p",
+      "text": "Notes"
+     },
+     {
+      "t": "p",
+      "text": "SELECTED (participant No.):"
+     },
+     {
+      "t": "p",
+      "text": "Justification for the selection (mandatory if not the lowest price):"
+     },
+     {
+      "t": "p",
+      "text": "Prepared by (PM / PTD) ______________ / _______     Approved by Head of CS ______________ / _______     Confirmed by CEO ______________ / _______"
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "OFFERS COMPARISON TABLE dated 14.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Procurement subject:",
+        "Aerated block wall laying, floors 1-3, 620 m3 (ToR No.12)",
+        "",
+        ""
+       ],
+       [
+        "Site:",
+        "Residential Complex \"Example\", Section 1",
+        "",
+        ""
+       ],
+       [
+        "Criterion",
+        "Offer 1",
+        "Offer 2",
+        "Offer 3"
+       ],
+       [
+        "Participant (name, EDRPOU code)",
+        "LLC \"BudServis\", 41235678",
+        "Sole Proprietor Moroz A.A., 3211456789",
+        "LLC \"MurBud\", 40987654"
+       ],
+       [
+        "Total price, UAH incl. VAT",
+        "768 800",
+        "812 400",
+        "745 200"
+       ],
+       [
+        "Unit price, UAH/m3",
+        "1 240",
+        "1 310",
+        "1 202"
+       ],
+       [
+        "Lead time",
+        "75 business days",
+        "60 business days",
+        "90 business days"
+       ],
+       [
+        "Works warranty",
+        "24 months",
+        "12 months",
+        "24 months"
+       ],
+       [
+        "Payment terms",
+        "20% advance, then by acceptance certificates",
+        "no advance, by acceptance certificates",
+        "40% advance"
+       ],
+       [
+        "Experience / references",
+        "3 residential sites, contacts available",
+        "2 sites, private houses",
+        "1 site, no references"
+       ],
+       [
+        "Compliance with ToR",
+        "full",
+        "full",
+        "masonry mesh not included"
+       ],
+       [
+        "Notes",
+        "own crew of 12 people",
+        "crew of 6 people - schedule risk",
+        "requires our hoist"
+       ],
+       [
+        "SELECTED (participant No.):",
+        "Offer 1 - LLC \"BudServis\"",
+        "",
+        ""
+       ],
+       [
+        "Justification for the selection (mandatory if not the lowest price):",
+        "The lowest price (MurBud) does not include the masonry mesh and requires our hoist - effectively more expensive; the 90-day lead time breaks the schedule. BudServis: full compliance with the ToR, a crew of 12, a 24-month warranty, references verified.",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Prepared by (PM / PTD) ______________ / _______     Approved by Head of CS ______________ / _______     Confirmed by CEO ______________ / _______"
+     }
+    ]
+   }
+  ],
+  "related": []
+ },
+ {
+  "index": "Г1",
+  "slug": "g1",
+  "name": "Change Request",
+  "purpose": "Initiator / reason / impact on budget and schedule / decision; including unforeseen works",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1j75zqmDHCL_9qc7xr_mO0_Tk9VQHQtvOANckCrGzcsQ/edit",
+  "from": "Any participant (initiator)",
+  "to": "PTD → PM → Head of CS; outside the cost estimate - CEO",
+  "term": "BEFORE work starts; response - 5 business days",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Work performed without a registered change is unauthorized and will not be paid.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "App. Г1. Change Request - instructions"
+     },
+     {
+      "t": "p",
+      "text": "The only way to change the design, scope, budget, or schedule - including any unforeseen works (demolition, rework, reinforcement). Filed BEFORE work starts."
+     },
+     {
+      "t": "h",
+      "text": "When it is filed"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Any change to the design decision, scope, budget, or schedule.",
+       "Unforeseen works: structure did not reach design strength, drawing error, hidden site condition, client requirement.",
+       "Rule: first a registered change, then the work. Work without a change is unauthorized and unpaid."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Who and how"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Initiator - anyone: site foreman, site manager, PTD, PM, Technical Supervision. The foreman records the issue → the site manager initiates the change.",
+       "Fill in the form: substance, reason, impact on budget / schedule / design, proposed solution. Attach photos, diagrams, reports.",
+       "Approval route: initiator → PTD (scope and cost estimate check) → Project Manager → Head of Client's Service. A change outside the approved cost estimate is approved only by the CEO.",
+       "Response time - 5 business days. The change is logged in the change register (maintained by PTD); the schedule and cost estimate are updated at the same time."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Sanction"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Work performed without a registered change is considered unauthorized and is not paid. The costs are borne by the contractor."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "CHANGE REQUEST No. ____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Initiator (name, position):"
+       ],
+       [
+        "Type of change (mark):",
+        "☐ design decision     ☐ scope of works     ☐ budget     ☐ schedule     ☐ unforeseen works"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "1. Substance of the change (what exactly is changing)"
+     },
+     {
+      "t": "p",
+      "text": "2. Reason"
+     },
+     {
+      "t": "p",
+      "text": "3. Impact on budget (amount, cost estimate line item)"
+     },
+     {
+      "t": "p",
+      "text": "4. Impact on schedule (days, which works are affected)"
+     },
+     {
+      "t": "p",
+      "text": "5. Proposed solution"
+     },
+     {
+      "t": "p",
+      "text": "6. Attachments (photos, diagrams, reports)"
+     },
+     {
+      "t": "p",
+      "text": "Approval (response time - 5 business days)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Initiator",
+        "PTD (scope, cost estimate)",
+        "Project Manager",
+        "Head of Client's Service (outside cost estimate - CEO)"
+       ],
+       [
+        "Decision:",
+        "☐ approved     ☐ rejected     ☐ needs revision         No. in change register: ______",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "After approval: PTD registers the change; the schedule (Б2) and cost estimate are updated. Work without a registered change is unauthorized and unpaid."
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "CHANGE REQUEST No. 7 dated 21.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Example Residential Complex, Section 1",
+        "Initiator (name, position):",
+        "Ivanenko I.I., Site Manager"
+       ],
+       [
+        "Type of change (mark):",
+        "☐ design decision     ☐ scope of works     ☐ budget     ☐ schedule     ☒ unforeseen works",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "1. Substance of the change (what exactly is changing)"
+     },
+     {
+      "t": "p",
+      "text": "Pylon П-3 on axis 2/Б (3rd floor) reached 62% of design strength at 28 days per lab report No. 18. Demolition and re-installation of the pylon is required."
+     },
+     {
+      "t": "p",
+      "text": "2. Reason"
+     },
+     {
+      "t": "p",
+      "text": "Violation of the temperature regime for concrete curing during the frost period on 02-04.03. Lab report No. 18 is attached."
+     },
+     {
+      "t": "p",
+      "text": "3. Impact on budget (amount, cost estimate line item)"
+     },
+     {
+      "t": "p",
+      "text": "Demolition - UAH 18,500; re-installation (В30 concrete 2.4 m3, rebar 0.31 t, formwork) - UAH 47,200. Total +UAH 65,700, line item \"Concrete works\". Compensation question - claim to contractor (Г8)."
+     },
+     {
+      "t": "p",
+      "text": "4. Impact on schedule (days, which works are affected)"
+     },
+     {
+      "t": "p",
+      "text": "+6 business days on 3rd-floor concrete works; 3rd-floor masonry shifts accordingly. Schedule Б2 is adjusted."
+     },
+     {
+      "t": "p",
+      "text": "5. Proposed solution"
+     },
+     {
+      "t": "p",
+      "text": "Demolition of the pylon by diamond cutting on 24-25.03, re-reinforcement and concreting on 26-27.03 with heating, lab control at 3/7/28 days."
+     },
+     {
+      "t": "p",
+      "text": "6. Attachments (photos, diagrams, reports)"
+     },
+     {
+      "t": "p",
+      "text": "Lab report No. 18; photo of the pylon; axis diagram 2/Б."
+     },
+     {
+      "t": "p",
+      "text": "Approval (response time - 5 business days)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Initiator",
+        "PTD (scope, cost estimate)",
+        "Project Manager",
+        "Head of Client's Service (outside cost estimate - CEO)"
+       ],
+       [
+        "Ivanenko I.I. / 21.03",
+        "Pavlenko S.S. / 22.03",
+        "Sydorenko O.O. / 23.03",
+        "Bondarenko V.V. / 24.03"
+       ],
+       [
+        "Decision:",
+        "☒ approved     ☐ rejected     ☐ needs revision         No. in change register: 2026-07",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "After approval: PTD registers the change; the schedule (Б2) and cost estimate are updated. Work without a registered change is unauthorized and unpaid."
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б2",
+   "Г8"
+  ]
+ },
+ {
+  "index": "Г2",
+  "slug": "g2",
+  "name": "Concealed Works Acceptance Certificate (CWC)",
+  "purpose": "Standard-form certificate; submitted with photo documentation and original certificates",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "dev",
+  "devOwner": "PTD (ask for ready-made templates)",
+  "drive": null,
+  "from": "Site Manager",
+  "to": "Technical Supervision → PTD",
+  "term": "before the works are covered by subsequent works",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Works covered without authorization may be opened up again at the fault party's expense.",
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Г3",
+  "slug": "g3",
+  "name": "Technical Supervision Directive / Comment",
+  "purpose": "Defect, requirement, correction deadline, correction confirmation mark",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1HbelI-vmPkg0kYSlj0aHo3-J_nWGR6OdEJ1cskGuzYA/edit",
+  "from": "Technical Supervision",
+  "to": "Site Manager, PM; register - PTD",
+  "term": "no later than 1 business day after inspection",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Works with an open comment are not closed until the issue is corrected.",
+  "sections": [
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "TECHNICAL SUPERVISION DIRECTIVE No. ____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "To (responsible person):",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Comment / defect (what and where: axes, floor, structure)",
+        "What is violated (design / DBN / technology)",
+        "Correction deadline",
+        "Corrected (date, responsible person's signature)",
+        "Checked by Technical Supervision (date, signature)"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Works with an open comment are not closed by acts until the issue is corrected and verified by Technical Supervision. A copy of the directive goes to the comment register (PTD). A repeat violation or a missed deadline triggers a memo (Г9) and escalation."
+     },
+     {
+      "t": "p",
+      "text": "Technical Supervision ______________ / __________        Received by (responsible person) ______________ / __________        Registered by PTD \"___\" ________"
+     },
+     {
+      "t": "p",
+      "text": "The highlighted cells are filled in by Technical Supervision when issuing the directive; the \"Corrected\" column - by the responsible person; \"Checked\" - by Technical Supervision after a follow-up inspection. The directive must be issued within 1 business day of the inspection."
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "TECHNICAL SUPERVISION DIRECTIVE No. 9 dated 19.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Example Residential Complex, Section 1",
+        "To (responsible person):",
+        "Site Manager Ivanenko I.I.",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Comment / defect (what and where: axes, floor, structure)",
+        "What is violated (design / DBN / technology)",
+        "Correction deadline",
+        "Corrected (date, responsible person's signature)",
+        "Checked by Technical Supervision (date, signature)"
+       ],
+       [
+        "1",
+        "Exposed rebar without concrete cover in column К-2, axis 3/Б, 2nd floor",
+        "KR design documentation, concrete cover 25 mm",
+        "21.03",
+        "20.03, Ivanenko",
+        "21.03, Melnyk"
+       ],
+       [
+        "2",
+        "Aerated-block masonry without reinforcement every 4th course, axes 1-2/А, 1st floor",
+        "Masonry work method statement",
+        "23.03",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Works with an open comment are not closed by acts until the issue is corrected and verified by Technical Supervision. A copy of the directive goes to the comment register (PTD). A repeat violation or a missed deadline triggers a memo (Г9) and escalation."
+     },
+     {
+      "t": "p",
+      "text": "Technical Supervision ______________ / __________        Received by (responsible person) ______________ / __________        Registered by PTD \"___\" ________"
+     },
+     {
+      "t": "p",
+      "text": "The highlighted cells are filled in by Technical Supervision when issuing the directive; the \"Corrected\" column - by the responsible person; \"Checked\" - by Technical Supervision after a follow-up inspection. The directive must be issued within 1 business day of the inspection."
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Г9"
+  ]
+ },
+ {
+  "index": "Г4",
+  "slug": "g4",
+  "name": "Work Stoppage / Resumption Certificate",
+  "purpose": "Basis, scope, requirements, resumption authorization",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1FEeBlXKgfuo2yFdmprXuiBLQtGF7MfxhZ66-l3liZQA/edit",
+  "from": "Technical Supervision / HSE Engineer / Head of CS",
+  "to": "PM, Site Manager, Head of CS (notifies the CEO)",
+  "term": "same day",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Downtime caused by the contractor is not compensated; losses go to the claims register.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Г4. Work Stoppage / Resumption Certificate - instructions"
+     },
+     {
+      "t": "p",
+      "text": "The right to stop works belongs to: Technical Supervision, the HSE Engineer, and the Head of Client's Service - when quality or safety is at risk, or there is a significant deviation from the design."
+     },
+     {
+      "t": "h",
+      "text": "Stoppage procedure"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "The initiator draws up the certificate: basis, scope of the stopped works, correction requirements, and deadline.",
+       "The certificate is handed over the same day to the PM, the Site Manager, and the Head of Client's Service; the Head of Client's Service notifies the CEO.",
+       "Works within the specified scope stop immediately upon delivery of the certificate."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Resumption procedure"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "The contractor corrects the violation and notifies in writing that it is ready for inspection.",
+       "The initiator verifies the correction; resumption is allowed only with the initiator's written permission, approved by the Head of Client's Service (bottom section of the certificate).",
+       "Downtime caused by the contractor is not compensated; losses are recorded in the claims register (claim - Г8)."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "WORK STOPPAGE CERTIFICATE No. ____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Date and time of stoppage:"
+       ],
+       [
+        "Initiator (position, name):",
+        "Contractor (delivered to):"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "1. Basis for the stoppage (what is violated)"
+     },
+     {
+      "t": "p",
+      "text": "2. Scope of stopped works (works, zones, axes)"
+     },
+     {
+      "t": "h",
+      "text": "3. Correction requirements and deadline"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Notified (date, signature):",
+        "Project Manager: __________",
+        "Site Manager: __________",
+        "Head of Client's Service (notifies CEO): __________"
+       ],
+       [
+        "Initiator's signature:",
+        "Certificate received by (contractor):",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "RESUMPTION OF WORKS"
+     },
+     {
+      "t": "p",
+      "text": "4. Correction confirmed (what was checked, date, time)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Resumption authorization - initiator:",
+        "Approved by Head of Client's Service:"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Downtime caused by the contractor is not compensated; losses go to the claims register (Г8). A copy of the certificate goes to PTD (register)."
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "WORK STOPPAGE CERTIFICATE No. 2 dated 25.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Example Residential Complex, Section 1",
+        "Date and time of stoppage:",
+        "25.03.2026, 10:40"
+       ],
+       [
+        "Initiator (position, name):",
+        "HSE Engineer Hrynchuk O.O.",
+        "Contractor (delivered to):",
+        "Contractor BudServis, foreman Koval D.D."
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "1. Basis for the stoppage (what is violated)"
+     },
+     {
+      "t": "p",
+      "text": "Masonry of the 3rd-floor exterior walls is being performed from scaffolding without guardrails and without fall-protection equipment - a direct threat to life (violation of NPAOP 45.2-7.02)."
+     },
+     {
+      "t": "p",
+      "text": "2. Scope of stopped works (works, zones, axes)"
+     },
+     {
+      "t": "p",
+      "text": "All work at height in Section 1, 3rd floor: exterior wall masonry, scaffolding erection."
+     },
+     {
+      "t": "p",
+      "text": "3. Correction requirements and deadline"
+     },
+     {
+      "t": "p",
+      "text": "Install perimeter guardrails, provide fall-protection harnesses with anchoring, and conduct an unscheduled safety briefing. Deadline - by 26.03, 12:00."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Notified (date, signature):",
+        "Project Manager: Sydorenko / 25.03",
+        "Site Manager: Ivanenko / 25.03",
+        "Head of Client's Service (notifies CEO): Bondarenko / 25.03"
+       ],
+       [
+        "Initiator's signature:",
+        "Hrynchuk O.O. / 25.03, 10:40",
+        "Certificate received by (contractor):",
+        "Koval D.D. / 25.03, 10:45"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "RESUMPTION OF WORKS"
+     },
+     {
+      "t": "p",
+      "text": "4. Correction confirmed (what was checked, date, time)"
+     },
+     {
+      "t": "p",
+      "text": "Guardrails installed around the perimeter, harnesses issued against signature, briefing conducted (HSE log, entry No. 84). Verified 26.03, 11:30."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Resumption authorization - initiator:",
+        "Hrynchuk O.O. / 26.03, 11:40",
+        "Approved by Head of Client's Service:",
+        "Bondarenko V.V. / 26.03, 12:00"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Downtime caused by the contractor is not compensated; losses go to the claims register (Г8). A copy of the certificate goes to PTD (register)."
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Г8"
+  ]
+ },
+ {
+  "index": "Г5",
+  "slug": "g5",
+  "name": "Cumulative Works and Materials Register",
+  "purpose": "Allocated / completed / remaining; protection against double billing",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "dev",
+  "devOwner": "PTD (ask for the current template)",
+  "drive": null,
+  "from": "PTD (maintained on an ongoing basis)",
+  "to": "PM, Head of CS, CEO - on request",
+  "term": "updated by the 10th of each month",
+  "rhythm": [
+   "щомісяця"
+  ],
+  "sanction": "A missed overrun is PTD's responsibility.",
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Г6",
+  "slug": "g6",
+  "name": "As-Built Documentation - Form Set",
+  "purpose": "Forms by type of work per applicable standards",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "dev",
+  "devOwner": "PTD (what is already in use)",
+  "drive": null,
+  "from": "Site Manager / PM",
+  "to": "PTD",
+  "term": "in parallel with the works",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Г7",
+  "slug": "g7",
+  "name": "Laboratory Test Report",
+  "purpose": "Concrete at 3/7/28 days, soil, mortar; basis for closing the CWC",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/14mEW-ac_zpkKw1G534fLba3QfchXwxgiJuAWR-13s0Q/edit",
+  "from": "Lab Technician",
+  "to": "Technical Supervision, Head of CS; copy - PTD",
+  "term": "within 1 business day after testing",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "CWCs and structure acceptance are not closed without a report.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Г7. Laboratory Test Report - instructions"
+     },
+     {
+      "t": "p",
+      "text": "The key quality document: the basis for closing the CWC and accepting structures. Prepared by the lab technician, submitted to Technical Supervision and the Head of Client's Service within 1 business day; a copy goes to PTD as part of the as-built documentation."
+     },
+     {
+      "t": "h",
+      "text": "Procedure"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Concrete samples are taken at EVERY concrete pour in the presence of the site foreman; a series is a minimum of 3 samples per testing age.",
+       "Strength testing is performed at 3, 7, and 28 days. At the earlier stages, the lab technician provides a strength-gain forecast.",
+       "If strength is deficient at any stage, the lab technician IMMEDIATELY notifies Technical Supervision and the Head of Client's Service, without waiting for the 28-day result."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Consequences of the results"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Strength confirmed - the report is attached to the CWC, and the structure is accepted.",
+       "Deficient strength - the structure is not accepted: repeat testing (core samples, rebound hammer) or reinforcement/demolition - only via a Change Request (Г1).",
+       "Costs arising from the contractor's process violation - claim (Г8)."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "TEST REPORT No. ____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Laboratory (name, accreditation certificate):",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Structure (what and where):",
+        "Concrete pour date:",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Design concrete grade:",
+        "Supplier / mix passport No.:",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Sample No.",
+        "Age, days",
+        "Test date",
+        "Sample size, mm",
+        "Failure load, kN",
+        "Strength, MPa",
+        "% of design"
+       ],
+       [
+        "Conclusion:",
+        "☐ meets design     ☐ does not meet design: strength ____% - action: ______________________ (repeat testing / reinforcement / demolition - via Г1)",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Lab Technician ______________ / _______     Reviewed by Technical Supervision ______________ / _______     Copy received by PTD \"___\" ________"
+     },
+     {
+      "t": "p",
+      "text": "The lab technician notifies Technical Supervision and the Head of CS of a strength deficiency immediately, without waiting for the next test date. The report is the basis for closing the CWC."
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "TEST REPORT No. 18 dated 30.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Site:",
+        "Example Residential Complex, Section 1",
+        "Laboratory (name, accreditation certificate):",
+        "BudLab LLC, accreditation certificate No. РН-114-24",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Structure (what and where):",
+        "Pylon П-3, axis 2/Б, 3rd floor",
+        "Concrete pour date:",
+        "02.03.2026",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Design concrete grade:",
+        "В30 П3",
+        "Supplier / mix passport No.:",
+        "BetonPlus LLC, passport No. 812",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Sample No.",
+        "Age, days",
+        "Test date",
+        "Sample size, mm",
+        "Failure load, kN",
+        "Strength, MPa",
+        "% of design"
+       ],
+       [
+        "1-1",
+        "3",
+        "05.03",
+        "100×100×100",
+        "214",
+        "21.4",
+        "56%"
+       ],
+       [
+        "1-2",
+        "7",
+        "09.03",
+        "100×100×100",
+        "241",
+        "24.1",
+        "63%"
+       ],
+       [
+        "1-3",
+        "28",
+        "30.03",
+        "100×100×100",
+        "238",
+        "23.8",
+        "62%"
+       ],
+       [
+        "Conclusion:",
+        "☐ meets design     ☒ does NOT meet design: strength at 28 days - 62% of design. The structure is not accepted. Recommendation: demolition and re-installation (Change Request Г1 No. 7).",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Lab Technician ______________ / _______     Reviewed by Technical Supervision ______________ / _______     Copy received by PTD \"___\" ________"
+     },
+     {
+      "t": "p",
+      "text": "The lab technician notifies Technical Supervision and the Head of CS of a strength deficiency immediately, without waiting for the next test date. The report is the basis for closing the CWC."
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Г1",
+   "Г8"
+  ]
+ },
+ {
+  "index": "Г8",
+  "slug": "g8",
+  "name": "Claim to Contractor",
+  "purpose": "Violation, amount, demand, response deadline",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1dd7NW_kdwnclcv1J2kQl1HSi5ufP0rPpCtDanOtYBvw/edit",
+  "from": "PTD + legal counsel",
+  "to": "Head of CS (approves) → CEO (confirms) → contractor",
+  "term": "upon the violation; contractor's response - 5 business days",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Deduction from upcoming payments; contract termination if not resolved.",
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Г8. Claim to Contractor - instructions"
+     },
+     {
+      "t": "p",
+      "text": "A written demand to the contractor or supplier for a contract violation: deadlines, quality, documentation. Prepared by PTD together with legal counsel, approved by the Head of Client's Service, confirmed by the CEO."
+     },
+     {
+      "t": "h",
+      "text": "When it is drawn up"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Work or delivery deadlines exceeded beyond what the contract allows.",
+       "Quality defects confirmed by a Technical Supervision directive or a lab report.",
+       "Failure to hand over as-built documentation, certificates, or acts."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "How it is drawn up"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Facts only, with evidence: contract clauses, acts, directives (Г3), reports (Г7), photos, correspondence.",
+       "The amount is calculated per the contract: penalty, cost of correction by others, downtime losses.",
+       "The contractor's response deadline is per the contract (standard 5 business days). The claim is logged in the claims register (PTD)."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "Consequences of non-compliance"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Deduction of the amount from upcoming payments, engaging other contractors at the violator's expense, contract termination, litigation."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "CLAIM No. ____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "To (contractor, EDRPOU):",
+        "Contract No., date:"
+       ],
+       [
+        "From:",
+        "Site:"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "1. Substance of the violation (what is violated, contract clauses)"
+     },
+     {
+      "t": "p",
+      "text": "2. Evidence"
+     },
+     {
+      "t": "p",
+      "text": "3. Amount calculation"
+     },
+     {
+      "t": "p",
+      "text": "4. Demand and response deadline"
+     },
+     {
+      "t": "p",
+      "text": "5. Consequences of non-compliance"
+     },
+     {
+      "t": "p",
+      "text": "Prepared by PTD + legal counsel ______________ / _______     Approved by Head of Client's Service ______________ / _______     Confirmed by CEO ______________ / _______"
+     },
+     {
+      "t": "p",
+      "text": "Sent (method, date): ______________________     Registered in the claims register No. ______     Response received: ______________"
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "CLAIM No. 2 dated 02.04.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "To (contractor, EDRPOU):",
+        "BudServis LLC, 41235678",
+        "Contract No., date:",
+        "No. 12-П dated 10.01.2026"
+       ],
+       [
+        "From:",
+        "Client's Service, Iron Invest",
+        "Site:",
+        "Example Residential Complex, Section 1"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "1. Substance of the violation (what is violated, contract clauses)"
+     },
+     {
+      "t": "p",
+      "text": "During the installation of pylon П-3 (axis 2/Б, 3rd floor), the winter concrete curing procedure was violated (contract clause 4.6). Strength at 28 days - 62% of design (report Г7 No. 18). The structure was not accepted by Technical Supervision."
+     },
+     {
+      "t": "p",
+      "text": "2. Evidence"
+     },
+     {
+      "t": "p",
+      "text": "Test report No. 18 dated 30.03.2026; Technical Supervision directive No. 9 dated 19.03; Change Request Г1 No. 7 (approved 24.03); photo documentation; concrete works log."
+     },
+     {
+      "t": "p",
+      "text": "3. Amount calculation"
+     },
+     {
+      "t": "p",
+      "text": "Demolition of the pylon by diamond cutting - UAH 18,500; re-installation (concrete, rebar, formwork, labor) - UAH 47,200. Total losses: UAH 65,700. Plus a penalty for a 6-business-day schedule delay - per contract clause 7.2."
+     },
+     {
+      "t": "p",
+      "text": "4. Demand and response deadline"
+     },
+     {
+      "t": "p",
+      "text": "Compensate UAH 65,700 either by deduction from upcoming payments under Contract No. 12-П or by payment to the account by 09.04.2026. Response deadline - 5 business days from the date of receipt."
+     },
+     {
+      "t": "p",
+      "text": "5. Consequences of non-compliance"
+     },
+     {
+      "t": "p",
+      "text": "Unilateral deduction of the amount from payments per contract clause 7.4; in case of a repeat process violation - contract termination and recovery of losses through litigation."
+     },
+     {
+      "t": "p",
+      "text": "Prepared by PTD + legal counsel ______________ / _______     Approved by Head of Client's Service ______________ / _______     Confirmed by CEO ______________ / _______"
+     },
+     {
+      "t": "p",
+      "text": "Sent (method, date): ______________________     Registered in the claims register No. ______     Response received: ______________"
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Г1",
+   "Г3",
+   "Г7"
+  ]
+ },
+ {
+  "index": "Г9",
+  "slug": "g9",
+  "name": "Memo (Escalation)",
+  "purpose": "Recording deadline / requirement violations",
+  "group": "Г",
+  "groupName": "Quality, Changes, Records",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1ru5TIWX4S88fXdPH3auMncofB26UxfDg2HB9c0lZ73A/edit",
+  "from": "Initiator",
+  "to": "manager per the escalation chain",
+  "term": "upon occurrence; response - 2 business days",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": null,
+  "sections": [
+   {
+    "title": "Instructions",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Г9. Memo (Escalation) - instructions"
+     },
+     {
+      "t": "p",
+      "text": "Written when the normal route has failed: the deadline is missed, there is no response, and escalation per the \"Overdue Escalation\" section has reached the point of a written record."
+     },
+     {
+      "t": "h",
+      "text": "When it is written"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "A delay of 6-10 business days (per the escalation ladder) - the Head of Client's Service records the violation with a memo.",
+       "A repeat violation after a Technical Supervision directive, or failure to implement a meeting decision.",
+       "Any situation that needs to be brought to a manager's attention in writing, outside the regular reporting."
+      ]
+     },
+     {
+      "t": "h",
+      "text": "How to write it"
+     },
+     {
+      "t": "ol",
+      "items": [
+       "Brief and factual: what was violated, by whom, when it should have been done, how many days overdue.",
+       "What has already been done to resolve it (reminders, escalations - with dates).",
+       "What you are requesting: a decision, resources, management intervention. One request per memo.",
+       "The addressee's response deadline is 2 business days. The memo is logged in Worksection."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Form",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "MEMO No. ____ dated \"___\" ________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "From (name, position):",
+        "To:"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "1. Substance of the violation (what, who, when it was due, how many days overdue)"
+     },
+     {
+      "t": "p",
+      "text": "2. What has already been done"
+     },
+     {
+      "t": "h",
+      "text": "3. Request"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Initiator's signature:",
+        "Registered in WS, No.:"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Manager's resolution (response deadline - 2 business days)"
+     },
+     {
+      "t": "p",
+      "text": "Manager's signature ______________ / __________"
+     }
+    ]
+   },
+   {
+    "title": "Example",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "MEMO No. 3 dated 28.03.2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "From (name, position):",
+        "Bondarenko V.V., Head of Client's Service",
+        "To:",
+        "General Director"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "1. Substance of the violation (what, who, when it was due, how many days overdue)"
+     },
+     {
+      "t": "p",
+      "text": "Contractor BudServis is not submitting as-built documentation for the 1st-floor masonry. Contract deadline - 20.03. Delay - 6 business days. Responsible on the site side - Site Manager Ivanenko I.I."
+     },
+     {
+      "t": "p",
+      "text": "2. What has already been done"
+     },
+     {
+      "t": "p",
+      "text": "21.03 - reminder in Worksection; 24.03 - escalated to the contractor's manager; 26.03 - raised at the weekly meeting (minutes No. 12). No result."
+     },
+     {
+      "t": "p",
+      "text": "3. Request"
+     },
+     {
+      "t": "p",
+      "text": "Block the next payment to the contractor until the full as-built documentation package is submitted; prepare a claim (Г8)."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Initiator's signature:",
+        "Bondarenko V.V. / 28.03",
+        "Registered in WS, No.:",
+        "WS-4812"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Manager's resolution (response deadline - 2 business days)"
+     },
+     {
+      "t": "p",
+      "text": "Block the payment. PTD together with legal counsel - claim by 02.04. Control - Head of CS."
+     },
+     {
+      "t": "p",
+      "text": "Manager's signature ______________ / __________"
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Г8"
+  ]
+ },
+ {
+  "index": "Д1",
+  "slug": "d1",
+  "name": "Start Package Checklist",
+  "purpose": "13 items of the «Start Package» section; gate for handover to execution",
+  "group": "Д",
+  "groupName": "Checklists",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1ae2KSu_6JQdi5ttGWB5wuEN5w2pKzxgCuGNTWHILzek/edit",
+  "from": "Head of Client's Service",
+  "to": "CEO (gate for handover to execution)",
+  "term": "before project start",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": "Without a complete start package, the project is not handed over to execution.",
+  "sections": [
+   {
+    "title": "Checklist",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Appendix Д1. Start Package Checklist"
+     },
+     {
+      "t": "p",
+      "text": "Filled in by the Head of Client's Service before handing the project over to execution (gate between the «Tendering» and «Execution of Works» stages). Mandatory: З - always · Ж - if built in-house · Ч - if general contractor, done by the general contractor."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Project:",
+        "Verification date:",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "No.",
+        "Document / material",
+        "Prepared by",
+        "Approved by",
+        "Mandatory",
+        "☐",
+        "Storage location (link / register)"
+       ],
+       [
+        "1",
+        "Project passport / project brief (goal, budget, timeline, KPIs, areas of responsibility, risks)",
+        "Head of CS",
+        "CEO",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "2",
+        "Title documents for the land plot / asset (asset - an existing object: built or in progress)",
+        "Lawyer",
+        "CEO",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "3",
+        "Urban planning conditions and restrictions",
+        "Design team",
+        "Head of CS",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "4",
+        "Utility connection specifications (power, water, gas, sewage)",
+        "Design team",
+        "Head of CS",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "5",
+        "Design documentation: site plan, architectural (AR), structural (KR), engineering sections (checked by PTD, stamped «Issued for Construction»)",
+        "Design team",
+        "Head of CS",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "6",
+        "Design documentation expert review - mandatory for each facility",
+        "Design team",
+        "-",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "7",
+        "Construction works permit",
+        "Head of CS",
+        "-",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "8",
+        "Approved cost estimate: unit estimates for each work type + facility estimates + summary calculation",
+        "Cost Engineer + PTD",
+        "CEO",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "9",
+        "Works Schedule with responsible persons",
+        "PM + PTD",
+        "Head of CS",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "10",
+        "Funding schedule synchronized with the Works Schedule",
+        "PM + Finance Dept",
+        "CEO",
+        "З",
+        "☐",
+        ""
+       ],
+       [
+        "11",
+        "Contractor portfolio: tender, 3 proposals, draft contracts",
+        "PM + PTD",
+        "CEO",
+        "Ч",
+        "☐",
+        ""
+       ],
+       [
+        "12",
+        "Occupational safety: safety engineer (outsourced); order appointing safety officer on site at start",
+        "Safety Engineer",
+        "Head of CS",
+        "Ж",
+        "☐",
+        ""
+       ],
+       [
+        "13",
+        "Order appointing the PM and project team",
+        "Head of CS",
+        "CEO",
+        "З",
+        "☐",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "GATE: without full completeness (all «З» + applicable «Ж»/«Ч») the project is not handed over to execution. Works started without the package are considered unauthorized; payment is not guaranteed."
+     },
+     {
+      "t": "p",
+      "text": "Package complete, project handed over to execution:    Head of Client's Service ______________ / __________        Approved by CEO ______________ / __________        Date: __________"
+     }
+    ]
+   }
+  ],
+  "related": []
+ },
+ {
+  "index": "Д2",
+  "slug": "d2",
+  "name": "Project Handover to Execution Checklist",
+  "purpose": "Verification before the «Execution of Works» stage",
+  "group": "Д",
+  "groupName": "Checklists",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1qOo9X5XmaJ29hO4xYUs9tUYCZcwzsnYKeZCHcwdXiY0/edit",
+  "from": "Head of Client's Service / PM",
+  "to": "-",
+  "term": "before the «Execution of Works» stage",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": null,
+  "sections": [
+   {
+    "title": "Checklist",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Д2. Project Handover to Execution Checklist"
+     },
+     {
+      "t": "p",
+      "text": "Gate between the «Tendering» and «Execution of Works» stages. Filled in by the Head of Client's Service together with the Project Manager. The Start Package (Д1) must be completed before this checklist."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Project:",
+        "Date: __________"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "1. DOCUMENTS"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "Condition",
+       "Confirmation"
+      ],
+      "rows": [
+       [
+        "1",
+        "☐",
+        "Start Package Checklist (Д1) fully completed and approved by CEO",
+        "Д1 with signatures"
+       ],
+       [
+        "2",
+        "☐",
+        "Cost estimate approved (unit + facility + summary)",
+        "CEO signature"
+       ],
+       [
+        "3",
+        "☐",
+        "Works Schedule with responsible persons approved",
+        "Works Schedule, Head of CS signature"
+       ],
+       [
+        "4",
+        "☐",
+        "Funding schedule synchronized with the Works Schedule and approved",
+        "CEO signature"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "2. CONTRACTS"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "Condition",
+       "Confirmation"
+      ],
+      "rows": [
+       [
+        "5",
+        "☐",
+        "Contracts with contractors signed (tender: 3 proposals + В7, legal review completed)",
+        "contract register"
+       ],
+       [
+        "6",
+        "☐",
+        "Contracts with key suppliers concluded or agreed",
+        "contract register"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "3. TEAM"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "Condition",
+       "Confirmation"
+      ],
+      "rows": [
+       [
+        "7",
+        "☐",
+        "Order appointing the PM and project team signed",
+        "order"
+       ],
+       [
+        "8",
+        "☐",
+        "Each team member has signed their position contract and acknowledgment of the Regulation",
+        "sign-off sheets"
+       ],
+       [
+        "9",
+        "☐",
+        "Job descriptions issued against signature",
+        "sign-off sheets"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "4. SITE"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "Condition",
+       "Confirmation"
+      ],
+      "rows": [
+       [
+        "10",
+        "☐",
+        "Site handed over to the unit / contractor by act",
+        "handover act"
+       ],
+       [
+        "11",
+        "☐",
+        "Temporary utilities provided (power, water), site welfare facilities arranged",
+        "verified on site"
+       ],
+       [
+        "12",
+        "☐",
+        "Order appointing the site safety officer signed; briefings conducted",
+        "order + safety log"
+       ],
+       [
+        "13",
+        "☐",
+        "Fencing, information board, safe walkways - completed",
+        "photo evidence"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "5. SYSTEMS"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "Condition",
+       "Confirmation"
+      ],
+      "rows": [
+       [
+        "14",
+        "☐",
+        "Project set up in Worksection: tasks, owners, deadlines",
+        "WS link"
+       ],
+       [
+        "15",
+        "☐",
+        "Project registers created (contracts, payments, changes, risks, remarks)",
+        "link"
+       ],
+       [
+        "16",
+        "☐",
+        "Site Telegram chat with the Head of Client's Service created, participants added",
+        "chat active"
+       ],
+       [
+        "17",
+        "☐",
+        "Project folder on Drive created per structure (documentation, photos, acts)",
+        "link"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "All boxes checked - the project is handed over to execution. If any is missing - the handover is postponed until resolved."
+     },
+     {
+      "t": "p",
+      "text": "Handed over by: Head of Client's Service ______________ / _______     Accepted by: Project Manager ______________ / _______     Approved by CEO ______________ / _______"
+     }
+    ]
+   }
+  ],
+  "related": [
+   "В7",
+   "Д1"
+  ]
+ },
+ {
+  "index": "Д3",
+  "slug": "d3",
+  "name": "Month-End Closing Checklist",
+  "purpose": "Everything that must be submitted by the 5th",
+  "group": "Д",
+  "groupName": "Checklists",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1NOAyGhS-fFc0CZ1f_rUNznocL28fBdkk1BbG_XWyqas/edit",
+  "from": "Site Manager",
+  "to": "-",
+  "term": "by the 25th (plan) and by the 5th (package)",
+  "rhythm": [
+   "щомісяця"
+  ],
+  "sanction": "No checkmark - payment for the month is at risk.",
+  "sections": [
+   {
+    "title": "Checklist",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Д3. Month-End Closing Checklist"
+     },
+     {
+      "t": "p",
+      "text": "Filled in by the Site Manager. Go through top to bottom - and the month is closed with no debts. Each checkmark = done and submitted."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Facility:",
+        "Month:"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "BY THE 25TH - NEXT MONTH'S PLAN"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "What must be done",
+       "Deadline",
+       "Form / to whom"
+      ],
+      "rows": [
+       [
+        "1",
+        "☐",
+        "Next month's work plan submitted to PTD",
+        "by the 25th",
+        "Б1 → PTD"
+       ],
+       [
+        "2",
+        "☐",
+        "Works Schedule submitted together with the plan",
+        "by the 25th",
+        "Б2 → PTD"
+       ],
+       [
+        "3",
+        "☐",
+        "Consolidated material requirements with delivery deadlines submitted",
+        "by the 25th",
+        "В1 → PTD"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "WEEKLY LOOSE ENDS OF THE MONTH CLOSED"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "What must be done",
+       "Deadline",
+       "Form / to whom"
+      ],
+      "rows": [
+       [
+        "4",
+        "☐",
+        "Weekly plan-vs-actual statuses submitted for every Friday of the month (with explanations if behind schedule)",
+        "every Friday",
+        "Б2 → PM"
+       ],
+       [
+        "5",
+        "☐",
+        "Weekly photo reports submitted for every week",
+        "every Friday",
+        "Е5 → Head of CS, PM"
+       ],
+       [
+        "6",
+        "☐",
+        "Machinery timesheets submitted to PTD for every week, signed",
+        "every Friday",
+        "В5 → PTD"
+       ],
+       [
+        "7",
+        "☐",
+        "All delivery notes and certificates for the month submitted to PTD",
+        "every Friday",
+        "originals → PTD"
+       ],
+       [
+        "8",
+        "☐",
+        "All Concealed Works Acceptance Certificates for the month's works closed: photos + certificates + protocols",
+        "before works closeout",
+        "Г2 → PTD"
+       ],
+       [
+        "9",
+        "☐",
+        "Technical supervision remarks resolved or have an agreed deadline",
+        "per directives",
+        "Г3"
+       ],
+       [
+        "10",
+        "☐",
+        "All unforeseen works processed via a Change Request",
+        "before works start",
+        "Г1"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "BY THE 5TH - REPORTING PACKAGE FOR THE PREVIOUS MONTH"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "What must be done",
+       "Deadline",
+       "Form / to whom"
+      ],
+      "rows": [
+       [
+        "11",
+        "☐",
+        "Certificate of Completed Works filled in, item names - per the cost estimate",
+        "by the 5th",
+        "Б3, «Act» sheet"
+       ],
+       [
+        "12",
+        "☐",
+        "Act signed by the Site Manager",
+        "by the 5th",
+        "Б3"
+       ],
+       [
+        "13",
+        "☐",
+        "Act signed by Technical Supervision",
+        "by the 5th",
+        "Б3"
+       ],
+       [
+        "14",
+        "☐",
+        "Б3 package checklist fully completed (all 10 checkboxes)",
+        "by the 5th",
+        "Б3, «Checklist»"
+       ],
+       [
+        "15",
+        "☐",
+        "Package submitted to PTD",
+        "by the 5th",
+        "Б3 → PTD"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "All boxes checked - the month is closed: next PTD (by the 10th) → Technical Verification Note → Head of CS approval → payment. No checkmark - payment for the month is at risk."
+     },
+     {
+      "t": "p",
+      "text": "Site Manager ______________ / __________          Date: __________"
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б1",
+   "Б2",
+   "Б3",
+   "В1",
+   "В5",
+   "Г1",
+   "Г2",
+   "Г3",
+   "Е3",
+   "Е5"
+  ]
+ },
+ {
+  "index": "Д4",
+  "slug": "d4",
+  "name": "Photo Documentation Checklist",
+  "purpose": "Angles and zones: general view, concealed works, reinforcement, engineering systems, details",
+  "group": "Д",
+  "groupName": "Checklists",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1ZPgdGhih3ndBA4OETAuNKkCQQheBRklJ59hcjERzJBg/edit",
+  "from": "Site Manager / Foreman",
+  "to": "-",
+  "term": "daily, weekly, and before each Concealed Works Acceptance Certificate",
+  "rhythm": [
+   "щодня",
+   "щотижня"
+  ],
+  "sanction": "Works without photo documentation are not accepted.",
+  "sections": [
+   {
+    "title": "Checklist",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Д4. Photo Documentation Checklist"
+     },
+     {
+      "t": "p",
+      "text": "What and how to photograph. Daily photos - to the Telegram chat with the Head of CS; weekly photo report and photos before the Concealed Works Acceptance Certificate - to the archive on Drive. Detailed procedure - Е5."
+     },
+     {
+      "t": "h",
+      "text": "1. DAILY DOCUMENTATION"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "What's in the photo",
+       "When / where"
+      ],
+      "rows": [
+       [
+        "1",
+        "☐",
+        "3-5 photos of key site zones: shows what works are underway and how many people",
+        "daily, TG chat"
+       ],
+       [
+        "2",
+        "☐",
+        "Problem spots of the day (if any): what's blocking, what broke, what wasn't delivered",
+        "as they occur, TG chat"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "2. WEEKLY PHOTO REPORT (FRIDAY BY 17:00)"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "What's in the photo",
+       "When / where"
+      ],
+      "rows": [
+       [
+        "3",
+        "☐",
+        "Every work item of the week: general view of the zone BEFORE and AFTER - shows WHAT exactly was done",
+        "Fri, archive + Head of CS"
+       ],
+       [
+        "4",
+        "☐",
+        "Frame reference: the shot shows axes / floor / landmark or a sign indicating the zone",
+        "every photo"
+       ],
+       [
+        "5",
+        "☐",
+        "Volume is readable: partitions, screed, utilities - shot so the completed volume can be assessed",
+        "every work item"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "3. BEFORE CLOSING THE CONCEALED WORKS ACCEPTANCE CERTIFICATE - MANDATORY"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "What's in the photo",
+       "When / where"
+      ],
+      "rows": [
+       [
+        "6",
+        "☐",
+        "Reinforcement before concreting: general view + details + protective layer spacers",
+        "before concreting"
+       ],
+       [
+        "7",
+        "☐",
+        "Embedded parts, sleeves, penetrations - close-up, with reference points",
+        "before closing"
+       ],
+       [
+        "8",
+        "☐",
+        "Waterproofing: EVERY layer before applying the next; abutments and corners - close-up",
+        "layer by layer"
+       ],
+       [
+        "9",
+        "☐",
+        "Engineering utilities before closing: routes, slopes, pressure testing (gauge in frame)",
+        "before backfilling/covering"
+       ],
+       [
+        "10",
+        "☐",
+        "Backfill compaction: layer by layer, with equipment in frame",
+        "layer by layer"
+       ],
+       [
+        "11",
+        "☐",
+        "Thermal and vapor insulation, fireproofing, anti-corrosion coating - before being covered by subsequent layers",
+        "before closing"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "4. REQUIREMENTS FOR EVERY PHOTO"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "What's in the photo",
+       "When / where"
+      ],
+      "rows": [
+       [
+        "12",
+        "☐",
+        "Date and time: date stamp enabled or file metadata preserved",
+        "always"
+       ],
+       [
+        "13",
+        "☐",
+        "Sharpness and lighting: the object is visible; in dark zones - with additional lighting",
+        "always"
+       ],
+       [
+        "14",
+        "☐",
+        "Sequence: before → in progress → after (mandatory for concealed works)",
+        "always"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "5. STORAGE"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "What's in the photo",
+       "When / where"
+      ],
+      "rows": [
+       [
+        "15",
+        "☐",
+        "Archive on Drive: facility folder → year-month → date or work name",
+        "weekly"
+       ],
+       [
+        "16",
+        "☐",
+        "Photos before the Concealed Works Acceptance Certificate - in the folder of the corresponding act, link included in the certificate (Г2)",
+        "before closing the certificate"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Rule: a work item without photo documentation is considered not completed for closing purposes. A Concealed Works Acceptance Certificate is not closed without photos."
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Г2",
+   "Е5"
+  ]
+ },
+ {
+  "index": "Д5",
+  "slug": "d5",
+  "name": "Service Self-Audit Checklist",
+  "purpose": "Per the audit questionnaire; quarterly",
+  "group": "Д",
+  "groupName": "Checklists",
+  "status": "dev",
+  "devOwner": "Operations Dept",
+  "drive": null,
+  "from": "Head of Client's Service",
+  "to": "CEO",
+  "term": "quarterly",
+  "rhythm": [
+   "за фактом"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Е1",
+  "slug": "e1",
+  "name": "PTD–Construction Site Unit Interaction Procedure",
+  "purpose": "Monthly cycle in detail (based on the \"Monthly Cycle\" section)",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "ready",
+  "devOwner": null,
+  "drive": null,
+  "from": "Approved by CEO",
+  "to": "PTD + Construction Site Unit (mandatory)",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [
+   {
+    "title": "Regulations",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "Е1. PTD–CONSTRUCTION SITE UNIT INTERACTION PROCEDURE"
+     },
+     {
+      "t": "p",
+      "text": "The monthly planning-and-closeout cycle in detail: who submits what and when, what exactly PTD checks, and what happens on deviations. Version 1.0. Approved by the CEO. Changes only through Г1."
+     },
+     {
+      "t": "h",
+      "text": "1. PURPOSE AND SCOPE"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "1.1",
+        "This procedure sets out how PTD (the Production & Technical Dept) and a construction site unit interact throughout the entire monthly cycle: issuing documentation → planning → weekly rhythm → month-end closeout → technical verification note."
+       ],
+       [
+        "1.2",
+        "Mandatory for: the Head of PTD, the cost engineer, the Site Manager, the Site Foreman, the Project Manager. Technical Supervision and the lab technician are involved in confirming works and quality."
+       ],
+       [
+        "1.3",
+        "Core principle: PTD is the single point of documentation issuance and the single filter before money moves. The Site builds - PTD counts and reconciles. Neither side substitutes for the other."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "2. TERMS"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Term",
+       "Meaning"
+      ],
+      "rows": [
+       [
+        "Monthly plan",
+        "The Site's package for the next month: work plan (Б1) + schedule (Б2) + material needs (В1). Submitted by the 25th."
+       ],
+       [
+        "Reporting package",
+        "The month-end closeout package (Б3): act + timesheets + as-built documentation + delivery notes and certificates. Submitted by the 5th."
+       ],
+       [
+        "Cumulative Works Register",
+        "PTD's living document (Г5): amount budgeted per the cost estimate / amount completed cumulatively / balance remaining for each work item and material. The main safeguard against double closeouts."
+       ],
+       [
+        "Overrun",
+        "Anything beyond what is allowed: volume beyond the cost estimate or remaining balance; write-off beyond the norm plus tolerance (Е9); work outside the plan without Г1; re-closing something already closed. An overrun is not accepted (section 4.6)."
+       ],
+       [
+        "Technical verification note",
+        "PTD's final monthly conclusion (form set out in regulation Е3). Without it, payment for the month is not confirmed."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "3. PARTICIPANTS AND RESPONSIBILITIES"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Role",
+       "What they do in the cycle",
+       "What they are responsible for"
+      ],
+      "rows": [
+       [
+        "Site Manager",
+        "Submits the plan by the 25th, weekly timesheets and delivery notes, the reporting package by the 5th; explains deviations",
+        "Timeliness and completeness of submissions; accuracy of volumes in the act"
+       ],
+       [
+        "Site Foreman",
+        "Keeps the works log, dockets, daily timesheets; prepares data for the act",
+        "Primary data at the Site"
+       ],
+       [
+        "Head of PTD",
+        "Issues documentation, checks the plan and package, maintains the cumulative register, prepares the verification note",
+        "Review timelines; a missed overrun is PTD's responsibility"
+       ],
+       [
+        "Cost engineer",
+        "Reconciles prices and volumes against the cost estimate; write-off norms (Е9); deviation report",
+        "Price and norm control"
+       ],
+       [
+        "Project Manager",
+        "Monitors timelines on both sides; resolves first-level disputes",
+        "Keeping the cycle moving without breakdowns"
+       ],
+       [
+        "Technical Supervision",
+        "Confirms volumes and quality by signature on the act and the CWAC",
+        "Accuracy of what is confirmed"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "4. DETAILED PROCEDURE"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "4.1",
+        "ISSUING DOCUMENTATION. Design documentation reaches the Site ONLY through PTD, stamped \"For execution\" and logged in the issuance log (see the \"Issuance Log\" tab). Turnaround on request - 1 business day. The Site works only with the current version; using an outdated version is the fault of whoever took it. Drawings obtained bypassing PTD are not a valid document."
+       ],
+       [
+        "4.2",
+        "PLANNING (by the 25th). The Site Manager submits the monthly plan: Б1 + Б2 + В1. PTD checks it against the checklist (see the \"PTD Review Checklist\" tab, Block A): 1) work names match the cost estimate exactly; 2) volumes are within the Cumulative Works Register's remaining balances; 3) works match the design and approved changes (Г1); 4) the schedule is technologically realistic: work sequences and links to other works; 5) material needs match volumes per the Е9 norms; 6) delivery lead times allow ordering on time. Review deadline - by the 28th."
+       ],
+       [
+        "4.3",
+        "PLAN REVIEW OUTCOME: \"Approved\" - PTD forwards the material needs to Procurement and the plan goes to the Head of CS for funding approval; \"Returned\" - a written list of comments to the Site Manager, correction within 1 business day, re-review within 1 day. A month without an approved plan is not funded."
+       ],
+       [
+        "4.4",
+        "WEEKLY RHYTHM (every Friday by 18:00). The Site submits to PTD: weekly machinery timesheets (В5, signed) + delivery notes and certificates for the week's deliveries. PTD on Monday: registers the documents, reconciles deliveries against В1 requests, and enters them in the Cumulative Works Register. A delivery/request mismatch triggers a query to the Site Manager, response within 1 business day."
+       ],
+       [
+        "4.5",
+        "MONTH-END CLOSEOUT (by the 5th). The Site submits the Б3 reporting package. PTD checks it against the checklist (Block B): 1) the act's arithmetic (volumes, totals); 2) names and units match the cost estimate; 3) actual work versus the monthly plan - deviations explained; 4) the cumulative register: nothing already closed is being re-closed and the remaining balance is not exceeded; 5) signatures of the Site Manager and Technical Supervision on every act; 6) CWAC: one for every concealed work of the month, with photos, certificates, and protocols (Г7); 7) machinery timesheets against the acts: any machinery \"that worked\" appears in the works; 8) material write-offs (M-29) against Е9 norms plus tolerance. Review deadline - by the 10th."
+       ],
+       [
+        "4.6",
+        "OVERRUNS AND DEVIATIONS. A detected overrun is NOT accepted: the line item is excluded from confirmation, and the Site Manager receives a written request for an explanation (deadline - 2 business days). Next: if it is a genuine, legitimate change in volumes - a Г1 is filed and the line item is accepted the following month; if there is no explanation or it is not confirmed - the line item is not paid, it is recorded in a memo (Г9), and if the contractor is at fault, a claim (Г8) follows."
+       ],
+       [
+        "4.7",
+        "TECHNICAL VERIFICATION NOTE (by the 10th). Based on the review, PTD prepares a technical verification note (form Е3, \"Technical Verification Note\" tabs): sections for works / materials / machinery / completeness / conclusion. Conclusions: \"confirmed\" - the acts go to the Head of CS; \"partial\" - the confirmed part goes to payment, disputed line items go to rework with deadlines; \"returned\" - the whole package is returned (correction within 2 business days, re-review within 2 days)."
+       ],
+       [
+        "4.8",
+        "SITE REQUESTS TO PTD (outside the cycle): write-off norms and coefficients - answer within 1 business day; issuance/clarification of documentation - 1 day; cost estimate consultation (via the cost engineer) - 2 days. All requests go through Worksection."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "5. CYCLE TIMELINES"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Event",
+       "Deadline",
+       "Who"
+      ],
+      "rows": [
+       [
+        "Monthly plan (Б1+Б2+В1) to PTD",
+        "by the 25th",
+        "Site Manager"
+       ],
+       [
+        "Plan review, material ordering",
+        "by the 28th",
+        "PTD"
+       ],
+       [
+        "Weekly timesheets + delivery notes to PTD",
+        "every Friday by 18:00",
+        "Site Manager"
+       ],
+       [
+        "Reporting package (Б3) to PTD",
+        "by the 5th",
+        "Site Manager"
+       ],
+       [
+        "Package review + technical verification note",
+        "by the 10th",
+        "PTD"
+       ],
+       [
+        "Explanation of an overrun",
+        "2 business days",
+        "Site Manager"
+       ],
+       [
+        "Correcting a returned package / re-review",
+        "2 + 2 business days",
+        "Site / PTD"
+       ],
+       [
+        "Issuing documentation, write-off norms",
+        "1 business day",
+        "PTD"
+       ],
+       [
+        "5.1",
+        "An overdue deadline triggers automatic escalation under the \"Overdue Escalation\" section of the Regulations.",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "6. FORMS AND DOCUMENTS"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "6.1",
+        "Б1 plan · Б2 schedule · В1 material request · В5 timesheets · Б3 reporting package · Г1 change request · Г2 CWAC · Г5 Cumulative Works Register · Г7 protocols · Technical verification note (Е3) · Е9 write-off norms · Documentation issuance log (this file's tab) · PTD review checklist (this file's tab)."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "7. PERFORMANCE CONTROL"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "7.1",
+        "The Project Manager checks both sides' deadlines weekly and raises any breakdowns at the meeting."
+       ],
+       [
+        "7.2",
+        "The Head of CS reviews technical verification notes monthly and, selectively, returned packages and detected overruns."
+       ],
+       [
+        "7.3",
+        "PTD submits statistics to the Head of CS monthly: submitted on time / late, packages returned, overruns detected and their amount."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "8. SANCTIONS"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Violation",
+       "Consequence"
+      ],
+      "rows": [
+       [
+        "Plan not submitted by the 25th",
+        "The next month is not funded, materials are not ordered"
+       ],
+       [
+        "Incomplete package / missing signature",
+        "Not accepted: payment for the month is not considered until the package is complete"
+       ],
+       [
+        "Overrun without an explanation",
+        "The line item is not paid; Г9; if the contractor is at fault - Г8"
+       ],
+       [
+        "PTD misses the review deadline",
+        "Escalation; if systematic - review by the Head of CS, impact on PTD's bonus"
+       ],
+       [
+        "PTD misses an overrun (found later)",
+        "PTD's responsibility; root-cause review by the Head of CS"
+       ],
+       [
+        "Work performed on an outdated drawing version",
+        "Responsibility of whoever took the old version; rework at the fault party's expense"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "9. FINAL PROVISIONS"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "9.1",
+        "The procedure takes effect on the date of CEO approval. Version 1.0. Changes - through a change request (Г1)."
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Approved: General Director ______________ / __________     Agreed: Head of CS ______________     Head of PTD ______________"
+     }
+    ]
+   },
+   {
+    "title": "PTD Review Checklist",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "PTD's working checklist: reviewing the plan and the reporting package"
+     },
+     {
+      "t": "p",
+      "text": "An internal PTD tool. Filled in for every plan (Block A, by the 28th) and every reporting package (Block B, by the 10th)."
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Object:",
+        "Month: ________"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "BLOCK A. MONTHLY PLAN REVIEW (by the 28th)"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "Check",
+       "Result / comment"
+      ],
+      "rows": [
+       [
+        "1",
+        "☐",
+        "Work names in Б1/Б2 - match the cost estimate exactly, no \"custom\" wording",
+        ""
+       ],
+       [
+        "2",
+        "☐",
+        "Volumes - within the Cumulative Works Register's remaining balances (Г5)",
+        ""
+       ],
+       [
+        "3",
+        "☐",
+        "Works match the design and approved changes (Г1 register)",
+        ""
+       ],
+       [
+        "4",
+        "☐",
+        "The Б2 schedule is technologically realistic: work sequences are not violated",
+        ""
+       ],
+       [
+        "5",
+        "☐",
+        "Material needs (В1) match volumes per the Е9 norms",
+        ""
+       ],
+       [
+        "6",
+        "☐",
+        "Delivery lead times in В1 allow ordering and delivering on time",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "BLOCK B. REPORTING PACKAGE REVIEW (by the 10th)"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "☐",
+       "Check",
+       "Result / comment"
+      ],
+      "rows": [
+       [
+        "7",
+        "☐",
+        "Act arithmetic: volumes, totals, cumulative figures - no errors",
+        ""
+       ],
+       [
+        "8",
+        "☐",
+        "Names and units of measure - match the cost estimate and the plan",
+        ""
+       ],
+       [
+        "9",
+        "☐",
+        "Actual work versus the monthly plan: deviations have explanations",
+        ""
+       ],
+       [
+        "10",
+        "☐",
+        "Cumulative register: nothing is closed a second time, balances are not exceeded",
+        ""
+       ],
+       [
+        "11",
+        "☐",
+        "Signatures of the Site Manager and Technical Supervision - on every act",
+        ""
+       ],
+       [
+        "12",
+        "☐",
+        "A CWAC for every concealed work: photos + certificates + Г7 protocols",
+        ""
+       ],
+       [
+        "13",
+        "☐",
+        "В5 timesheets against the acts: machinery \"that worked\" appears in the month's works",
+        ""
+       ],
+       [
+        "14",
+        "☐",
+        "M-29 write-offs against Е9 norms plus tolerance; overages - explained",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "All checkboxes in a block ticked - the item is \"Approved.\" Any unticked item goes into the technical verification note with the reason; the item goes to rework or is not accepted."
+     },
+     {
+      "t": "p",
+      "text": "Reviewed by: Head of PTD ______________ / __________"
+     }
+    ]
+   },
+   {
+    "title": "Documentation Issuance Log",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "DESIGN DOCUMENTATION ISSUANCE LOG (maintained by PTD)"
+     },
+     {
+      "t": "p",
+      "text": "Every issuance is a log entry. Only the current version, stamped \"For execution,\" is issued. The previous version is withdrawn upon replacement."
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Issue date",
+       "Document (code, name)",
+       "Version",
+       "Issued to (name, title)",
+       "\"For execution\" stamp",
+       "Recipient's signature",
+       "Old version withdrawn",
+       "Note"
+      ],
+      "rows": [
+       [
+        "1",
+        "05.03",
+        "АР-02 1st Floor Plan",
+        "v2",
+        "Ivanenko I.I., Site Manager",
+        "yes",
+        "Ivanenko",
+        "yes (v1)",
+        ""
+       ],
+       [
+        "2",
+        "12.03",
+        "КР-04 3rd Floor Pylons",
+        "v3",
+        "Petrenko P.P., Site Foreman",
+        "yes",
+        "Petrenko",
+        "yes (v2)",
+        "change per Г1 No. 5"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б1",
+   "Б2",
+   "Б3",
+   "В1",
+   "В5",
+   "Г1",
+   "Г2",
+   "Г5",
+   "Г7",
+   "Г8",
+   "Г9",
+   "Е3",
+   "Е9"
+  ]
+ },
+ {
+  "index": "Е2",
+  "slug": "e2",
+  "name": "Tender Procedure",
+  "purpose": "Thresholds, committee, selection criteria, timelines",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "dev",
+  "devOwner": "Operations Dept",
+  "drive": null,
+  "from": "Approved by CEO",
+  "to": "tender participants",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Е3",
+  "slug": "e3",
+  "name": "Payment Procedure",
+  "purpose": "Initiation → PTD review → technical verification note → limit-based approval → payment",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "ready",
+  "devOwner": null,
+  "drive": "https://docs.google.com/spreadsheets/d/1O6dgmSW3oPLIq3BS39y5N8Eoth_LaW3QH-ijCvhEOMM/edit",
+  "from": "Approved by CEO",
+  "to": "all participants in the payment process",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [
+   {
+    "title": "Regulations",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "Е3. TECHNICAL BLOCK PAYMENT PROCEDURE"
+     },
+     {
+      "t": "p",
+      "text": "The single procedure for initiating, reviewing, approving, and executing payments. Version 1.0. Approved by the General Director. Changes only through a change request (Г1)."
+     },
+     {
+      "t": "h",
+      "text": "1. PURPOSE AND SCOPE"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "1.1",
+        "This procedure sets out the single, mandatory path every technical-block payment must follow: from initiation to execution by the finance block."
+       ],
+       [
+        "1.2",
+        "It applies to all project payments: to contractors for works, to suppliers for materials, for external-machinery rental and services, for casual labor. Mandatory for all participants in the process, without exception."
+       ],
+       [
+        "1.3",
+        "Purpose: not a single hryvnia moves without documented proof of completion; PTD is the filter that catches overruns and unconfirmed works BEFORE the money leaves."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "2. TERMS"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Term",
+       "Meaning"
+      ],
+      "rows": [
+       [
+        "Initiator",
+        "The person who enters a payment into the payment register: the Project Manager; the Site Manager - via the PM."
+       ],
+       [
+        "Payment register",
+        "A living register (maintained by the finance block): every payment has a filled-in \"contract\" column, initiator, amount, basis, and status."
+       ],
+       [
+        "Complete package",
+        "The set of documents proving the basis for a payment (composition - section 4.2). Missing even one document makes the package incomplete."
+       ],
+       [
+        "Technical verification note",
+        "PTD's monthly reconciliation (works/materials/machinery against the plan, cost estimate, and norms) - the filter for the month's payments (regulation Е1)."
+       ],
+       [
+        "Limits",
+        "Approval threshold amounts: up to the limit (the amount is set by the CEO) - the Head of CS; above the limit (the amount is set by the CEO) - the CEO (see the \"Authority Matrix\" section of the Regulations)."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "3. PARTICIPANTS AND RESPONSIBILITIES"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Role",
+       "What they do",
+       "What they are responsible for"
+      ],
+      "rows": [
+       [
+        "Initiator (PM)",
+        "Enters the payment in the register, assembles the complete package, submits it to PTD",
+        "Completeness and accuracy of the package; the link to the contract"
+       ],
+       [
+        "PTD",
+        "Reconciles the package against the cost estimate and the Cumulative Works Register; prepares the technical verification note",
+        "Preventing overruns and double closeouts; review deadline"
+       ],
+       [
+        "Cost engineer",
+        "Confirms that prices and volumes match the cost estimate; keeps the deviation report",
+        "Price control; explaining deviations"
+       ],
+       [
+        "Technical Supervision",
+        "Confirms, by signature on the acts, the fact and quality of the work performed",
+        "Accuracy of the confirmed volume"
+       ],
+       [
+        "Head of CS",
+        "Approves payments within the limit; sets the weekly payment priority",
+        "Decisions within their authority; timeliness"
+       ],
+       [
+        "CEO",
+        "Approves payments above the limit, outside the cost estimate, advances beyond the norm",
+        "Higher-level decisions"
+       ],
+       [
+        "Finance block",
+        "Executes payment per the register after all sign-offs; maintains statuses",
+        "3-business-day payment deadline; payments only per the register"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "4. DETAILED PROCEDURE"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "4.1",
+        "PRECONDITIONS. A payment is possible only if: (a) the contract has passed legal review, is signed, and is entered in the contract register; (b) the cost estimate for the works is approved; (c) the works have been accepted by Technical Supervision / the materials were delivered with quality documents. If even one precondition is missing, initiation is not possible."
+       ],
+       [
+        "4.2",
+        "COMPLETE-PACKAGE COMPOSITION by payment type. CONTRACTOR WORKS: the KB-2v act + the KB-3 statement, signed by the Site Manager and Technical Supervision; closed CWACs for the works in the act; if the contractor supplied materials - delivery notes and certificates. MATERIALS: delivery note, invoice, quality certificates/passports, match to the В1 request. EXTERNAL MACHINERY / CASUAL LABOR: contract, dockets or waybills signed by the Site Foreman on the day of work (В3 request). SERVICES: contract, service acceptance act, invoice."
+       ],
+       [
+        "4.3",
+        "INITIATION. The Initiator enters the payment in the payment register (contract, amount, basis, link to the package) and submits the package to PTD. A payment outside the register does not exist and is not considered."
+       ],
+       [
+        "4.4",
+        "PTD REVIEW - 2 business days: reconciling volumes and prices against the cost estimate; reconciling against the Cumulative Works Register (protection from double closeout); checking the package's completeness and signatures. Outcome: PTD's sign-off in the register, or a return to the Initiator stating the reason. A returned package, once corrected, is resubmitted - the review clock restarts."
+       ],
+       [
+        "4.5",
+        "MONTHLY FILTER. Acts for the reporting month are approved only after PTD's technical verification note (by the 10th, regulation Е1). Without the note, payment for the month is not confirmed - no exceptions."
+       ],
+       [
+        "4.6",
+        "LIMIT-BASED APPROVAL - 2 business days: within the cost estimate, up to the limit - the Head of CS; above the limit - the CEO; ANY payment outside the approved cost estimate - the CEO only, and only on an approved change request (Г1); an advance beyond the norm (the percentage is set by the CEO) - the CEO only."
+       ],
+       [
+        "4.7",
+        "PAYMENT. The finance block executes the payment within 3 business days of a complete package of sign-offs. In case of a funds shortage, the Head of CS sets the weekly priority order; critical discrepancies go to the CEO. The register status is updated on the day of payment."
+       ],
+       [
+        "4.8",
+        "STOP CONDITIONS: a payment is NOT executed if: there is no contract in the register; there is no Technical Supervision signature on the act; there is no technical verification note for the month; the works were performed in a suspended zone (an active Г4 act applies); the works were performed without a change request (unauthorized); there is an active claim with a hold (Г8) against the counterparty - for the held amount."
+       ],
+       [
+        "4.9",
+        "THE \"WHERE IS MY PAYMENT\" QUESTION. Payment status is queried through the Head of CS; response within 2 business days (see the \"Request Routes\" section of the Regulations). A contractor asks only through the PM."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "5. PROCESS TIMELINES"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Step",
+       "Deadline",
+       "Responsible"
+      ],
+      "rows": [
+       [
+        "PTD package review",
+        "2 business days",
+        "PTD"
+       ],
+       [
+        "Technical verification note for the month",
+        "by the 10th",
+        "PTD"
+       ],
+       [
+        "Limit-based approval",
+        "2 business days",
+        "Head of CS / CEO"
+       ],
+       [
+        "Payment execution after sign-offs",
+        "3 business days",
+        "Finance block"
+       ],
+       [
+        "Response to a status query",
+        "2 business days",
+        "Finance block via the Head of CS"
+       ],
+       [
+        "5.1",
+        "An overdue step at any point triggers automatic escalation under the \"Overdue Escalation\" section of the Regulations (day 1 - reminder; days 2-3 - department head; days 4-10 - Head of CS and a meeting; beyond day 10 - CEO).",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "6. FORMS AND DOCUMENTS"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "6.1",
+        "Payment register (finance block) · Reporting package Б3 · Requests В1/В3 · В5 timesheets with dockets · Change request Г1 · Suspension act Г4 · Claim Г8 · Technical verification note · Comparison table В7 (for new contracts)."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "7. PERFORMANCE CONTROL"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "7.1",
+        "Every week the finance block submits a register report to the Head of CS: paid / queued / returned, with reasons."
+       ],
+       [
+        "7.2",
+        "Every month the cost engineer submits a budget deviation report (line item / plan / actual / reason) - by the 10th."
+       ],
+       [
+        "7.3",
+        "The Head of CS spot-checks paid-payment packages - at least 3 per month. Violations found are reviewed and sanctioned under section 8."
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "8. SANCTIONS"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Violation",
+       "Consequence"
+      ],
+      "rows": [
+       [
+        "Payment bypassing the register or without a package",
+        "Personal liability for whoever initiated and whoever executed it; memo Г9; noted against the bonus"
+       ],
+       [
+        "Signing an act for work not performed",
+        "Liability of the signatories (Site Manager, Technical Supervision); a hold; dismissal on repeat"
+       ],
+       [
+        "Systematic returns of an initiator's packages (3+ per month)",
+        "Review at the meeting; impact on the bonus"
+       ],
+       [
+        "A step's deadline missed without cause",
+        "Escalation + the violation is recorded"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "9. FINAL PROVISIONS"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "9.1",
+        "The procedure takes effect on the date of CEO approval. Version 1.0. Changes - through a change request (Г1) with CEO approval."
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Approved: General Director ______________ / __________     Agreed: Head of CS ______________     Finance block ______________"
+     }
+    ]
+   },
+   {
+    "title": "Payment Path",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "PAYMENT PATH: 8 STEPS FROM INITIATION TO PAYMENT"
+     },
+     {
+      "t": "table",
+      "header": [
+       "Step",
+       "Who",
+       "What they do",
+       "Input (what's needed)",
+       "Output (result)",
+       "Deadline",
+       "If NO - what happens"
+      ],
+      "rows": [
+       [
+        "1",
+        "Initiator (PM)",
+        "Checks preconditions: contract in the register, cost estimate approved, works accepted",
+        "Contract, cost estimate, Technical Supervision acceptance",
+        "Right to initiate",
+        "-",
+        "Initiation is not possible - close the precondition first"
+       ],
+       [
+        "2",
+        "Initiator (PM)",
+        "Enters the payment in the payment register + assembles the complete package for the payment type (section 4.2)",
+        "Signed acts/delivery notes/dockets",
+        "Register entry + package to PTD",
+        "day of submission",
+        "A payment outside the register does not exist"
+       ],
+       [
+        "3",
+        "PTD",
+        "Reconciles against the cost estimate and the Cumulative Works Register, checks completeness and signatures",
+        "Package + cost estimate + register",
+        "PTD sign-off or return with a reason",
+        "2 business days",
+        "Returned to the Initiator; resubmitted after correction"
+       ],
+       [
+        "4",
+        "PTD",
+        "Monthly filter: technical verification note for the month (for acts in the reporting month)",
+        "The Site's Б3 reporting package",
+        "Technical verification note to the Head of CS",
+        "by the 10th",
+        "Payment for the month is not confirmed"
+       ],
+       [
+        "5",
+        "Cost engineer",
+        "Confirms prices and volumes, records deviations",
+        "Package with PTD's sign-off",
+        "Cost engineer's sign-off / entry in the deviation report",
+        "alongside step 3",
+        "An unexplained deviation blocks the line item"
+       ],
+       [
+        "6",
+        "Head of CS / CEO",
+        "Approves per the limits: up to the limit - Head of CS; above / outside the estimate / advance beyond the norm - CEO (+Г1)",
+        "Package with sign-offs",
+        "Approval in the register",
+        "2 business days",
+        "Declined - reason logged in the register, returned to the Initiator"
+       ],
+       [
+        "7",
+        "Finance block",
+        "Executes payment per the register; if funds are short - per the Head of CS's weekly priority",
+        "Complete package of sign-offs",
+        "Payment + status in the register",
+        "3 business days",
+        "Overdue - escalation; status query - via the Head of CS, 2 days"
+       ],
+       [
+        "8",
+        "Finance block",
+        "Updates the register, weekly report to the Head of CS: paid / queued / returned",
+        "Payments executed",
+        "Register report",
+        "every Friday",
+        "Reviewed at the meeting"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "STOP CONDITIONS (a payment is not executed): no contract in the register · no Technical Supervision signature · no technical verification note for the month · works in a suspended zone (Г4) · unauthorized works without Г1 · a hold under a Г8 claim is in effect"
+     }
+    ]
+   },
+   {
+    "title": "Technical Verification Note (form)",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "TECHNICAL VERIFICATION NOTE FOR ______________ 20___"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Object:",
+        "Prepared by (PTD):"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "The month's final reconciliation: works against the plan and cost estimate, materials against norms, machinery against timesheets. Submitted to the Head of CS by the 10th. Without the note, payment for the month is not confirmed."
+     },
+     {
+      "t": "p",
+      "text": "1. WORKS: the Site's act against the plan, cost estimate, and Cumulative Works Register"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "No.",
+        "Work (per cost estimate)",
+        "Monthly plan",
+        "Per the Б3 act",
+        "Confirmed by PTD",
+        "Deviation",
+        "PTD comment"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "2. MATERIALS: write-offs against norms for the volume completed"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "No.",
+        "Material",
+        "Received during the month",
+        "Written off (M-29)",
+        "Norm for the volume",
+        "Deviation",
+        "PTD comment"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "3. MACHINERY: timesheets against norms"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "No.",
+        "Machinery unit",
+        "Engine hours for the month",
+        "Fuel actual, l",
+        "Norm, l",
+        "Deviation",
+        "PTD comment"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "4. PACKAGE COMPLETENESS"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Item",
+        "Yes/No",
+        "Comment"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Б3 act with signatures of the Site Manager and Technical Supervision"
+     },
+     {
+      "t": "p",
+      "text": "All CWACs for the month's works are closed (photos + certificates + protocols)"
+     },
+     {
+      "t": "p",
+      "text": "Machinery timesheets for every unit"
+     },
+     {
+      "t": "p",
+      "text": "Delivery notes and certificates submitted"
+     },
+     {
+      "t": "p",
+      "text": "As-built drawings"
+     },
+     {
+      "t": "h",
+      "text": "5. PTD'S CONCLUSION"
+     },
+     {
+      "t": "p",
+      "text": "☐ Package confirmed - acts go to the Head of CS     ☐ Confirmed partially (reasons below)     ☐ Returned for rework (reasons below)"
+     },
+     {
+      "t": "p",
+      "text": "Head of PTD ______________ / __________          Received by the Head of CS ______________ / \"___\" ________ 20__"
+     }
+    ]
+   },
+   {
+    "title": "Technical Verification Note (example)",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "TECHNICAL VERIFICATION NOTE FOR MARCH 2026 (EXAMPLE)"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Object:",
+        "\"Example\" residential complex, section 1",
+        "Prepared by (PTD):",
+        "Head of PTD Pavlenko S.S."
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "The month's final reconciliation: works against the plan and cost estimate, materials against norms, machinery against timesheets. Submitted to the Head of CS by the 10th. Without the note, payment for the month is not confirmed."
+     },
+     {
+      "t": "p",
+      "text": "1. WORKS: the Site's act against the plan, cost estimate, and Cumulative Works Register"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Work (per cost estimate)",
+       "Monthly plan",
+       "Per the Б3 act",
+       "Confirmed by PTD",
+       "Deviation",
+       "PTD comment"
+      ],
+      "rows": [
+       [
+        "1",
+        "Reinforcement of the foundation slab, t",
+        "12.4",
+        "12.4",
+        "12.4",
+        "0",
+        "confirmed, CWAC No. 3"
+       ],
+       [
+        "2",
+        "Concreting the В30 slab, m3",
+        "185",
+        "185",
+        "185",
+        "0",
+        "CWAC No. 4, protocols within norm"
+       ],
+       [
+        "3",
+        "AAC block masonry, 1st floor, m3",
+        "120",
+        "96",
+        "96",
+        "-24",
+        "2-day weather delay - an explanation is on file"
+       ],
+       [
+        "4",
+        "Interior plastering, m2",
+        "-",
+        "80",
+        "0",
+        "+80",
+        "WORK OUTSIDE THE PLAN, no Г1 - NOT accepted pending confirmation"
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "2. MATERIALS: write-offs against norms for the volume completed"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Material",
+       "Received during the month",
+       "Written off (M-29)",
+       "Norm for the volume",
+       "Deviation",
+       "PTD comment"
+      ],
+      "rows": [
+       [
+        "1",
+        "В30 concrete, m3",
+        "187",
+        "185",
+        "185+2% = 188.7",
+        "within norm",
+        "losses within Е9"
+       ],
+       [
+        "2",
+        "D400 AAC block, m3",
+        "98",
+        "99",
+        "96+2% = 97.9",
+        "+1.1",
+        "overage - Site Manager's explanation due by 12.04"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "3. MACHINERY: timesheets against norms"
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Machinery unit",
+       "Engine hours for the month",
+       "Fuel actual, l",
+       "Norm, l",
+       "Deviation",
+       "PTD comment"
+      ],
+      "rows": [
+       [
+        "1",
+        "JCB 3CX excavator",
+        "142",
+        "938",
+        "142×6.5 = 923",
+        "+15 l (1.6%)",
+        "within tolerance"
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "4. PACKAGE COMPLETENESS"
+     },
+     {
+      "t": "table",
+      "header": null,
+      "rows": [
+       [
+        "Item",
+        "Yes/No",
+        "Comment"
+       ],
+       [
+        "Б3 act with signatures of the Site Manager and Technical Supervision",
+        "Yes",
+        ""
+       ],
+       [
+        "All CWACs for the month's works are closed (photos + certificates + protocols)",
+        "Yes",
+        ""
+       ],
+       [
+        "Machinery timesheets for every unit",
+        "Yes",
+        ""
+       ],
+       [
+        "Delivery notes and certificates submitted",
+        "Yes",
+        ""
+       ],
+       [
+        "As-built drawings",
+        "Yes",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "h",
+      "text": "5. PTD'S CONCLUSION"
+     },
+     {
+      "t": "p",
+      "text": "☐ Package fully confirmed     ☒ Confirmed PARTIALLY: item 1.4 (plastering outside the plan) not accepted pending a Г1; AAC block overage - explanation due by 12.04. The remaining acts go to the Head of CS for approval."
+     },
+     {
+      "t": "p",
+      "text": "Head of PTD ______________ / __________          Received by the Head of CS ______________ / \"___\" ________ 20__"
+     }
+    ]
+   },
+   {
+    "title": "Payment Register (template)",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "PAYMENT REGISTER (template of the living register - maintained by the finance block)"
+     },
+     {
+      "t": "p",
+      "text": "Every payment exists only here. Mandatory columns: contract and initiator. Statuses: QUEUED / PAID / RETURNED."
+     },
+     {
+      "t": "table",
+      "header": [
+       "No.",
+       "Init. date",
+       "Object",
+       "Counterparty",
+       "Contract No.",
+       "Basis (act/delivery note no.)",
+       "Amount, UAH",
+       "Initiator",
+       "PTD sign-off",
+       "Cost eng. sign-off",
+       "Approved (Head of CS/CEO)",
+       "Status",
+       "Payment date",
+       "Comment"
+      ],
+      "rows": [
+       [
+        "1",
+        "03.04",
+        "\"Example\" residential complex s.1",
+        "BudService LLC",
+        "12-П",
+        "KB-2v No. 3 for March",
+        "412,800",
+        "PM Sydorenko",
+        "04.04 ✓",
+        "04.04 ✓",
+        "Head of CS 07.04",
+        "PAID",
+        "09.04",
+        "March note on file"
+       ],
+       [
+        "2",
+        "05.04",
+        "\"Example\" residential complex s.1",
+        "BetonPlus LLC",
+        "8-М",
+        "delivery notes No. 812-816",
+        "268,400",
+        "PM Sydorenko",
+        "06.04 ✓",
+        "06.04 ✓",
+        "CEO 08.04",
+        "QUEUED",
+        "above limit - CEO sign-off",
+        ""
+       ],
+       [
+        "3",
+        "05.04",
+        "\"Example\" residential complex s.1",
+        "Sole Proprietor Moroz",
+        "14-Т",
+        "dockets 12-19",
+        "21,500",
+        "PM Sydorenko",
+        "RETURNED",
+        "RETURNED",
+        "2 dockets missing the Foreman's signature",
+        "",
+        "",
+        ""
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "related": [
+   "Б3",
+   "В1",
+   "В3",
+   "В5",
+   "В7",
+   "Г1",
+   "Г4",
+   "Г5",
+   "Г8",
+   "Г9",
+   "Е1",
+   "Е9"
+  ]
+ },
+ {
+  "index": "Е4",
+  "slug": "e4",
+  "name": "Worksection (WS) Operating Procedure",
+  "purpose": "Requests, statuses, timelines, auto-escalation",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "dev",
+  "devOwner": "Operations Dept",
+  "drive": null,
+  "from": "Approved by CEO",
+  "to": "all roles",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Е5",
+  "slug": "e5",
+  "name": "Photo Documentation Procedure",
+  "purpose": "How to photograph: angles, linking photos to the week's works, daily photos in the Telegram chat with the Head of CS, a weekly photo report, mandatory documentation before a CWAC",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "dev",
+  "devOwner": "Operations Dept",
+  "drive": null,
+  "from": "Approved by CEO",
+  "to": "the Site",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Е6",
+  "slug": "e6",
+  "name": "CWAC Preparation and Submission Procedure",
+  "purpose": "How it is prepared, the package (certificates, protocols), submission to PTD and for review",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "dev",
+  "devOwner": "PTD + Operations Dept",
+  "drive": null,
+  "from": "Approved by CEO",
+  "to": "the Site, Technical Supervision, PTD",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Е7",
+  "slug": "e7",
+  "name": "Laboratory Control Procedure",
+  "purpose": "Who checks what and when: concrete at 3/7/28 days, soil, mortar; min. 1 visit/week",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "dev",
+  "devOwner": "Operations Dept",
+  "drive": null,
+  "from": "Approved by CEO",
+  "to": "lab technician, Technical Supervision",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Е8",
+  "slug": "e8",
+  "name": "Work Acceptance Standards",
+  "purpose": "Acceptance criteria and tolerances by type of work (ДБН/ДСТУ)",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "dev",
+  "devOwner": "First draft prepared by Claude",
+  "drive": null,
+  "from": "Approved by CEO",
+  "to": "Technical Supervision, the Site",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ },
+ {
+  "index": "Е9",
+  "slug": "e9",
+  "name": "Material Write-Off Coefficients",
+  "purpose": "Consumption norms and write-off allowance; approved company-wide",
+  "group": "Е",
+  "groupName": "Regulations",
+  "status": "dev",
+  "devOwner": "PTD + Cost Engineer",
+  "drive": null,
+  "from": "Approved by CEO",
+  "to": "the Site, PTD, cost engineer",
+  "term": "standing regulation",
+  "rhythm": [
+   "довідник"
+  ],
+  "sanction": null,
+  "sections": [],
+  "related": []
+ }
+]

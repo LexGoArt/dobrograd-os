@@ -1,0 +1,185 @@
+---
+import Base from '../../../layouts/Base.astro';
+import DocChip from '../../../components/DocChip.astro';
+import StatusBadge from '../../../components/StatusBadge.astro';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const { docs } = getData(lang);
+const L = (p) => `${base}${lang}/${p}`;
+
+const groups = ['А','Б','В','Г','Д','Е'];
+const rhythms = ['щодня','щотижня','щомісяця','за фактом','довідник'];
+// ролі для фільтра «хто подає»
+const roleFilters = [
+  ['дільниц', 'Начальник дільниці'], ['прораб', 'Прораб'], ['ВТВ', 'ВТВ'],
+  ['ехнагляд', 'Технагляд'], ['еханік', 'Механік'], ['аборант', 'Лаборант'],
+  ['КП', 'Керівник проєкту'], ['КСЗ', 'Керівник СЗ'], ['ГД', 'ГД'],
+];
+---
+<Base lang={lang} title={`${t(lang, 'docs.title')} - ${t(lang, 'site.short')}`} crumbs={[{ label: t(lang, 'nav.docs') }]}>
+  <div class="mx-auto max-w-6xl px-4 py-10 md:px-6">
+    <h1 class="text-2xl font-extrabold text-(--color-brand) md:text-3xl">{t(lang, 'docs.title')}</h1>
+    <p class="mt-2 max-w-2xl text-[14.5px] text-(--color-ink-2)">{t(lang, 'docs.subtitle')}</p>
+
+    <!-- Фільтри: ховаються за кнопкою -->
+    <div class="no-print sticky top-14 z-30 -mx-4 mt-6 border-b border-(--color-line) bg-(--color-paper)/95 px-4 backdrop-blur md:-mx-6 md:px-6">
+      <div class="flex items-center gap-3 py-3">
+        <button id="filters-toggle" type="button" aria-expanded="false" aria-controls="filters-panel"
+          class="flex items-center gap-2 rounded-xl border border-(--color-line) bg-white px-3.5 py-2 text-[13px] font-semibold text-(--color-brand) transition-colors hover:border-(--color-accent) hover:text-(--color-accent)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+          {t(lang, 'docs.filtersBtn')}
+          <span id="filters-count" class="hidden rounded-full bg-(--color-accent) px-1.5 py-0.5 text-[10px] font-bold text-white"></span>
+          <svg id="filters-chev" class="transition-transform duration-200" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <p id="filters-summary" class="truncate text-[12px] text-(--color-mute)"></p>
+        <button id="reset-filters-top" class="ml-auto hidden text-[12.5px] font-semibold text-(--color-stop) hover:underline">{t(lang, 'docs.reset')}</button>
+      </div>
+      <div id="filters-panel" class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+        <div class="overflow-hidden">
+          <div class="flex flex-wrap items-center gap-x-6 gap-y-2.5 pb-4 text-[13px]">
+            <div class="flex items-center gap-1.5" role="group" aria-label={t(lang, 'docs.filterGroup')}>
+              <span class="mr-1 font-bold text-(--color-mute)">{t(lang, 'docs.filterGroup')}:</span>
+              <button data-f="group" data-v="" class="fbtn active">{t(lang, 'docs.all')}</button>
+              {groups.map((g) => <button data-f="group" data-v={g} class="fbtn chip">{g}</button>)}
+            </div>
+            <div class="flex items-center gap-1.5" role="group" aria-label={t(lang, 'docs.filterStatus')}>
+              <span class="mr-1 font-bold text-(--color-mute)">{t(lang, 'docs.filterStatus')}:</span>
+              <button data-f="status" data-v="" class="fbtn active">{t(lang, 'docs.all')}</button>
+              <button data-f="status" data-v="ready" class="fbtn">{t(lang, 'docs.ready')}</button>
+              <button data-f="status" data-v="dev" class="fbtn">{t(lang, 'docs.dev')}</button>
+            </div>
+            <div class="flex flex-wrap items-center gap-1.5" role="group" aria-label={t(lang, 'docs.filterRhythm')}>
+              <span class="mr-1 font-bold text-(--color-mute)">{t(lang, 'docs.filterRhythm')}:</span>
+              <button data-f="rhythm" data-v="" class="fbtn active">{t(lang, 'docs.all')}</button>
+              {rhythms.map((r) => <button data-f="rhythm" data-v={r} class="fbtn">{t(lang, `docs.rhythm.${r}`)}</button>)}
+            </div>
+            <div class="flex flex-wrap items-center gap-1.5" role="group" aria-label={t(lang, 'docs.filterRole')}>
+              <span class="mr-1 font-bold text-(--color-mute)">{t(lang, 'docs.filterRole')}:</span>
+              <select id="role-select" class="rounded-lg border border-(--color-line) bg-white px-2.5 py-1.5 text-[13px] text-(--color-ink) focus:border-(--color-accent) focus:outline-none">
+                <option value="">{t(lang, 'docs.all')}</option>
+                {roleFilters.map(([v, label]) => <option value={v}>{label}</option>)}
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Групи документів -->
+    <div id="doc-list" class="mt-8 space-y-10">
+      {groups.map((g) => (
+        <section data-group-section={g}>
+          <h2 class="mb-3 flex items-center gap-2.5 text-[13px] font-bold uppercase tracking-widest text-(--color-mute)">
+            <DocChip index={g} size="sm" /> {t(lang, `docs.group.${g}`)}
+          </h2>
+          <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+            {docs.filter((d) => d.group === g).map((d) => (
+              <a href={L(`docs/${d.slug}/`)}
+                 class="doc-card group flex items-start gap-3.5 rounded-2xl border border-(--color-line) bg-white p-4 transition-all hover:-translate-y-0.5 hover:border-(--color-accent) hover:shadow-md"
+                 data-group={d.group} data-status={d.status} data-rhythm={d.rhythm.join('|')}
+                 data-from={d.from} data-to={d.to}>
+                <DocChip index={d.index} />
+                <span class="min-w-0 flex-1">
+                  <span class="flex items-start justify-between gap-2">
+                    <span class="text-[14.5px] font-bold leading-snug text-(--color-brand) group-hover:text-(--color-accent)">{d.name}</span>
+                    <StatusBadge status={d.status} lang={lang} />
+                  </span>
+                  <span class="mt-1 block text-[12.5px] leading-snug text-(--color-ink-2)">{d.purpose}</span>
+                  <span class="mt-2 block text-[11.5px] text-(--color-mute)">{d.from} → {d.to} · {d.term}</span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+      <p id="empty-note" class="hidden rounded-2xl border border-dashed border-(--color-line) p-8 text-center text-[14px] text-(--color-mute)">
+        {t(lang, 'docs.empty')}
+        <button id="reset-filters" class="ml-2 font-semibold text-(--color-accent)">{t(lang, 'docs.reset')}</button>
+      </p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .fbtn {
+    border-radius: .5rem; padding: .3rem .65rem; font-weight: 500;
+    color: var(--color-ink-2); background: transparent; cursor: pointer;
+    border: 1px solid transparent; transition: all .15s ease;
+  }
+  .fbtn:hover { background: var(--color-wash); }
+  .fbtn.active { background: var(--color-brand); color: #fff; }
+</style>
+
+<script>
+  const state = { group: '', status: '', rhythm: '', role: '' };
+  const cards = [...document.querySelectorAll('.doc-card')];
+  const sections = [...document.querySelectorAll('[data-group-section]')];
+  const empty = document.getElementById('empty-note');
+
+  // Розкриття/ховання панелі фільтрів
+  const toggleBtn = document.getElementById('filters-toggle')!;
+  const panel = document.getElementById('filters-panel')!;
+  const chev = document.getElementById('filters-chev')!;
+  let open = false;
+  toggleBtn.addEventListener('click', () => {
+    open = !open;
+    panel.style.gridTemplateRows = open ? '1fr' : '0fr';
+    chev.style.transform = open ? 'rotate(180deg)' : '';
+    toggleBtn.setAttribute('aria-expanded', String(open));
+  });
+
+  const LABELS: Record<string, string> = { ready: 'Готово', dev: 'В розробці' };
+  function syncSummary() {
+    const active = Object.entries(state).filter(([, v]) => v);
+    const count = document.getElementById('filters-count')!;
+    const summary = document.getElementById('filters-summary')!;
+    const resetTop = document.getElementById('reset-filters-top')!;
+    count.textContent = String(active.length);
+    count.classList.toggle('hidden', active.length === 0);
+    resetTop.classList.toggle('hidden', active.length === 0);
+    summary.textContent = active.map(([, v]) => LABELS[v] ?? v).join(' · ');
+  }
+
+  function apply() {
+    syncSummary();
+    let shown = 0;
+    for (const c of cards) {
+      const el = c as HTMLElement;
+      const ok =
+        (!state.group || el.dataset.group === state.group) &&
+        (!state.status || el.dataset.status === state.status) &&
+        (!state.rhythm || (el.dataset.rhythm || '').split('|').includes(state.rhythm)) &&
+        (!state.role || (el.dataset.from + ' ' + el.dataset.to).includes(state.role));
+      el.classList.toggle('hidden', !ok);
+      if (ok) shown++;
+    }
+    for (const s of sections) {
+      const any = [...s.querySelectorAll('.doc-card')].some((c) => !c.classList.contains('hidden'));
+      (s as HTMLElement).classList.toggle('hidden', !any);
+    }
+    empty?.classList.toggle('hidden', shown > 0);
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.fbtn').forEach((b) =>
+    b.addEventListener('click', () => {
+      const f = b.dataset.f!, v = b.dataset.v || '';
+      state[f as keyof typeof state] = v;
+      document.querySelectorAll(`.fbtn[data-f="${f}"]`).forEach((x) => x.classList.toggle('active', x === b));
+      apply();
+    })
+  );
+  document.getElementById('role-select')?.addEventListener('change', (e) => {
+    state.role = (e.target as HTMLSelectElement).value; apply();
+  });
+  function resetAll() {
+    state.group = state.status = state.rhythm = state.role = '';
+    document.querySelectorAll('.fbtn').forEach((x) => x.classList.toggle('active', (x as HTMLElement).dataset.v === ''));
+    (document.getElementById('role-select') as HTMLSelectElement).value = '';
+    apply();
+  }
+  document.getElementById('reset-filters')?.addEventListener('click', resetAll);
+  document.getElementById('reset-filters-top')?.addEventListener('click', resetAll);
+</script>

@@ -1,0 +1,258 @@
+{
+ "title": "Appendix А. Reporting calendar of the technical division",
+ "intro": "Who submits what, to whom, and when. Sanctions are in the right-hand column. Violations are recorded and affect the bonus portion (Motivation Policy).",
+ "sections": [
+  {
+   "rhythm": "DAILY",
+   "items": [
+    {
+     "num": "1",
+     "what": "Headcount: how many people reported to the site (by crew)",
+     "from": "Site Manager",
+     "to": "Telegram chat with Head of CS",
+     "term": "by 8:30",
+     "form": "chat",
+     "sanction": "A day without a report = a day without confirmed attendance; the day's volumes are counted only after an explanation"
+    },
+    {
+     "num": "2",
+     "what": "Photos of 3-5 key zones of the site",
+     "from": "Site Manager / Foreman",
+     "to": "Telegram chat with Head of CS",
+     "term": "during the day",
+     "form": "chat",
+     "sanction": "The day's works are unconfirmed without photos until photo documentation is provided"
+    },
+    {
+     "num": "3",
+     "what": "Summary: progress, problems, needs",
+     "from": "Site Manager",
+     "to": "Telegram chat with Head of CS",
+     "term": "by 18:00",
+     "form": "chat",
+     "sanction": "A problem not stated in the summary is not accepted as a reason for a schedule slip"
+    },
+    {
+     "num": "4",
+     "what": "Works execution logbook",
+     "from": "Foreman",
+     "to": "on site; Technical Supervision and PTD - upon request",
+     "term": "daily",
+     "form": "logbook",
+     "sanction": "Works without a logbook entry are not confirmed by acceptance certificates"
+    },
+    {
+     "num": "5",
+     "what": "Machinery timesheet - separately for each unit",
+     "from": "Driver / Mechanic",
+     "to": "on site",
+     "term": "each shift",
+     "form": "В5",
+     "sanction": "Engine hours and fuel are not written off without a timesheet; unexplained downtime is charged to the mechanic"
+    }
+   ],
+   "note": "Daily photos and summaries go to the Telegram chat (we do not load photos into Worksection). The chat with the Head of CS is the official channel for daily reporting."
+  },
+  {
+   "rhythm": "WEEKLY (FRIDAY)",
+   "items": [
+    {
+     "num": "6",
+     "what": "Schedule plan-vs-actual: on schedule - mark \"On track\"; behind schedule - written explanation of causes and a catch-up plan (free form)",
+     "from": "Site Manager",
+     "to": "Project Manager",
+     "term": "by 17:00",
+     "form": "Б2 + explanation",
+     "sanction": "A week without a status update - the week's works are not accepted for closeout; the matter is escalated to a meeting requiring personal attendance"
+    },
+    {
+     "num": "7",
+     "what": "Weekly photo report: every work item of the week photographed with date and zone reference",
+     "from": "Site Manager",
+     "to": "Head of CS, PM",
+     "term": "by 17:00",
+     "form": "Е5, Д4",
+     "sanction": "Works without a photo report are not accepted for closeout"
+    },
+    {
+     "num": "8",
+     "what": "Weekly machinery timesheets signed by the Site Manager",
+     "from": "Site Manager",
+     "to": "PTD",
+     "term": "by 18:00",
+     "form": "В5",
+     "sanction": "Machinery time and fuel are not written off until timesheets are submitted"
+    },
+    {
+     "num": "9",
+     "what": "Delivery notes + certificates for the week's materials",
+     "from": "Site Manager",
+     "to": "PTD",
+     "term": "by 18:00",
+     "form": "originals",
+     "sanction": "Materials without documents are not applied to works under acceptance certificates; Concealed Works Acceptance Certificates are not closed"
+    },
+    {
+     "num": "10",
+     "what": "Report on schedule execution across the portfolio",
+     "from": "Project Manager",
+     "to": "Head of CS",
+     "term": "by 18:00",
+     "form": "summary",
+     "sanction": "Escalation under the \"Overdue Escalation\" section"
+    },
+    {
+     "num": "11",
+     "what": "Risk register update",
+     "from": "Project Manager",
+     "to": "Head of CS",
+     "term": "weekly",
+     "form": "register",
+     "sanction": "A risk not in the register is not accepted as justification for a failure"
+    }
+   ],
+   "note": "A week on schedule = only the \"On track\" mark. Explanations are written only when behind schedule."
+  },
+  {
+   "rhythm": "MONTHLY (CLOSEOUT CYCLE)",
+   "items": [
+    {
+     "num": "12",
+     "what": "Work plan for the next month + schedule + material requirements with deadlines",
+     "from": "Site Manager",
+     "to": "PTD",
+     "term": "by the 25th",
+     "form": "Б1, Б2, В1",
+     "sanction": "No plan - the month is not financed, materials are not ordered"
+    },
+    {
+     "num": "13",
+     "what": "Plan review: reconciliation with the project, cost estimate, and cumulative register; ordering materials",
+     "from": "PTD",
+     "to": "Procurement Dept",
+     "term": "by the 28th",
+     "form": "-",
+     "sanction": "Supply failure is the responsibility of PTD"
+    },
+    {
+     "num": "14",
+     "what": "Reporting package: certificate (2 signatures) + timesheets + as-built documentation + delivery notes and certificates",
+     "from": "Site Manager",
+     "to": "PTD",
+     "term": "by the 5th",
+     "form": "Б3 + В5",
+     "sanction": "If one document or signature is missing, the package is not accepted and payment is not considered"
+    },
+    {
+     "num": "15",
+     "what": "Technical Verification Note: reconciliation of works, materials, and machinery against the plan and norms",
+     "from": "PTD",
+     "to": "Head of CS",
+     "term": "by the 10th",
+     "form": "note",
+     "sanction": "Without the Technical Verification Note, the month's payment is not confirmed"
+    },
+    {
+     "num": "16",
+     "what": "Budget variance report: line item / plan / actual / reason",
+     "from": "Cost Engineer",
+     "to": "Head of CS",
+     "term": "by the 10th",
+     "form": "register",
+     "sanction": "An unexplained variance blocks payments under that line item"
+    },
+    {
+     "num": "17",
+     "what": "Cumulative Works Register update",
+     "from": "PTD",
+     "to": "-",
+     "term": "by the 10th",
+     "form": "Г5",
+     "sanction": "Protection against double closeouts is the responsibility of PTD"
+    }
+   ],
+   "note": "Payment chain: package (by the 5th) → PTD review (by the 10th) → Technical Verification Note → approval by Head of CS → payment within the Policy's limits."
+  },
+  {
+   "rhythm": "AS EVENTS OCCUR",
+   "items": [
+    {
+     "num": "18",
+     "what": "Laboratory test report (concrete at 3/7/28 days, soil, mortar)",
+     "from": "Lab Technician",
+     "to": "Technical Supervision, Head of CS; copy - PTD",
+     "term": "1 business day",
+     "form": "Г7",
+     "sanction": "Concealed Works Acceptance Certificates and structure acceptance are not closed without the report"
+    },
+    {
+     "num": "19",
+     "what": "Concealed Works Acceptance Certificate + photos + original certificates",
+     "from": "Site Manager → Technical Supervision",
+     "to": "PTD",
+     "term": "before the works are closed out",
+     "form": "Г2",
+     "sanction": "Works closed without authorization; may be reopened at the contractor's expense"
+    },
+    {
+     "num": "20",
+     "what": "Change Request (unforeseen works, change in budget / timeline / project)",
+     "from": "Initiator",
+     "to": "Head of CS",
+     "term": "before works begin",
+     "form": "Г1",
+     "sanction": "Works without a Change Request are unauthorized and not paid"
+    },
+    {
+     "num": "21",
+     "what": "Technical Supervision Directive / remark",
+     "from": "Technical Supervision",
+     "to": "Site Manager, PM; register - PTD",
+     "term": "1 business day",
+     "form": "Г3",
+     "sanction": "-"
+    },
+    {
+     "num": "22",
+     "what": "Remark resolution status",
+     "from": "Site Manager",
+     "to": "Technical Supervision, PM",
+     "term": "per the deadline stated in the Directive",
+     "form": "mark",
+     "sanction": "Escalation; repeat violation - memo (Г9)"
+    },
+    {
+     "num": "23",
+     "what": "Machinery relocation certificate",
+     "from": "Mechanic",
+     "to": "PTD",
+     "term": "upon relocation",
+     "form": "В4",
+     "sanction": "Logistics and relocation time are not written off"
+    },
+    {
+     "num": "24",
+     "what": "Memo (violation escalation)",
+     "from": "Initiator",
+     "to": "Manager up the chain",
+     "term": "as it occurs",
+     "form": "Г9",
+     "sanction": "-"
+    },
+    {
+     "num": "25",
+     "what": "Meeting minutes: decisions, assignments, deadlines",
+     "from": "Meeting Secretary",
+     "to": "Participants; decisions register",
+     "term": "1 business day",
+     "form": "minutes",
+     "sanction": "Decisions without minutes are considered not adopted"
+    }
+   ],
+   "note": null
+  }
+ ],
+ "outro": [
+  "General rule: a report not submitted on time is considered not submitted. Escalation applies automatically (the \"Overdue Escalation\" section of the Policy), and the violation is recorded and affects the bonus portion."
+ ]
+}

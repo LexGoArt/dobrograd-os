@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+import Sidebar from '../components/Sidebar.astro';
+import Topbar from '../components/Topbar.astro';
+import Footer from '../components/Footer.astro';
+
+const { lang = 'uk', title, description = '', crumbs = [], plain = false } = Astro.props;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href={`data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#2F5061"/><text x="16" y="21.5" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="13" fill="#fff" text-anchor="middle">ОС</text></svg>')}`} />
+  </head>
+  <body class="min-h-dvh bg-(--color-paper) font-[family-name:var(--font-sans)]">
+    <Sidebar lang={lang} />
+    <div class="flex min-h-dvh flex-col lg:pl-[248px]">
+      <Topbar lang={lang} crumbs={crumbs} />
+      <main class="flex-1">
+        <slot />
+      </main>
+      <Footer lang={lang} />
+    </div>
+    <script>
+      // Scroll-reveal: секції з data-reveal мʼяко зʼявляються
+      const items = document.querySelectorAll('[data-reveal]');
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach((el) => el.classList.add('in-view'));
+      } else {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+        items.forEach((el) => io.observe(el));
+        // страховка: якщо спостерігач не спрацював (фонова вкладка, старий браузер) - показати все
+        setTimeout(() => items.forEach((el) => el.classList.add('in-view')), 2000);
+      }
+    </script>
+  </body>
+</html>

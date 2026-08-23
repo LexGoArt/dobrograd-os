@@ -1,0 +1,52 @@
+---
+// Рендер блоків контенту (h/p/ol/ul/note/table) з автолінковкою індексів.
+import { autolink } from '../lib/autolink.js';
+import { getData } from '../lib/data.js';
+
+const { blocks, lang, selfIndex = null, skipFirst = 0 } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const { dict } = getData(lang);
+const opts = { base, lang, dict: dict.indexes, terms: dict.terms, selfIndex };
+const A = (s) => autolink(s, opts);
+const list = blocks.slice(skipFirst);
+const isSanctionHead = (t) => /санкці/i.test(t);
+---
+<div class="space-y-4 text-[15px] leading-relaxed text-(--color-ink)">
+  {list.map((b, i) => {
+    if (b.t === 'h') {
+      return <h3 id={b.id} class:list={['pt-2 text-[13px] font-bold uppercase tracking-wider scroll-mt-20',
+        isSanctionHead(b.text) ? 'text-(--color-stop)' : 'text-(--color-brand)']}>{b.text}</h3>;
+    }
+    if (b.t === 'p') return <p class="text-(--color-ink-2)" set:html={A(b.text)} />;
+    if (b.t === 'note') return (
+      <p class="rounded-xl border-l-4 border-(--color-stop) bg-(--color-stop-bg) px-4 py-3 text-[14px] font-medium text-(--color-ink)" set:html={A(b.text)} />
+    );
+    if (b.t === 'ol' || b.t === 'ul') {
+      const prev = list[i - 1];
+      const sanction = prev && prev.t === 'h' && isSanctionHead(prev.text);
+      return (
+        <ol class:list={['space-y-2', sanction && 'rounded-xl border-l-4 border-(--color-stop) bg-(--color-stop-bg) px-4 py-3']}>
+          {b.items.map((item, n) => (
+            <li class="flex gap-3">
+              {b.t === 'ol'
+                ? <span class:list={['mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full text-[11px] font-bold', sanction ? 'bg-(--color-stop) text-white' : 'bg-(--color-wash) text-(--color-brand)']}>{n + 1}</span>
+                : <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-(--color-accent)"></span>}
+              <span set:html={A(item)} />
+            </li>
+          ))}
+        </ol>
+      );
+    }
+    if (b.t === 'table') return (
+      <div class="overflow-x-auto rounded-xl border border-(--color-line)">
+        <table class="tbl">
+          {b.header && <thead><tr>{b.header.map((h) => <th set:html={A(h)} />)}</tr></thead>}
+          <tbody>
+            {b.rows.map((r) => <tr>{r.map((c) => <td set:html={A(c)} />)}</tr>)}
+          </tbody>
+        </table>
+      </div>
+    );
+    return null;
+  })}
+</div>

@@ -1,0 +1,140 @@
+[
+ {
+  "what": "Project documentation: site plan, architectural and structural design (AR, KR), engineering sections (current version)",
+  "who": "PM, Site Manager, Site Foreman, Technical Supervision, Cost Engineer",
+  "whom": "PTD",
+  "term": "1 business day"
+ },
+ {
+  "what": "Clarification of a design decision, drawing error",
+  "who": "PM, PTD, Site Manager, Technical Supervision",
+  "whom": "Design team (via PTD)",
+  "term": "3 business days"
+ },
+ {
+  "what": "Cost estimate, unit price, cost verification",
+  "who": "PM, Head of CS, CEO, Finance department",
+  "whom": "Cost Engineer (via Head of PTD)",
+  "term": "3 business days"
+ },
+ {
+  "what": "Technical specifications (TU) and permit documentation (copies)",
+  "who": "PM, PTD, Design team",
+  "whom": "Head of Client's Service",
+  "term": "1 business day"
+ },
+ {
+  "what": "Current works schedule",
+  "who": "Any project participant",
+  "whom": "PM / PTD",
+  "term": "1 business day"
+ },
+ {
+  "what": "Cumulative Works Register: completed / remaining works and materials",
+  "who": "PM, Head of CS, CEO, Finance department",
+  "whom": "PTD",
+  "term": "2 business days"
+ },
+ {
+  "what": "Acceptance certificates, as-built documentation (copies, status)",
+  "who": "PM, Head of CS, Technical Supervision",
+  "whom": "PTD",
+  "term": "2 business days"
+ },
+ {
+  "what": "Machinery data: engine hours, fuel/lubricants, downtime",
+  "who": "PTD, PM, Finance department",
+  "whom": "Mechanic",
+  "term": "2 business days"
+ },
+ {
+  "what": "Payment status",
+  "who": "PM; contractor - via PM",
+  "whom": "Finance department (via Head of CS)",
+  "term": "2 business days"
+ },
+ {
+  "what": "Contract, contract approval status",
+  "who": "PM, Site Manager",
+  "whom": "PTD (contracts register)",
+  "term": "1 business day"
+ },
+ {
+  "what": "Materials and inventory balance on site",
+  "who": "PM, PTD, Head of CS",
+  "whom": "Site Manager",
+  "term": "2 business days"
+ },
+ {
+  "what": "Occupational safety status, worker clearances",
+  "who": "Head of CS, PM",
+  "whom": "Safety Engineer",
+  "term": "1 business day"
+ },
+ {
+  "what": "Laboratory test reports (concrete 3/7/28 days)",
+  "who": "Technical Supervision, PM, PTD",
+  "whom": "Lab Technician",
+  "term": "1 business day"
+ },
+ {
+  "what": "Photo record of a specific work item / date",
+  "who": "Head of CS, PM, PTD, Technical Supervision",
+  "whom": "Site Manager",
+  "term": "1 business day"
+ },
+ {
+  "what": "Copies of concealed works acceptance certificates",
+  "who": "PM, Head of CS, PTD",
+  "whom": "Technical Supervision / Site Manager",
+  "term": "2 business days"
+ },
+ {
+  "what": "Tender status, comparative table of bids",
+  "who": "PM, CEO",
+  "whom": "Head of CS / PTD",
+  "term": "2 business days"
+ },
+ {
+  "what": "Change Request (CR) status",
+  "who": "Change initiator",
+  "whom": "Head of Client's Service (via WS)",
+  "term": "2 business days"
+ },
+ {
+  "what": "Material write-off norms and factors",
+  "who": "Site Manager, Site Foreman, Cost Engineer",
+  "whom": "PTD",
+  "term": "1 business day"
+ },
+ {
+  "what": "Project budget variance report",
+  "who": "Head of CS, CEO, Finance department",
+  "whom": "Cost Engineer",
+  "term": "2 business days"
+ },
+ {
+  "what": "Extract from the works execution log",
+  "who": "Technical Supervision, PM, PTD",
+  "whom": "Site Foreman",
+  "term": "1 business day"
+ },
+ {
+  "what": "Status of resolving a Technical Supervision remark",
+  "who": "Technical Supervision, PM",
+  "whom": "Site Manager",
+  "term": "1 business day"
+ },
+ {
+  "what": "Delivery notes and certificates (copies)",
+  "who": "PTD, Technical Supervision, Lab Technician",
+  "whom": "Site Manager",
+  "term": "2 business days"
+ },
+ {
+  "what": "Meeting minutes / extract from the decisions register",
+  "who": "Any participant",
+  "whom": "Meeting secretary / Head of CS",
+  "term": "1 business day"
+ }
+]

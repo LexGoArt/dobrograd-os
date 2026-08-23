@@ -1,0 +1,44 @@
+---
+import Base from '../../../layouts/Base.astro';
+import DocChip from '../../../components/DocChip.astro';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const { checklists } = getData(lang);
+const L = (p) => `${base}${lang}/${p}`;
+---
+<Base lang={lang} title={`${t(lang, 'checklists.title')} - ${t(lang, 'site.short')}`} crumbs={[{ label: t(lang, 'nav.checklists') }]}>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:px-6">
+    <h1 class="text-2xl font-extrabold text-(--color-brand) md:text-3xl">{t(lang, 'checklists.title')}</h1>
+    <p class="mt-2 max-w-2xl text-[14.5px] text-(--color-ink-2)">{t(lang, 'checklists.subtitle')}</p>
+
+    <div class="mt-8 space-y-3">
+      {checklists.map((c) => {
+        const total = c.sections.reduce((n, s) => n + s.items.length, 0);
+        return (
+          <a href={L(`checklists/${c.id}/`)} class="group flex items-center gap-4 rounded-2xl border border-(--color-line) bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-(--color-accent) hover:shadow-md">
+            <DocChip index={c.source} />
+            <span class="min-w-0 flex-1">
+              <span class="block text-[15.5px] font-bold text-(--color-brand) group-hover:text-(--color-accent)">{c.title}</span>
+              <span class="mt-0.5 line-clamp-1 block text-[12.5px] text-(--color-ink-2)">{c.intro}</span>
+            </span>
+            <span class="progress-pill shrink-0 rounded-full bg-(--color-wash) px-3 py-1 text-[12px] font-bold text-(--color-mute)" data-ck={c.id} data-total={total}>0 / {total}</span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</Base>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.progress-pill').forEach((p) => {
+    const id = p.dataset.ck!, total = Number(p.dataset.total);
+    let done = 0;
+    try { done = Object.values(JSON.parse(localStorage.getItem(`ck:${id}`) || '{}')).filter(Boolean).length; } catch {}
+    p.textContent = `${done} / ${total}`;
+    if (done === total && total > 0) { p.style.background = 'var(--color-ok-bg)'; p.style.color = 'var(--color-ok)'; }
+    else if (done > 0) { p.style.color = 'var(--color-accent)'; }
+  });
+</script>

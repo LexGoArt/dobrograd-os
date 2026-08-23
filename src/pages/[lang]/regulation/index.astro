@@ -1,0 +1,67 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Blocks from '../../../components/Blocks.astro';
+import Scheme from '../../../components/Scheme.astro';
+import Mindmap from '../../../components/Mindmap.astro';
+import Icon from '../../../components/Icon.astro';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const { regulation } = getData(lang);
+const simplifiedDrive = 'https://docs.google.com/spreadsheets/d/1MAbMDI5xei9i2dLzDGI3wbttSMBiBlJ0_sWbFUotHqc/edit';
+
+// секції регламенту -> акордеони
+const sections = [];
+let cur = null;
+for (const b of regulation.blocks) {
+  if (b.t === 'h') { cur = { title: b.text, blocks: [] }; sections.push(cur); }
+  else if (cur) cur.blocks.push(b);
+}
+---
+<Base lang={lang} title={`${t(lang, 'nav.regulation')} - ${t(lang, 'site.short')}`} crumbs={[{ label: t(lang, 'nav.regulation') }]}>
+  <div class="mx-auto max-w-6xl px-4 py-10 md:px-8" data-pagefind-body>
+    <h1 class="max-w-2xl text-2xl font-extrabold leading-tight text-(--color-brand) md:text-3xl" data-reveal>{regulation.title}</h1>
+    <p class="mt-2 max-w-xl text-[14px] text-(--color-ink-2)" data-reveal>{t(lang, 'regulation.pageLead')}</p>
+
+    <!-- Майндмап ритму -->
+    <section class="mt-10">
+      <h2 class="mb-6 text-[19px] font-extrabold text-(--color-brand)" data-reveal>{t(lang, 'regulation.mindmapTitle')}</h2>
+      <Mindmap lang={lang} />
+    </section>
+
+    <!-- Схема структури -->
+    <section class="mt-12">
+      <div class="mb-5 flex flex-wrap items-end justify-between gap-2">
+        <h2 class="text-[19px] font-extrabold text-(--color-brand)" data-reveal>{t(lang, 'regulation.schemeTitle')}</h2>
+        <p class="text-[12.5px] text-(--color-mute)">{t(lang, 'regulation.schemeHint')}</p>
+      </div>
+      <div data-reveal><Scheme lang={lang} /></div>
+    </section>
+
+    <!-- Текст регламенту: акордеони -->
+    <section class="mt-12 max-w-4xl">
+      <div class="mb-5 flex flex-wrap items-end justify-between gap-3">
+        <h2 class="text-[19px] font-extrabold text-(--color-brand)" data-reveal>{t(lang, 'regulation.fullText')}</h2>
+        <a href={simplifiedDrive} target="_blank" rel="noopener" class="no-print inline-flex items-center gap-2 text-[13px] font-semibold text-(--color-accent) hover:text-(--color-accent-2)">
+          <Icon name="file-text" size={14} /> {t(lang, 'docs.formOnDrive')}
+        </a>
+      </div>
+      <div class="space-y-3">
+        {sections.map((s, i) => (
+          <details class="group overflow-hidden rounded-2xl border border-(--color-line) bg-white transition-shadow open:shadow-sm" data-reveal style={`--reveal-delay:${Math.min(i, 5) * 60}ms`}>
+            <summary class="flex cursor-pointer list-none items-center gap-3 p-5 text-[14.5px] font-bold text-(--color-brand) transition-colors hover:text-(--color-accent) [&::-webkit-details-marker]:hidden">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-(--color-wash) text-[12px] font-extrabold text-(--color-accent)">{i + 1}</span>
+              {s.title.replace(/^\d+\.\s*/, '')}
+              <svg class="ml-auto shrink-0 text-(--color-mute) transition-transform duration-200 group-open:rotate-180" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="border-t border-(--color-line) p-5">
+              <Blocks blocks={s.blocks} lang={lang} />
+            </div>
+          </details>
+        ))}
+      </div>
+    </section>
+  </div>
+</Base>

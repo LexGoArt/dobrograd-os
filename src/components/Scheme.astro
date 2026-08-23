@@ -1,0 +1,38 @@
+---
+// Схема структури: рівні-смуги, блоки-ролі клікабельні. Тексти - з i18n (scheme.levels).
+import { t } from '../lib/data.js';
+const { lang } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const R = (slug) => `${base}${lang}/roles/${slug}/`;
+const LEVELS = t(lang, 'scheme.levels');
+---
+<div class="relative">
+  <div class="space-y-0">
+    {LEVELS.map((lvl, li) => (
+      <div class="relative">
+        {li > 0 && <div class="mx-auto h-6 w-px bg-(--color-line)"></div>}
+        <div class="rounded-2xl border border-(--color-line) bg-white p-4 md:p-5">
+          <p class="mb-3 text-[11px] font-bold uppercase tracking-widest text-(--color-mute)">{lvl.label}</p>
+          <div class:list={['grid gap-3', lvl.nodes.length === 1 ? 'grid-cols-1' : lvl.nodes.length === 2 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1 sm:grid-cols-2 xl:grid-cols-4']}>
+            {lvl.nodes.map((n) => (
+              <a href={R(n.slug)}
+                 class:list={[
+                   'group relative flex min-h-[3.5rem] flex-col justify-center rounded-xl px-4 py-3 transition-all duration-200',
+                   n.dashed
+                     ? 'border-2 border-dashed border-(--color-line) bg-(--color-paper) hover:border-(--color-accent)'
+                     : li <= 1
+                       ? 'bg-(--color-brand) text-white shadow-sm hover:bg-[#264352] hover:shadow-md'
+                       : 'border border-(--color-line) bg-(--color-wash) hover:border-(--color-accent) hover:bg-white hover:shadow-sm',
+                 ]}>
+                <span class:list={['text-[14.5px] font-bold leading-snug', li <= 1 ? 'text-white' : 'text-(--color-brand)']}>
+                  {n.name}{n.abbr && <span class:list={['ml-2 text-[11px] font-semibold', li <= 1 ? 'text-white/60' : 'text-(--color-mute)']}>{n.abbr}</span>}
+                </span>
+                {n.sub && <span class="mt-0.5 text-[12px] text-(--color-mute)">{n.sub}</span>}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

@@ -1,0 +1,12 @@
+---
+import { t } from '../lib/data.js';
+const { lang } = Astro.props;
+const LOCALES = { uk: 'uk-UA', ru: 'ru-RU', en: 'en-GB' };
+const updated = new Date().toLocaleDateString(LOCALES[lang] ?? 'uk-UA', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<footer class="mt-16 border-t border-(--color-line) bg-white">
+  <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 text-[12.5px] text-(--color-mute) md:flex-row md:items-center md:justify-between md:px-6">
+    <p>{t(lang, 'footer.disclaimer')}</p>
+    <p class="shrink-0">{t(lang, 'site.org')} · {t(lang, 'footer.updated')} {updated}</p>
+  </div>
+</footer>

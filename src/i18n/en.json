@@ -1,0 +1,236 @@
+{
+  "site": {
+    "name": "Construction Block Operating System",
+    "short": "Block OS",
+    "org": "Iron Invest · Dobrograd",
+    "tagline": "Regulations, forms and rhythms of the Client's Service - from the CEO to the site foreman. One site instead of scattered files.",
+    "motto": "If it is not recorded, the agreement does not exist."
+  },
+  "nav": {
+    "home": "Home",
+    "docs": "Documents",
+    "roles": "Roles",
+    "processes": "Processes",
+    "calendar": "Calendar",
+    "checklists": "Checklists",
+    "kernel": "Charter",
+    "regulation": "Quick guide",
+    "roadmap": "In progress",
+    "search": "Search",
+    "searchHint": "Search roles, documents…"
+  },
+  "aside": {
+    "helpTitle": "Can't find something?",
+    "helpText": "Message the operations manager - we'll find it and add it to the base.",
+    "tgButton": "Message on Telegram"
+  },
+  "home": {
+    "heroTitle": "One knowledge base for the construction block",
+    "heroLead": "All regulations, forms, deadlines and interaction maps in one place. Pick your role and instantly see how to work, what to submit and to whom.",
+    "benefits": [
+      { "icon": "shield-check", "text": "Verified, up-to-date information" },
+      { "icon": "sitemap", "text": "One standard for every role" },
+      { "icon": "search", "text": "Fast search and clear navigation" },
+      { "icon": "clipboard-list", "text": "Works on a phone at the site" }
+    ],
+    "rolesTitle": "Pick your role",
+    "rolesHint": "Responsibilities, documents, deadlines and interactions - on every role page.",
+    "allRoles": "All roles",
+    "quickTitle": "Quick access",
+    "quickSubs": {
+      "docsReady": "ready",
+      "processes": "5 step-by-step maps",
+      "calendar": "who, what, to whom, when",
+      "checklists": "with checkboxes and progress",
+      "kernel": "5 chapters of the core",
+      "roadmap": "documents in progress"
+    },
+    "howTitle": "How to use the portal",
+    "how": [
+      { "title": "Pick your role", "text": "Find your position and see what you are responsible for, what you submit and by when." },
+      { "title": "Learn the processes", "text": "Step-by-step maps: monthly cycle, payment path, concealed works, escalation." },
+      { "title": "Work with the forms", "text": "Open forms on Drive, run through interactive checklists, find anything via search." }
+    ],
+    "cycleTitle": "The monthly cycle - the main rhythm",
+    "cycleHint": "Skip a step - the money stops.",
+    "cycleMore": "More about the cycle"
+  },
+  "cycle": {
+    "steps": [
+      { "day": "by 25th", "title": "Monthly plan", "text": "The site submits the plan, schedule and material needs", "links": [["Б1","b1"],["Б2","b2"],["В1","v1"]] },
+      { "day": "by 28th", "title": "PTD review", "text": "Check against the design, estimate and cumulative register", "links": [["Е1","e1"]] },
+      { "day": "by 5th", "title": "Closing package", "text": "Signed acceptance act + timesheets + as-built records", "links": [["Б3","b3"],["В5","v5"]] },
+      { "day": "by 10th", "title": "Verification note", "text": "PTD verifies the package and reports to the Head of CS", "links": [["Е3","e3"]] },
+      { "day": "after", "title": "Payment", "text": "Head of CS approves the acts, finance pays within limits", "links": [], "accent": true }
+    ]
+  },
+  "scheme": {
+    "levels": [
+      { "label": "Strategy and budget", "nodes": [{ "slug": "gd", "name": "General Director", "abbr": "CEO" }] },
+      { "label": "Operations management", "nodes": [{ "slug": "ksz", "name": "Head of Client's Service", "abbr": "CS" }] },
+      { "label": "Execution", "nodes": [
+        { "slug": "vtv", "name": "PTD", "sub": "single point of documentation" },
+        { "slug": "nachalnyk-dilnytsi", "name": "Construction Site Unit", "sub": "construction works" },
+        { "slug": "tehnahliad", "name": "Technical Supervision", "sub": "quality control" },
+        { "slug": "kp", "name": "Project Office (PM)", "sub": "project delivery" }
+      ]},
+      { "label": "Service and independent control", "nodes": [
+        { "slug": "zakupivli", "name": "Procurement Dept", "sub": "per PTD specifications" },
+        { "slug": "laborant", "name": "Laboratory", "sub": "outsourced testing", "dashed": true }
+      ]}
+    ]
+  },
+  "mindmap": {
+    "center": "Monthly rhythm of the block",
+    "centerSub": "25 → 28 → 5 → 10 → payment",
+    "branches": [
+      { "icon": "calendar", "color": "#2F6690", "title": "Planning - by the 25th", "items": [
+        { "text": "Plan Б1 + schedule Б2 + materials В1 to PTD", "href": "docs/b1/" },
+        { "text": "No plan - the month is not financed", "stop": true }
+      ]},
+      { "icon": "package", "color": "#3e6b4a", "title": "Procurement", "items": [
+        { "text": "PTD issues specifications for Procurement", "href": "roles/zakupivli/" },
+        { "text": "Over budget - re-approval by the Head of CS" }
+      ]},
+      { "icon": "shield-check", "color": "#584a80", "title": "Quality control", "items": [
+        { "text": "Concealed works shown to Supervision BEFORE covering", "href": "processes/hidden-works/" },
+        { "text": "Laboratory: concrete at 3/7/28 days", "href": "docs/g7/" }
+      ]},
+      { "icon": "refresh", "color": "#2F5061", "title": "Closing - by 5th and 10th", "items": [
+        { "text": "Signed package Б3 → PTD review", "href": "docs/b3/" },
+        { "text": "Verification note is the payment filter", "href": "docs/e3/" }
+      ]},
+      { "icon": "coins", "color": "#8c6d1f", "title": "Payment", "items": [
+        { "text": "Only via the payment register, within limits", "href": "processes/payment/" },
+        { "text": "6 stop conditions: no contract, signature, note…", "stop": true }
+      ]},
+      { "icon": "megaphone", "color": "#8c4a42", "title": "Communication", "items": [
+        { "text": "Everything in Worksection; daily photos in the Telegram chat" },
+        { "text": "If it is not recorded, the agreement does not exist", "stop": true }
+      ]}
+    ]
+  },
+  "docs": {
+    "title": "Document register",
+    "subtitle": "34 documents of the technical block: forms, checklists, regulations. Filter by group, role, rhythm or status.",
+    "filtersBtn": "Filters",
+    "filterGroup": "Group",
+    "filterRole": "Role",
+    "filterRhythm": "Rhythm",
+    "filterStatus": "Status",
+    "all": "All",
+    "ready": "Ready",
+    "dev": "In progress",
+    "empty": "Nothing found. Reset the filters.",
+    "reset": "Reset filters",
+    "openForm": "Open the form",
+    "openChecklist": "Interactive checklist",
+    "formOnDrive": "Form on Google Drive",
+    "noDrive": "The file is not on Drive yet",
+    "purpose": "Purpose",
+    "who": "Submitted by",
+    "whom": "To",
+    "when": "When",
+    "sanction": "Sanction",
+    "related": "Related documents",
+    "devNotice": "Document in progress",
+    "devOwner": "Owner",
+    "devText": "The form is not released yet. The index is reserved in the register and links already point here - once the document is ready, this page will update.",
+    "group": {
+      "А": "Calendar",
+      "Б": "Monthly cycle",
+      "В": "Resources and procurement",
+      "Г": "Quality, changes, records",
+      "Д": "Checklists",
+      "Е": "Regulations"
+    },
+    "rhythm": {
+      "щодня": "Daily",
+      "щотижня": "Weekly",
+      "щомісяця": "Monthly",
+      "за фактом": "On event",
+      "довідник": "Reference"
+    }
+  },
+  "roles": {
+    "title": "Roles and responsibilities",
+    "subtitle": "Pick a role to see its responsibilities, documents, deadlines and interactions.",
+    "open": "Open role",
+    "kpi": "Key performance indicators (KPI)",
+    "submits": "Submits",
+    "receives": "Receives / approves",
+    "docsAndTerms": "Documents and deadlines",
+    "keyTasks": "Key tasks",
+    "mainDocs": "Key documents",
+    "noDocs": "Works with site logbooks and work orders.",
+    "chain": "Who you work with",
+    "asked": "When people come to you",
+    "askedHint": "Requests you answer, with the standard response time.",
+    "duties": "Duties",
+    "faq": "Frequent questions",
+    "groups": {
+      "Керівництво": "Leadership",
+      "Служба замовника": "Client's Service",
+      "Штаб проєкту": "Project Office",
+      "Сервісні підрозділи": "Support units"
+    }
+  },
+  "processes": {
+    "title": "Processes",
+    "subtitle": "Step-by-step maps of the key processes: who does what and when - and what happens if a step is skipped.",
+    "steps": "Process steps",
+    "stepsWord": "steps",
+    "stops": "Stop conditions: the payment is blocked",
+    "errors": "Common mistakes",
+    "daily": "Daily",
+    "weekly": "On Fridays",
+    "docs": "Process documents",
+    "ifnot": "If not"
+  },
+  "calendar": {
+    "title": "Reporting calendar",
+    "subtitle": "Who submits what, to whom and when. Pick a rhythm and see only what matters to you.",
+    "sanctionLabel": "What happens if it is not submitted",
+    "col": { "what": "Report / event", "from": "Submitted by", "to": "To / where", "term": "Deadline", "form": "Form", "sanction": "What happens if it is not submitted" }
+  },
+  "checklists": {
+    "title": "Interactive checklists",
+    "subtitle": "Checkboxes are saved on this device. All checked - the job is closed.",
+    "progress": "done",
+    "reset": "Reset",
+    "resetConfirm": "Clear all checkboxes of this checklist?",
+    "source": "Source"
+  },
+  "regulation": {
+    "pageLead": "How the construction structure works - in two diagrams and seven short sections.",
+    "mindmapTitle": "How the month moves",
+    "schemeTitle": "Structure diagram",
+    "schemeHint": "Blocks are clickable and lead to role pages.",
+    "fullText": "Full text of the regulation"
+  },
+  "kernel": {
+    "title": "Client's Service Charter",
+    "subtitle": "The core of the system: structure, roles, authority, KPIs, regulations, document flow and reporting.",
+    "chapters": "Chapters",
+    "chapter": "Chapter",
+    "prev": "Back",
+    "next": "Next"
+  },
+  "roadmap": {
+    "title": "In progress",
+    "subtitle": "What is not ready yet, who owns it and what already works instead.",
+    "readyCount": "ready",
+    "devCount": "in progress"
+  },
+  "footer": {
+    "disclaimer": "Internal working tool of the technical block. The source of truth for forms is the files on Google Drive.",
+    "updated": "Updated"
+  },
+  "misc": {
+    "backToDocs": "Back to the document register",
+    "backToRoles": "Back to all roles",
+    "onThisPage": "On this page",
+    "closeHint": "Esc - close",
+    "searchAfterBuild": "Search is available after the site is built."
+  }
+}

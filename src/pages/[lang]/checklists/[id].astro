@@ -1,0 +1,102 @@
+---
+import Base from '../../../layouts/Base.astro';
+import DocChip from '../../../components/DocChip.astro';
+import { autolink } from '../../../lib/autolink.js';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) =>
+    getData(lang).checklists.map((ck) => ({ params: { lang, id: ck.id }, props: { ck } }))
+  );
+}
+const { lang } = Astro.params;
+const { ck } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const { dict, docs } = getData(lang);
+const opts = { base, lang, dict: dict.indexes, terms: dict.terms };
+const A = (s) => autolink(s || '', opts);
+const total = ck.sections.reduce((n, s) => n + s.items.length, 0);
+const srcDoc = docs.find((d) => d.index === ck.source);
+const L = (p) => `${base}${lang}/${p}`;
+---
+<Base lang={lang} title={`${ck.title} - ${t(lang, 'site.short')}`} crumbs={[{ label: t(lang, 'nav.checklists'), href: L('checklists/') }, { label: ck.title }]}>
+  <div class="mx-auto max-w-3xl px-4 py-10 md:px-6">
+    <a href={L('checklists/')} class="text-[13px] font-semibold text-(--color-mute) hover:text-(--color-accent)">← {t(lang, 'nav.checklists')}</a>
+    <div class="mt-4 flex items-start gap-4">
+      <DocChip index={ck.source} size="lg" />
+      <div>
+        <h1 class="text-2xl font-extrabold leading-tight text-(--color-brand)">{ck.title}</h1>
+        <p class="mt-1.5 text-[13.5px] text-(--color-ink-2)" set:html={A(ck.intro)} />
+        {srcDoc && <p class="mt-1 text-[12px] text-(--color-mute)">{t(lang, 'checklists.source')}: <a class="doclink" href={L(`docs/${srcDoc.slug}/`)}>{ck.source} · {srcDoc.name}</a></p>}
+      </div>
+    </div>
+
+    <!-- Прогрес -->
+    <div class="no-print sticky top-14 z-30 mt-6 rounded-2xl border border-(--color-line) bg-white/95 p-4 shadow-sm backdrop-blur">
+      <div class="flex items-center justify-between gap-4">
+        <p class="text-[13px] font-bold text-(--color-brand)"><span id="ck-done">0</span> / {total} {t(lang, 'checklists.progress')}</p>
+        <button id="ck-reset" class="text-[12.5px] font-semibold text-(--color-mute) transition-colors hover:text-(--color-stop)">{t(lang, 'checklists.reset')}</button>
+      </div>
+      <div class="mt-2.5 h-2 overflow-hidden rounded-full bg-(--color-wash)">
+        <div id="ck-bar" class="h-full w-0 rounded-full bg-(--color-accent) transition-all duration-300"></div>
+      </div>
+    </div>
+
+    <form id="ck-form" class="mt-6 space-y-8" data-ck={ck.id} data-total={total}>
+      {ck.sections.map((sec, si) => (
+        <section>
+          {sec.title && <h2 class="mb-3 text-[13px] font-bold uppercase tracking-wide text-(--color-brand)">{sec.title}</h2>}
+          <div class="overflow-hidden rounded-2xl border border-(--color-line) bg-white">
+            {sec.items.map((item, ii) => {
+              const key = `s${si}i${ii}`;
+              return (
+                <label class="flex cursor-pointer items-start gap-3.5 border-b border-(--color-line) p-4 transition-colors last:border-b-0 hover:bg-(--color-wash) has-[:checked]:bg-(--color-ok-bg)/60">
+                  <input type="checkbox" data-key={key}
+                    class="mt-0.5 h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border-2 border-(--color-line) bg-white transition-all checked:border-(--color-ok) checked:bg-(--color-ok) checked:bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22white%22 stroke-width=%223.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 13l4 4 10-10%22/%3E%3C/svg%3E')] checked:bg-[length:14px] checked:bg-center checked:bg-no-repeat" />
+                  <span class="min-w-0">
+                    <span class="block text-[14.5px] leading-snug" set:html={A(item.text)} />
+                    {item.meta && <span class="mt-0.5 block text-[12px] text-(--color-mute)" set:html={A(item.meta)} />}
+                  </span>
+                </label>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+    </form>
+  </div>
+</Base>
+
+<script define:vars={{ resetMsg: t(lang, 'checklists.resetConfirm') }}>
+  const form = document.getElementById('ck-form');
+  const id = form.dataset.ck, total = Number(form.dataset.total);
+  const KEY = `ck:${id}`;
+  const boxes = [...form.querySelectorAll('input[type=checkbox]')];
+  const doneEl = document.getElementById('ck-done');
+  const bar = document.getElementById('ck-bar');
+
+  let state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch {}
+
+  function paint() {
+    const done = boxes.filter((b) => b.checked).length;
+    doneEl.textContent = String(done);
+    bar.style.width = `${total ? (done / total) * 100 : 0}%`;
+    bar.style.background = done === total && total > 0 ? 'var(--color-ok)' : 'var(--color-accent)';
+  }
+  boxes.forEach((b) => {
+    b.checked = !!state[b.dataset.key];
+    b.addEventListener('change', () => {
+      state[b.dataset.key] = b.checked;
+      localStorage.setItem(KEY, JSON.stringify(state));
+      paint();
+    });
+  });
+  document.getElementById('ck-reset').addEventListener('click', () => {
+    if (!confirm(resetMsg)) return;
+    state = {}; localStorage.removeItem(KEY);
+    boxes.forEach((b) => (b.checked = false));
+    paint();
+  });
+  paint();
+</script>

@@ -1,0 +1,125 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Cycle from '../../components/Cycle.astro';
+import RoleCard from '../../components/RoleCard.astro';
+import { LANGS, getData, t } from '../../lib/data.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const { docs, roles } = getData(lang);
+const L = (p = '') => `${base}${lang}/${p}`;
+const ready = docs.filter((d) => d.status === 'ready').length;
+const benefits = t(lang, 'home.benefits');
+const how = t(lang, 'home.how');
+
+const PRIMARY = ['gd', 'ksz', 'vtv', 'kp', 'nachalnyk-dilnytsi', 'prorab', 'tehnahliad', 'koshtorysnyk'];
+const primaryRoles = PRIMARY.map((s) => roles.find((r) => r.slug === s)).filter(Boolean);
+const restRoles = roles.filter((r) => !PRIMARY.includes(r.slug));
+
+const quick = [
+  { href: L('docs/'), icon: 'file-text', title: t(lang, 'nav.docs'), sub: `${ready} / ${docs.length} ${t(lang, 'home.quickSubs.docsReady')}` },
+  { href: L('processes/'), icon: 'route', title: t(lang, 'nav.processes'), sub: t(lang, 'home.quickSubs.processes') },
+  { href: L('calendar/'), icon: 'calendar', title: t(lang, 'nav.calendar'), sub: t(lang, 'home.quickSubs.calendar') },
+  { href: L('checklists/'), icon: 'check-square', title: t(lang, 'nav.checklists'), sub: t(lang, 'home.quickSubs.checklists') },
+  { href: L('kernel/'), icon: 'book', title: t(lang, 'nav.kernel'), sub: t(lang, 'home.quickSubs.kernel') },
+  { href: L('roadmap/'), icon: 'clock', title: t(lang, 'nav.roadmap'), sub: `${docs.length - ready} ${t(lang, 'home.quickSubs.roadmap')}` },
+];
+---
+<Base lang={lang} title={t(lang, 'site.name')} description={t(lang, 'site.tagline')}>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-white">
+    <img src={`${base}img/hero-blueprint.png`} alt="" width="2688" height="1536" fetchpriority="high"
+         class="pointer-events-none absolute -right-16 top-0 hidden w-[780px] opacity-[0.2] lg:block" />
+    <div class="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-white via-white/70 to-transparent lg:block"></div>
+    <div class="relative mx-auto max-w-6xl px-4 pt-12 md:px-8 md:pt-16">
+      <div class="max-w-2xl" data-reveal>
+        <h1 class="text-3xl font-extrabold leading-tight text-(--color-brand) md:text-[2.5rem] md:leading-[1.15]">
+          {t(lang, 'home.heroTitle')}
+        </h1>
+        <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-(--color-ink-2)">{t(lang, 'home.heroLead')}</p>
+        <ul class="mt-6 grid max-w-xl grid-cols-1 gap-x-8 gap-y-2.5 sm:grid-cols-2">
+          {benefits.map((b) => (
+            <li class="flex items-center gap-2 text-[12.5px] font-medium text-(--color-mute)">
+              <Icon name={b.icon} size={14} class="shrink-0 text-(--color-accent)" />
+              {b.text}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Оберіть свою роль -->
+      <div class="mt-10 pb-12">
+        <div class="mb-5 flex flex-wrap items-end justify-between gap-2" data-reveal>
+          <div>
+            <h2 class="text-[22px] font-extrabold text-(--color-brand)">{t(lang, 'home.rolesTitle')}</h2>
+            <p class="mt-1 text-[13px] text-(--color-mute)">{t(lang, 'home.rolesHint')}</p>
+          </div>
+          <a href={L('roles/')} class="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-(--color-accent) hover:text-(--color-accent-2)">
+            {t(lang, 'home.allRoles')} ({roles.length}) <Icon name="arrow-right" size={13} />
+          </a>
+        </div>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {primaryRoles.map((r, i) => <RoleCard role={r} lang={lang} delay={i * 60} />)}
+        </div>
+        <div class="mt-4 flex flex-wrap justify-center gap-2" data-reveal>
+          {restRoles.map((r) => (
+            <a href={L(`roles/${r.slug}/`)} class="rounded-full border border-(--color-line) bg-white px-3.5 py-1.5 text-[12.5px] font-semibold text-(--color-ink-2) transition-colors hover:border-(--color-accent) hover:text-(--color-accent)">
+              {r.cardName}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="border-t border-(--color-line)"></div>
+
+  <!-- Швидкий доступ -->
+  <section class="mx-auto max-w-6xl px-4 pt-12 md:px-8">
+    <h2 class="text-[22px] font-extrabold text-(--color-brand)" data-reveal>{t(lang, 'home.quickTitle')}</h2>
+    <div class="mt-5 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+      {quick.map((q, i) => (
+        <a href={q.href} data-reveal style={`--reveal-delay:${i * 60}ms`}
+           class="group rounded-2xl border border-(--color-line) bg-white p-4 text-center transition-all duration-200 hover:-translate-y-0.5 hover:border-(--color-accent) hover:shadow-md">
+          <span class="mx-auto grid h-9 w-9 place-items-center rounded-lg bg-(--color-wash) text-(--color-accent) transition-colors group-hover:bg-(--color-accent) group-hover:text-white">
+            <Icon name={q.icon} size={17} />
+          </span>
+          <p class="mt-2.5 text-[13px] font-bold text-(--color-brand)">{q.title}</p>
+          <p class="mt-0.5 text-[10.5px] text-(--color-mute)">{q.sub}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Місячний цикл -->
+  <section class="mx-auto max-w-6xl px-4 pt-12 md:px-8">
+    <div class="rounded-2xl border border-(--color-line) bg-white p-5 md:p-7" data-reveal>
+      <div class="mb-5 flex flex-wrap items-center justify-between gap-2">
+        <h2 class="text-[20px] font-extrabold text-(--color-brand)">{t(lang, 'home.cycleTitle')}</h2>
+        <p class="text-[13px] font-semibold text-(--color-stop)">{t(lang, 'home.cycleHint')}</p>
+      </div>
+      <Cycle lang={lang} />
+      <a href={L('processes/monthly-cycle/')} class="mt-4 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-(--color-accent) hover:text-(--color-accent-2)">
+        {t(lang, 'home.cycleMore')} <Icon name="arrow-right" size={14} />
+      </a>
+    </div>
+  </section>
+
+  <!-- Як користуватися -->
+  <section class="mx-auto max-w-6xl px-4 py-12 md:px-8">
+    <h2 class="text-[22px] font-extrabold text-(--color-brand)" data-reveal>{t(lang, 'home.howTitle')}</h2>
+    <div class="mt-5 grid grid-cols-1 gap-3.5 md:grid-cols-3">
+      {how.map((h, i) => (
+        <div class="flex items-start gap-4 rounded-2xl border border-(--color-line) bg-white p-5" data-reveal style={`--reveal-delay:${i * 90}ms`}>
+          <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-(--color-accent) text-[14px] font-extrabold text-white">{i + 1}</span>
+          <div>
+            <p class="text-[14.5px] font-bold text-(--color-brand)">{h.title}</p>
+            <p class="mt-1 text-[13px] leading-relaxed text-(--color-ink-2)">{h.text}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,37 @@
+{
+  "_comment": "Карта: індекс документа -> Google Drive URL. Знайдено 23.08.2026 у папках Диска Alex. Е1 на Диску відсутній. Спрощений регламент - взято найновіший з 4 дублів (04.08 15:10), ПІДТВЕРДИТИ в Alex.",
+  "folders": {
+    "root": "https://drive.google.com/drive/folders/1OLvvtmMiuGEdAjkxO4uP60SJCf_y0iLT",
+    "polozhennia": "https://drive.google.com/drive/folders/1we3NBKSsSanpOK8yfohEALzLxFhKVmcA",
+    "dodatky": "https://drive.google.com/drive/folders/138djReP4BtAYFvFxLdX8EE8ew1h6vlj2"
+  },
+  "kernel": "https://docs.google.com/spreadsheets/d/1izWmosUZux5D2xxAfrAlyocaul__mNjKJ6w9UrsEMjU/edit",
+  "kernel_note": "Положення_про_технічний_блок_v7 (на Диску), дамп у пакеті - з v3",
+  "simplified": "https://docs.google.com/spreadsheets/d/1MAbMDI5xei9i2dLzDGI3wbttSMBiBlJ0_sWbFUotHqc/edit",
+  "docs": {
+    "А":  "https://docs.google.com/spreadsheets/d/1bgxmLu24dO003_kGXk3t0dgDm84HChvb1aZg8a4mCJk/edit",
+    "Б1": "https://docs.google.com/spreadsheets/d/1BqHMu1SLLR8uvjpplNh43OtYMjzkiPDHlJAYN53XwkA/edit",
+    "Б2": "https://docs.google.com/spreadsheets/d/1Mdr2S6kWn4ch6DRMl0EEcv1fsKIHP2oyNXRqAJf2Qzg/edit",
+    "Б3": "https://docs.google.com/spreadsheets/d/1J5yTIhO9cYom3OzQWsGd_npZX1rs98Li2KrbZYJzrDQ/edit",
+    "В1": "https://docs.google.com/spreadsheets/d/1b2LjAsCA2rJ8_-8H9XxGQeBj9vVH3T65OgvsRj3pJqo/edit",
+    "В2": "https://docs.google.com/spreadsheets/d/1slgDgEoJIGYesyzgVXXpg8OXEXbgIyjweNbvC-EZEIc/edit",
+    "В3": "https://docs.google.com/spreadsheets/d/12D7EkejhuoVAA_YagtFF6xsR6QCV7uqVZdjksKzZBzs/edit",
+    "В4": "https://docs.google.com/spreadsheets/d/1CIYqyUDE1tFE_mMHxAgJRR9fHapej9XLRzrbd5Lw3h8/edit",
+    "В5": "https://docs.google.com/spreadsheets/d/1Jpz8iQr2nECqIsVLxaxQMahFHKxXx7KVfdVwyisC6C0/edit",
+    "В6": "https://docs.google.com/spreadsheets/d/1YaxD7DZI4MWtzDKAxcyfNplwIuShBV6oPaKj1wqD7Ok/edit",
+    "В7": "https://docs.google.com/spreadsheets/d/1S099FntEfcTf7XEPoDKdPe4RvGS8aOOT8p5WsvpppGU/edit",
+    "Г1": "https://docs.google.com/spreadsheets/d/1j75zqmDHCL_9qc7xr_mO0_Tk9VQHQtvOANckCrGzcsQ/edit",
+    "Г3": "https://docs.google.com/spreadsheets/d/1HbelI-vmPkg0kYSlj0aHo3-J_nWGR6OdEJ1cskGuzYA/edit",
+    "Г4": "https://docs.google.com/spreadsheets/d/1FEeBlXKgfuo2yFdmprXuiBLQtGF7MfxhZ66-l3liZQA/edit",
+    "Г7": "https://docs.google.com/spreadsheets/d/14mEW-ac_zpkKw1G534fLba3QfchXwxgiJuAWR-13s0Q/edit",
+    "Г8": "https://docs.google.com/spreadsheets/d/1dd7NW_kdwnclcv1J2kQl1HSi5ufP0rPpCtDanOtYBvw/edit",
+    "Г9": "https://docs.google.com/spreadsheets/d/1ru5TIWX4S88fXdPH3auMncofB26UxfDg2HB9c0lZ73A/edit",
+    "Д1": "https://docs.google.com/spreadsheets/d/1ae2KSu_6JQdi5ttGWB5wuEN5w2pKzxgCuGNTWHILzek/edit",
+    "Д2": "https://docs.google.com/spreadsheets/d/1qOo9X5XmaJ29hO4xYUs9tUYCZcwzsnYKeZCHcwdXiY0/edit",
+    "Д3": "https://docs.google.com/spreadsheets/d/1NOAyGhS-fFc0CZ1f_rUNznocL28fBdkk1BbG_XWyqas/edit",
+    "Д4": "https://docs.google.com/spreadsheets/d/1ZPgdGhih3ndBA4OETAuNKkCQQheBRklJ59hcjERzJBg/edit",
+    "Е3": "https://docs.google.com/spreadsheets/d/1O6dgmSW3oPLIq3BS39y5N8Eoth_LaW3QH-ijCvhEOMM/edit"
+  },
+  "missing_on_drive": ["Е1"],
+  "in_development": ["Г2", "Г5", "Г6", "Д5", "Е2", "Е4", "Е5", "Е6", "Е7", "Е8", "Е9"]
+}

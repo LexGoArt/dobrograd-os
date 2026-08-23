@@ -1,0 +1,560 @@
+[
+ {
+  "id": "d1",
+  "title": "Project Starter Package Checklist",
+  "intro": "Filled in by the Head of Client's Service before handing the project over to execution (gate: 'Tendering' → 'Execution stage'). Applicability: A - always · S - if self-performed · G - performed by the general contractor under general contracting.",
+  "source": "Д1",
+  "sections": [
+   {
+    "title": "",
+    "items": [
+     {
+      "num": "1",
+      "text": "Project charter / design brief (goal, budget, timeline, KPIs, areas of responsibility, risks)",
+      "meta": "Head of CS · CEO · A"
+     },
+     {
+      "num": "2",
+      "text": "Title documents for the land plot / asset (asset - an existing facility: built or in progress)",
+      "meta": "Legal counsel · CEO · A"
+     },
+     {
+      "num": "3",
+      "text": "Urban planning conditions and restrictions",
+      "meta": "Design team · Head of CS · A"
+     },
+     {
+      "num": "4",
+      "text": "Utility connection specifications (power, water, gas, sewage)",
+      "meta": "Design team · Head of CS · A"
+     },
+     {
+      "num": "5",
+      "text": "Design documentation: site plan, architectural and structural sections, engineering sections (checked by PTD, stamped 'Issued for Construction')",
+      "meta": "Design team · Head of CS · A"
+     },
+     {
+      "num": "6",
+      "text": "Design documentation review (expertise) - mandatory for every facility",
+      "meta": "Design team · - · A"
+     },
+     {
+      "num": "7",
+      "text": "Construction works permit",
+      "meta": "Head of CS · - · A"
+     },
+     {
+      "num": "8",
+      "text": "Approved cost estimate: unit estimates for each work type + facility estimates + summary calculation",
+      "meta": "Cost engineer + PTD · CEO · A"
+     },
+     {
+      "num": "9",
+      "text": "Works Schedule with responsible persons assigned",
+      "meta": "PM + PTD · Head of CS · A"
+     },
+     {
+      "num": "10",
+      "text": "Funding schedule synchronized with the Works Schedule",
+      "meta": "PM + Finance · CEO · A"
+     },
+     {
+      "num": "11",
+      "text": "Contractor portfolio: tender, 3 proposals, draft contracts",
+      "meta": "PM + PTD · CEO · G"
+     },
+     {
+      "num": "12",
+      "text": "Health & safety: H&S engineer (outsourced); order appointing the on-site H&S responsible at project start",
+      "meta": "H&S engineer · Head of CS · S"
+     },
+     {
+      "num": "13",
+      "text": "Order appointing the PM and project team",
+      "meta": "Head of CS · CEO · A"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "d2",
+  "title": "Handover-to-Execution Checklist",
+  "intro": "Gate: 'Tendering' → 'Execution stage'. Filled in by the Head of Client's Service together with the Project Manager. The starter package (Д1) must be completed before this checklist.",
+  "source": "Д2",
+  "sections": [
+   {
+    "title": "1. DOCUMENTS",
+    "items": [
+     {
+      "num": "1",
+      "text": "Starter package checklist (Д1) fully completed and approved by the CEO",
+      "meta": "Д1 with signatures"
+     },
+     {
+      "num": "2",
+      "text": "Cost estimate approved (unit + facility + summary)",
+      "meta": "CEO signature"
+     },
+     {
+      "num": "3",
+      "text": "Works Schedule with responsible persons approved",
+      "meta": "Works Schedule, Head of CS signature"
+     },
+     {
+      "num": "4",
+      "text": "Funding schedule synchronized with the Works Schedule and approved",
+      "meta": "CEO signature"
+     }
+    ]
+   },
+   {
+    "title": "2. CONTRACTS",
+    "items": [
+     {
+      "num": "5",
+      "text": "Contracts with contractors signed (tender: 3 proposals + В7, legal review completed)",
+      "meta": "contract register"
+     },
+     {
+      "num": "6",
+      "text": "Contracts with key suppliers executed or agreed",
+      "meta": "contract register"
+     }
+    ]
+   },
+   {
+    "title": "3. TEAM",
+    "items": [
+     {
+      "num": "7",
+      "text": "Order appointing the PM and project team signed",
+      "meta": "order"
+     },
+     {
+      "num": "8",
+      "text": "Every team member has signed their position contract and acknowledgment of the Regulation",
+      "meta": "acknowledgment sheets"
+     },
+     {
+      "num": "9",
+      "text": "Job descriptions issued against signature",
+      "meta": "acknowledgment sheets"
+     }
+    ]
+   },
+   {
+    "title": "4. SITE",
+    "items": [
+     {
+      "num": "10",
+      "text": "Site handed over to the unit / contractor under an acceptance certificate",
+      "meta": "handover certificate"
+     },
+     {
+      "num": "11",
+      "text": "Temporary utilities provided (power, water), site facilities arranged",
+      "meta": "verified on site"
+     },
+     {
+      "num": "12",
+      "text": "Order appointing the on-site H&S responsible signed; safety briefings conducted",
+      "meta": "order + H&S logbook"
+     },
+     {
+      "num": "13",
+      "text": "Fencing, information board, safe walkways - completed",
+      "meta": "photo record"
+     }
+    ]
+   },
+   {
+    "title": "5. SYSTEMS",
+    "items": [
+     {
+      "num": "14",
+      "text": "Project set up in Worksection: tasks, responsible persons, deadlines",
+      "meta": "WS link"
+     },
+     {
+      "num": "15",
+      "text": "Project registers created (contracts, payments, changes, risks, remarks)",
+      "meta": "link"
+     },
+     {
+      "num": "16",
+      "text": "Facility Telegram chat with the Head of Client's Service created, participants added",
+      "meta": "chat is active"
+     },
+     {
+      "num": "17",
+      "text": "Project folder on Drive created per the standard structure (documentation, photos, certificates)",
+      "meta": "link"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "d3",
+  "title": "Month-End Closing Checklist",
+  "intro": "Filled in by the Site Manager. Go top to bottom - and the month is closed with no debts. Every checkbox = done and submitted.",
+  "source": "Д3",
+  "sections": [
+   {
+    "title": "BY THE 25TH - NEXT MONTH'S PLAN",
+    "items": [
+     {
+      "num": "1",
+      "text": "Next month's works plan submitted to PTD",
+      "meta": "by the 25th · Б1 → PTD"
+     },
+     {
+      "num": "2",
+      "text": "Works Schedule submitted together with the plan",
+      "meta": "by the 25th · Б2 → PTD"
+     },
+     {
+      "num": "3",
+      "text": "Consolidated material requirement with delivery dates submitted",
+      "meta": "by the 25th · В1 → PTD"
+     }
+    ]
+   },
+   {
+    "title": "ALL WEEKLY LOOSE ENDS CLOSED",
+    "items": [
+     {
+      "num": "4",
+      "text": "Weekly plan-vs-actual statuses submitted for every Friday of the month (with explanations if behind schedule)",
+      "meta": "every Friday · Б2 → PM"
+     },
+     {
+      "num": "5",
+      "text": "Weekly photo reports submitted for every week",
+      "meta": "every Friday · Е5 → Head of CS, PM"
+     },
+     {
+      "num": "6",
+      "text": "Machinery Timesheets submitted to PTD for every week, signed",
+      "meta": "every Friday · В5 → PTD"
+     },
+     {
+      "num": "7",
+      "text": "All delivery notes and certificates for the month submitted to PTD",
+      "meta": "every Friday · originals → PTD"
+     },
+     {
+      "num": "8",
+      "text": "All Concealed Works Acceptance Certificates for the month's works closed: photos + certificates + protocols",
+      "meta": "before works closeout · Г2 → PTD"
+     },
+     {
+      "num": "9",
+      "text": "Technical Supervision remarks resolved or have an agreed deadline",
+      "meta": "per supervision directives · Г3"
+     },
+     {
+      "num": "10",
+      "text": "All unforeseen works processed through a Change Request",
+      "meta": "before works start · Г1"
+     }
+    ]
+   },
+   {
+    "title": "BY THE 5TH - REPORTING PACKAGE FOR THE PAST MONTH",
+    "items": [
+     {
+      "num": "11",
+      "text": "Works Completion Certificate filled in, item names per the cost estimate",
+      "meta": "by the 5th · Б3, 'Act' sheet"
+     },
+     {
+      "num": "12",
+      "text": "Certificate signed by the Site Manager",
+      "meta": "by the 5th · Б3"
+     },
+     {
+      "num": "13",
+      "text": "Certificate signed by Technical Supervision",
+      "meta": "by the 5th · Б3"
+     },
+     {
+      "num": "14",
+      "text": "Б3 package checklist fully completed (all 10 checkboxes)",
+      "meta": "by the 5th · Б3, 'Checklist'"
+     },
+     {
+      "num": "15",
+      "text": "Package submitted to PTD",
+      "meta": "by the 5th · Б3 → PTD"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "d4",
+  "title": "Photo Documentation Checklist",
+  "intro": "What and how to photograph. Daily photos - to the Telegram chat with the Head of Client's Service; weekly photo report and photos for the Concealed Works Acceptance Certificate - to the archive on Drive. Detailed procedure - Е5.",
+  "source": "Д4",
+  "sections": [
+   {
+    "title": "1. DAILY RECORDING",
+    "items": [
+     {
+      "num": "1",
+      "text": "3-5 photos of key site zones: showing which works are underway and how many people",
+      "meta": "daily, TG chat"
+     },
+     {
+      "num": "2",
+      "text": "Problem spots of the day (if any): what's blocking work, what broke, what wasn't delivered",
+      "meta": "as they occur, TG chat"
+     }
+    ]
+   },
+   {
+    "title": "2. WEEKLY PHOTO REPORT (FRIDAY BY 17:00)",
+    "items": [
+     {
+      "num": "3",
+      "text": "Each work item of the week: overall view of the zone BEFORE and AFTER - showing exactly WHAT was done",
+      "meta": "Fri, archive + Head of CS"
+     },
+     {
+      "num": "4",
+      "text": "Frame reference: the shot shows axes / floor / landmark or a sign indicating the zone",
+      "meta": "every photo"
+     },
+     {
+      "num": "5",
+      "text": "Quantity is legible: partitions, screed, utilities - shot so the completed quantity can be assessed",
+      "meta": "every work item"
+     }
+    ]
+   },
+   {
+    "title": "3. BEFORE CLOSING THE CONCEALED WORKS CERTIFICATE - MANDATORY",
+    "items": [
+     {
+      "num": "6",
+      "text": "Rebar before concreting: overall view + connection nodes + cover-layer spacers",
+      "meta": "before concreting"
+     },
+     {
+      "num": "7",
+      "text": "Embedded parts, sleeves, penetrations - close-up, with reference points",
+      "meta": "before closeout"
+     },
+     {
+      "num": "8",
+      "text": "Waterproofing: EVERY layer before the next is applied; abutments and corners - close-up",
+      "meta": "layer by layer"
+     },
+     {
+      "num": "9",
+      "text": "Utility lines before closing: routes, slopes, pressure test (gauge visible in frame)",
+      "meta": "before backfilling/covering"
+     },
+     {
+      "num": "10",
+      "text": "Compaction of backfill: layer by layer, with equipment visible in frame",
+      "meta": "layer by layer"
+     },
+     {
+      "num": "11",
+      "text": "Thermal and vapor insulation, fireproofing, anti-corrosion coating - before being covered by subsequent layers",
+      "meta": "before closeout"
+     }
+    ]
+   },
+   {
+    "title": "4. REQUIREMENTS FOR EVERY PHOTO",
+    "items": [
+     {
+      "num": "12",
+      "text": "Date and time: date stamp enabled, or the file's metadata preserved",
+      "meta": "always"
+     },
+     {
+      "num": "13",
+      "text": "Sharpness and lighting: the object is visible; use extra lighting in dark zones",
+      "meta": "always"
+     },
+     {
+      "num": "14",
+      "text": "Sequence: before → in progress → after (mandatory for concealed works)",
+      "meta": "always"
+     }
+    ]
+   },
+   {
+    "title": "5. STORAGE",
+    "items": [
+     {
+      "num": "15",
+      "text": "Archive on Drive: facility folder → year-month → date or work name",
+      "meta": "weekly"
+     },
+     {
+      "num": "16",
+      "text": "Photos for the Concealed Works Acceptance Certificate - in the corresponding certificate's folder, link entered into the certificate (Г2)",
+      "meta": "before closing the certificate"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "vtv",
+  "title": "PTD Verification Checklist (plan and reporting package)",
+  "intro": "Internal PTD tool. Filled in for every plan (Block A, by the 28th) and every reporting package (Block Б, by the 10th).",
+  "source": "Е1",
+  "sections": [
+   {
+    "title": "BLOCK A. MONTHLY PLAN VERIFICATION (by the 28th)",
+    "items": [
+     {
+      "num": "1",
+      "text": "Work item names in Б1/Б2 - exactly per the cost estimate, no ad hoc wording",
+      "meta": ""
+     },
+     {
+      "num": "2",
+      "text": "Quantities - within the remaining balances of the Cumulative Works Register (Г5)",
+      "meta": ""
+     },
+     {
+      "num": "3",
+      "text": "Works comply with the design and approved changes (register Г1)",
+      "meta": ""
+     },
+     {
+      "num": "4",
+      "text": "Schedule Б2 is technologically realistic: work sequences are not violated",
+      "meta": ""
+     },
+     {
+      "num": "5",
+      "text": "Material requirement (В1) matches the quantities per the norms Е9",
+      "meta": ""
+     },
+     {
+      "num": "6",
+      "text": "Delivery dates in В1 allow ordering and delivering on time",
+      "meta": ""
+     }
+    ]
+   },
+   {
+    "title": "BLOCK B. REPORTING PACKAGE VERIFICATION (by the 10th)",
+    "items": [
+     {
+      "num": "7",
+      "text": "Certificate arithmetic: quantities, totals, cumulative figures - error-free",
+      "meta": ""
+     },
+     {
+      "num": "8",
+      "text": "Names and units of measurement - per the cost estimate, match the plan",
+      "meta": ""
+     },
+     {
+      "num": "9",
+      "text": "Actual vs. the month's plan: deviations are explained",
+      "meta": ""
+     },
+     {
+      "num": "10",
+      "text": "Cumulative register: nothing is closed twice, balances are not exceeded",
+      "meta": ""
+     },
+     {
+      "num": "11",
+      "text": "Signatures of the Site Manager and Technical Supervision - on every certificate",
+      "meta": ""
+     },
+     {
+      "num": "12",
+      "text": "Concealed Works Acceptance Certificate for every concealed work item: photos + certificates + protocols Г7",
+      "meta": ""
+     },
+     {
+      "num": "13",
+      "text": "Timesheets В5 vs. certificates: equipment 'that worked' is reflected in the month's works",
+      "meta": ""
+     },
+     {
+      "num": "14",
+      "text": "Write-off M-29 vs. norms Е9 within tolerance; overruns - with an explanation",
+      "meta": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "b3",
+  "title": "Reporting Package Contents Checklist",
+  "intro": "",
+  "source": "Б3",
+  "sections": [
+   {
+    "title": "",
+    "items": [
+     {
+      "num": "1",
+      "text": "Works Completion Certificate signed by the Site Manager",
+      "meta": "'Act' sheet"
+     },
+     {
+      "num": "2",
+      "text": "Works Completion Certificate signed by Technical Supervision",
+      "meta": "'Act' sheet"
+     },
+     {
+      "num": "3",
+      "text": "Machinery Timesheets for the month - for every unit, signed",
+      "meta": "В5"
+     },
+     {
+      "num": "4",
+      "text": "Concealed Works Acceptance Certificates for the month's works",
+      "meta": "Г2"
+     },
+     {
+      "num": "5",
+      "text": "Photo documentation for every Concealed Works Acceptance Certificate",
+      "meta": "Е5, Д4"
+     },
+     {
+      "num": "6",
+      "text": "Laboratory test protocols (concrete 3/7/28 and others)",
+      "meta": "Г7"
+     },
+     {
+      "num": "7",
+      "text": "Original material certificates (linked to the Concealed Works Acceptance Certificate)",
+      "meta": "-"
+     },
+     {
+      "num": "8",
+      "text": "As-built drawings, including partial completion",
+      "meta": "-"
+     },
+     {
+      "num": "9",
+      "text": "Delivery/issue notes for the month (if not submitted weekly)",
+      "meta": "-"
+     },
+     {
+      "num": "10",
+      "text": "Links to the month's weekly photo reports",
+      "meta": "Е5"
+     }
+    ]
+   }
+  ]
+ }
+]

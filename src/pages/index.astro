@@ -1,0 +1,14 @@
+---
+import { DEFAULT_LANG } from '../lib/data.js';
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang={DEFAULT_LANG}>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0; url=${base}${DEFAULT_LANG}/`} />
+    <link rel="canonical" href={`${base}${DEFAULT_LANG}/`} />
+    <title>Операційна система будівельного блоку</title>
+  </head>
+  <body><p><a href={`${base}${DEFAULT_LANG}/`}>Перейти на сайт</a></p></body>
+</html>

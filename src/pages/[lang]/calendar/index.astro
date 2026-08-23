@@ -1,0 +1,115 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { autolink } from '../../../lib/autolink.js';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const { calendar, dict } = getData(lang);
+const opts = { base, lang, dict: dict.indexes, terms: dict.terms };
+const A = (s) => autolink(s || '', opts);
+const roleOptions = [...new Set(calendar.sections.flatMap((s) => s.items.map((i) => i.from)))];
+const TAB_ICONS = ['clock', 'calendar', 'refresh', 'flag'];
+const short = (r) => r.replace(' (ПʼЯТНИЦЯ)', '').replace(' (ЦИКЛ ЗАКРИТТЯ)', '').replace(' ПОДІЇ', '');
+---
+<Base lang={lang} title={`${t(lang, 'calendar.title')} - ${t(lang, 'site.short')}`} crumbs={[{ label: t(lang, 'nav.calendar') }]}>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:px-8" data-pagefind-body>
+    <h1 class="text-2xl font-extrabold text-(--color-brand) md:text-3xl" data-reveal>{t(lang, 'calendar.title')}</h1>
+    <p class="mt-2 max-w-xl text-[14.5px] text-(--color-ink-2)" data-reveal>{t(lang, 'calendar.subtitle')}</p>
+
+    <!-- Перемикач ритму -->
+    <div class="no-print sticky top-14 z-30 -mx-4 mt-6 border-b border-(--color-line) bg-(--color-paper)/95 px-4 py-3 backdrop-blur md:-mx-8 md:px-8">
+      <div class="flex flex-wrap items-center gap-3">
+        <div class="flex flex-wrap gap-1 rounded-xl border border-(--color-line) bg-white p-1" role="tablist" aria-label={t(lang, 'docs.filterRhythm')}>
+          {calendar.sections.map((s, i) => (
+            <button data-tab={String(i)} role="tab" aria-selected={i === 0 ? 'true' : 'false'}
+              class:list={['cal-tab flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-[12.5px] font-semibold transition-all', i === 0 && 'active']}>
+              <Icon name={TAB_ICONS[i]} size={13} />
+              {short(s.rhythm)}
+            </button>
+          ))}
+        </div>
+        <select id="cal-role" class="ml-auto rounded-xl border border-(--color-line) bg-white px-3 py-2 text-[12.5px] font-medium text-(--color-ink) focus:border-(--color-accent) focus:outline-none">
+          <option value="">{t(lang, 'docs.filterRole')}: {t(lang, 'docs.all')}</option>
+          {roleOptions.map((r) => <option value={r}>{r}</option>)}
+        </select>
+      </div>
+    </div>
+
+    <!-- Панелі ритмів -->
+    {calendar.sections.map((sec, si) => (
+      <section data-cal-panel={si} class:list={['mt-6', si !== 0 && 'hidden']} role="tabpanel">
+        <div class="space-y-2.5">
+          {sec.items.map((it, ii) => (
+            <article class="cal-row overflow-hidden rounded-2xl border border-(--color-line) bg-white transition-all hover:border-(--color-accent-2)/50 hover:shadow-sm" data-from={it.from} data-reveal style={`--reveal-delay:${Math.min(ii, 6) * 50}ms`}>
+              <div class="flex items-start gap-4 p-4">
+                <span class="chip mt-0.5 grid h-10 min-w-[74px] shrink-0 place-items-center rounded-xl bg-(--color-brand) px-2 text-[12px] font-bold text-white">{it.term}</span>
+                <div class="min-w-0 flex-1">
+                  <p class="text-[14px] font-semibold leading-snug" set:html={A(it.what)} />
+                  <p class="mt-1 flex flex-wrap items-center gap-x-2 text-[12px] text-(--color-mute)">
+                    <span set:html={A(it.from)} />
+                    <Icon name="arrow-right" size={11} class="text-(--color-line)" />
+                    <span set:html={A(it.to)} />
+                    {it.form && it.form !== '-' && (
+                      <span class="chip rounded-md bg-(--color-wash) px-1.5 py-0.5 text-[10.5px] font-bold text-(--color-accent)" set:html={A(it.form)} />
+                    )}
+                  </p>
+                </div>
+              </div>
+              {it.sanction && it.sanction !== '-' && (
+                <details class="group border-t border-(--color-line) bg-(--color-paper)">
+                  <summary class="flex cursor-pointer list-none items-center gap-2 px-4 py-2 text-[11.5px] font-semibold text-(--color-stop) transition-colors hover:bg-(--color-stop-bg)/50 [&::-webkit-details-marker]:hidden">
+                    <Icon name="alert" size={12} />
+                    {t(lang, 'calendar.sanctionLabel')}
+                    <svg class="ml-auto text-(--color-mute) transition-transform duration-200 group-open:rotate-180" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+                  </summary>
+                  <p class="px-4 pb-3 text-[12.5px] leading-snug text-(--color-stop)" set:html={A(it.sanction)} />
+                </details>
+              )}
+            </article>
+          ))}
+        </div>
+        {sec.note && <p class="mt-3 flex items-start gap-2 text-[12.5px] italic text-(--color-mute)"><Icon name="question" size={13} class="mt-0.5 shrink-0" /><span set:html={A(sec.note)} /></p>}
+      </section>
+    ))}
+
+    {calendar.outro.map((o) => (
+      <p class="mt-8 flex items-start gap-3 rounded-2xl border-l-4 border-(--color-stop) bg-(--color-stop-bg) px-4 py-3.5 text-[13px] font-medium" data-reveal>
+        <Icon name="alert" size={15} class="mt-0.5 shrink-0 text-(--color-stop)" />
+        <span set:html={A(o)} />
+      </p>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .cal-tab { color: var(--color-ink-2); cursor: pointer; }
+  .cal-tab:hover { background: var(--color-wash); }
+  .cal-tab.active { background: var(--color-brand); color: #fff; }
+</style>
+
+<script>
+  const tabs = [...document.querySelectorAll<HTMLButtonElement>('.cal-tab')];
+  const panels = [...document.querySelectorAll<HTMLElement>('[data-cal-panel]')];
+  const roleSel = document.getElementById('cal-role') as HTMLSelectElement;
+  let role = '';
+
+  function applyRole() {
+    panels.forEach((p) => {
+      p.querySelectorAll<HTMLElement>('.cal-row').forEach((r) => {
+        r.classList.toggle('hidden', !!role && !(r.dataset.from || '').includes(role));
+      });
+    });
+  }
+  tabs.forEach((tab) =>
+    tab.addEventListener('click', () => {
+      tabs.forEach((x) => { x.classList.toggle('active', x === tab); x.setAttribute('aria-selected', String(x === tab)); });
+      panels.forEach((p) => p.classList.toggle('hidden', p.dataset.calPanel !== tab.dataset.tab));
+      const panel = panels.find((p) => p.dataset.calPanel === tab.dataset.tab);
+      panel?.querySelectorAll('[data-reveal]').forEach((el) => el.classList.add('in-view'));
+    })
+  );
+  roleSel?.addEventListener('change', () => { role = roleSel.value; applyRole(); });
+</script>

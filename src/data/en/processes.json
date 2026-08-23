@@ -1,0 +1,324 @@
+[
+ {
+  "slug": "monthly-cycle",
+  "icon": "refresh",
+  "title": "Monthly planning and closeout cycle",
+  "lead": "The main rhythm of site work: daily fact-tracking, weekly schedule review, planning by the 25th, submission by the 5th, PTD review by the 10th - payment follows.",
+  "warn": "Skip a step - payment stops.",
+  "steps": [
+   {
+    "num": "1",
+    "day": "by the 25th",
+    "who": "Site Manager",
+    "what": "Submits to PTD the work plan (Б1) + schedule (Б2) + material needs (В1)",
+    "ifnot": "The month is not funded, materials are not ordered"
+   },
+   {
+    "num": "2",
+    "day": "by the 28th",
+    "who": "PTD",
+    "what": "Reconciles the plan with the project, cost estimate and cumulative works register; forwards the requirement to Procurement",
+    "ifnot": "Delivery failure - PTD responsibility"
+   },
+   {
+    "num": "3",
+    "day": "by the 5th",
+    "who": "Site Manager",
+    "what": "Submits the reporting package (Б3): certificate with 2 signatures + timesheets В5 + as-built documentation + delivery notes",
+    "ifnot": "One missing document - the package is not accepted"
+   },
+   {
+    "num": "4",
+    "day": "by the 10th",
+    "who": "PTD",
+    "what": "Reviews the package, reconciles it with the cumulative works register, forwards the technical verification note to the Head of Client's Service",
+    "ifnot": "Without the note, payment for the month is not confirmed"
+   },
+   {
+    "num": "5",
+    "day": "after",
+    "who": "Head of CS + Finance",
+    "what": "Head of CS approves the certificates, Finance processes payment within limits",
+    "ifnot": ""
+   }
+  ],
+  "rhythm": {
+   "daily": [
+    "By 8:30 - daily headcount to the Telegram chat with Head of CS (by crew)",
+    "During the day - 3-5 photos of key zones to the same chat",
+    "Site foreman fills in the works log; the driver - the machinery timesheet (В5)"
+   ],
+   "weekly": [
+    "By 17:00 Friday - schedule plan-fact: \"On track\" or a written explanation from the PM",
+    "By 17:00 - weekly photo report (every work item of the week photographed)",
+    "By 18:00 - weekly machinery timesheets to PTD + delivery notes and certificates"
+   ]
+  },
+  "errors": [
+   "Plan not submitted by the 25th - the month is not funded",
+   "Incomplete package or missing signature - payment is not considered",
+   "Overrun without explanation - the line item is not paid (Г9, Г8)",
+   "Work performed to an outdated drawing revision - rework at the fault party's expense"
+  ],
+  "docs": [
+   "Б1",
+   "Б2",
+   "В1",
+   "Б3",
+   "В5",
+   "Е1",
+   "Е3"
+  ]
+ },
+ {
+  "slug": "payment",
+  "icon": "coins",
+  "title": "Payment path: 8 steps from initiation to payment",
+  "lead": "No hryvnia moves without documentary confirmation. PTD is the filter that catches overruns BEFORE the money leaves.",
+  "warn": "There is no such thing as a payment outside the register.",
+  "steps": [
+   {
+    "num": "1",
+    "day": "",
+    "who": "Initiator (PM)",
+    "what": "Checks prerequisites: contract in the register, cost estimate approved, works accepted",
+    "ifnot": "Initiation is not possible - close the prerequisite first"
+   },
+   {
+    "num": "2",
+    "day": "submission day",
+    "who": "Initiator (PM)",
+    "what": "Enters the payment into the payment register + assembles the full package per payment type (Section 4.2)",
+    "ifnot": "There is no such thing as a payment outside the register"
+   },
+   {
+    "num": "3",
+    "day": "2 business days",
+    "who": "PTD",
+    "what": "Reconciles with the cost estimate and cumulative works register, checks completeness and signatures",
+    "ifnot": "Returned to the initiator; resubmit after correction"
+   },
+   {
+    "num": "4",
+    "day": "by the 10th",
+    "who": "PTD",
+    "what": "Monthly filter: technical verification note for the month (for the reporting month's certificates)",
+    "ifnot": "Payment for the month is not confirmed"
+   },
+   {
+    "num": "5",
+    "day": "together with step 3",
+    "who": "Cost Engineer",
+    "what": "Confirms prices and quantities, records deviations",
+    "ifnot": "Deviation without explanation - the line item is blocked"
+   },
+   {
+    "num": "6",
+    "day": "2 business days",
+    "who": "Head of CS / CEO",
+    "what": "Approves within limits: up to the limit - Head of CS; above the limit / outside the estimate / advance above the norm - CEO (+Г1)",
+    "ifnot": "Rejected - reason recorded in the register, returned to the initiator"
+   },
+   {
+    "num": "7",
+    "day": "3 business days",
+    "who": "Finance",
+    "what": "Processes payment per the register; in case of shortfall - per the Head of CS's weekly priority",
+    "ifnot": "Delay - escalation; status inquiries - via Head of CS, 2 days"
+   },
+   {
+    "num": "8",
+    "day": "every Friday",
+    "who": "Finance",
+    "what": "Updates the register, weekly report to Head of CS: paid / in queue / returned",
+    "ifnot": "Reviewed at the meeting"
+   }
+  ],
+  "stops": [
+   "No contract in the contract register",
+   "No Technical Supervision signature on the certificate",
+   "No technical verification note for the month",
+   "Works performed in suspended zones (Certificate Г4 in effect)",
+   "Works performed without Change Request Г1 - unauthorized",
+   "A claim with withholding is in effect against the contractor (Г8)"
+  ],
+  "errors": [
+   "Payment bypassing the register - personal responsibility of the initiator and the performer",
+   "Signing a certificate for work not performed - withholding, dismissal on repeat",
+   "3+ package returns per month - reviewed at the meeting"
+  ],
+  "docs": [
+   "Е3",
+   "Б3",
+   "В1",
+   "В3",
+   "В5",
+   "Г1",
+   "Г4",
+   "Г8",
+   "В7"
+  ]
+ },
+ {
+  "slug": "escalation",
+  "icon": "trending-up",
+  "title": "Overdue escalation",
+  "lead": "A request without a response within the standard timeframe escalates automatically - no one needs to be \"reminded personally\".",
+  "warn": "A report not submitted on time is considered not submitted.",
+  "steps": [
+   {
+    "num": "1",
+    "day": "within 1 day",
+    "who": "Worksection",
+    "what": "Automatic reminder to the responsible person",
+    "ifnot": ""
+   },
+   {
+    "num": "2",
+    "day": "2-3 days",
+    "who": "Department Head",
+    "what": "Escalation to the department head of the person in default",
+    "ifnot": ""
+   },
+   {
+    "num": "3",
+    "day": "4-10 days",
+    "who": "Head of Client's Service",
+    "what": "Escalation to Head of CS; the issue is raised at the weekly meeting; recorded via memo (Г9)",
+    "ifnot": ""
+   },
+   {
+    "num": "4",
+    "day": "10+ days",
+    "who": "General Director",
+    "what": "Escalation to CEO",
+    "ifnot": ""
+   }
+  ],
+  "errors": [
+   "A risk outside the register is not accepted as justification for a failure",
+   "A problem not reported in the daily summary is not accepted as a reason for falling behind"
+  ],
+  "docs": [
+   "Г9",
+   "А"
+  ]
+ },
+ {
+  "slug": "hidden-works",
+  "icon": "layers",
+  "title": "Concealed works and laboratory control",
+  "lead": "Works to be covered by subsequent works are presented to Technical Supervision BEFORE they are covered. Without the lab technician's protocol and photo documentation, the Concealed Works Acceptance Certificate is not accepted.",
+  "warn": "Covered without authorization - uncovering at the fault party's expense is possible.",
+  "steps": [
+   {
+    "num": "1",
+    "day": "in advance",
+    "who": "Site Manager",
+    "what": "Calls Technical Supervision via Worksection BEFORE the works are covered by subsequent works",
+    "ifnot": "Works covered without authorization"
+   },
+   {
+    "num": "2",
+    "day": "during concreting",
+    "who": "Lab Technician",
+    "what": "Takes samples at EVERY concrete pour; testing at 3/7/28 days (Г7)",
+    "ifnot": "Concealed Works Acceptance Certificate is not closed without the protocol"
+   },
+   {
+    "num": "3",
+    "day": "before closing",
+    "who": "Site Manager",
+    "what": "Photo documentation per checklist Д4 + original material certificates",
+    "ifnot": "Without photos and certificates the Concealed Works Acceptance Certificate is not accepted"
+   },
+   {
+    "num": "4",
+    "day": "inspection",
+    "who": "Technical Supervision",
+    "what": "Inspects the works, signs the Concealed Works Acceptance Certificate (Г2) and as-built diagrams, or issues a Supervision Directive (Г3)",
+    "ifnot": "Works with a defect note are not closed until the defect is corrected"
+   },
+   {
+    "num": "5",
+    "day": "weekly",
+    "who": "Site Manager",
+    "what": "Forwards closed Concealed Works Acceptance Certificates with the package to PTD for the as-built documentation",
+    "ifnot": "The month's reporting package will not be accepted"
+   }
+  ],
+  "errors": [
+   "The structure has not reached the required strength per the protocol - not accepted: reinforcement or demolition only via Г1",
+   "Strength shortfall - the lab technician reports IMMEDIATELY, without waiting for 28 days"
+  ],
+  "docs": [
+   "Г2",
+   "Г7",
+   "Д4",
+   "Г3",
+   "Г1",
+   "Е6",
+   "Е7"
+  ]
+ },
+ {
+  "slug": "project-start",
+  "icon": "flag",
+  "title": "Project start package",
+  "lead": "Before any works begin, a complete start package of 13 items must be assembled. This is a gate: without the package, the project is not handed over for execution.",
+  "warn": "Works started without the package are considered unauthorized - payment is not guaranteed.",
+  "steps": [
+   {
+    "num": "1",
+    "day": "",
+    "who": "Head of CS → CEO",
+    "what": "Project passport: goal, budget, timeline, KPIs, areas of responsibility, risks",
+    "ifnot": ""
+   },
+   {
+    "num": "2",
+    "day": "",
+    "who": "Project Team → Head of CS",
+    "what": "Urban planning conditions, utility connection specs, design documentation (site plan, architectural and structural sections), expert review",
+    "ifnot": ""
+   },
+   {
+    "num": "3",
+    "day": "",
+    "who": "Head of CS",
+    "what": "Permit to carry out construction works",
+    "ifnot": ""
+   },
+   {
+    "num": "4",
+    "day": "",
+    "who": "Cost Engineer + PTD → CEO",
+    "what": "Approved cost estimate: local + facility-level + summary calculation",
+    "ifnot": ""
+   },
+   {
+    "num": "5",
+    "day": "",
+    "who": "PM + PTD → Head of CS/CEO",
+    "what": "Works Schedule, funding schedule, contractor portfolio (tender, 3 proposals)",
+    "ifnot": ""
+   },
+   {
+    "num": "6",
+    "day": "",
+    "who": "H&S Engineer, Head of CS",
+    "what": "Labor safety + orders appointing the PM and project team",
+    "ifnot": ""
+   }
+  ],
+  "errors": [
+   "Gate: without the complete start package, the project is not handed over for execution"
+  ],
+  "docs": [
+   "Д1",
+   "Д2",
+   "В7",
+   "Г1"
+  ]
+ }
+]

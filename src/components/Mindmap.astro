@@ -1,0 +1,88 @@
+---
+// Майндмап місячного ритму: тексти гілок - з i18n (mindmap.branches).
+import Icon from './Icon.astro';
+import { t } from '../lib/data.js';
+const { lang } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const L = (p) => `${base}${lang}/${p}`;
+const BRANCHES = t(lang, 'mindmap.branches');
+const left = BRANCHES.slice(0, 3), right = BRANCHES.slice(3);
+---
+<div class="mindmap" data-reveal>
+  <div class="grid grid-cols-1 items-center gap-6 lg:grid-cols-[1fr_auto_1fr]">
+    <div class="order-2 space-y-4 lg:order-1">
+      {left.map((b, i) => (
+        <div class="mm-branch mm-left" style={`--bc:${b.color}; --reveal-delay:${i * 90}ms`} data-reveal>
+          <div class="mm-card">
+            <p class="flex items-center gap-2 text-[13.5px] font-extrabold" style={`color:${b.color}`}>
+              <Icon name={b.icon} size={15} /> {b.title}
+            </p>
+            <ul class="mt-2 space-y-1.5">
+              {b.items.map((it) => (
+                <li class="flex items-start gap-2 text-[12.5px] leading-snug">
+                  <span class:list={['mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full', it.stop ? 'bg-(--color-stop)' : '']} style={!it.stop ? `background:${b.color}` : ''}></span>
+                  {it.href
+                    ? <a href={L(it.href)} class="text-(--color-ink-2) underline decoration-(--color-line) underline-offset-2 transition-colors hover:text-(--color-accent) hover:decoration-(--color-accent)">{it.text}</a>
+                    : <span class:list={[it.stop ? 'font-semibold text-(--color-stop)' : 'text-(--color-ink-2)']}>{it.text}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="order-1 flex justify-center lg:order-2">
+      <div class="mm-center grid place-items-center rounded-full border-4 border-(--color-brand) bg-white p-6 text-center shadow-lg" data-reveal>
+        <Icon name="refresh" size={26} class="text-(--color-accent)" />
+        <p class="mt-2 max-w-[130px] text-[14px] font-extrabold leading-tight text-(--color-brand)">{t(lang, 'mindmap.center')}</p>
+        <p class="mt-1 text-[10.5px] font-semibold text-(--color-mute)">{t(lang, 'mindmap.centerSub')}</p>
+      </div>
+    </div>
+
+    <div class="order-3 space-y-4">
+      {right.map((b, i) => (
+        <div class="mm-branch mm-right" style={`--bc:${b.color}; --reveal-delay:${i * 90 + 45}ms`} data-reveal>
+          <div class="mm-card">
+            <p class="flex items-center gap-2 text-[13.5px] font-extrabold" style={`color:${b.color}`}>
+              <Icon name={b.icon} size={15} /> {b.title}
+            </p>
+            <ul class="mt-2 space-y-1.5">
+              {b.items.map((it) => (
+                <li class="flex items-start gap-2 text-[12.5px] leading-snug">
+                  <span class:list={['mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full', it.stop ? 'bg-(--color-stop)' : '']} style={!it.stop ? `background:${b.color}` : ''}></span>
+                  {it.href
+                    ? <a href={L(it.href)} class="text-(--color-ink-2) underline decoration-(--color-line) underline-offset-2 transition-colors hover:text-(--color-accent) hover:decoration-(--color-accent)">{it.text}</a>
+                    : <span class:list={[it.stop ? 'font-semibold text-(--color-stop)' : 'text-(--color-ink-2)']}>{it.text}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  .mm-center { width: 190px; height: 190px; }
+  .mm-card {
+    position: relative;
+    border: 1.5px solid color-mix(in srgb, var(--bc) 35%, transparent);
+    border-left: 4px solid var(--bc);
+    background: #fff; border-radius: 1rem; padding: 0.9rem 1rem;
+    transition: box-shadow .2s ease, transform .2s ease;
+  }
+  .mm-branch:hover .mm-card { transform: translateY(-2px); box-shadow: 0 10px 22px -10px color-mix(in srgb, var(--bc) 45%, transparent); }
+  .mm-right .mm-card { border-left: 1.5px solid color-mix(in srgb, var(--bc) 35%, transparent); border-right: 4px solid var(--bc); }
+
+  @media (min-width: 1024px) {
+    .mm-branch { position: relative; }
+    .mm-branch::after {
+      content: ''; position: absolute; top: 50%; width: 2.2rem; height: 2px;
+      background: linear-gradient(to right, var(--bc), color-mix(in srgb, var(--bc) 20%, transparent));
+    }
+    .mm-left::after { right: -2.4rem; }
+    .mm-right::after { left: -2.4rem; transform: scaleX(-1); }
+  }
+</style>

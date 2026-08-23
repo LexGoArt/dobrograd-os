@@ -1,0 +1,17 @@
+---
+const { index, size = 'md' } = Astro.props;
+const group = index[0];
+const tints = {
+  'А': 'bg-slate-100 text-slate-700',
+  'Б': 'bg-[#e8eff5] text-(--color-brand)',
+  'В': 'bg-[#e9f2ea] text-[#3e6b4a]',
+  'Г': 'bg-[#f6ecec] text-[#8c4a42]',
+  'Д': 'bg-[#f4eee2] text-[#7d6428]',
+  'Е': 'bg-[#ece9f3] text-[#584a80]',
+};
+---
+<span class:list={[
+  'chip inline-grid shrink-0 place-items-center rounded-lg',
+  size === 'lg' ? 'h-12 w-12 text-lg' : size === 'md' ? 'h-9 w-9 text-[13px]' : 'h-7 w-7 text-[11px]',
+  tints[group] ?? tints['А'],
+]}>{index}</span>

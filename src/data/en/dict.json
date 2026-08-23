@@ -1,0 +1,145 @@
+{
+ "indexes": {
+  "А": {
+   "slug": "a",
+   "name": "Reporting Calendar"
+  },
+  "Б1": {
+   "slug": "b1",
+   "name": "Monthly Work Plan"
+  },
+  "Б2": {
+   "slug": "b2",
+   "name": "Works Schedule (monthly)"
+  },
+  "Б3": {
+   "slug": "b3",
+   "name": "Monthly Reporting Package"
+  },
+  "В1": {
+   "slug": "v1",
+   "name": "Materials Request (Inventory)"
+  },
+  "В2": {
+   "slug": "v2",
+   "name": "Own Machinery Request"
+  },
+  "В3": {
+   "slug": "v3",
+   "name": "External Machinery and Laborers Request"
+  },
+  "В4": {
+   "slug": "v4",
+   "name": "Machinery Relocation Certificate"
+  },
+  "В5": {
+   "slug": "v5",
+   "name": "Machinery Timesheet"
+  },
+  "В6": {
+   "slug": "v6",
+   "name": "Inventory/Machinery Custody Transfer Certificate"
+  },
+  "В7": {
+   "slug": "v7",
+   "name": "Tender Bids Comparison Table"
+  },
+  "Г1": {
+   "slug": "g1",
+   "name": "Change Request"
+  },
+  "Г2": {
+   "slug": "g2",
+   "name": "Concealed Works Inspection Certificate (CWAC)"
+  },
+  "Г3": {
+   "slug": "g3",
+   "name": "Technical Supervision Directive / Remark"
+  },
+  "Г4": {
+   "slug": "g4",
+   "name": "Work Suspension/Resumption Certificate"
+  },
+  "Г5": {
+   "slug": "g5",
+   "name": "Cumulative Works and Materials Register"
+  },
+  "Г6": {
+   "slug": "g6",
+   "name": "As-Built Documentation - Form Set"
+  },
+  "Г7": {
+   "slug": "g7",
+   "name": "Laboratory Test Report"
+  },
+  "Г8": {
+   "slug": "g8",
+   "name": "Claim to Contractor"
+  },
+  "Г9": {
+   "slug": "g9",
+   "name": "Internal Memo (Escalation)"
+  },
+  "Д1": {
+   "slug": "d1",
+   "name": "Project Kickoff Package Checklist"
+  },
+  "Д2": {
+   "slug": "d2",
+   "name": "Project Handover to Execution Checklist"
+  },
+  "Д3": {
+   "slug": "d3",
+   "name": "Month-End Closing Checklist"
+  },
+  "Д4": {
+   "slug": "d4",
+   "name": "Photo Record Checklist"
+  },
+  "Д5": {
+   "slug": "d5",
+   "name": "Service Self-Audit Checklist"
+  },
+  "Е1": {
+   "slug": "e1",
+   "name": "PTD-Site Interaction Regulations"
+  },
+  "Е2": {
+   "slug": "e2",
+   "name": "Tender Regulations"
+  },
+  "Е3": {
+   "slug": "e3",
+   "name": "Payment Regulations"
+  },
+  "Е4": {
+   "slug": "e4",
+   "name": "Worksection (WS) Operating Regulations"
+  },
+  "Е5": {
+   "slug": "e5",
+   "name": "Photo Record Regulations"
+  },
+  "Е6": {
+   "slug": "e6",
+   "name": "Concealed Works Acceptance Certificate Preparation and Submission Regulations"
+  },
+  "Е7": {
+   "slug": "e7",
+   "name": "Laboratory Control Regulations"
+  },
+  "Е8": {
+   "slug": "e8",
+   "name": "Works Acceptance Standards"
+  },
+  "Е9": {
+   "slug": "e9",
+   "name": "Material Write-off Factors"
+  }
+ },
+ "terms": {
+  "Technical Verification Note": "e3",
+  "Cumulative Works Register": "g5",
+  "payment register": "e3"
+ }
+}

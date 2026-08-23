@@ -1,0 +1,33 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const { kernel } = getData(lang);
+const L = (p) => `${base}${lang}/${p}`;
+const kernelDrive = 'https://docs.google.com/spreadsheets/d/1izWmosUZux5D2xxAfrAlyocaul__mNjKJ6w9UrsEMjU/edit';
+---
+<Base lang={lang} title={`${t(lang, 'kernel.title')} - ${t(lang, 'site.short')}`} crumbs={[{ label: t(lang, 'nav.kernel') }]}>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:px-6">
+    <h1 class="text-2xl font-extrabold text-(--color-brand) md:text-3xl">{t(lang, 'kernel.title')}</h1>
+    <p class="mt-2 max-w-2xl text-[14.5px] text-(--color-ink-2)">{t(lang, 'kernel.subtitle')}</p>
+    <a href={kernelDrive} target="_blank" rel="noopener" class="no-print mt-4 inline-flex items-center gap-2 rounded-xl border-2 border-(--color-line) bg-white px-4 py-2.5 text-[13.5px] font-bold text-(--color-brand) transition-all hover:border-(--color-accent) hover:text-(--color-accent)">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M14 3v5h5M7 3h7l5 5v13H7z"/></svg>
+      {t(lang, 'docs.formOnDrive')}
+    </a>
+
+    <div class="mt-8 space-y-3">
+      {kernel.chapters.map((ch) => (
+        <a href={L(`kernel/${ch.num}/`)} class="group flex items-center gap-4 rounded-2xl border border-(--color-line) bg-white p-5 transition-all hover:-translate-y-0.5 hover:border-(--color-accent) hover:shadow-md">
+          <span class="chip grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-(--color-brand) text-lg text-white">{ch.num}</span>
+          <span class="min-w-0 flex-1">
+            <span class="block text-[15.5px] font-bold text-(--color-brand) group-hover:text-(--color-accent)">{ch.title}</span>
+          </span>
+          <svg class="shrink-0 text-(--color-mute) transition-transform group-hover:translate-x-1 group-hover:text-(--color-accent)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

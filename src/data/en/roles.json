@@ -1,0 +1,1374 @@
+[
+ {
+  "slug": "gd",
+  "title": "General Director",
+  "group": "Керівництво",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "By the 5th, submits the handover package with technical supervision signatures to the PTD.",
+     "TECHNICAL SUPERVISION",
+     "Continuously monitors the quality of works and materials directly on site."
+    ]
+   }
+  ],
+  "kpi": null,
+  "submits": [],
+  "receives": [
+   "В7",
+   "Г1",
+   "Г4",
+   "Г5",
+   "Г8",
+   "Д1",
+   "Д5"
+  ],
+  "icon": "building",
+  "cardName": "General Director",
+  "short": "strategy, budget, and top-level decisions",
+  "tagline": "Strategic leadership, budget, and top-level decisions.",
+  "chain": [],
+  "faq": [],
+  "asked": []
+ },
+ {
+  "slug": "ksz",
+  "title": "Head of Client's Service",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Organizes the work of the Client's Service and distributes responsibility among the structure's participants.",
+     "Receives tasks from the General Director and ensures their execution through the service and the project headquarters.",
+     "Responsible for the preparation, organization, control, and support of project implementation.",
+     "Monitors deadlines, budget, quality, scope, inventory, equipment, and document flow.",
+     "Records deviations, causes, responsible persons, and correction deadlines."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Organize the development and approval of design documentation.",
+     "Organize the acquisition of technical specifications and permitting documentation.",
+     "Ensure the preparation and approval of the cost estimate, works schedule, and financing schedule.",
+     "Form teams for project implementation.",
+     "Coordinate and oversee the work of project managers.",
+     "Organize the work of the PTD, cost engineer, technical supervision, design team, and labor protection.",
+     "Ensure control of deadlines, budget, quality, scope, documentation, and payment justification.",
+     "Organize inventory checks, fixed asset accounting, and inventory control through project completion."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "General Director - receiving tasks, approving decisions, reporting.",
+     "Design team - design decisions, changes, optimization.",
+     "PTD / cost engineer / technical supervision - documents, cost estimate, scope, quality, deviations.",
+     "Project headquarters - task assignment, execution control, receiving certificates and reports.",
+     "Finance division - confirmed scope, certificates, payment register, budget deviations.",
+     "Marketing and sales division - readiness deadlines, site status, information for sales."
+    ]
+   }
+  ],
+  "kpi": "Projects prepared (documentation, permits, cost estimate, schedules); projects on time and within budget; quality, scope, and payments confirmed.",
+  "group": "Служба замовника",
+  "submits": [
+   "Г4",
+   "Д1",
+   "Д2",
+   "Д5"
+  ],
+  "receives": [
+   "Б2",
+   "В7",
+   "Г1",
+   "Г4",
+   "Г5",
+   "Г7",
+   "Г8"
+  ],
+  "icon": "compass",
+  "cardName": "Head of CS",
+  "short": "operational management of the Client's Service",
+  "tagline": "Operational management of the Client's Service: from project preparation to payment approval.",
+  "chain": [
+   {
+    "name": "General Director",
+    "why": "receiving tasks, approving decisions, reporting.",
+    "icon": "building",
+    "slug": "gd"
+   },
+   {
+    "name": "Design Team",
+    "why": "design decisions, changes, optimization.",
+    "icon": "pencil-ruler",
+    "slug": "proektna-grupa"
+   },
+   {
+    "name": "PTD / Cost Engineer / Technical Supervision",
+    "why": "documents, cost estimate, scope, quality, deviations.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Project Headquarters",
+    "why": "task assignment, execution control, receiving certificates and reports.",
+    "icon": "briefcase",
+    "slug": "kp"
+   },
+   {
+    "name": "Finance Division",
+    "why": "confirmed scope, certificates, payment register, budget deviations.",
+    "icon": "coins",
+    "slug": null
+   },
+   {
+    "name": "Marketing and Sales Division",
+    "why": "readiness deadlines, site status, information for sales.",
+    "icon": "megaphone",
+    "slug": null
+   }
+  ],
+  "faq": [
+   {
+    "q": "Which payments do I approve?",
+    "a": "Within the approved cost estimate up to the limit (the amount is set by the CEO). Above the limit and outside the cost estimate - the CEO; outside the cost estimate only via a Change Request Г1."
+   },
+   {
+    "q": "What do I check monthly?",
+    "a": "PTD technical verification notes; on a sample basis - returned packages and overruns; at least 3 packages of paid payments."
+   }
+  ],
+  "asked": [
+   {
+    "what": "Technical specifications and permitting documentation (copies)",
+    "who": "PM, PTD, design team",
+    "whom": "Head of CS",
+    "term": "1 business day"
+   },
+   {
+    "what": "Payment status",
+    "who": "PM; contractor - via PM",
+    "whom": "Finance division (via Head of CS)",
+    "term": "2 business days"
+   },
+   {
+    "what": "Tender status, comparative table of proposals",
+    "who": "PM, CEO",
+    "whom": "Head of CS / PTD",
+    "term": "2 business days"
+   },
+   {
+    "what": "Change request (CR) status",
+    "who": "Change initiator",
+    "whom": "Head of CS (via WS)",
+    "term": "2 business days"
+   },
+   {
+    "what": "Meeting minutes / extract from the decision register",
+    "who": "Any participant",
+    "whom": "Meeting secretary / Head of CS",
+    "term": "1 business day"
+   }
+  ]
+ },
+ {
+  "slug": "proektna-grupa",
+  "title": "Design Team (outsourced)",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Prepares design decisions, drawings, changes, and clarifications.",
+     "Provides the technical basis for the cost estimate, works schedule, and execution of works.",
+     "Works on optimizing design decisions in terms of cost, timelines, and practicality of execution.",
+     "Provides clarifications on technical decisions for the PTD, cost engineer, and project headquarters.",
+     "Prepares updated documentation in case of changes or adjustments."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Develop design and working documentation for the site.",
+     "Develop pre-design decisions and the architectural section.",
+     "Engage related specialists (project chief architect, project chief engineer, ventilation, electrical, fire safety).",
+     "Obtain technical specifications for related sections.",
+     "Make changes to the project via a registered Change Request."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Head of Service - tasks, decision approval, changes.",
+     "PTD - design documentation, technical decisions, clarifications.",
+     "Cost engineer - scope, decisions, materials, changes.",
+     "Project headquarters - documentation for executing works on site.",
+     "Technical supervision - compliance of works with design decisions."
+    ]
+   }
+  ],
+  "kpi": null,
+  "group": "Служба замовника",
+  "submits": [],
+  "receives": [],
+  "icon": "pencil-ruler",
+  "cardName": "Design Team",
+  "short": "design decisions and drawings",
+  "tagline": "Design decisions, drawings, and changes - via a registered request.",
+  "chain": [
+   {
+    "name": "Head of Service",
+    "why": "tasks, decision approval, changes.",
+    "icon": "compass",
+    "slug": "ksz"
+   },
+   {
+    "name": "PTD",
+    "why": "design documentation, technical decisions, clarifications.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Cost Engineer",
+    "why": "scope, decisions, materials, changes.",
+    "icon": "calculator",
+    "slug": "koshtorysnyk"
+   },
+   {
+    "name": "Project Headquarters",
+    "why": "documentation for executing works on site.",
+    "icon": "briefcase",
+    "slug": "kp"
+   },
+   {
+    "name": "Technical Supervision",
+    "why": "compliance of works with design decisions.",
+    "icon": "shield-check",
+    "slug": "tehnahliad"
+   }
+  ],
+  "faq": [],
+  "asked": []
+ },
+ {
+  "slug": "vtv",
+  "title": "Head of PTD",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Organizes the preparation of design-technical, cost estimate, contract, and as-built documentation.",
+     "Prepares or verifies the scope of works, rates, cost estimates, and grounds for payments.",
+     "Ensures the maintenance of works schedules and control of deadlines and technical documentation.",
+     "Checks certificates, work orders, scope confirmations, and the compliance of documents with the actual works performed.",
+     "Maintains the cumulative works and materials register - ensures no scope is closed twice.",
+     "Prepares information for the Head of Service, the finance division, and the project headquarters."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Organizing, maintaining, and controlling the completeness of design, technical, and as-built documentation.",
+     "Organize the preparation, verification, and support of contracts with contractors and suppliers.",
+     "Ensure documentation of all construction processes.",
+     "Organize the verification of scope, cost of works and materials jointly with the cost engineer and technical supervision.",
+     "Maintain registers of contracts, certificates, changes, as-built documentation, and remarks.",
+     "Ensure that changes to the project, cost estimate, and schedules are made exclusively in writing.",
+     "Ensure timely transfer of documentation between the Client's Service, the Project Headquarters, and external participants.",
+     "Compile and hand over a complete documentation package after completion of each project."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Design team - design documentation, changes, technical decisions.",
+     "Cost engineer - scope, rates, cost estimates, deviations.",
+     "Technical supervision - quality, scope, certificates, remarks.",
+     "Project headquarters - schedules, work orders, certificates, as-built documentation, monthly packages.",
+     "Head of Service - reporting, issues, decisions."
+    ]
+   }
+  ],
+  "kpi": "Completeness and up-to-dateness of documentation with no overdue items; document issuance deadlines; up-to-date registers.",
+  "group": "Служба замовника",
+  "submits": [
+   "В7",
+   "Г5",
+   "Г8"
+  ],
+  "receives": [
+   "Б1",
+   "Б2",
+   "Б3",
+   "В1",
+   "В3",
+   "В4",
+   "В5",
+   "В6",
+   "Г1",
+   "Г2",
+   "Г3",
+   "Г6",
+   "Г7"
+  ],
+  "icon": "folder-check",
+  "cardName": "Head of PTD",
+  "short": "documentation and the filter before payments",
+  "tagline": "The single point for issuing documentation and the filter before payments: verifies scope, maintains the cumulative register, and prepares the technical verification note.",
+  "chain": [
+   {
+    "name": "Design Team",
+    "why": "design documentation, changes, technical decisions.",
+    "icon": "pencil-ruler",
+    "slug": "proektna-grupa"
+   },
+   {
+    "name": "Cost Engineer",
+    "why": "scope, rates, cost estimates, deviations.",
+    "icon": "calculator",
+    "slug": "koshtorysnyk"
+   },
+   {
+    "name": "Technical Supervision",
+    "why": "quality, scope, certificates, remarks.",
+    "icon": "shield-check",
+    "slug": "tehnahliad"
+   },
+   {
+    "name": "Project Headquarters",
+    "why": "schedules, work orders, certificates, as-built documentation, monthly packages.",
+    "icon": "briefcase",
+    "slug": "kp"
+   },
+   {
+    "name": "Head of Service",
+    "why": "reporting, issues, decisions.",
+    "icon": "compass",
+    "slug": "ksz"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What do I check in the monthly plan?",
+    "a": "Checklist, block А: names as per the cost estimate, scope within the balances of the cumulative register, compliance with the project and Г1 changes, realistic schedule, materials as per Е9 norms. Deadline - by the 28th."
+   },
+   {
+    "q": "What to do with an overrun?",
+    "a": "The line item is excluded from confirmation; the Site Manager receives a written request for explanation (2 business days). A legitimate change - via Г1 the following month; without explanation - not paid, Г9; if the contractor is at fault - Г8."
+   },
+   {
+    "q": "Who is responsible if an overrun is missed?",
+    "a": "The PTD. The cause is reviewed by the Head of CS."
+   }
+  ],
+  "asked": [
+   {
+    "what": "Design documentation: master plan, architectural section (AR), structural section (KR), engineering sections (current version)",
+    "who": "PM, Site Manager, Site Foreman, technical supervision, cost engineer",
+    "whom": "PTD",
+    "term": "1 business day"
+   },
+   {
+    "what": "Clarification of a design decision, error in a drawing",
+    "who": "PM, PTD, Site Manager, technical supervision",
+    "whom": "Design team (via PTD)",
+    "term": "3 business days"
+   },
+   {
+    "what": "Cost estimate, rate, cost verification",
+    "who": "PM, Head of CS, CEO, finance division",
+    "whom": "Cost engineer (via Head of PTD)",
+    "term": "3 business days"
+   },
+   {
+    "what": "Current works schedule",
+    "who": "Any project participant",
+    "whom": "PM / PTD",
+    "term": "1 business day"
+   },
+   {
+    "what": "Cumulative register: completed / remaining works and materials",
+    "who": "PM, Head of CS, CEO, finance division",
+    "whom": "PTD",
+    "term": "2 business days"
+   },
+   {
+    "what": "Certificates, as-built documentation (copies, status)",
+    "who": "PM, Head of CS, technical supervision",
+    "whom": "PTD",
+    "term": "2 business days"
+   },
+   {
+    "what": "Contract, contract approval status",
+    "who": "PM, Site Manager",
+    "whom": "PTD (contract register)",
+    "term": "1 business day"
+   },
+   {
+    "what": "Tender status, comparative table of proposals",
+    "who": "PM, CEO",
+    "whom": "Head of CS / PTD",
+    "term": "2 business days"
+   },
+   {
+    "what": "Norms and coefficients for material write-offs",
+    "who": "Site Manager, Site Foreman, cost engineer",
+    "whom": "PTD",
+    "term": "1 business day"
+   }
+  ]
+ },
+ {
+  "slug": "koshtorysnyk",
+  "title": "Cost Engineer",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Prepares cost estimates based on design documentation.",
+     "Verifies the cost of works, materials, machinery, and services.",
+     "Builds the basis for the budget, financing schedule, and payment register.",
+     "Checks deviations of actual costs from the approved cost estimate.",
+     "Prepares explanations for disputed or unjustified amounts."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Prepare project cost estimates (local, object-level, consolidated).",
+     "Verify contractor cost estimates against market prices.",
+     "Monitor prices for materials and works jointly with the PTD.",
+     "Recalculate the cost estimate when the project or scope of works changes.",
+     "Prepare comparative calculations for tenders and contractor selection.",
+     "Maintain a database of current prices for materials and works."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "PTD - scope of works, technical data, cost estimate base.",
+     "Design team - design decisions, changes, clarifications.",
+     "Finance division - budget, financing schedule, payment register.",
+     "Head of Service - deviations, risks, proposals.",
+     "Project headquarters - actual scope, clarifications on works, execution confirmation."
+    ]
+   }
+  ],
+  "kpi": "Cost estimate issued within the standard deadline; 100% of actual/estimate deviations with an explained cause; price database up to date (updated monthly).",
+  "group": "Служба замовника",
+  "submits": [],
+  "receives": [],
+  "icon": "calculator",
+  "cardName": "Cost Engineer",
+  "short": "cost estimates and price control",
+  "tagline": "Cost estimates, price control, and the budget deviation report.",
+  "chain": [
+   {
+    "name": "PTD",
+    "why": "scope of works, technical data, cost estimate base.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Design Team",
+    "why": "design decisions, changes, clarifications.",
+    "icon": "pencil-ruler",
+    "slug": "proektna-grupa"
+   },
+   {
+    "name": "Finance Division",
+    "why": "budget, financing schedule, payment register.",
+    "icon": "coins",
+    "slug": null
+   },
+   {
+    "name": "Head of Service",
+    "why": "deviations, risks, proposals.",
+    "icon": "compass",
+    "slug": "ksz"
+   },
+   {
+    "name": "Project Headquarters",
+    "why": "actual scope, clarifications on works, execution confirmation.",
+    "icon": "briefcase",
+    "slug": "kp"
+   }
+  ],
+  "faq": [],
+  "asked": [
+   {
+    "what": "Cost estimate, rate, cost verification",
+    "who": "PM, Head of CS, CEO, finance division",
+    "whom": "Cost engineer (via Head of PTD)",
+    "term": "3 business days"
+   },
+   {
+    "what": "Project budget deviation report",
+    "who": "Head of CS, CEO, finance division",
+    "whom": "Cost engineer",
+    "term": "2 business days"
+   }
+  ]
+ },
+ {
+  "slug": "tehnahliad",
+  "title": "Technical Supervision",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Monitors the quality of works performed on site.",
+     "Checks the compliance of works with the design documentation, DBN (state building codes), technical requirements, and execution technology.",
+     "Confirms or does not confirm the works actually performed.",
+     "Records remarks, defects, technology violations, and correction deadlines.",
+     "Provides confirmation for certificates, scope, and subsequent payments."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Confirm the works actually performed and sign KB-2v certificates weekly.",
+     "Monitor the compliance of completed works with the design documentation.",
+     "Monitor the quality and scope of completed works.",
+     "Inspect concealed works and record violations and deviations in the remarks register.",
+     "Maintain the technical supervision log and the concealed works log.",
+     "Without a certificate signed by technical supervision, payments to contractors and wages are not made."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Site Foreman / Site Manager - work control, remarks, defect correction.",
+     "PTD - scope confirmation, certificates, as-built documentation.",
+     "Cost engineer - actually completed scope.",
+     "Head of Service - critical violations, risks, quality, decisions.",
+     "Finance division - confirmation of completed works as the basis for payment."
+    ]
+   }
+  ],
+  "kpi": "Certificates verified before signing - 100%; remarks issued no later than 1 business day after inspection; concealed works with a Concealed Works Acceptance Certificate - 100%.",
+  "group": "Служба замовника",
+  "submits": [
+   "Г3",
+   "Г4"
+  ],
+  "receives": [
+   "Г2",
+   "Г7"
+  ],
+  "icon": "shield-check",
+  "cardName": "Technical Supervision",
+  "short": "quality and scope control on site",
+  "tagline": "Quality and scope control on site. Without their signature, no one gets paid.",
+  "chain": [
+   {
+    "name": "Site Foreman / Site Manager",
+    "why": "work control, remarks, defect correction.",
+    "icon": "hammer",
+    "slug": "prorab"
+   },
+   {
+    "name": "PTD",
+    "why": "scope confirmation, certificates, as-built documentation.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Cost Engineer",
+    "why": "actually completed scope.",
+    "icon": "calculator",
+    "slug": "koshtorysnyk"
+   },
+   {
+    "name": "Head of Service",
+    "why": "critical violations, risks, quality, decisions.",
+    "icon": "compass",
+    "slug": "ksz"
+   },
+   {
+    "name": "Finance Division",
+    "why": "confirmation of completed works as the basis for payment.",
+    "icon": "coins",
+    "slug": null
+   }
+  ],
+  "faq": [
+   {
+    "q": "When do I sign certificates?",
+    "a": "KB-2v - weekly, after verifying the actual scope. Remarks after inspection - no later than 1 business day (Г3)."
+   },
+   {
+    "q": "I'm called to close out concealed works - what's the procedure?",
+    "a": "Inspection BEFORE it's covered by the next works; the call must be made in advance via Worksection. Check the photos (Д4), lab technician's reports (Г7), and certificates - without them the Concealed Works Acceptance Certificate is not accepted."
+   },
+   {
+    "q": "When can I stop the works?",
+    "a": "Safety violations, deviation from the project, missing documentation, poor-quality execution, unapproved materials - a Г4 certificate the same day."
+   }
+  ],
+  "asked": [
+   {
+    "what": "Copies of concealed works certificates",
+    "who": "PM, Head of CS, PTD",
+    "whom": "Technical supervision / Site Manager",
+    "term": "2 business days"
+   }
+  ]
+ },
+ {
+  "slug": "mehanik",
+  "title": "Mechanic",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Monitors the use of equipment, machinery, mechanisms, and tools on site.",
+     "Records engine hours, fuel, downtime, technical condition, and repair needs.",
+     "Verifies the justification for deploying equipment to specific works.",
+     "Monitors the handover of equipment under responsibility and its return.",
+     "Prepares equipment cost data for the PTD, cost engineer, and Head of Service."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Keep records of engine hours and actual equipment operating time on sites.",
+     "Monitor fuel turnover: balance at the start and end of shift, refueling, consumption.",
+     "Monitor fuel and lubricant consumption according to approved norms.",
+     "Organize equipment orders for the site tied to the works schedule.",
+     "Ensure the serviceability and maintenance of equipment and mechanisms.",
+     "Maintain the equipment downtime log and conduct fleet inventory checks."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Site Manager / Site Foreman - actual equipment use on site.",
+     "PTD - equipment confirmation in certificates, work orders, registers.",
+     "Cost engineer - equipment cost, engine hours, deviations.",
+     "Head of Service - equipment issues, downtime, inefficient use.",
+     "Contractors / crews - equipment handover, use, responsibility."
+    ]
+   }
+  ],
+  "kpi": "Engine-hour timesheet for 100% of equipment; fuel and lubricant consumption within norms; downtime recorded with cause.",
+  "group": "Служба замовника",
+  "submits": [
+   "В4",
+   "В5"
+  ],
+  "receives": [
+   "В2"
+  ],
+  "icon": "wrench",
+  "cardName": "Mechanic",
+  "short": "equipment, engine hours, fuel, and downtime",
+  "tagline": "Equipment, engine hours, fuel, and downtime - all under instrument-based accounting.",
+  "chain": [
+   {
+    "name": "Site Manager / Site Foreman",
+    "why": "actual equipment use on site.",
+    "icon": "hammer",
+    "slug": "prorab"
+   },
+   {
+    "name": "PTD",
+    "why": "equipment confirmation in certificates, work orders, registers.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Cost Engineer",
+    "why": "equipment cost, engine hours, deviations.",
+    "icon": "calculator",
+    "slug": "koshtorysnyk"
+   },
+   {
+    "name": "Head of Service",
+    "why": "equipment issues, downtime, inefficient use.",
+    "icon": "compass",
+    "slug": "ksz"
+   },
+   {
+    "name": "Contractors / Crews",
+    "why": "equipment handover, use, responsibility.",
+    "icon": "users",
+    "slug": "brygady"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What about equipment timesheets?",
+    "a": "Timesheet В5 for EACH unit separately - the driver fills it in every shift, you check and sign it weekly. Without the timesheet, engine hours and fuel are not written off."
+   },
+   {
+    "q": "Equipment is moving to another site - what needs to be filed?",
+    "a": "A relocation certificate В4, otherwise the move is not recorded."
+   }
+  ],
+  "asked": [
+   {
+    "what": "Equipment data: engine hours, fuel/lubricants, downtime",
+    "who": "PTD, PM, finance division",
+    "whom": "Mechanic",
+    "term": "2 business days"
+   }
+  ]
+ },
+ {
+  "slug": "inzhener-tb",
+  "title": "Occupational Health & Safety Engineer (outsourced)",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Monitors compliance with occupational health and safety requirements on site.",
+     "Organizes briefings, permits, and verification of workers' readiness to perform work.",
+     "Records violations, risks, hazardous conditions and deadlines for their elimination.",
+     "Checks the availability of required protective equipment, logs and confirmations.",
+     "Initiates work stoppage in the event of a critical safety violation."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Conduct initial and repeat safety briefings.",
+     "Open and maintain safety and occupational health logs.",
+     "Verify the presence of contracts and safety documents for each worker.",
+     "Verify availability of PPE and worker permits, maintain an incident and accident log.",
+     "Periodically visit the site and investigate accidents."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Site Manager / Site Foreman - daily monitoring of work safety.",
+     "Contractors / crews - briefings, permits, compliance with requirements.",
+     "Head of Service - critical risks, violations, decisions.",
+     "PTD - logs, certificates, confirmations, safety documents.",
+     "General Director (CEO) - in the event of critical risks or work stoppage."
+    ]
+   }
+  ],
+  "kpi": null,
+  "group": "Служба замовника",
+  "submits": [
+   "Г4"
+  ],
+  "receives": [],
+  "icon": "hard-hat",
+  "cardName": "H&S Engineer",
+  "short": "occupational safety, briefings and permits",
+  "tagline": "Occupational safety: briefings, permits, the right to halt works.",
+  "chain": [
+   {
+    "name": "Site Manager / Site Foreman",
+    "why": "daily monitoring of work safety.",
+    "icon": "hammer",
+    "slug": "prorab"
+   },
+   {
+    "name": "Contractors / crews",
+    "why": "briefings, permits, compliance with requirements.",
+    "icon": "users",
+    "slug": "brygady"
+   },
+   {
+    "name": "Head of Service",
+    "why": "critical risks, violations, decisions.",
+    "icon": "compass",
+    "slug": "ksz"
+   },
+   {
+    "name": "PTD",
+    "why": "logs, certificates, confirmations, safety documents.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "General Director",
+    "why": "in the event of critical risks or work stoppage.",
+    "icon": "building",
+    "slug": "gd"
+   }
+  ],
+  "faq": [],
+  "asked": [
+   {
+    "what": "Occupational safety status, worker permits",
+    "who": "Head of CS, PM",
+    "whom": "Safety Engineer",
+    "term": "1 business day"
+   }
+  ]
+ },
+ {
+  "slug": "laborant",
+  "title": "Laboratory Technician (outsourced)",
+  "sections": [
+   {
+    "title": "",
+    "items": [
+     "Independent confirmation of the quality of materials and structures. The valuable end product is test reports confirming that materials and structures comply with the project."
+    ]
+   },
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Independent quality control of materials and structures on site.",
+     "Testing of concrete, soils and mortars per the works schedule (3 / 7 / 28 days).",
+     "Test reports as the basis for closing concealed works and accepting structures."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Incoming inspection of the concrete mix and sample collection at every concrete pour.",
+     "Concrete strength testing at 3 / 7 / 28 days; early forecasting of strength shortfall.",
+     "Control of rebar and embedded parts (certificates, testing when required), masonry mortar and aerated concrete blocks.",
+     "Control of soil compaction during backfilling.",
+     "Inspections of waterproofing and other concealed works at the request of technical supervision.",
+     "Presence on site at least once a week; reports go to Technical Supervision and the Head of Client's Service, copies to PTD for as-built documentation."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Technical Supervision - test reports as the basis for closing concealed works certificates.",
+     "Site Foreman / Site Manager - concrete pouring schedule, access to structures, sample collection.",
+     "PTD - reports for as-built documentation and the technical verification note.",
+     "Head of Client's Service - immediate notification of critical non-conformities.",
+     "A structure that has not reached design strength per the technician's report is not accepted; reinforcement or demolition only via a Change Request (App. Г1)."
+    ]
+   }
+  ],
+  "kpi": null,
+  "group": "Служба замовника",
+  "submits": [
+   "Г7"
+  ],
+  "receives": [],
+  "icon": "flask",
+  "cardName": "Lab Technician",
+  "short": "independent testing of concrete and materials",
+  "tagline": "Independent testing of concrete and materials - the basis for closing concealed works.",
+  "chain": [
+   {
+    "name": "Technical Supervision",
+    "why": "test reports as the basis for closing concealed works certificates.",
+    "icon": "shield-check",
+    "slug": "tehnahliad"
+   },
+   {
+    "name": "Site Foreman / Site Manager",
+    "why": "concrete pouring schedule, access to structures, sample collection.",
+    "icon": "hammer",
+    "slug": "prorab"
+   },
+   {
+    "name": "PTD",
+    "why": "reports for as-built documentation and the technical verification note.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Head of Client's Service",
+    "why": "immediate notification of critical non-conformities.",
+    "icon": "compass",
+    "slug": "ksz"
+   },
+   {
+    "name": "A structure that has not reached design strength per the technician's report is not accepted; reinforcement or demolition",
+    "why": "only via a Change Request (App. Г1).",
+    "icon": "flask",
+    "slug": "laborant"
+   }
+  ],
+  "faq": [],
+  "asked": [
+   {
+    "what": "Laboratory test reports (concrete 3/7/28 days)",
+    "who": "Technical Supervision, PM, PTD",
+    "whom": "Lab Technician",
+    "term": "1 business day"
+   }
+  ]
+ },
+ {
+  "slug": "kp",
+  "title": "Project Manager",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Takes the project into execution after preparation by Client's Service.",
+     "Organizes project delivery within approved documentation, cost estimate, schedule and budget.",
+     "Ensures the launch of works and the engagement of contractors, crews and required resources.",
+     "Coordinates the work of the Site Manager, Site Foreman, contractors and related departments.",
+     "Prepares reporting for the Head of Client's Service on progress, deviations and decisions."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Participate in the development and approval of the construction project.",
+     "Form the project team and organize its work.",
+     "Participates in preparing the project cost estimate and ensures its execution.",
+     "Develop and ensure execution of the works schedule and funding plan.",
+     "Participates in tenders, contractor selection and coordination.",
+     "Ensure quality control of works performed and confirmation of their volumes.",
+     "Ensure documentary support of the project.",
+     "Ensure timely supply of materials, machinery and other resources.",
+     "Ensure project completion and facility commissioning within the set deadlines."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Head of Service - tasks, control, decision approval, reporting.",
+     "Site Manager / Site Foreman - work organization, issues, resources, reports.",
+     "PTD / Cost Engineer - schedules, volumes, certificates, cost estimates, documents.",
+     "Finance Dept - funding needs, confirmed volumes, payment registers.",
+     "Marketing and Sales - readiness timelines, the object's presentation condition, impact on sales."
+    ]
+   }
+  ],
+  "kpi": "Adherence to budget and schedule; number of overdue items; control of quality, volumes and document flow.",
+  "group": "Штаб проєкту",
+  "submits": [
+   "В7",
+   "Г6",
+   "Д2"
+  ],
+  "receives": [
+   "В2",
+   "В3",
+   "Г1",
+   "Г3",
+   "Г4",
+   "Г5"
+  ],
+  "icon": "briefcase",
+  "cardName": "Project Manager",
+  "short": "project delivery within budget",
+  "tagline": "Project delivery within the cost estimate, schedule and budget.",
+  "chain": [
+   {
+    "name": "Head of Service",
+    "why": "tasks, control, decision approval, reporting.",
+    "icon": "compass",
+    "slug": "ksz"
+   },
+   {
+    "name": "Site Manager / Site Foreman",
+    "why": "work organization, issues, resources, reports.",
+    "icon": "hammer",
+    "slug": "prorab"
+   },
+   {
+    "name": "PTD / Cost Engineer",
+    "why": "schedules, volumes, certificates, cost estimates, documents.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Finance Dept",
+    "why": "funding needs, confirmed volumes, payment registers.",
+    "icon": "coins",
+    "slug": null
+   },
+   {
+    "name": "Marketing and Sales",
+    "why": "readiness timelines, the object's presentation condition, impact on sales.",
+    "icon": "megaphone",
+    "slug": null
+   }
+  ],
+  "faq": [
+   {
+    "q": "How do I initiate a payment?",
+    "a": "Check the preconditions (contract in the register, cost estimate, acceptance by Technical Supervision), enter the payment in the payment register, assemble the full package for the payment type and submit it to PTD. There is no payment outside the register."
+   },
+   {
+    "q": "A contractor asks 'where's my payment?'",
+    "a": "Only through you: status request via the Head of Client's Service, response within 2 business days."
+   },
+   {
+    "q": "A client asks to change something - what to do?",
+    "a": "Client requests do not go directly to the site. Only a Change Request (Г1) with an assessment of the impact on budget and timeline."
+   }
+  ],
+  "asked": [
+   {
+    "what": "Current works schedule",
+    "who": "Any project participant",
+    "whom": "PM / PTD",
+    "term": "1 business day"
+   }
+  ]
+ },
+ {
+  "slug": "nachalnyk-dilnytsi",
+  "title": "Site Manager",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Organizes daily work on the construction site.",
+     "Coordinates site foremen, contractors, crews, machinery, materials and the work front.",
+     "Ensures work is performed according to the schedule, work orders and approved assignments.",
+     "Controls the transfer, use and safekeeping of inventory items on site.",
+     "Reports to the Project Manager on progress, issues, needs and deviations."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Organize and coordinate the daily progress of construction works at the sites.",
+     "Monitor execution of the approved works schedule.",
+     "Monitor works against the design documentation.",
+     "Organize and maintain the technical part of the documentation and its execution.",
+     "Inspect completed works before signing KB-2v certificates.",
+     "Organize incoming inspection of materials and structures (incoming inspection log).",
+     "Conduct daily inspections with contractors.",
+     "Liaise with project managers on technical matters on site.",
+     "Ensure supporting occupational safety measures.",
+     "Compile as-built documentation in parallel with completed works."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Project Manager - tasks, schedule, issues, reporting.",
+     "Site Foreman - daily work execution, crews, quality, volumes.",
+     "Mechanic - machinery, fuel, engine hours, downtime.",
+     "PTD - work orders, certificates, as-built documentation, volumes, monthly packages (by the 25th and by the 5th).",
+     "Contractors / crews - work front, inventory items, deadlines, responsibility."
+    ]
+   }
+  ],
+  "kpi": "Schedule adherence, deviations up to 5 business days; as-built documentation kept in parallel with works; monthly plan by the 25th and reporting package by the 5th - without violations.",
+  "group": "Штаб проєкту",
+  "submits": [
+   "Б1",
+   "Б2",
+   "Б3",
+   "В1",
+   "В2",
+   "В3",
+   "В5",
+   "В6",
+   "Г2",
+   "Г6",
+   "Д3",
+   "Д4"
+  ],
+  "receives": [
+   "Г3",
+   "Г4"
+  ],
+  "icon": "clipboard-list",
+  "cardName": "Site Manager",
+  "short": "daily site organization",
+  "tagline": "Daily site organization: plan by the 25th, reporting package by the 5th, timesheets every Friday.",
+  "chain": [
+   {
+    "name": "Project Manager",
+    "why": "tasks, schedule, issues, reporting.",
+    "icon": "briefcase",
+    "slug": "kp"
+   },
+   {
+    "name": "Site Foreman",
+    "why": "daily work execution, crews, quality, volumes.",
+    "icon": "hammer",
+    "slug": "prorab"
+   },
+   {
+    "name": "Mechanic",
+    "why": "machinery, fuel, engine hours, downtime.",
+    "icon": "wrench",
+    "slug": "mehanik"
+   },
+   {
+    "name": "PTD",
+    "why": "work orders, certificates, as-built documentation, volumes, monthly packages (by the 25th and by the 5th).",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Contractors / crews",
+    "why": "work front, inventory items, deadlines, responsibility.",
+    "icon": "users",
+    "slug": "brygady"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What are my main deadlines?",
+    "a": "By 8:30 - headcount to the chat; every Friday by 17:00 - plan vs actual and photo report, by 18:00 - timesheets and delivery notes; by the 25th - the monthly plan (Б1+Б2+В1); by the 5th - the reporting package (Б3)."
+   },
+   {
+    "q": "What happens if the plan isn't submitted by the 25th?",
+    "a": "The following month is not funded and materials are not ordered. This is the most costly mistake of the month."
+   },
+   {
+    "q": "PTD returned the package - what next?",
+    "a": "You have 2 business days to correct it, then a repeat review takes 2 days. Disputed items may be paid partially - the rest after rework."
+   },
+   {
+    "q": "How do I transfer inventory or machinery under responsibility?",
+    "a": "Only via certificate В6. Moving machinery between sites - via certificate В4, otherwise logistics costs are not written off."
+   }
+  ],
+  "asked": [
+   {
+    "what": "Inventory balances on site",
+    "who": "PM, PTD, Head of CS",
+    "whom": "Site Manager",
+    "term": "2 business days"
+   },
+   {
+    "what": "Photo documentation of a specific work / date",
+    "who": "Head of CS, PM, PTD, Technical Supervision",
+    "whom": "Site Manager",
+    "term": "1 business day"
+   },
+   {
+    "what": "Copies of concealed works certificates",
+    "who": "PM, Head of CS, PTD",
+    "whom": "Technical Supervision / Site Manager",
+    "term": "2 business days"
+   },
+   {
+    "what": "Status of resolving a Technical Supervision remark",
+    "who": "Technical Supervision, PM",
+    "whom": "Site Manager",
+    "term": "1 business day"
+   },
+   {
+    "what": "Delivery notes and certificates (copies)",
+    "who": "PTD, Technical Supervision, Lab Technician",
+    "whom": "Site Manager",
+    "term": "2 business days"
+   }
+  ]
+ },
+ {
+  "slug": "prorab",
+  "title": "Site Foreman",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Directly manages the execution of works on site.",
+     "Organizes the work of crews, contractors, machinery and materials within the assigned task.",
+     "Controls quality, technology, volumes and daily work execution.",
+     "Records actually completed works, needs, issues and deviations.",
+     "Passes data to the Site Manager and PTD for certificates, work orders, volumes and reporting."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Direct execution of construction works by crews.",
+     "Deployment of crews and on-site monitoring of work execution.",
+     "Maintain safety and occupational health logs.",
+     "Maintain the work execution log (daily).",
+     "Submit requests for materials and machinery, receive materials on site."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Site Manager - tasks, work organization, issues, daily report.",
+     "Crews / contractors - work execution, deadlines, quality, inventory items.",
+     "Technical Supervision - quality, remarks, defect resolution.",
+     "PTD - actual volumes, work orders, certificates, as-built documentation.",
+     "Mechanic - machinery, engine hours, fuel, downtime."
+    ]
+   }
+  ],
+  "kpi": "Work execution log filled in daily; material requests submitted before the need date; 0 works performed without current design documentation.",
+  "group": "Штаб проєкту",
+  "submits": [
+   "В1",
+   "В2",
+   "В3",
+   "Д4"
+  ],
+  "receives": [],
+  "icon": "hammer",
+  "cardName": "Site Foreman",
+  "short": "direct management of works",
+  "tagline": "Direct management of works: crews, work log, material requests.",
+  "chain": [
+   {
+    "name": "Site Manager",
+    "why": "tasks, work organization, issues, daily report.",
+    "icon": "clipboard-list",
+    "slug": "nachalnyk-dilnytsi"
+   },
+   {
+    "name": "Crews / contractors",
+    "why": "work execution, deadlines, quality, inventory items.",
+    "icon": "users",
+    "slug": "brygady"
+   },
+   {
+    "name": "Technical Supervision",
+    "why": "quality, remarks, defect resolution.",
+    "icon": "shield-check",
+    "slug": "tehnahliad"
+   },
+   {
+    "name": "PTD",
+    "why": "actual volumes, work orders, certificates, as-built documentation.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Mechanic",
+    "why": "machinery, engine hours, fuel, downtime.",
+    "icon": "wrench",
+    "slug": "mehanik"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What should I do every day?",
+    "a": "Maintain the work execution log, make sure the timesheet for each piece of machinery (В5) is filled in every shift, and submit requests for materials (В1) and machinery (В2, В3) in advance."
+   },
+   {
+    "q": "How do I order materials?",
+    "a": "A В1 request tied to a task from the Б1 plan - no later than the delivery lead time before the need date. Outside the monthly plan - only with justification, and if it involves a change in volumes - a Change Request (Г1) first."
+   },
+   {
+    "q": "I found a problem on site - what should I do?",
+    "a": "Record it in the daily summary in the Telegram chat. If unplanned work is needed - no 'do it now, paperwork later': the Site Manager first initiates a Change Request (Г1), then the work follows."
+   },
+   {
+    "q": "Why weren't my works accepted?",
+    "a": "Most often: no entry in the log, no photo documentation (Д4), the Concealed Works Acceptance Certificate isn't closed with reports, or the work was performed outside the plan without Г1."
+   }
+  ],
+  "asked": [
+   {
+    "what": "Extract from the work execution log",
+    "who": "Technical Supervision, PM, PTD",
+    "whom": "Site Foreman",
+    "term": "1 business day"
+   }
+  ]
+ },
+ {
+  "slug": "brygady",
+  "title": "Work Crews",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": [
+     "Perform works in accordance with the contract, work order, terms of reference or assigned task.",
+     "Comply with the design documentation, work execution technology, deadlines and quality requirements.",
+     "Accept inventory items, machinery or the work front under their responsibility in the established manner.",
+     "Provide actual data on works performed, materials used and needs.",
+     "Resolve remarks, defects and violations within the set deadlines."
+    ]
+   },
+   {
+    "title": "Обовʼязки",
+    "items": [
+     "Perform construction works according to the project and assignments.",
+     "Comply with the work execution technology.",
+     "Comply with safety and occupational health requirements.",
+     "Follow instructions from the Site Foreman and Site Manager.",
+     "Maintain the workplace and safeguard materials."
+    ]
+   },
+   {
+    "title": "Взаємодія",
+    "items": [
+     "Site Foreman / Site Manager - receiving tasks, work front, inventory items and machinery.",
+     "Technical Supervision - quality checks, remarks, confirmation of completion.",
+     "PTD - documents, certificates, work orders, volumes.",
+     "Mechanic - machinery, equipment, engine hours, fuel.",
+     "Project Manager - critical matters, changes, deadlines, responsibility.",
+     "The detailed list of duties for each position is defined by the job description.\nUpon appointment, the person signs the position contract and acknowledgment of this Regulation."
+    ]
+   }
+  ],
+  "kpi": null,
+  "group": "Штаб проєкту",
+  "submits": [],
+  "receives": [],
+  "icon": "users",
+  "cardName": "Work Crews",
+  "short": "work execution per project and work order",
+  "tagline": "Work execution per the project, work order and technology.",
+  "chain": [
+   {
+    "name": "Site Foreman / Site Manager",
+    "why": "receiving tasks, work front, inventory items and machinery.",
+    "icon": "hammer",
+    "slug": "prorab"
+   },
+   {
+    "name": "Technical Supervision",
+    "why": "quality checks, remarks, confirmation of completion.",
+    "icon": "shield-check",
+    "slug": "tehnahliad"
+   },
+   {
+    "name": "PTD",
+    "why": "documents, certificates, work orders, volumes.",
+    "icon": "folder-check",
+    "slug": "vtv"
+   },
+   {
+    "name": "Mechanic",
+    "why": "machinery, equipment, engine hours, fuel.",
+    "icon": "wrench",
+    "slug": "mehanik"
+   },
+   {
+    "name": "Project Manager",
+    "why": "critical matters, changes, deadlines, responsibility.",
+    "icon": "briefcase",
+    "slug": "kp"
+   },
+   {
+    "name": "The detailed list of duties for each position is defined by the job description.\nUpon appointment, the person signs the position contract and acknowledgment of this Regulation.",
+    "why": "",
+    "icon": "users",
+    "slug": null
+   }
+  ],
+  "faq": [],
+  "asked": []
+ },
+ {
+  "slug": "zakupivli",
+  "title": "Procurement Dept (Commercial Division)",
+  "group": "Сервісні підрозділи",
+  "sections": [
+   {
+    "title": "Зона відповідальності",
+    "items": []
+   }
+  ],
+  "kpi": null,
+  "submits": [],
+  "receives": [
+   "В1",
+   "В3"
+  ],
+  "icon": "package",
+  "cardName": "Procurement Dept",
+  "short": "supply per PTD specifications",
+  "tagline": "Supply of materials per PTD specifications, acting as an internal contractor.",
+  "chain": [],
+  "faq": [],
+  "asked": []
+ }
+]

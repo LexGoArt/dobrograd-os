@@ -1,0 +1,48 @@
+---
+import Base from '../../../layouts/Base.astro';
+import DocChip from '../../../components/DocChip.astro';
+import StatusBadge from '../../../components/StatusBadge.astro';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const { docs } = getData(lang);
+const L = (p) => `${base}${lang}/${p}`;
+const dev = docs.filter((d) => d.status === 'dev');
+const ready = docs.length - dev.length;
+---
+<Base lang={lang} title={`${t(lang, 'roadmap.title')} - ${t(lang, 'site.short')}`} crumbs={[{ label: t(lang, 'nav.roadmap') }]}>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:px-6">
+    <h1 class="text-2xl font-extrabold text-(--color-brand) md:text-3xl">{t(lang, 'roadmap.title')}</h1>
+    <p class="mt-2 max-w-2xl text-[14.5px] text-(--color-ink-2)">{t(lang, 'roadmap.subtitle')}</p>
+
+    <div class="mt-6 flex items-center gap-4 rounded-2xl border border-(--color-line) bg-white p-5">
+      <div class="flex-1">
+        <div class="flex justify-between text-[13px] font-bold">
+          <span class="text-(--color-ok)">{ready} {t(lang, 'roadmap.readyCount')}</span>
+          <span class="text-(--color-warn)">{dev.length} {t(lang, 'roadmap.devCount')}</span>
+        </div>
+        <div class="mt-2 flex h-2.5 overflow-hidden rounded-full bg-(--color-warn-bg)">
+          <div class="rounded-full bg-(--color-ok)" style={`width: ${(ready / docs.length) * 100}%`}></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 space-y-3">
+      {dev.map((d) => (
+        <a href={L(`docs/${d.slug}/`)} class="group flex items-start gap-3.5 rounded-2xl border border-(--color-line) bg-white p-4 transition-all hover:border-(--color-accent) hover:shadow-sm">
+          <DocChip index={d.index} />
+          <span class="min-w-0 flex-1">
+            <span class="flex flex-wrap items-center gap-2">
+              <span class="text-[14.5px] font-bold text-(--color-brand) group-hover:text-(--color-accent)">{d.name}</span>
+              <StatusBadge status="dev" lang={lang} />
+            </span>
+            <span class="mt-1 block text-[12.5px] text-(--color-ink-2)">{d.purpose}</span>
+            {d.devOwner && <span class="mt-1.5 block text-[12px] font-semibold text-(--color-warn)">{t(lang, 'docs.devOwner')}: {d.devOwner}</span>}
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

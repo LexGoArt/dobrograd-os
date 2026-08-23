@@ -1,0 +1,31 @@
+---
+import Base from '../../../layouts/Base.astro';
+import RoleCard from '../../../components/RoleCard.astro';
+import { LANGS, getData, t } from '../../../lib/data.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const { roles } = getData(lang);
+const order = ['Керівництво', 'Служба замовника', 'Штаб проєкту', 'Сервісні підрозділи'];
+const grouped = order.map((g) => ({ g, list: roles.filter((r) => r.group === g) })).filter((x) => x.list.length);
+---
+<Base lang={lang} title={`${t(lang, 'roles.title')} - ${t(lang, 'site.short')}`} crumbs={[{ label: t(lang, 'nav.roles') }]}>
+  <div class="border-b border-(--color-line) bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-10 md:px-8">
+      <h1 class="text-2xl font-extrabold text-(--color-brand) md:text-3xl" data-reveal>{t(lang, 'roles.title')}</h1>
+      <p class="mt-2 max-w-xl text-[14.5px] text-(--color-ink-2)" data-reveal>{t(lang, 'roles.subtitle')}</p>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-6xl px-4 py-8 md:px-8">
+    {grouped.map(({ g, list }) => (
+      <section class="mt-8 first:mt-0">
+        <h2 class="mb-4 text-[12px] font-bold uppercase tracking-widest text-(--color-mute)" data-reveal>{t(lang, `roles.groups.${g}`)}</h2>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {list.map((r, i) => <RoleCard role={r} lang={lang} delay={i * 60} />)}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>
