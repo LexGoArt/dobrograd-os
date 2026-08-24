@@ -31,11 +31,12 @@ const switchPath = (l) => {
       ))}
     </nav>
 
+    <!-- Мобільний: пошук - лише іконка 44x44; від sm - повне поле -->
     <button id="search-open" type="button"
-      class="ml-auto flex w-full max-w-xs items-center gap-2.5 rounded-xl border border-(--color-line) bg-(--color-paper) px-3.5 py-2 text-[13px] text-(--color-mute) transition-colors hover:border-(--color-accent) hover:text-(--color-accent) sm:w-72"
+      class="ml-auto grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-(--color-line) bg-(--color-paper) text-(--color-mute) transition-colors hover:border-(--color-accent) hover:text-(--color-accent) sm:flex sm:h-auto sm:w-72 sm:items-center sm:gap-2.5 sm:px-3.5 sm:py-2 sm:text-[13px]"
       aria-label={t(lang, 'nav.search')}>
-      <Icon name="search" size={14} />
-      <span class="truncate">{t(lang, 'nav.searchHint')}</span>
+      <Icon name="search" size={16} />
+      <span class="hidden truncate sm:inline">{t(lang, 'nav.searchHint')}</span>
       <kbd class="chip ml-auto hidden rounded-md border border-(--color-line) bg-white px-1.5 py-0.5 text-[10px] text-(--color-mute) md:block">⌘K</kbd>
     </button>
 
@@ -43,9 +44,12 @@ const switchPath = (l) => {
       <div class="flex shrink-0 rounded-xl border border-(--color-line) bg-white p-0.5" aria-label="Мова / Language">
         {LANGS.map((l) => (
           <a href={switchPath(l)}
-             class:list={['rounded-lg px-2 py-1.5 text-[10.5px] font-extrabold tracking-wide transition-colors',
+             class:list={['grid min-h-[38px] place-items-center rounded-lg px-1.5 text-[10.5px] font-extrabold tracking-wide transition-colors sm:px-2',
                l === lang ? 'bg-(--color-brand) text-white' : 'text-(--color-mute) hover:text-(--color-brand)']}
-             aria-current={l === lang ? 'true' : undefined}>{LANG_LABELS[l]}</a>
+             aria-current={l === lang ? 'true' : undefined}>
+            <span class="sm:hidden">{l.toUpperCase()}</span>
+            <span class="hidden sm:inline">{LANG_LABELS[l]}</span>
+          </a>
         ))}
       </div>
     )}

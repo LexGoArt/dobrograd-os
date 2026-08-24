@@ -6,8 +6,9 @@ const base = import.meta.env.BASE_URL;
 const D = (slug) => `${base}${lang}/docs/${slug}/`;
 const STEPS = t(lang, 'cycle.steps');
 ---
-<div class="overflow-x-auto pb-2">
-  <ol class="flex min-w-[720px] gap-0 lg:min-w-0">
+<div class="cycle-scroll relative">
+  <div class="overflow-x-auto pb-2 snap-x snap-mandatory lg:snap-none">
+    <ol class="flex min-w-[720px] gap-0 lg:min-w-0">
     {STEPS.map((s, i) => (
       <li class="relative flex-1">
         <div class="flex items-center">
@@ -30,5 +31,17 @@ const STEPS = t(lang, 'cycle.steps');
         </div>
       </li>
     ))}
-  </ol>
+    </ol>
+  </div>
+  <span class="cycle-fade" aria-hidden="true"></span>
+  <p class="mt-1 text-[12px] font-semibold text-(--color-accent) lg:hidden">{t(lang, 'cycle.swipeHint')} →</p>
 </div>
+
+<style>
+  .cycle-scroll li { scroll-snap-align: start; }
+  .cycle-fade {
+    pointer-events: none; position: absolute; top: 0; bottom: 14px; right: 0; width: 56px;
+    background: linear-gradient(to right, transparent, #fff);
+  }
+  @media (min-width: 1024px) { .cycle-fade { display: none; } }
+</style>

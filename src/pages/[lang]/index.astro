@@ -41,7 +41,7 @@ const quick = [
         <p class="mt-4 max-w-xl text-[15px] leading-relaxed text-(--color-ink-2)">{t(lang, 'home.heroLead')}</p>
         <ul class="mt-6 grid max-w-xl grid-cols-1 gap-x-8 gap-y-2.5 sm:grid-cols-2">
           {benefits.map((b) => (
-            <li class="flex items-center gap-2 text-[12.5px] font-medium text-(--color-mute)">
+            <li class="flex items-center gap-2 text-[13.5px] font-medium text-(--color-mute)">
               <Icon name={b.icon} size={14} class="shrink-0 text-(--color-accent)" />
               {b.text}
             </li>
@@ -61,9 +61,14 @@ const quick = [
           </a>
         </div>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {primaryRoles.map((r, i) => <RoleCard role={r} lang={lang} delay={i * 60} />)}
+          {primaryRoles.map((r, i) => (
+            <div class:list={[i >= 4 && 'hidden sm:block']}><RoleCard role={r} lang={lang} delay={i * 60} /></div>
+          ))}
         </div>
-        <div class="mt-4 flex flex-wrap justify-center gap-2" data-reveal>
+        <a href={L('roles/')} class="mt-4 flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border-2 border-(--color-line) bg-white px-5 text-[14.5px] font-bold text-(--color-brand) transition-colors hover:border-(--color-accent) hover:text-(--color-accent) sm:hidden">
+          {t(lang, 'home.allRoles')} (14) <Icon name="arrow-right" size={14} />
+        </a>
+        <div class="mt-4 hidden flex-wrap justify-center gap-2 sm:flex" data-reveal>
           {restRoles.map((r) => (
             <a href={L(`roles/${r.slug}/`)} class="rounded-full border border-(--color-line) bg-white px-3.5 py-1.5 text-[12.5px] font-semibold text-(--color-ink-2) transition-colors hover:border-(--color-accent) hover:text-(--color-accent)">
               {r.cardName}
@@ -76,8 +81,8 @@ const quick = [
 
   <div class="border-t border-(--color-line)"></div>
 
-  <!-- Швидкий доступ -->
-  <section class="mx-auto max-w-6xl px-4 pt-12 md:px-8">
+  <!-- Швидкий доступ: лише поки сайдбар схований (до lg) -->
+  <section class="mx-auto max-w-6xl px-4 pt-12 md:px-8 lg:hidden">
     <h2 class="text-[22px] font-extrabold text-(--color-brand)" data-reveal>{t(lang, 'home.quickTitle')}</h2>
     <div class="mt-5 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
       {quick.map((q, i) => (

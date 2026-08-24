@@ -28,10 +28,22 @@
     "heroTitle": "One knowledge base for the construction block",
     "heroLead": "All regulations, forms, deadlines and interaction maps in one place. Pick your role and instantly see how to work, what to submit and to whom.",
     "benefits": [
-      { "icon": "shield-check", "text": "Verified, up-to-date information" },
-      { "icon": "sitemap", "text": "One standard for every role" },
-      { "icon": "search", "text": "Fast search and clear navigation" },
-      { "icon": "clipboard-list", "text": "Works on a phone at the site" }
+      {
+        "icon": "shield-check",
+        "text": "Verified, up-to-date information"
+      },
+      {
+        "icon": "sitemap",
+        "text": "One standard for every role"
+      },
+      {
+        "icon": "search",
+        "text": "Fast search and clear navigation"
+      },
+      {
+        "icon": "clipboard-list",
+        "text": "Works on a phone at the site"
+      }
     ],
     "rolesTitle": "Pick your role",
     "rolesHint": "Responsibilities, documents, deadlines and interactions - on every role page.",
@@ -47,9 +59,18 @@
     },
     "howTitle": "How to use the portal",
     "how": [
-      { "title": "Pick your role", "text": "Find your position and see what you are responsible for, what you submit and by when." },
-      { "title": "Learn the processes", "text": "Step-by-step maps: monthly cycle, payment path, concealed works, escalation." },
-      { "title": "Work with the forms", "text": "Open forms on Drive, run through interactive checklists, find anything via search." }
+      {
+        "title": "Pick your role",
+        "text": "Find your position and see what you are responsible for, what you submit and by when."
+      },
+      {
+        "title": "Learn the processes",
+        "text": "Step-by-step maps: monthly cycle, payment path, concealed works, escalation."
+      },
+      {
+        "title": "Work with the forms",
+        "text": "Open forms on Drive, run through interactive checklists, find anything via search."
+      }
     ],
     "cycleTitle": "The monthly cycle - the main rhythm",
     "cycleHint": "Skip a step - the money stops.",
@@ -57,57 +78,229 @@
   },
   "cycle": {
     "steps": [
-      { "day": "by 25th", "title": "Monthly plan", "text": "The site submits the plan, schedule and material needs", "links": [["Б1","b1"],["Б2","b2"],["В1","v1"]] },
-      { "day": "by 28th", "title": "PTD review", "text": "Check against the design, estimate and cumulative register", "links": [["Е1","e1"]] },
-      { "day": "by 5th", "title": "Closing package", "text": "Signed acceptance act + timesheets + as-built records", "links": [["Б3","b3"],["В5","v5"]] },
-      { "day": "by 10th", "title": "Verification note", "text": "PTD verifies the package and reports to the Head of CS", "links": [["Е3","e3"]] },
-      { "day": "after", "title": "Payment", "text": "Head of CS approves the acts, finance pays within limits", "links": [], "accent": true }
-    ]
+      {
+        "day": "by 25th",
+        "title": "Monthly plan",
+        "text": "The site submits the plan, schedule and material needs",
+        "links": [
+          [
+            "Б1",
+            "b1"
+          ],
+          [
+            "Б2",
+            "b2"
+          ],
+          [
+            "В1",
+            "v1"
+          ]
+        ]
+      },
+      {
+        "day": "by 28th",
+        "title": "PTD review",
+        "text": "Check against the design, estimate and cumulative register",
+        "links": [
+          [
+            "Е1",
+            "e1"
+          ]
+        ]
+      },
+      {
+        "day": "by 5th",
+        "title": "Closing package",
+        "text": "Signed acceptance act + timesheets + as-built records",
+        "links": [
+          [
+            "Б3",
+            "b3"
+          ],
+          [
+            "В5",
+            "v5"
+          ]
+        ]
+      },
+      {
+        "day": "by 10th",
+        "title": "Verification note",
+        "text": "PTD verifies the package and reports to the Head of CS",
+        "links": [
+          [
+            "Е3",
+            "e3"
+          ]
+        ]
+      },
+      {
+        "day": "after",
+        "title": "Payment",
+        "text": "Head of CS approves the acts, finance pays within limits",
+        "links": [],
+        "accent": true
+      }
+    ],
+    "swipeHint": "Swipe"
   },
   "scheme": {
     "levels": [
-      { "label": "Strategy and budget", "nodes": [{ "slug": "gd", "name": "General Director", "abbr": "CEO" }] },
-      { "label": "Operations management", "nodes": [{ "slug": "ksz", "name": "Head of Client's Service", "abbr": "CS" }] },
-      { "label": "Execution", "nodes": [
-        { "slug": "vtv", "name": "PTD", "sub": "single point of documentation" },
-        { "slug": "nachalnyk-dilnytsi", "name": "Construction Site Unit", "sub": "construction works" },
-        { "slug": "tehnahliad", "name": "Technical Supervision", "sub": "quality control" },
-        { "slug": "kp", "name": "Project Office (PM)", "sub": "project delivery" }
-      ]},
-      { "label": "Service and independent control", "nodes": [
-        { "slug": "zakupivli", "name": "Procurement Dept", "sub": "per PTD specifications" },
-        { "slug": "laborant", "name": "Laboratory", "sub": "outsourced testing", "dashed": true }
-      ]}
+      {
+        "label": "Strategy and budget",
+        "nodes": [
+          {
+            "slug": "gd",
+            "name": "General Director",
+            "abbr": "CEO"
+          }
+        ]
+      },
+      {
+        "label": "Operations management",
+        "nodes": [
+          {
+            "slug": "ksz",
+            "name": "Head of Client's Service",
+            "abbr": "CS"
+          }
+        ]
+      },
+      {
+        "label": "Execution",
+        "nodes": [
+          {
+            "slug": "vtv",
+            "name": "PTD",
+            "sub": "single point of documentation"
+          },
+          {
+            "slug": "nachalnyk-dilnytsi",
+            "name": "Construction Site Unit",
+            "sub": "construction works"
+          },
+          {
+            "slug": "tehnahliad",
+            "name": "Technical Supervision",
+            "sub": "quality control"
+          },
+          {
+            "slug": "kp",
+            "name": "Project Office (PM)",
+            "sub": "project delivery"
+          }
+        ]
+      },
+      {
+        "label": "Service and independent control",
+        "nodes": [
+          {
+            "slug": "zakupivli",
+            "name": "Procurement Dept",
+            "sub": "per PTD specifications"
+          },
+          {
+            "slug": "laborant",
+            "name": "Laboratory",
+            "sub": "outsourced testing",
+            "dashed": true
+          }
+        ]
+      }
     ]
   },
   "mindmap": {
     "center": "Monthly rhythm of the block",
     "centerSub": "25 → 28 → 5 → 10 → payment",
     "branches": [
-      { "icon": "calendar", "color": "#2F6690", "title": "Planning - by the 25th", "items": [
-        { "text": "Plan Б1 + schedule Б2 + materials В1 to PTD", "href": "docs/b1/" },
-        { "text": "No plan - the month is not financed", "stop": true }
-      ]},
-      { "icon": "package", "color": "#3e6b4a", "title": "Procurement", "items": [
-        { "text": "PTD issues specifications for Procurement", "href": "roles/zakupivli/" },
-        { "text": "Over budget - re-approval by the Head of CS" }
-      ]},
-      { "icon": "shield-check", "color": "#584a80", "title": "Quality control", "items": [
-        { "text": "Concealed works shown to Supervision BEFORE covering", "href": "processes/hidden-works/" },
-        { "text": "Laboratory: concrete at 3/7/28 days", "href": "docs/g7/" }
-      ]},
-      { "icon": "refresh", "color": "#2F5061", "title": "Closing - by 5th and 10th", "items": [
-        { "text": "Signed package Б3 → PTD review", "href": "docs/b3/" },
-        { "text": "Verification note is the payment filter", "href": "docs/e3/" }
-      ]},
-      { "icon": "coins", "color": "#8c6d1f", "title": "Payment", "items": [
-        { "text": "Only via the payment register, within limits", "href": "processes/payment/" },
-        { "text": "6 stop conditions: no contract, signature, note…", "stop": true }
-      ]},
-      { "icon": "megaphone", "color": "#8c4a42", "title": "Communication", "items": [
-        { "text": "Everything in Worksection; daily photos in the Telegram chat" },
-        { "text": "If it is not recorded, the agreement does not exist", "stop": true }
-      ]}
+      {
+        "icon": "calendar",
+        "color": "#2F6690",
+        "title": "Planning - by the 25th",
+        "items": [
+          {
+            "text": "Plan Б1 + schedule Б2 + materials В1 to PTD",
+            "href": "docs/b1/"
+          },
+          {
+            "text": "No plan - the month is not financed",
+            "stop": true
+          }
+        ]
+      },
+      {
+        "icon": "package",
+        "color": "#3e6b4a",
+        "title": "Procurement",
+        "items": [
+          {
+            "text": "PTD issues specifications for Procurement",
+            "href": "roles/zakupivli/"
+          },
+          {
+            "text": "Over budget - re-approval by the Head of CS"
+          }
+        ]
+      },
+      {
+        "icon": "shield-check",
+        "color": "#584a80",
+        "title": "Quality control",
+        "items": [
+          {
+            "text": "Concealed works shown to Supervision BEFORE covering",
+            "href": "processes/hidden-works/"
+          },
+          {
+            "text": "Laboratory: concrete at 3/7/28 days",
+            "href": "docs/g7/"
+          }
+        ]
+      },
+      {
+        "icon": "refresh",
+        "color": "#2F5061",
+        "title": "Closing - by 5th and 10th",
+        "items": [
+          {
+            "text": "Signed package Б3 → PTD review",
+            "href": "docs/b3/"
+          },
+          {
+            "text": "Verification note is the payment filter",
+            "href": "docs/e3/"
+          }
+        ]
+      },
+      {
+        "icon": "coins",
+        "color": "#8c6d1f",
+        "title": "Payment",
+        "items": [
+          {
+            "text": "Only via the payment register, within limits",
+            "href": "processes/payment/"
+          },
+          {
+            "text": "6 stop conditions: no contract, signature, note…",
+            "stop": true
+          }
+        ]
+      },
+      {
+        "icon": "megaphone",
+        "color": "#8c4a42",
+        "title": "Communication",
+        "items": [
+          {
+            "text": "Everything in Worksection; daily photos in the Telegram chat"
+          },
+          {
+            "text": "If it is not recorded, the agreement does not exist",
+            "stop": true
+          }
+        ]
+      }
     ]
   },
   "docs": {
@@ -191,7 +384,14 @@
     "title": "Reporting calendar",
     "subtitle": "Who submits what, to whom and when. Pick a rhythm and see only what matters to you.",
     "sanctionLabel": "What happens if it is not submitted",
-    "col": { "what": "Report / event", "from": "Submitted by", "to": "To / where", "term": "Deadline", "form": "Form", "sanction": "What happens if it is not submitted" }
+    "col": {
+      "what": "Report / event",
+      "from": "Submitted by",
+      "to": "To / where",
+      "term": "Deadline",
+      "form": "Form",
+      "sanction": "What happens if it is not submitted"
+    }
   },
   "checklists": {
     "title": "Interactive checklists",
