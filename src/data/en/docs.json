@@ -360,7 +360,8 @@
    "Д4",
    "Е3",
    "Е5"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Б1",
@@ -380,7 +381,8 @@
   ],
   "sanction": "No plan - the next month is not financed and materials are not ordered.",
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Б2",
@@ -886,7 +888,8 @@
   "related": [
    "Б1",
    "Г1"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Б3",
@@ -1196,7 +1199,8 @@
    "Г7",
    "Д4",
    "Е5"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "В1",
@@ -1416,7 +1420,8 @@
    "Б1",
    "Г1",
    "Е9"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "В2",
@@ -1594,7 +1599,8 @@
    "Б2",
    "В4",
    "В5"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "В3",
@@ -1785,7 +1791,8 @@
    "В1",
    "В4",
    "В7"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "В4",
@@ -1942,7 +1949,8 @@
   ],
   "related": [
    "В5"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "В5",
@@ -2219,7 +2227,8 @@
   ],
   "related": [
    "В4"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "В6",
@@ -2354,7 +2363,8 @@
     ]
    }
   ],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "В7",
@@ -2602,7 +2612,8 @@
     ]
    }
   ],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Г1",
@@ -2854,7 +2865,8 @@
   "related": [
    "Б2",
    "Г8"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Г2",
@@ -2874,7 +2886,8 @@
   ],
   "sanction": "Works covered without authorization may be opened up again at the fault party's expense.",
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Г3",
@@ -2999,7 +3012,8 @@
   ],
   "related": [
    "Г9"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Г4",
@@ -3231,7 +3245,8 @@
   ],
   "related": [
    "Г8"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Г5",
@@ -3251,7 +3266,8 @@
   ],
   "sanction": "A missed overrun is PTD's responsibility.",
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Г6",
@@ -3271,7 +3287,8 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Г7",
@@ -3495,7 +3512,8 @@
   "related": [
    "Г1",
    "Г8"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Г8",
@@ -3693,7 +3711,8 @@
    "Г1",
    "Г3",
    "Г7"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Г9",
@@ -3872,7 +3891,8 @@
   ],
   "related": [
    "Г8"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Д1",
@@ -4055,7 +4075,8 @@
     ]
    }
   ],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Д2",
@@ -4287,7 +4308,8 @@
   "related": [
    "В7",
    "Д1"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Д3",
@@ -4503,7 +4525,8 @@
    "Г3",
    "Е3",
    "Е5"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Д4",
@@ -4716,7 +4739,8 @@
   "related": [
    "Г2",
    "Е5"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Д5",
@@ -4736,7 +4760,8 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Е1",
@@ -5271,7 +5296,8 @@
    "Г9",
    "Е3",
    "Е9"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Е2",
@@ -5291,7 +5317,8 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Е3",
@@ -6117,7 +6144,8 @@
    "Г9",
    "Е1",
    "Е9"
-  ]
+  ],
+  "updated": null
  },
  {
   "index": "Е4",
@@ -6137,7 +6165,8 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Е5",
@@ -6157,7 +6186,8 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Е6",
@@ -6177,7 +6207,8 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Е7",
@@ -6197,7 +6228,8 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Е8",
@@ -6217,7 +6249,8 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  },
  {
   "index": "Е9",
@@ -6237,6 +6270,7 @@
   ],
   "sanction": null,
   "sections": [],
-  "related": []
+  "related": [],
+  "updated": null
  }
 ]

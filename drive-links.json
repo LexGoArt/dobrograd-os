@@ -9,7 +9,7 @@
   "kernel_note": "Положення_про_технічний_блок_v7 (на Диску), дамп у пакеті - з v3",
   "simplified": "https://docs.google.com/spreadsheets/d/1MAbMDI5xei9i2dLzDGI3wbttSMBiBlJ0_sWbFUotHqc/edit",
   "docs": {
-    "А":  "https://docs.google.com/spreadsheets/d/1bgxmLu24dO003_kGXk3t0dgDm84HChvb1aZg8a4mCJk/edit",
+    "А": "https://docs.google.com/spreadsheets/d/1bgxmLu24dO003_kGXk3t0dgDm84HChvb1aZg8a4mCJk/edit",
     "Б1": "https://docs.google.com/spreadsheets/d/1BqHMu1SLLR8uvjpplNh43OtYMjzkiPDHlJAYN53XwkA/edit",
     "Б2": "https://docs.google.com/spreadsheets/d/1Mdr2S6kWn4ch6DRMl0EEcv1fsKIHP2oyNXRqAJf2Qzg/edit",
     "Б3": "https://docs.google.com/spreadsheets/d/1J5yTIhO9cYom3OzQWsGd_npZX1rs98Li2KrbZYJzrDQ/edit",
@@ -32,6 +32,45 @@
     "Д4": "https://docs.google.com/spreadsheets/d/1ZPgdGhih3ndBA4OETAuNKkCQQheBRklJ59hcjERzJBg/edit",
     "Е3": "https://docs.google.com/spreadsheets/d/1O6dgmSW3oPLIq3BS39y5N8Eoth_LaW3QH-ijCvhEOMM/edit"
   },
-  "missing_on_drive": ["Е1"],
-  "in_development": ["Г2", "Г5", "Г6", "Д5", "Е2", "Е4", "Е5", "Е6", "Е7", "Е8", "Е9"]
+  "missing_on_drive": [
+    "Е1"
+  ],
+  "in_development": [
+    "Г2",
+    "Г5",
+    "Г6",
+    "Д5",
+    "Е2",
+    "Е4",
+    "Е5",
+    "Е6",
+    "Е7",
+    "Е8",
+    "Е9"
+  ],
+  "updated": {
+    "А": "07.08.2026",
+    "Б1": "03.08.2026",
+    "Б2": "03.08.2026",
+    "Б3": "02.08.2026",
+    "В1": "02.08.2026",
+    "В2": "03.08.2026",
+    "В3": "03.08.2026",
+    "В4": "02.08.2026",
+    "В5": "02.08.2026",
+    "В6": "02.08.2026",
+    "В7": "03.08.2026",
+    "Г1": "02.08.2026",
+    "Г3": "02.08.2026",
+    "Г4": "03.08.2026",
+    "Г7": "03.08.2026",
+    "Г8": "03.08.2026",
+    "Г9": "02.08.2026",
+    "Д1": "02.08.2026",
+    "Д2": "03.08.2026",
+    "Д3": "02.08.2026",
+    "Д4": "03.08.2026",
+    "Е1": "23.08.2026",
+    "Е3": "03.08.2026"
+  }
 }

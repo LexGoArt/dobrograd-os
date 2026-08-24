@@ -41,17 +41,28 @@ const switchPath = (l) => {
     </button>
 
     {LANGS.length > 1 && (
-      <div class="flex shrink-0 rounded-xl border border-(--color-line) bg-white p-0.5" aria-label="Мова / Language">
-        {LANGS.map((l) => (
-          <a href={switchPath(l)}
-             class:list={['grid min-h-[38px] place-items-center rounded-lg px-1.5 text-[10.5px] font-extrabold tracking-wide transition-colors sm:px-2',
-               l === lang ? 'bg-(--color-brand) text-white' : 'text-(--color-mute) hover:text-(--color-brand)']}
-             aria-current={l === lang ? 'true' : undefined}>
-            <span class="sm:hidden">{l.toUpperCase()}</span>
-            <span class="hidden sm:inline">{LANG_LABELS[l]}</span>
-          </a>
-        ))}
-      </div>
+      <>
+        <!-- Мобільний: поточна мова + dropdown -->
+        <details class="relative shrink-0 sm:hidden" id="lang-dd">
+          <summary class="grid h-11 w-12 cursor-pointer list-none place-items-center rounded-[10px] border border-(--color-line) bg-white text-[11px] font-extrabold text-(--color-brand) [&::-webkit-details-marker]:hidden" aria-label="Мова / Language">
+            {lang.toUpperCase()}
+          </summary>
+          <div class="absolute right-0 top-12 z-50 min-w-[120px] overflow-hidden rounded-xl border border-(--color-line) bg-white shadow-lg">
+            {LANGS.filter((l) => l !== lang).map((l) => (
+              <a href={switchPath(l)} class="block min-h-[44px] px-4 py-3 text-[13px] font-bold text-(--color-ink-2) hover:bg-(--color-wash) hover:text-(--color-brand)">{LANG_LABELS[l]}</a>
+            ))}
+          </div>
+        </details>
+        <!-- Десктоп: три кнопки -->
+        <div class="hidden shrink-0 rounded-[10px] border border-(--color-line) bg-white p-0.5 sm:flex" aria-label="Мова / Language">
+          {LANGS.map((l) => (
+            <a href={switchPath(l)}
+               class:list={['grid min-h-[38px] place-items-center rounded-lg px-2 text-[10.5px] font-extrabold tracking-wide transition-colors',
+                 l === lang ? 'bg-(--color-brand) text-white' : 'text-(--color-mute) hover:text-(--color-brand)']}
+               aria-current={l === lang ? 'true' : undefined}>{LANG_LABELS[l]}</a>
+          ))}
+        </div>
+      </>
     )}
   </div>
 </header>
@@ -64,7 +75,11 @@ const switchPath = (l) => {
 </dialog>
 
 <script is:inline define:vars={{ base }}>
-  document.getElementById('menu-open')?.addEventListener('click', () => window.__toggleSidebar?.());
+  const menuBtn = document.getElementById('menu-open');
+  menuBtn?.addEventListener('click', () => window.__toggleSidebar?.(true, menuBtn));
+  // Закривати мовний dropdown кліком поза ним
+  const dd = document.getElementById('lang-dd');
+  document.addEventListener('click', (e) => { if (dd && dd.open && !dd.contains(e.target)) dd.open = false; });
   const dlg = document.getElementById('search-dialog');
   let inited = false;
   async function openSearch() {
@@ -83,6 +98,7 @@ const switchPath = (l) => {
     }
   }
   document.getElementById('search-open')?.addEventListener('click', openSearch);
+  window.__openSearch = openSearch;
   document.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
   });

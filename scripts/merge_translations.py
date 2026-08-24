@@ -39,6 +39,7 @@ for lang in ['ru', 'en']:
                     d_tr[key] = d_uk[key]
             d_tr['rhythm'] = d_uk['rhythm']
             d_tr['related'] = d_uk['related']
+            d_tr['updated'] = d_uk.get('updated')
         docs.extend(chunk)
     json.dump(docs, open(f'{out_dir}/docs.json', 'w'), ensure_ascii=False, indent=1)
 
@@ -54,6 +55,7 @@ for lang in ['ru', 'en']:
     roles = src('roles-1.json') + src('roles-2.json')
     uk_roles = uk('roles-1.json') + uk('roles-2.json')
     for r_uk, r_tr in zip(uk_roles, roles):
+        r_tr['boss'] = r_uk.get('boss')
         for key in ['slug', 'group', 'icon', 'submits', 'receives']:
             if r_uk.get(key) != r_tr.get(key):
                 problems.append(f'{lang}/roles: {r_uk["slug"]} змінене захищене поле {key}')

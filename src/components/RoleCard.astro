@@ -4,7 +4,7 @@ import Icon from './Icon.astro';
 import { t } from '../lib/data.js';
 const { role, lang, delay = 0 } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const pic = `${base}img/role-${role.slug}.png`;
+const pic = `${base}img/role-${role.slug}.webp`;
 ---
 <a href={`${base}${lang}/roles/${role.slug}/`} data-reveal style={`--reveal-delay:${delay}ms`}
    title={role.title} class="role-card group block rounded-2xl border border-(--color-line) bg-white p-5 pt-6 text-center transition-all duration-300 hover:-translate-y-1.5 hover:border-(--color-accent) hover:shadow-xl hover:shadow-slate-200/70">

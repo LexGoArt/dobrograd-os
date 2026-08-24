@@ -25,6 +25,19 @@ const receiveDocs = role.receives.map(byIdx).filter(Boolean);
 const mainDocs = [...submitDocs, ...receiveDocs].slice(0, 8);
 const zone = role.sections.find((s) => s.title === 'Зона відповідальності')?.items ?? [];
 const duties = role.sections.find((s) => s.title === 'Обовʼязки')?.items ?? [];
+const { roles } = getData(lang);
+const bossRole = role.boss ? roles.find((r) => r.slug === role.boss) : null;
+const nearestTerms = submitDocs.slice(0, 2).map((d) => `${d.index} - ${d.term}`);
+const dodatkyFolder = 'https://drive.google.com/drive/folders/138djReP4BtAYFvFxLdX8EE8ew1h6vlj2';
+// якірна навігація по секціях сторінки
+const anchors = [
+  { id: 'tasks', label: t(lang, 'roles.keyTasks') },
+  ...(duties.length ? [{ id: 'duties', label: t(lang, 'roles.duties') }] : []),
+  { id: 'docs', label: t(lang, 'roles.mainDocs') },
+  ...(role.chain.length ? [{ id: 'chain', label: t(lang, 'roles.chain') }] : []),
+  ...(role.asked.length ? [{ id: 'asked', label: t(lang, 'roles.asked') }] : []),
+  ...(role.faq.length ? [{ id: 'faq', label: t(lang, 'roles.faq') }] : []),
+];
 ---
 <Base lang={lang} title={`${role.title} - ${t(lang, 'site.short')}`} description={role.tagline}
       crumbs={[{ label: t(lang, 'nav.roles'), href: L('roles/') }, { label: role.title }]}>
@@ -37,21 +50,58 @@ const duties = role.sections.find((s) => s.title === 'Обовʼязки')?.item
     <div class="relative mx-auto max-w-6xl px-4 py-10 md:px-8">
       <div class="flex items-start gap-5">
         <span class="block h-24 w-24 shrink-0 overflow-hidden rounded-full border border-(--color-line) bg-[radial-gradient(circle_at_50%_38%,#eef4f8_0%,var(--color-wash)_72%)]">
-          <img src={`${base}img/role-${role.slug}.png`} alt="" width="96" height="96" class="h-full w-full object-cover object-[center_10%]" />
+          <img src={`${base}img/role-${role.slug}.webp`} alt="" width="96" height="96" class="h-full w-full object-cover object-[center_10%]" />
         </span>
         <div class="min-w-0">
           <p class="text-[11.5px] font-bold uppercase tracking-widest text-(--color-mute)">{t(lang, `roles.groups.${role.group}`)}</p>
           <h1 class="mt-0.5 text-2xl font-extrabold leading-tight text-(--color-brand) md:text-3xl">{role.title}</h1>
           <p class="mt-2 max-w-xl text-[14.5px] leading-relaxed text-(--color-ink-2)">{role.tagline}</p>
+          <div class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-[13px]">
+            {bossRole && (
+              <span class="flex items-center gap-1.5 text-(--color-ink-2)">
+                <span class="font-bold text-(--color-mute)">{t(lang, 'role.manager')}:</span>
+                <a href={L(`roles/${bossRole.slug}/`)} class="font-semibold text-(--color-accent) hover:text-(--color-accent-2)">{bossRole.cardName}</a>
+              </span>
+            )}
+            {nearestTerms.length > 0 && (
+              <span class="flex items-center gap-1.5 text-(--color-ink-2)">
+                <span class="font-bold text-(--color-mute)">{t(lang, 'role.nearest')}:</span>
+                <span class="font-medium">{nearestTerms.join(' · ')}</span>
+              </span>
+            )}
+            {submitDocs.length > 0 && (
+              <a href={dodatkyFolder} target="_blank" rel="noopener"
+                 class="inline-flex min-h-[40px] items-center gap-2 rounded-[10px] border-[1.5px] border-(--color-line) bg-white px-4 text-[13px] font-bold text-(--color-brand) transition-colors hover:border-(--color-accent) hover:text-(--color-accent)">
+                <Icon name="file-text" size={14} /> {t(lang, 'role.allForms')}
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Якірна навігація: чипи на десктопі, select на мобільному -->
+  <nav class="no-print sticky top-14 z-30 border-b border-(--color-line) bg-white/90 backdrop-blur" aria-label={t(lang, 'misc.onThisPage')}>
+    <div class="mx-auto max-w-6xl px-4 md:px-8">
+      <div class="hidden gap-1 overflow-x-auto py-2 sm:flex">
+        {anchors.map((a) => (
+          <a href={`#${a.id}`} class="shrink-0 rounded-[10px] px-3.5 py-2 text-[13px] font-semibold text-(--color-ink-2) transition-colors hover:bg-(--color-wash) hover:text-(--color-brand)">{a.label}</a>
+        ))}
+      </div>
+      <label class="block py-2 sm:hidden">
+        <span class="sr-only">{t(lang, 'misc.onThisPage')}</span>
+        <select id="role-anchor" class="w-full min-h-[44px] rounded-[10px] border border-(--color-line) bg-white px-3 text-[14px] font-semibold text-(--color-brand) focus:border-(--color-accent) focus:outline-none">
+          {anchors.map((a) => <option value={a.id}>{a.label}</option>)}
+        </select>
+      </label>
+    </div>
+  </nav>
+
   <div class="mx-auto max-w-6xl px-4 py-8 md:px-8" data-pagefind-body>
     <!-- Ключові задачі + Основні документи -->
     <div class="grid grid-cols-1 gap-4 lg:grid-cols-5">
-      <section class="rounded-2xl border border-(--color-line) bg-white p-5 md:p-6 lg:col-span-3" data-reveal>
+      <section id="tasks" class="scroll-mt-28 rounded-2xl border border-(--color-line) bg-white p-5 md:p-6 lg:col-span-3" data-reveal>
         <h2 class="flex items-center gap-2 text-[16px] font-extrabold text-(--color-brand)">
           <Icon name="check-square" size={17} class="text-(--color-accent)" /> {t(lang, 'roles.keyTasks')}
         </h2>
@@ -73,7 +123,7 @@ const duties = role.sections.find((s) => s.title === 'Обовʼязки')?.item
         )}
       </section>
 
-      <section class="rounded-2xl border border-(--color-line) bg-white p-5 md:p-6 lg:col-span-2" data-reveal style="--reveal-delay:90ms">
+      <section id="docs" class="scroll-mt-28 rounded-2xl border border-(--color-line) bg-white p-5 md:p-6 lg:col-span-2" data-reveal style="--reveal-delay:90ms">
         <h2 class="flex items-center gap-2 text-[16px] font-extrabold text-(--color-brand)">
           <Icon name="file-text" size={17} class="text-(--color-accent)" /> {t(lang, 'roles.mainDocs')}
         </h2>
@@ -92,7 +142,7 @@ const duties = role.sections.find((s) => s.title === 'Обовʼязки')?.item
 
     <!-- Ланцюг взаємодії -->
     {role.chain.length > 0 && (
-      <section class="mt-4 rounded-2xl border border-(--color-line) bg-white p-5 md:p-6" data-reveal>
+      <section id="chain" class="scroll-mt-28 mt-4 rounded-2xl border border-(--color-line) bg-white p-5 md:p-6" data-reveal>
         <h2 class="flex items-center gap-2 text-[16px] font-extrabold text-(--color-brand)">
           <Icon name="route" size={17} class="text-(--color-accent)" /> {t(lang, 'roles.chain')}
         </h2>
@@ -125,7 +175,7 @@ const duties = role.sections.find((s) => s.title === 'Обовʼязки')?.item
 
     <!-- Коли до вас звертаються -->
     {role.asked.length > 0 && (
-      <section class="mt-4 rounded-2xl border border-(--color-line) bg-white p-5 md:p-6" data-reveal>
+      <section id="asked" class="scroll-mt-28 mt-4 rounded-2xl border border-(--color-line) bg-white p-5 md:p-6" data-reveal>
         <h2 class="flex items-center gap-2 text-[16px] font-extrabold text-(--color-brand)">
           <Icon name="megaphone" size={17} class="text-(--color-accent)" /> {t(lang, 'roles.asked')}
         </h2>
@@ -145,7 +195,7 @@ const duties = role.sections.find((s) => s.title === 'Обовʼязки')?.item
     <!-- Обовʼязки + Документи і строки -->
     <div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
       {duties.length > 0 && (
-        <section class="rounded-2xl border border-(--color-line) bg-white p-5 md:p-6">
+        <section id="duties" class="scroll-mt-28 rounded-2xl border border-(--color-line) bg-white p-5 md:p-6">
           <h2 class="flex items-center gap-2 text-[16px] font-extrabold text-(--color-brand)">
             <Icon name="clipboard-list" size={17} class="text-(--color-accent)" /> {t(lang, 'roles.duties')}
           </h2>
@@ -206,3 +256,10 @@ const duties = role.sections.find((s) => s.title === 'Обовʼязки')?.item
     )}
   </div>
 </Base>
+
+<script>
+  const sel = document.getElementById('role-anchor') as HTMLSelectElement | null;
+  sel?.addEventListener('change', () => {
+    document.getElementById(sel.value)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+</script>

@@ -1,0 +1,22 @@
+---
+// Горизонтальна картка ролі: ілюстрація ліворуч, текст праворуч, одна явна дія.
+import Icon from './Icon.astro';
+import { t } from '../lib/data.js';
+const { role, lang, delay = 0 } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<a href={`${base}${lang}/roles/${role.slug}/`} title={role.title} data-reveal style={`--reveal-delay:${delay}ms`}
+   class="group flex min-h-[120px] items-center gap-4 rounded-2xl border border-(--color-line) bg-white p-4 transition-all duration-200 hover:border-(--color-accent) hover:shadow-md sm:gap-5 sm:p-5">
+  <span class="block h-20 w-20 shrink-0 overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_38%,#eef4f8_0%,var(--color-wash)_72%)] sm:h-24 sm:w-24">
+    <img src={`${base}img/role-${role.slug}.webp`} alt="" width="96" height="96" loading="lazy"
+         class="h-full w-full object-cover object-[center_10%]" />
+  </span>
+  <span class="min-w-0 flex-1">
+    <span class="block font-[family-name:var(--font-display)] text-[15.5px] font-bold leading-snug text-(--color-brand)">{role.cardName}</span>
+    <span class="mt-1 block text-[13px] leading-snug text-(--color-mute)">{role.short}</span>
+    <span class="mt-2.5 inline-flex min-h-[36px] items-center gap-1.5 rounded-[10px] border-[1.5px] border-(--color-line) px-3.5 text-[13px] font-bold text-(--color-accent) transition-all duration-200 group-hover:border-(--color-accent) group-hover:bg-(--color-accent) group-hover:text-white">
+      {t(lang, 'roles.open')}
+      <Icon name="arrow-right" size={12} />
+    </span>
+  </span>
+</a>

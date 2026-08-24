@@ -30,7 +30,8 @@
   "tagline": "Strategic leadership, budget, and top-level decisions.",
   "chain": [],
   "faq": [],
-  "asked": []
+  "asked": [],
+  "boss": null
  },
  {
   "slug": "ksz",
@@ -171,7 +172,8 @@
     "whom": "Meeting secretary / Head of CS",
     "term": "1 business day"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "proektna-grupa",
@@ -249,7 +251,8 @@
    }
   ],
   "faq": [],
-  "asked": []
+  "asked": [],
+  "boss": null
  },
  {
   "slug": "vtv",
@@ -417,7 +420,8 @@
     "whom": "PTD",
     "term": "1 business day"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "koshtorysnyk",
@@ -509,7 +513,8 @@
     "whom": "Cost engineer",
     "term": "2 business days"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "tehnahliad",
@@ -614,7 +619,8 @@
     "whom": "Technical supervision / Site Manager",
     "term": "2 business days"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "mehanik",
@@ -714,7 +720,8 @@
     "whom": "Mechanic",
     "term": "2 business days"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "inzhener-tb",
@@ -801,7 +808,8 @@
     "whom": "Safety Engineer",
     "term": "1 business day"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "laborant",
@@ -893,7 +901,8 @@
     "whom": "Lab Technician",
     "term": "1 business day"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "kp",
@@ -1006,7 +1015,8 @@
     "whom": "PM / PTD",
     "term": "1 business day"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "nachalnyk-dilnytsi",
@@ -1153,7 +1163,8 @@
     "whom": "Site Manager",
     "term": "2 business days"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "prorab",
@@ -1260,7 +1271,8 @@
     "whom": "Site Foreman",
     "term": "1 business day"
    }
-  ]
+  ],
+  "boss": null
  },
  {
   "slug": "brygady",
@@ -1345,7 +1357,8 @@
    }
   ],
   "faq": [],
-  "asked": []
+  "asked": [],
+  "boss": null
  },
  {
   "slug": "zakupivli",
@@ -1369,6 +1382,7 @@
   "tagline": "Supply of materials per PTD specifications, acting as an internal contractor.",
   "chain": [],
   "faq": [],
-  "asked": []
+  "asked": [],
+  "boss": null
  }
 ]

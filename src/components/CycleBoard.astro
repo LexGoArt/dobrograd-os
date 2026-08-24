@@ -1,0 +1,130 @@
+---
+// Інтерактивний місячний цикл.
+// Десктоп: 5 етапів у рядок + панель деталей обраного етапу; поточний етап виділяє скрипт.
+// Мобільний: вертикальний таймлайн, деталі - акордеонами. Без горизонтальної прокрутки.
+import Icon from './Icon.astro';
+import { t } from '../lib/data.js';
+const { lang } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const D = (slug) => `${base}${lang}/docs/${slug}/`;
+const STEPS = t(lang, 'cycle.steps');
+const DETAILS = t(lang, 'cycleDetails');
+// день місяця, до якого діє етап (для підсвітки поточного): 25, 28, 5, 10, оплата - решта
+const DUE = [25, 28, 5, 10, null];
+const rows = STEPS.map((s, i) => ({ ...s, ...DETAILS[i], due: DUE[i], i }));
+---
+<div id="cycle-board">
+  <!-- Десктоп: етапи + панель -->
+  <div class="hidden lg:block">
+    <div class="grid grid-cols-5 gap-2" role="tablist" aria-label={t(lang, 'home.cycleTitle')}>
+      {rows.map((s) => (
+        <button type="button" role="tab" data-stage={s.i} aria-selected={s.i === 0 ? 'true' : 'false'}
+          class="cycle-tab group min-h-[76px] rounded-2xl border border-(--color-line) bg-white p-3 text-left transition-all hover:border-(--color-accent)">
+          <span class:list={['chip inline-grid min-h-[26px] place-items-center rounded-full px-2.5 text-[11px] font-bold',
+            s.accent ? 'bg-(--color-ok) text-white' : 'bg-(--color-brand) text-white']}>{s.day}</span>
+          <span class="mt-1.5 block text-[13.5px] font-bold leading-tight text-(--color-brand)">{s.title}</span>
+          <span class="cycle-now mt-1 hidden text-[10.5px] font-bold uppercase tracking-wide text-(--color-ok)">● {t(lang, 'home.nowNearest')}</span>
+        </button>
+      ))}
+    </div>
+    <div class="mt-3 rounded-2xl border border-(--color-line) bg-(--color-wash) p-5" aria-live="polite">
+      {rows.map((s) => (
+        <div data-stage-panel={s.i} class:list={[s.i !== 0 && 'hidden', 'grid grid-cols-2 gap-x-8 gap-y-3 xl:grid-cols-4']}>
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-wider text-(--color-mute)">{t(lang, 'home.nowResp')}</p>
+            <p class="mt-0.5 text-[13.5px] font-semibold text-(--color-brand)">{s.role}</p>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-wider text-(--color-mute)">→</p>
+            <p class="mt-0.5 text-[13.5px]">{s.inputs}</p>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-wider text-(--color-mute)">✓</p>
+            <p class="mt-0.5 text-[13.5px] font-medium">{s.result}</p>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-wider text-(--color-mute)">⇢</p>
+            <p class="mt-0.5 text-[13.5px] text-(--color-ink-2)">{s.next}</p>
+          </div>
+          {s.links.length > 0 && (
+            <p class="col-span-full flex flex-wrap items-center gap-1.5 border-t border-(--color-line) pt-3">
+              <span class="mr-1 text-[11px] font-bold uppercase tracking-wider text-(--color-mute)">{t(lang, 'home.nowForms')}:</span>
+              {s.links.map(([idx, slug]) => (
+                <a href={D(slug)} class="chip inline-grid min-h-[28px] place-items-center rounded-md bg-white px-2 text-[11.5px] font-bold text-(--color-accent) transition-colors hover:bg-(--color-accent) hover:text-white">{idx}</a>
+              ))}
+            </p>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Мобільний: вертикальний таймлайн -->
+  <ol class="relative space-y-2.5 before:absolute before:bottom-5 before:left-[13px] before:top-5 before:w-px before:bg-(--color-line) lg:hidden">
+    {rows.map((s) => (
+      <li class="relative pl-10" data-stage-m={s.i}>
+        <span class:list={['absolute left-0 top-3 z-10 grid h-7 w-7 place-items-center rounded-full text-[10px] font-extrabold text-white ring-4 ring-(--color-paper)',
+          s.accent ? 'bg-(--color-ok)' : 'bg-(--color-brand)']}>{s.i + 1}</span>
+        <details class="group overflow-hidden rounded-2xl border border-(--color-line) bg-white">
+          <summary class="flex min-h-[56px] cursor-pointer list-none items-center gap-3 px-4 py-2.5 [&::-webkit-details-marker]:hidden">
+            <span class="min-w-0 flex-1">
+              <span class="flex flex-wrap items-center gap-2">
+                <span class="chip text-[11.5px] font-bold text-(--color-accent)">{s.day}</span>
+                <span class="cycle-now hidden rounded-full bg-(--color-ok-bg) px-2 py-0.5 text-[10px] font-bold uppercase text-(--color-ok)">{t(lang, 'home.nowNearest')}</span>
+              </span>
+              <span class="block text-[14.5px] font-bold leading-snug text-(--color-brand)">{s.title}</span>
+              <span class="block text-[12.5px] text-(--color-mute)">{s.role}</span>
+            </span>
+            <svg class="shrink-0 text-(--color-mute) transition-transform duration-200 group-open:rotate-180" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="space-y-2 border-t border-(--color-line) px-4 py-3 text-[13.5px]">
+            <p>{s.text}</p>
+            <p><b class="text-(--color-brand)">✓</b> {s.result}</p>
+            <p class="text-(--color-ink-2)"><b class="text-(--color-brand)">⇢</b> {s.next}</p>
+            {s.links.length > 0 && (
+              <p class="flex flex-wrap gap-1.5 pt-1">
+                {s.links.map(([idx, slug]) => (
+                  <a href={D(slug)} class="chip inline-grid min-h-[32px] place-items-center rounded-md bg-(--color-wash) px-2.5 text-[12px] font-bold text-(--color-accent)">{idx}</a>
+                ))}
+              </p>
+            )}
+          </div>
+        </details>
+      </li>
+    ))}
+  </ol>
+</div>
+
+<style>
+  .cycle-tab[aria-selected="true"] {
+    border-color: var(--color-accent);
+    box-shadow: inset 0 -3px 0 var(--color-accent);
+    background: #fff;
+  }
+</style>
+
+<script>
+  const board = document.getElementById('cycle-board')!;
+  const tabs = [...board.querySelectorAll<HTMLButtonElement>('.cycle-tab')];
+  const panels = [...board.querySelectorAll<HTMLElement>('[data-stage-panel]')];
+
+  function select(i: number) {
+    tabs.forEach((tb) => tb.setAttribute('aria-selected', String(tb.dataset.stage === String(i))));
+    panels.forEach((p) => p.classList.toggle('hidden', p.dataset.stagePanel !== String(i)));
+  }
+  tabs.forEach((tb) => tb.addEventListener('click', () => select(Number(tb.dataset.stage))));
+
+  // Поточний/найближчий етап за сьогоднішньою датою: до 5 -> етап 3, до 10 -> 4, до 25 -> 1, до 28 -> 2, інакше -> 3 (наступний місяць)
+  const day = new Date().getDate();
+  let current = 0;
+  if (day <= 5) current = 2;
+  else if (day <= 10) current = 3;
+  else if (day <= 25) current = 0;
+  else if (day <= 28) current = 1;
+  else current = 2;
+  select(current);
+  board.querySelectorAll(`[data-stage="${current}"] .cycle-now, [data-stage-m="${current}"] .cycle-now`)
+    .forEach((el) => el.classList.remove('hidden'));
+  const mob = board.querySelector<HTMLDetailsElement>(`[data-stage-m="${current}"] details`);
+  if (mob) mob.open = true;
+</script>

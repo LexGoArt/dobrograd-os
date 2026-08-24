@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Sidebar from '../components/Sidebar.astro';
 import Topbar from '../components/Topbar.astro';
 import Footer from '../components/Footer.astro';
+import { t } from '../lib/data.js';
 
 const { lang = 'uk', title, description = '', crumbs = [], plain = false } = Astro.props;
 
@@ -36,14 +37,16 @@ const OG_DESC = '34 regulations · 14 roles · payment paths · checklists · th
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}img/dobrograd-mark.svg`} />
   </head>
   <body class="min-h-dvh bg-(--color-paper) font-[family-name:var(--font-sans)]">
+    <a href="#main" class="skip-link">{t(lang, 'misc.skip')}</a>
     <Sidebar lang={lang} />
-    <div class="flex min-h-dvh flex-col lg:pl-[248px]">
+    <div class="app-shell flex min-h-dvh flex-col transition-[padding] duration-200 lg:pl-[248px]">
       <Topbar lang={lang} crumbs={crumbs} />
-      <main class="flex-1">
+      <main id="main" class="flex-1">
         <slot />
       </main>
       <Footer lang={lang} />
     </div>
+    <div id="toast" role="status" aria-live="polite"></div>
     <script>
       // Scroll-reveal: секції з data-reveal мʼяко зʼявляються
       const items = document.querySelectorAll('[data-reveal]');

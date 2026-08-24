@@ -8,14 +8,14 @@
   --color-faint: #8aa0b2;        /* лише декор: розділювачі, вимкнені стрілки */
   --color-brand: #2F5061;        /* графітово-синій - заголовки */
   --color-accent: #2F6690;       /* синій - акценти, лінки */
-  --color-accent-2: #3d7cab;     /* світліший акцент */
-  --color-paper: #fbfcfd;        /* фон сторінки */
+  --color-accent-2: #285779;     /* hover акценту (темніший) */
+  --color-paper: #f7f9fb;        /* фон сторінки */
   --color-card: #ffffff;
   --color-wash: #f2f6f9;         /* підложка секцій */
-  --color-line: #e3eaf0;         /* бордери */
+  --color-line: #dce5ec;         /* бордери */
   --color-ok: #2e7d4f;           /* готово */
   --color-ok-bg: #e9f5ee;
-  --color-warn: #9a6b00;         /* в розробці */
+  --color-warn: #946200;         /* в розробці */
   --color-warn-bg: #fdf3d8;
   --color-stop: #b3372e;         /* санкції, стоп-умови */
   --color-stop-bg: #fdeeec;
@@ -112,6 +112,34 @@ body {
   --pagefind-ui-border-radius: 12px;
   --pagefind-ui-font: var(--font-sans);
 }
+
+/* Доступність: видимий фокус і skip-link */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  background: var(--color-brand); color: #fff; font-weight: 700;
+  padding: .7rem 1.2rem; border-radius: 0 0 10px 0; font-size: 14px;
+}
+.skip-link:focus-visible { left: 0; }
+
+/* Згорнутий сайдбар (десктоп) */
+html.nav-min #sidebar { width: 76px; }
+html.nav-min #sidebar .nav-label, html.nav-min #sidebar .nav-extra { display: none; }
+html.nav-min #sidebar nav a { justify-content: center; padding-left: 0; padding-right: 0; }
+@media (min-width: 1024px) { html.nav-min .app-shell { padding-left: 76px; } }
+
+/* Тост */
+#toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translate(-50%, 16px);
+  background: var(--color-brand); color: #fff; font-size: 13.5px; font-weight: 600;
+  padding: .7rem 1.3rem; border-radius: 12px; opacity: 0; pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease; z-index: 150;
+}
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
 
 @media print {
   header, footer, .no-print { display: none !important; }

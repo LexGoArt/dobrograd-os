@@ -85,10 +85,10 @@ const roleFilters = [
                 <span class="min-w-0 flex-1">
                   <span class="flex items-start justify-between gap-2">
                     <span class="text-[14.5px] font-bold leading-snug text-(--color-brand) group-hover:text-(--color-accent)">{d.name}</span>
-                    <StatusBadge status={d.status} lang={lang} />
+                    <StatusBadge status={d.status === 'ready' && !d.drive ? 'nofile' : d.status} lang={lang} />
                   </span>
                   <span class="mt-1 block text-[12.5px] leading-snug text-(--color-ink-2)">{d.purpose}</span>
-                  <span class="mt-2 block text-[11.5px] text-(--color-mute)">{d.from} → {d.to} · {d.term}</span>
+                  <span class="mt-2 block text-[12px] text-(--color-mute)">{d.from} → {d.to} · {d.term}{d.updated && ` · ${t(lang, 'docs2.updatedLabel')} ${d.updated}`}</span>
                 </span>
               </a>
             ))}

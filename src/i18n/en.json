@@ -17,7 +17,9 @@
     "regulation": "Quick guide",
     "roadmap": "In progress",
     "search": "Search",
-    "searchHint": "Search roles, documents…"
+    "searchHint": "Search roles, documents…",
+    "groupWork": "Work",
+    "groupBase": "Knowledge base"
   },
   "aside": {
     "helpTitle": "Can't find something?",
@@ -45,7 +47,7 @@
         "text": "Works on a phone at the site"
       }
     ],
-    "rolesTitle": "Pick your role",
+    "rolesTitle": "Work by role",
     "rolesHint": "Responsibilities, documents, deadlines and interactions - on every role page.",
     "allRoles": "All roles",
     "quickTitle": "Quick access",
@@ -74,7 +76,96 @@
     ],
     "cycleTitle": "The monthly cycle - the main rhythm",
     "cycleHint": "Skip a step - the money stops.",
-    "cycleMore": "More about the cycle"
+    "cycleMore": "More about the cycle",
+    "searchTitle": "Find a role, document, form or process",
+    "quickQueries": [
+      {
+        "label": "Find a form",
+        "href": "docs/"
+      },
+      {
+        "label": "Check a deadline",
+        "href": "calendar/"
+      },
+      {
+        "label": "Open a checklist",
+        "href": "checklists/"
+      },
+      {
+        "label": "Payment path",
+        "href": "processes/payment/"
+      }
+    ],
+    "startTitle": "Where do we start?",
+    "start": [
+      {
+        "icon": "users",
+        "title": "I know my role",
+        "text": "See duties, documents and deadlines.",
+        "href": "roles/",
+        "cta": "To roles"
+      },
+      {
+        "icon": "file-text",
+        "title": "I am looking for a document",
+        "text": "Find a form, regulation or template.",
+        "href": "docs/",
+        "cta": "To documents"
+      },
+      {
+        "icon": "route",
+        "title": "I want to get a task done",
+        "text": "Open a step-by-step process or checklist.",
+        "href": "processes/",
+        "cta": "To processes"
+      }
+    ],
+    "allRolesBtn": "See all 14 roles",
+    "nowTitle": "Current right now",
+    "nowNearest": "nearest deadline",
+    "nowResp": "Owner",
+    "nowForms": "Forms",
+    "nowOpen": "Open the guide",
+    "actionsTitle": "Quick actions",
+    "actions": [
+      {
+        "icon": "file-text",
+        "title": "Open the current form",
+        "text": "Register of 34 documents with Drive links",
+        "href": "docs/"
+      },
+      {
+        "icon": "check-square",
+        "title": "My checklists",
+        "text": "Continue where you left off",
+        "href": "checklists/"
+      },
+      {
+        "icon": "calendar",
+        "title": "Check the calendar",
+        "text": "Who submits what and when this week",
+        "href": "calendar/"
+      },
+      {
+        "icon": "coins",
+        "title": "Payment path",
+        "text": "8 steps from initiation to payment",
+        "href": "processes/payment/"
+      },
+      {
+        "icon": "megaphone",
+        "title": "Report an issue",
+        "text": "Write to us - we will fix and add it",
+        "href": "tg"
+      },
+      {
+        "icon": "users",
+        "title": "Find the owner",
+        "text": "Who is responsible for the next step",
+        "href": "roles/"
+      }
+    ],
+    "howLink": "How the portal works"
   },
   "cycle": {
     "steps": [
@@ -431,6 +522,108 @@
     "backToRoles": "Back to all roles",
     "onThisPage": "On this page",
     "closeHint": "Esc - close",
-    "searchAfterBuild": "Search is available after the site is built."
+    "searchAfterBuild": "Search is available after the site is built.",
+    "skip": "Skip to main content",
+    "close": "Close",
+    "collapse": "Collapse menu",
+    "expand": "Expand menu"
+  },
+  "cycleDetails": [
+    {
+      "role": "Site Manager",
+      "inputs": "Estimate, cumulative register, design",
+      "result": "Approved monthly plan",
+      "next": "PTD reviews the plan by the 28th"
+    },
+    {
+      "role": "PTD",
+      "inputs": "Plan Б1+Б2+В1 from the site",
+      "result": "Plan approved, materials ordered",
+      "next": "The site works, weekly statuses on Fridays"
+    },
+    {
+      "role": "Site Manager",
+      "inputs": "Acts, timesheets В5, CWA certificates, delivery notes",
+      "result": "Full closing package at PTD",
+      "next": "PTD verifies the package by the 10th"
+    },
+    {
+      "role": "PTD",
+      "inputs": "Closing package Б3",
+      "result": "Verification note to the Head of CS",
+      "next": "Head of CS approves the acts"
+    },
+    {
+      "role": "Head of CS + finance",
+      "inputs": "Verification note, approved acts",
+      "result": "Payment executed",
+      "next": "New cycle - plan by the 25th"
+    }
+  ],
+  "role": {
+    "manager": "Reports to",
+    "nearest": "Upcoming deadlines",
+    "allForms": "All forms on Drive"
+  },
+  "docs2": {
+    "updatedLabel": "Updated",
+    "format": "Google Sheet",
+    "openDoc": "Open the document",
+    "copyLink": "Copy link",
+    "copied": "Link copied",
+    "report": "Report an issue",
+    "noFile": "No file"
+  },
+  "help": {
+    "title": "How the portal works",
+    "lead": "The portal is the instruction mirror of the technical block: it answers what to do, by when and with which form. The source of truth for forms is Google Drive.",
+    "glossaryTitle": "Abbreviations and terms",
+    "glossary": [
+      [
+        "CS",
+        "Client's Service - manages construction on behalf of the company"
+      ],
+      [
+        "Head of CS",
+        "Head of Client's Service - operational management of the vertical"
+      ],
+      [
+        "PTD",
+        "Production & Technical Dept - single point of documentation and the payment filter"
+      ],
+      [
+        "PM",
+        "Project Manager - delivers the project within budget"
+      ],
+      [
+        "CEO",
+        "General Director"
+      ],
+      [
+        "OSH",
+        "Occupational safety and health"
+      ],
+      [
+        "CWA",
+        "Concealed Works Acceptance Certificate"
+      ],
+      [
+        "Inventory",
+        "Materials and inventory (ТМЦ)"
+      ],
+      [
+        "Schedule",
+        "Works Schedule (ГВР)"
+      ],
+      [
+        "WS",
+        "Worksection - the corporate task system, the single source of truth"
+      ],
+      [
+        "А-Е",
+        "Document groups: А - calendar · Б - monthly cycle · В - resources · Г - quality and changes · Д - checklists · Е - regulations"
+      ]
+    ],
+    "indexHint": "Codes like Б1 or Е3 are document indices. Every code on the site is clickable and leads to the document page."
   }
 }

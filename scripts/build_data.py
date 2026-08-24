@@ -231,6 +231,7 @@ for idx, flow in FLOWS.items():
         'group': idx[0], 'groupName': GROUPS[idx[0]],
         'status': status, 'devOwner': DEV_OWNER.get(idx),
         'drive': drive['docs'].get(idx),
+        'updated': drive.get('updated', {}).get(idx),
         'from': flow['frm'], 'to': flow['to'], 'term': flow['term'],
         'rhythm': flow['rhythm'], 'sanction': flow['sanction'],
         'sections': [], 'related': [],
@@ -427,6 +428,12 @@ for r in K:
 json.dump(routes, open(os.path.join(OUT, 'routes.json'), 'w'), ensure_ascii=False, indent=1)
 
 # ---------- Роль: опис, іконка, «до вас звертаються» / «ви запитуєте», FAQ ----------
+ROLE_BOSS = {  # безпосередній керівник (slug); None - вершина
+ 'gd': None, 'ksz': 'gd', 'vtv': 'ksz', 'koshtorysnyk': 'vtv', 'tehnahliad': 'ksz',
+ 'mehanik': 'ksz', 'inzhener-tb': 'ksz', 'laborant': 'ksz', 'proektna-grupa': 'ksz',
+ 'kp': 'ksz', 'nachalnyk-dilnytsi': 'kp', 'prorab': 'nachalnyk-dilnytsi',
+ 'brygady': 'prorab', 'zakupivli': 'gd',
+}
 ROLE_META = {
  'gd': dict(icon='building', card='Генеральний директор', short='стратегія, бюджет і рішення вищого рівня',
             tagline='Стратегічне керівництво, бюджет і рішення вищого рівня.'),
@@ -527,6 +534,7 @@ for role in roles:
     meta = ROLE_META.get(role['slug'], {})
     role['icon'] = meta.get('icon', 'users')
     role['cardName'] = meta.get('card', role['title'])
+    role['boss'] = ROLE_BOSS.get(role['slug'])
     role['short'] = meta.get('short', '')
     role['tagline'] = meta.get('tagline', '')
     role['chain'] = chain_for(role)
