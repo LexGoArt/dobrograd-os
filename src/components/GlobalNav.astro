@@ -1,0 +1,119 @@
+---
+// Глобальна навігація в стилі apple.com: напівпрозора смуга з розмиттям,
+// на телефоні - повноекранне меню. Пошук (Pagefind) і перемикач мов - праворуч.
+import Icon from './Icon.astro';
+import { t, LANGS } from '../lib/data.js';
+const { lang } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const L = (p = '') => `${base}${lang}/${p}`;
+const path = Astro.url.pathname;
+const LANG_LABELS = { uk: 'УКР', ru: 'РУС', en: 'ENG' };
+const switchPath = (l) => {
+  const rest = path.startsWith(`${base}${lang}/`) ? path.slice(`${base}${lang}/`.length) : '';
+  return `${base}${l}/${rest}`;
+};
+const MAIN = [
+  { href: L('roles/'), label: t(lang, 'nav.roles') },
+  { href: L('docs/'), label: t(lang, 'nav.docs') },
+  { href: L('processes/'), label: t(lang, 'nav.processes') },
+  { href: L('calendar/'), label: t(lang, 'nav.calendar') },
+  { href: L('checklists/'), label: t(lang, 'nav.checklists') },
+  { href: L('kernel/'), label: t(lang, 'nav.kernel') },
+];
+const MORE = [
+  { href: L('regulation/'), label: t(lang, 'nav.regulation') },
+  { href: L('roadmap/'), label: t(lang, 'nav.roadmap') },
+  { href: L('help/'), label: t(lang, 'home.howLink') },
+];
+const on = (h) => path.startsWith(h);
+---
+<header class="gnav" id="gnav">
+  <div class="gnav-in">
+    <a href={L('')} class="gnav-logo" aria-label={t(lang, 'nav.home')}>
+      <img src={`${base}img/dobrograd-mark.svg`} alt="" width="216" height="196" />
+      <span>{t(lang, 'site.short')}</span>
+    </a>
+    <nav class="gnav-links" aria-label={t(lang, 'nav.home')}>
+      {MAIN.map((i) => <a href={i.href} aria-current={on(i.href) ? 'page' : undefined}>{i.label}</a>)}
+    </nav>
+    <div class="gnav-tools">
+      <button id="search-open" type="button" class="gnav-ico" aria-label={t(lang, 'nav.search')}>
+        <Icon name="search" size={17} />
+      </button>
+      {LANGS.length > 1 && (
+        <div class="gnav-lang" aria-label="Мова / Language">
+          {LANGS.map((l) => (
+            <a href={switchPath(l)} aria-current={l === lang ? 'true' : undefined}>{LANG_LABELS[l]}</a>
+          ))}
+        </div>
+      )}
+      <button id="menu-open" type="button" class="gnav-ico gnav-burger" aria-label="Меню" aria-expanded="false" aria-controls="gmenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Повноекранне меню (телефон) -->
+<div class="gmenu" id="gmenu" hidden>
+  <nav aria-label="Меню">
+    <a href={L('')} style="--i:0">{t(lang, 'nav.home')}</a>
+    {MAIN.map((i, n) => <a href={i.href} style={`--i:${n + 1}`} aria-current={on(i.href) ? 'page' : undefined}>{i.label}</a>)}
+    <div class="gmenu-more" style={`--i:${MAIN.length + 1}`}>
+      {MORE.map((i) => <a href={i.href}>{i.label}</a>)}
+      <a href="https://t.me/lexgo" target="_blank" rel="noopener">{t(lang, 'aside.tgButton')}</a>
+    </div>
+    {LANGS.length > 1 && (
+      <div class="gmenu-lang" style={`--i:${MAIN.length + 2}`}>
+        {LANGS.map((l) => <a href={switchPath(l)} aria-current={l === lang ? 'true' : undefined}>{LANG_LABELS[l]}</a>)}
+      </div>
+    )}
+  </nav>
+</div>
+
+<dialog id="search-dialog" class="m-auto w-[min(92vw,680px)] rounded-[22px] border-0 p-0 shadow-2xl backdrop:bg-black/30 backdrop:backdrop-blur-md">
+  <div class="p-4">
+    <div id="pagefind-box"></div>
+    <p class="mt-3 text-center text-[12px] text-(--color-mute)">{t(lang, 'misc.closeHint')}</p>
+  </div>
+</dialog>
+
+<script is:inline define:vars={{ base }}>
+  // Меню: відкривається з кнопки, закривається нею ж, Esc або переходом
+  const btn = document.getElementById('menu-open');
+  const menu = document.getElementById('gmenu');
+  function setMenu(open) {
+    if (open) { menu.hidden = false; void menu.offsetWidth; }
+    document.documentElement.classList.toggle('menu-open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    if (!open) setTimeout(() => { if (!document.documentElement.classList.contains('menu-open')) menu.hidden = true; }, 320);
+  }
+  btn?.addEventListener('click', () => setMenu(!document.documentElement.classList.contains('menu-open')));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && document.documentElement.classList.contains('menu-open')) { setMenu(false); btn.focus(); } });
+  window.addEventListener('resize', () => { if (window.innerWidth >= 1024) setMenu(false); });
+
+  const dlg = document.getElementById('search-dialog');
+  let inited = false;
+  async function openSearch() {
+    setMenu(false);
+    dlg.showModal();
+    if (inited) return;
+    inited = true;
+    try {
+      const css = document.createElement('link');
+      css.rel = 'stylesheet'; css.href = `${base}pagefind/pagefind-ui.css`;
+      document.head.appendChild(css);
+      await import(`${base}pagefind/pagefind-ui.js`);
+      new PagefindUI({ element: "#pagefind-box", bundlePath: `${base}pagefind/`, showSubResults: true, showImages: false, autofocus: true });
+    } catch (e) {
+      document.getElementById('pagefind-box').innerHTML =
+        '<p style="font-size:13px;color:#86868b">Пошук доступний після збірки сайту (pagefind).</p>';
+    }
+  }
+  document.getElementById('search-open')?.addEventListener('click', openSearch);
+  window.__openSearch = openSearch;
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+  });
+  dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+</script>

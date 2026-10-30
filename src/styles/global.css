@@ -1,38 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  /* Палітра системи: графітово-синій + синій з Excel-форм, розвинена в токени */
-  --color-ink: #14293a;          /* основний текст */
-  --color-ink-2: #44586b;        /* вторинний текст */
-  --color-mute: #60788b;         /* приглушений (>=4.5:1 на білому) */
-  --color-faint: #8aa0b2;        /* лише декор: розділювачі, вимкнені стрілки */
-  --color-brand: #2F5061;        /* графітово-синій - заголовки */
-  --color-accent: #2F6690;       /* синій - акценти, лінки */
-  --color-accent-2: #285779;     /* hover акценту (темніший) */
-  --color-paper: #f7f9fb;        /* фон сторінки */
+  /* Палітра в дусі apple.com: майже чорний текст, білий і світло-сірий фон, синій лише для дій і посилань.
+     Імена токенів збережено - сторінки підхоплюють нову палітру без переписування. */
+  --color-ink: #1d1d1f;          /* основний текст */
+  --color-ink-2: #424245;        /* вторинний текст */
+  --color-mute: #6e6e73;         /* приглушений (>=4.5:1 на білому) */
+  --color-faint: #a1a1a6;        /* лише декор: розділювачі, вимкнені стрілки */
+  --color-brand: #1d1d1f;        /* заголовки */
+  --color-accent: #0066cc;       /* посилання і дії */
+  --color-accent-2: #0055b3;     /* hover акценту */
+  --color-paper: #ffffff;        /* фон сторінки */
   --color-card: #ffffff;
-  --color-wash: #f2f6f9;         /* підложка секцій */
-  --color-line: #dce5ec;         /* бордери */
-  --color-ok: #2e7d4f;           /* готово */
-  --color-ok-bg: #e9f5ee;
-  --color-warn: #946200;         /* в розробці */
-  --color-warn-bg: #fdf3d8;
-  --color-stop: #b3372e;         /* санкції, стоп-умови */
+  --color-wash: #f5f5f7;         /* підложка секцій і плиток */
+  --color-line: #e6e6eb;         /* бордери */
+  --color-gold: #a8862f;         /* фірмове золото Доброграда - лише дрібні акценти */
+  --color-ok: #1e7d3a;           /* готово */
+  --color-ok-bg: #eaf6ec;
+  --color-warn: #8a5a00;         /* в розробці */
+  --color-warn-bg: #fdf4dc;
+  --color-stop: #c4291c;         /* санкції, стоп-умови */
   --color-stop-bg: #fdeeec;
 
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-display: "Lexend", "Inter", -apple-system, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+  --ease: cubic-bezier(.25, .1, .25, 1);
 }
 
-h1, h2 { font-family: var(--font-display); letter-spacing: -0.01em; }
+/* Типографіка Apple: трекінг залежить від розміру - великі заголовки щільніші, текст майже без трекінгу.
+   Правила поза шаром навмисно сильніші за утиліти Tailwind: так усі сторінки отримують однакову вагу заголовків. */
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; }
+h1 { letter-spacing: -0.03em; }
+h2 { letter-spacing: -0.024em; }
+h3 { letter-spacing: -0.016em; }
 
 /* Плавна поява секцій при скролі.
    Без JS контент видимий одразу: стилі активуються лише класом html.js */
 html.js [data-reveal] {
   opacity: 0;
-  transform: translateY(14px);
-  transition: opacity .55s var(--ease, cubic-bezier(0.33, 1, 0.68, 1)), transform .55s var(--ease, cubic-bezier(0.33, 1, 0.68, 1));
+  transform: translateY(20px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
   transition-delay: var(--reveal-delay, 0ms);
 }
 html.js [data-reveal].in-view { opacity: 1; transform: none; }
@@ -47,7 +55,7 @@ html.js [data-reveal].in-view { opacity: 1; transform: none; }
 /* Пульс активного вузла в авто-циклі */
 .node-glow {
   border-color: var(--color-accent) !important;
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-accent) 14%, transparent), 0 10px 24px -8px rgba(47, 102, 144, .35);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-accent) 12%, transparent), 0 10px 28px -10px rgba(0, 0, 0, .18);
   transform: translateY(-2px) scale(1.02);
 }
 
@@ -56,7 +64,7 @@ html.js [data-reveal].in-view { opacity: 1; transform: none; }
 
 /* Прогрес читання довгих сторінок */
 #read-progress {
-  position: fixed; top: 0; left: 0; height: 3px; width: 0;
+  position: fixed; top: 48px; left: 0; height: 2px; width: 0;
   background: var(--color-accent); z-index: 100;
   transition: width .1s linear;
 }
@@ -66,14 +74,93 @@ html.js [data-reveal].in-view { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 body {
   background: var(--color-paper);
   color: var(--color-ink);
-  font-feature-settings: "cv05", "cv11";
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+/* Натискання відчувається одразу: легке стиснення на :active */
+a, button { -webkit-tap-highlight-color: transparent; }
+.press { transition: transform .2s var(--ease); }
+.press:active { transform: scale(.98); }
+
+/* ---------- Глобальна навігація ---------- */
+.gnav {
+  position: sticky; top: 0; z-index: 40; height: 48px;
+  background: rgba(251, 251, 253, .8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+.gnav-in { max-width: 72rem; height: 100%; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; gap: 24px; }
+.gnav-logo { display: flex; align-items: center; gap: 9px; flex: none; font-size: 14px; font-weight: 600; letter-spacing: -.01em; color: var(--color-ink); }
+.gnav-logo img { height: 24px; width: auto; }
+.gnav-links { display: flex; gap: 26px; margin: 0 auto; font-size: 12.5px; }
+.gnav-links a { color: rgba(0, 0, 0, .8); transition: color .2s var(--ease); white-space: nowrap; }
+.gnav-links a:hover, .gnav-links a[aria-current] { color: #000; }
+.gnav-links a[aria-current] { font-weight: 600; }
+.gnav-tools { display: flex; align-items: center; gap: 6px; flex: none; }
+.gnav-ico { width: 44px; height: 44px; display: grid; place-items: center; border: 0; background: none; color: rgba(0, 0, 0, .8); cursor: pointer; border-radius: 10px; }
+.gnav-ico:hover { color: #000; }
+.gnav-lang { display: flex; gap: 2px; font-size: 11.5px; }
+.gnav-lang a { min-height: 32px; display: grid; place-items: center; padding: 0 7px; border-radius: 8px; color: var(--color-mute); letter-spacing: .02em; }
+.gnav-lang a:hover { color: #000; }
+.gnav-lang a[aria-current] { color: #000; font-weight: 600; }
+.gnav-burger { display: none; position: relative; }
+.gnav-burger span { position: absolute; left: 14px; width: 16px; height: 1.5px; border-radius: 2px; background: currentColor; transition: transform .32s var(--ease); }
+.gnav-burger span:first-child { transform: translateY(-3.5px); }
+.gnav-burger span:last-child { transform: translateY(3.5px); }
+.menu-open .gnav-burger span:first-child { transform: rotate(45deg); }
+.menu-open .gnav-burger span:last-child { transform: rotate(-45deg); }
+
+/* Повноекранне меню (телефон і вузький планшет) */
+.gmenu {
+  position: fixed; inset: 48px 0 0; z-index: 39; overflow-y: auto;
+  background: rgba(251, 251, 253, .97);
+  -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+  opacity: 0; transition: opacity .3s var(--ease);
+}
+.menu-open .gmenu { opacity: 1; }
+.menu-open, .menu-open body { overflow: hidden; }
+.gmenu nav { padding: 18px 40px 48px; display: flex; flex-direction: column; }
+.gmenu nav > a { padding: 9px 0; font: 600 28px/1.15 var(--font-display); letter-spacing: -.02em; color: var(--color-ink); }
+.gmenu nav > a[aria-current] { color: var(--color-accent); }
+.gmenu nav > * { opacity: 0; transform: translateY(-8px); transition: opacity .35s var(--ease), transform .35s var(--ease); transition-delay: calc(var(--i, 0) * 25ms); }
+.menu-open .gmenu nav > * { opacity: 1; transform: none; }
+.gmenu-more { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--color-line); display: flex; flex-direction: column; }
+.gmenu-more a { padding: 8px 0; font-size: 17px; color: var(--color-ink-2); }
+.gmenu-lang { margin-top: 22px; display: flex; gap: 18px; font-size: 15px; }
+.gmenu-lang a { min-height: 44px; display: grid; place-items: center; color: var(--color-mute); }
+.gmenu-lang a[aria-current] { color: var(--color-ink); font-weight: 600; }
+
+@media (max-width: 1023px) {
+  .gnav-links, .gnav-lang { display: none; }
+  .gnav-burger { display: grid; }
+  .gnav-in { justify-content: space-between; padding: 0 12px 0 18px; }
+}
+
+/* Хлібні крихти: тихий рядок під навігацією */
+.crumbs { border-bottom: 1px solid var(--color-line); }
+.crumbs-in { max-width: 72rem; margin: 0 auto; padding: 12px 32px; display: flex; gap: 8px; align-items: center; overflow-x: auto; white-space: nowrap; font-size: 12.5px; color: var(--color-mute); scrollbar-width: none; }
+.crumbs-in::-webkit-scrollbar { display: none; }
+.crumbs-in a:hover { color: var(--color-accent); }
+.crumbs-in [aria-current] { color: var(--color-ink); }
+
+/* ---------- Підвал-каталог ---------- */
+.gfoot { margin-top: 72px; background: var(--color-wash); color: var(--color-mute); font-size: 12px; letter-spacing: -.005em; }
+.gfoot-in { max-width: 72rem; margin: 0 auto; padding: 18px 32px 22px; }
+.gfoot-note { padding-bottom: 14px; border-bottom: 1px solid #d2d2d7; line-height: 1.5; }
+.gfoot-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 20px 0; }
+.gfoot h3 { margin: 0 0 8px; font: 600 12px/1.3 var(--font-sans); letter-spacing: -.005em; color: var(--color-ink); }
+.gfoot ul { list-style: none; margin: 0; padding: 0; }
+.gfoot li { margin: 0 0 7px; }
+.gfoot a:hover { color: var(--color-ink); text-decoration: underline; }
+.gfoot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-top: 14px; border-top: 1px solid #d2d2d7; }
+@media (max-width: 640px) { .gfoot-cols { grid-template-columns: 1fr 1fr; } }
 
 /* Індекс документа - фірмовий чип */
 .chip {
@@ -87,7 +174,7 @@ body {
   color: var(--color-accent);
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
   transition: border-color .15s ease, color .15s ease;
 }
 .doclink:hover { color: var(--color-accent-2); border-bottom-color: var(--color-accent-2); }
@@ -95,11 +182,11 @@ body {
 /* Таблиці контенту */
 .tbl { width: 100%; border-collapse: collapse; font-size: .875rem; }
 .tbl th {
-  text-align: left; font-weight: 600; color: var(--color-brand);
-  padding: .5rem .75rem; border-bottom: 2px solid var(--color-line);
+  text-align: left; font-weight: 600; color: var(--color-ink);
+  padding: .6rem .75rem; border-bottom: 1px solid var(--color-line);
   background: var(--color-wash); white-space: nowrap;
 }
-.tbl td { padding: .55rem .75rem; border-bottom: 1px solid var(--color-line); vertical-align: top; }
+.tbl td { padding: .6rem .75rem; border-bottom: 1px solid var(--color-line); vertical-align: top; }
 .tbl tr:last-child td { border-bottom: none; }
 
 /* Pagefind */
@@ -121,26 +208,32 @@ body {
 }
 .skip-link {
   position: absolute; left: -9999px; top: 0; z-index: 200;
-  background: var(--color-brand); color: #fff; font-weight: 700;
+  background: var(--color-ink); color: #fff; font-weight: 600;
   padding: .7rem 1.2rem; border-radius: 0 0 10px 0; font-size: 14px;
 }
 .skip-link:focus-visible { left: 0; }
 
-/* Згорнутий сайдбар (десктоп) */
-html.nav-min #sidebar { width: 76px; }
-html.nav-min #sidebar .nav-label, html.nav-min #sidebar .nav-extra { display: none; }
-html.nav-min #sidebar nav a { justify-content: center; padding-left: 0; padding-right: 0; }
-@media (min-width: 1024px) { html.nav-min .app-shell { padding-left: 76px; } }
-
 /* Тост */
 #toast {
   position: fixed; bottom: 24px; left: 50%; transform: translate(-50%, 16px);
-  background: var(--color-brand); color: #fff; font-size: 13.5px; font-weight: 600;
-  padding: .7rem 1.3rem; border-radius: 12px; opacity: 0; pointer-events: none;
+  background: rgba(29, 29, 31, .92); color: #fff; font-size: 14px; font-weight: 500;
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+  padding: .75rem 1.3rem; border-radius: 14px; opacity: 0; pointer-events: none;
   transition: opacity .25s ease, transform .25s ease; z-index: 150;
 }
 #toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+@media (prefers-reduced-transparency: reduce) {
+  .gnav, .gmenu { background: #fbfbfd; -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+
 @media print {
-  header, footer, .no-print { display: none !important; }
+  header, footer, .no-print, .gnav, .gfoot, .crumbs { display: none !important; }
+}
+
+/* Вага в дусі Apple: напівжирний замість надважкого */
+.font-extrabold { font-weight: 700; }
+@media (max-width: 767px) {
+  .gnav-in { padding: 0 8px 0 16px; }
+  .crumbs-in, .gfoot-in { padding-inline: 16px; }
 }

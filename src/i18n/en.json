@@ -165,7 +165,30 @@
         "href": "roles/"
       }
     ],
-    "howLink": "How the portal works"
+    "howLink": "How the portal works",
+    "apple": {
+      "eyebrow": "Iron Invest · Dobrograd",
+      "title": "Construction block regulations. All in one place.",
+      "roles": "Choose your role.",
+      "bento": "Everything for daily work.",
+      "bentoLead": "Documents, processes, deadlines and checks. Opens on a phone right on site.",
+      "tDocs": "Documents and forms",
+      "tDocsT": "A register with Drive links and update dates.",
+      "tDocsGo": "Open the register",
+      "tPay": "Payment path",
+      "tPayT": "Steps from request to payment.",
+      "tPayGo": "Walk the path",
+      "tProc": "Processes",
+      "tProcT": "Step-by-step flows.",
+      "tCheck": "Checklists",
+      "tCheckT": "With ticks and progress.",
+      "tCal": "Calendar",
+      "tCalT": "Plan by the 25th, report pack by the 5th.",
+      "now": "Happening now.",
+      "mottoNote": "The customer service golden rule.",
+      "prev": "Back",
+      "next": "Next"
+    }
   },
   "cycle": {
     "steps": [

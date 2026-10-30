@@ -25,7 +25,7 @@ const L = (p) => `${base}${lang}/${p}`;
     <div class="mt-4 flex items-start gap-4">
       <DocChip index={ck.source} size="lg" />
       <div>
-        <h1 class="text-2xl font-extrabold leading-tight text-(--color-brand)">{ck.title}</h1>
+        <h1 class="text-[28px] leading-[1.12] font-extrabold text-(--color-brand) md:text-[36px]">{ck.title}</h1>
         <p class="mt-1.5 text-[13.5px] text-(--color-ink-2)" set:html={A(ck.intro)} />
         {srcDoc && <p class="mt-1 text-[12px] text-(--color-mute)">{t(lang, 'checklists.source')}: <a class="doclink" href={L(`docs/${srcDoc.slug}/`)}>{ck.source} · {srcDoc.name}</a></p>}
       </div>

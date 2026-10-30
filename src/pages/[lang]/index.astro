@@ -2,139 +2,202 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import CycleBoard from '../../components/CycleBoard.astro';
-import RoleCardWide from '../../components/RoleCardWide.astro';
 import { LANGS, getData, t } from '../../lib/data.js';
 
 export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
 const { lang } = Astro.params;
 const base = import.meta.env.BASE_URL;
-const { roles } = getData(lang);
+const { roles, docs, processes, checklists } = getData(lang);
 const L = (p = '') => `${base}${lang}/${p}`;
-const A = (href) => href === 'tg' ? 'https://t.me/lexgo' : L(href);
+const a = (k) => t(lang, `home.apple.${k}`);
 
-const PRIMARY = ['nachalnyk-dilnytsi', 'prorab', 'vtv', 'kp'];
-const primaryRoles = PRIMARY.map((s) => roles.find((r) => r.slug === s)).filter(Boolean);
-const start = t(lang, 'home.start');
+// Галерея: спершу ролі майданчика, далі служба замовника
+const ORDER = ['nachalnyk-dilnytsi', 'prorab', 'vtv', 'kp', 'tehnahliad', 'koshtorysnyk', 'ksz', 'zakupivli', 'mehanik', 'gd'];
+const gallery = ORDER.map((s) => roles.find((r) => r.slug === s)).filter(Boolean);
+const cap = (s = '') => s.charAt(0).toUpperCase() + s.slice(1);
+const count = (x) => (Array.isArray(x) ? x : Object.values(x)).length;
+const payment = (Array.isArray(processes) ? processes : Object.values(processes)).find((p) => p.slug === 'payment');
 const quickQueries = t(lang, 'home.quickQueries');
-const actions = t(lang, 'home.actions');
-// різна візуальна вага стартових карток
-const startStyles = [
-  'bg-(--color-brand) text-white border-transparent',
-  'bg-white border-(--color-line)',
-  'bg-(--color-wash) border-(--color-line)',
-];
 ---
 <Base lang={lang} title={t(lang, 'site.name')} description={t(lang, 'site.tagline')}>
-  <!-- Перший екран: заголовок + великий пошук -->
-  <section class="relative overflow-hidden border-b border-(--color-line) bg-white">
-    <img src={`${base}img/hero-blueprint.png`} alt="" width="2688" height="1536" fetchpriority="high"
-         class="pointer-events-none absolute -right-16 -top-6 hidden w-[720px] opacity-[0.18] lg:block" />
-    <div class="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-white via-white/75 to-transparent lg:block"></div>
-    <div class="relative mx-auto max-w-6xl px-4 pb-10 pt-10 md:px-8 md:pb-12 md:pt-14">
-      <h1 class="max-w-2xl text-[28px] font-extrabold leading-tight text-(--color-brand) md:text-[2.4rem] md:leading-[1.15]">
-        {t(lang, 'home.heroTitle')}
-      </h1>
-      <p class="mt-3 max-w-xl text-[15px] leading-relaxed text-(--color-ink-2)">{t(lang, 'home.heroLead')}</p>
-
-      <!-- Великий пошук -->
-      <button id="hero-search" type="button"
-        class="mt-6 flex min-h-[56px] w-full max-w-2xl items-center gap-3.5 rounded-2xl border-2 border-(--color-line) bg-(--color-paper) px-5 text-left text-[15px] text-(--color-mute) shadow-sm transition-all hover:border-(--color-accent) hover:shadow-md">
-        <Icon name="search" size={19} class="shrink-0 text-(--color-accent)" />
-        <span class="truncate">{t(lang, 'home.searchTitle')}</span>
-        <kbd class="chip ml-auto hidden rounded-md border border-(--color-line) bg-white px-2 py-1 text-[11px] text-(--color-mute) md:block">⌘K</kbd>
-      </button>
-      <div class="mt-3.5 flex max-w-2xl flex-wrap gap-2">
-        {quickQueries.map((q) => (
-          <a href={L(q.href)} class="inline-flex min-h-[38px] items-center rounded-full border border-(--color-line) bg-white px-4 text-[13px] font-semibold text-(--color-ink-2) transition-colors hover:border-(--color-accent) hover:text-(--color-accent)">
-            {q.label}
-          </a>
-        ))}
-      </div>
+  <!-- Перший екран -->
+  <section class="hero">
+    <p class="eyebrow">{a('eyebrow')}</p>
+    <h1>{a('title')}</h1>
+    <p class="lead">{t(lang, 'home.heroLead')}</p>
+    <button id="hero-search" type="button" class="sbox press">
+      <Icon name="search" size={19} class="shrink-0" />
+      <span class="truncate">{t(lang, 'home.searchTitle')}</span>
+      <kbd>⌘K</kbd>
+    </button>
+    <div class="quick">
+      {quickQueries.map((q) => <a href={L(q.href)}>{q.label}&nbsp;<span aria-hidden="true">›</span></a>)}
     </div>
   </section>
 
-  <!-- З чого почнемо? -->
-  <section class="mx-auto max-w-6xl px-4 pt-10 md:px-8 md:pt-12">
-    <h2 class="text-[21px] font-extrabold text-(--color-brand)" data-reveal>{t(lang, 'home.startTitle')}</h2>
-    <div class="mt-4 grid grid-cols-1 gap-3.5 md:grid-cols-3">
-      {start.map((c, i) => (
-        <a href={L(c.href)} data-reveal style={`--reveal-delay:${i * 80}ms`}
-           class:list={['group relative rounded-[20px] border p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md', startStyles[i]]}>
-          <span class:list={['grid h-11 w-11 place-items-center rounded-xl',
-            i === 0 ? 'bg-white/15 text-white' : 'bg-white text-(--color-accent) shadow-sm']}>
-            <Icon name={c.icon} size={21} />
-          </span>
-          <span class:list={['mt-4 block font-[family-name:var(--font-display)] text-[16.5px] font-bold leading-snug', i === 0 ? 'text-white' : 'text-(--color-brand)']}>{c.title}</span>
-          <span class:list={['mt-1 block text-[13.5px] leading-relaxed', i === 0 ? 'text-white/75' : 'text-(--color-ink-2)']}>{c.text}</span>
-          <span class:list={['mt-3 inline-flex items-center gap-1.5 text-[13px] font-bold', i === 0 ? 'text-white' : 'text-(--color-accent)']}>
-            {c.cta} <Icon name="arrow-right" size={13} class="transition-transform group-hover:translate-x-0.5" />
-          </span>
+  <!-- Ролі: горизонтальна галерея -->
+  <section class="band" aria-labelledby="roles-h">
+    <div class="wrap" data-reveal>
+      <h2 id="roles-h" class="h2">{a('roles')}</h2>
+      <p class="sub">{t(lang, 'home.rolesHint')}</p>
+    </div>
+    <div class="gal" id="gal" tabindex="0" aria-label={a('roles')}>
+      {gallery.map((r) => (
+        <a class="rc press" href={L(`roles/${r.slug}/`)}>
+          <span class="k">{r.group}</span>
+          <h3>{r.title}</h3>
+          <p>{cap(r.short)}</p>
+          <img src={`${base}img/role-${r.slug}.webp`} alt="" width="512" height="512" loading="lazy" decoding="async" />
         </a>
       ))}
+      <a class="rc rc-all press" href={L('roles/')}>
+        <h3>{t(lang, 'home.allRolesBtn')}</h3>
+        <span class="go">{t(lang, 'nav.roles')} <span aria-hidden="true">›</span></span>
+      </a>
+    </div>
+    <div class="wrap gal-nav">
+      <button type="button" data-dir="-1" aria-label={a('prev')} aria-controls="gal"><Icon name="arrow-right" size={17} class="rotate-180" /></button>
+      <button type="button" data-dir="1" aria-label={a('next')} aria-controls="gal"><Icon name="arrow-right" size={17} /></button>
     </div>
   </section>
 
-  <!-- Робота за ролями -->
-  <section class="mx-auto max-w-6xl px-4 pt-10 md:px-8 md:pt-12">
-    <div class="flex flex-wrap items-end justify-between gap-2" data-reveal>
-      <div>
-        <h2 class="text-[21px] font-extrabold text-(--color-brand)">{t(lang, 'home.rolesTitle')}</h2>
-        <p class="mt-1 text-[13.5px] text-(--color-mute)">{t(lang, 'home.rolesHint')}</p>
-      </div>
+  <!-- Плитки з цифрами -->
+  <section class="wrap bento" aria-labelledby="bento-h">
+    <div data-reveal>
+      <h2 id="bento-h" class="h2">{a('bento')}</h2>
+      <p class="sub">{a('bentoLead')}</p>
     </div>
-    <div class="mt-4 grid grid-cols-1 gap-3.5 lg:grid-cols-2">
-      {primaryRoles.map((r, i) => <RoleCardWide role={r} lang={lang} delay={i * 70} />)}
+    <div class="grid">
+      <a class="tile t-dark press" href={L('docs/')} data-reveal>
+        <span class="n">{count(docs)}</span>
+        <span><h3>{a('tDocs')}</h3><p>{a('tDocsT')}</p><span class="go">{a('tDocsGo')} ›</span></span>
+      </a>
+      <a class="tile press" href={L('processes/payment/')} data-reveal style="--reveal-delay:60ms">
+        <span class="n">{payment?.steps?.length ?? 8}</span>
+        <span><h3>{a('tPay')}</h3><p>{a('tPayT')}</p><span class="go">{a('tPayGo')} ›</span></span>
+      </a>
+      <a class="tile t-s press" href={L('processes/')} data-reveal>
+        <span class="n">{count(processes)}</span>
+        <span><h3>{a('tProc')}</h3><p>{a('tProcT')}</p></span>
+      </a>
+      <a class="tile t-s press" href={L('checklists/')} data-reveal style="--reveal-delay:60ms">
+        <span class="n">{count(checklists)}</span>
+        <span><h3>{a('tCheck')}</h3><p>{a('tCheckT')}</p></span>
+      </a>
+      <a class="tile t-s press" href={L('calendar/')} data-reveal style="--reveal-delay:120ms">
+        <span class="n">25</span>
+        <span><h3>{a('tCal')}</h3><p>{a('tCalT')}</p></span>
+      </a>
     </div>
-    <a href={L('roles/')} data-reveal
-       class="mt-4 flex min-h-[52px] items-center justify-center gap-2 rounded-2xl border-2 border-(--color-accent) bg-white px-5 text-[14.5px] font-bold text-(--color-accent) transition-all hover:bg-(--color-accent) hover:text-white">
-      {t(lang, 'home.allRolesBtn')} <Icon name="arrow-right" size={15} />
-    </a>
   </section>
 
   <!-- Актуально зараз: інтерактивний місячний цикл -->
-  <section class="mx-auto max-w-6xl px-4 pt-10 md:px-8 md:pt-12">
-    <div class="rounded-[20px] border border-(--color-line) bg-white p-5 md:p-7" data-reveal>
-      <div class="mb-5 flex flex-wrap items-center justify-between gap-2">
-        <h2 class="text-[21px] font-extrabold text-(--color-brand)">{t(lang, 'home.nowTitle')}</h2>
-        <a href={L('processes/monthly-cycle/')} class="inline-flex min-h-[40px] items-center gap-1.5 text-[13.5px] font-semibold text-(--color-accent) hover:text-(--color-accent-2)">
-          {t(lang, 'home.nowOpen')} <Icon name="arrow-right" size={14} />
-        </a>
+  <section class="band band-tight" aria-labelledby="now-h">
+    <div class="wrap">
+      <div class="now-head" data-reveal>
+        <h2 id="now-h" class="h2">{a('now')}</h2>
+        <a href={L('processes/monthly-cycle/')} class="more">{t(lang, 'home.nowOpen')} ›</a>
       </div>
-      <CycleBoard lang={lang} />
+      <div class="now-card" data-reveal><CycleBoard lang={lang} /></div>
     </div>
   </section>
 
-  <!-- Швидкі дії -->
-  <section class="mx-auto max-w-6xl px-4 pt-10 md:px-8 md:pt-12">
-    <h2 class="text-[21px] font-extrabold text-(--color-brand)" data-reveal>{t(lang, 'home.actionsTitle')}</h2>
-    <div class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {actions.map((a, i) => (
-        <a href={A(a.href)} target={a.href === 'tg' ? '_blank' : undefined} rel={a.href === 'tg' ? 'noopener' : undefined}
-           data-reveal style={`--reveal-delay:${i * 50}ms`}
-           class="group flex min-h-[76px] items-center gap-4 rounded-2xl border border-(--color-line) bg-white p-4 transition-all duration-200 hover:border-(--color-accent) hover:shadow-sm">
-          <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-(--color-wash) text-(--color-accent) transition-colors group-hover:bg-(--color-accent) group-hover:text-white">
-            <Icon name={a.icon} size={19} />
-          </span>
-          <span class="min-w-0">
-            <span class="block text-[14px] font-bold leading-snug text-(--color-brand)">{a.title}</span>
-            <span class="mt-0.5 block text-[12.5px] leading-snug text-(--color-mute)">{a.text}</span>
-          </span>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <!-- Компактне посилання на довідку -->
-  <section class="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-12">
-    <a href={L('help/')} data-reveal
-       class="flex min-h-[56px] flex-wrap items-center gap-3 rounded-2xl border border-(--color-line) bg-(--color-wash) px-5 py-3 transition-colors hover:border-(--color-accent)">
-      <Icon name="question" size={17} class="shrink-0 text-(--color-accent)" />
-      <span class="text-[14px] font-bold text-(--color-brand)">{t(lang, 'home.howLink')}</span>
-      <Icon name="arrow-right" size={14} class="ml-auto shrink-0 text-(--color-accent)" />
-    </a>
+  <!-- Головне правило -->
+  <section class="motto wrap" data-reveal>
+    <p class="q">{t(lang, 'site.motto')}</p>
+    <p class="note">{a('mottoNote')}</p>
   </section>
 </Base>
 
+<style>
+  .wrap { max-width: 72rem; margin: 0 auto; padding-inline: 32px; }
+  .hero { max-width: 1024px; margin: 0 auto; padding: 96px 22px 76px; text-align: center; }
+  .eyebrow { font-size: 17px; font-weight: 600; color: var(--color-gold); letter-spacing: -.01em; }
+  .hero h1 { margin: 10px auto 0; max-width: 840px; font-size: clamp(40px, 6.4vw, 72px); line-height: 1.05; letter-spacing: -.035em; }
+  .lead { margin: 18px auto 0; max-width: 640px; font-size: clamp(17px, 2vw, 21px); line-height: 1.4; color: var(--color-mute); letter-spacing: -.016em; }
+  .sbox { margin: 36px auto 0; width: 100%; max-width: 600px; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 20px; border: 0; border-radius: 16px; background: var(--color-wash); color: var(--color-mute); font-size: 17px; text-align: left; cursor: pointer; transition: background .2s var(--ease), transform .2s var(--ease); }
+  .sbox:hover { background: #ebebef; }
+  .sbox kbd { margin-left: auto; font: 500 12px/1 var(--font-mono); color: var(--color-faint); }
+  @media (hover: none), (max-width: 833px) { .sbox kbd { display: none; } }
+  .quick { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; font-size: 15px; }
+  .quick a { color: var(--color-accent); min-height: 32px; display: inline-flex; align-items: center; }
+  .quick a:hover { text-decoration: underline; }
+
+  .band { background: var(--color-wash); padding: 84px 0 88px; }
+  .band-tight { padding: 72px 0 80px; }
+  .h2 { margin: 0; font-size: clamp(32px, 4.4vw, 48px); line-height: 1.08; letter-spacing: -.03em; }
+  .sub { margin: 10px 0 0; font-size: clamp(17px, 1.8vw, 19px); color: var(--color-mute); max-width: 680px; }
+
+  .gal { --gp: max(32px, calc((100vw - 72rem) / 2 + 32px)); margin-top: 40px; display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gp); padding: 6px var(--gp) 26px; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .gal::-webkit-scrollbar { display: none; }
+  .gal:focus-visible { outline-offset: -4px; }
+  .rc { flex: 0 0 300px; scroll-snap-align: start; background: #fff; border-radius: 28px; padding: 30px 28px 26px; display: flex; flex-direction: column; min-height: 440px; box-shadow: 0 2px 12px rgba(0,0,0,.04); transition: box-shadow .35s var(--ease), transform .35s var(--ease); }
+  .rc:hover { box-shadow: 0 12px 40px rgba(0,0,0,.09); transform: scale(1.012); }
+  .rc .k { font-size: 12px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--color-faint); }
+  .rc h3 { margin: 10px 0 0; font-size: 26px; line-height: 1.12; letter-spacing: -.025em; }
+  .rc p { margin: 10px 0 0; font-size: 15px; line-height: 1.42; color: var(--color-mute); }
+  .rc img { margin-top: auto; width: 100%; height: 190px; object-fit: contain; }
+  .rc-all { justify-content: center; align-items: flex-start; background: #1d1d1f; color: #f5f5f7; }
+  .rc-all h3 { font-size: 28px; }
+  .rc-all .go { margin-top: 14px; color: #2997ff; font-size: 17px; }
+  .gal-nav { display: flex; justify-content: flex-end; gap: 14px; }
+  .gal-nav button { width: 44px; height: 44px; border-radius: 50%; border: 0; background: #e3e3e8; color: var(--color-ink); display: grid; place-items: center; cursor: pointer; transition: background .2s var(--ease), opacity .2s var(--ease); }
+  .gal-nav button:hover { background: #d8d8de; }
+  .gal-nav button:active { transform: scale(.94); }
+  .gal-nav button[disabled] { opacity: .35; cursor: default; }
+
+  .bento { padding-block: 88px; }
+  .grid { margin-top: 40px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px; }
+  .tile { grid-column: span 3; background: var(--color-wash); border-radius: 28px; padding: 32px; min-height: 250px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+  .tile:hover { box-shadow: 0 12px 36px rgba(0,0,0,.07); }
+  .t-s { grid-column: span 2; }
+  .tile .n { font: 600 72px/1 var(--font-display); letter-spacing: -.045em; }
+  .tile h3 { margin: 0; font-size: 24px; line-height: 1.15; letter-spacing: -.022em; }
+  .tile p { margin: 6px 0 0; color: var(--color-mute); font-size: 15px; line-height: 1.4; }
+  .tile .go { display: inline-block; margin-top: 14px; color: var(--color-accent); font-size: 15px; }
+  .t-dark { background: #1d1d1f; color: #f5f5f7; }
+  .t-dark p { color: #a1a1a6; }
+  .t-dark .go { color: #2997ff; }
+
+  .now-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+  .more { color: var(--color-accent); font-size: 17px; }
+  .more:hover { text-decoration: underline; }
+  .now-card { margin-top: 32px; background: #fff; border-radius: 28px; padding: 28px; }
+
+  .motto { padding-block: 112px 120px; text-align: center; }
+  .motto .q { margin: 0 auto; max-width: 820px; font: 600 clamp(30px, 4.6vw, 54px)/1.1 var(--font-display); letter-spacing: -.03em; }
+  .motto .note { margin: 16px 0 0; color: var(--color-mute); font-size: 17px; }
+
+  @media (max-width: 833px) {
+    .wrap { padding-inline: 16px; }
+    .gal { --gp: 16px; }
+    .hero { padding: 56px 22px 52px; }
+    .band { padding: 60px 0 64px; }
+    .bento { padding-block: 64px; }
+    .grid { grid-template-columns: 1fr; gap: 14px; }
+    .tile, .t-s { grid-column: auto; min-height: 0; padding: 26px; }
+    .tile .n { font-size: 56px; }
+    .rc { flex-basis: 78vw; min-height: 400px; }
+    .now-card { padding: 18px; border-radius: 22px; }
+    .motto { padding-block: 72px 80px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .rc:hover { transform: none; } }
+</style>
+
 <script>
   document.getElementById('hero-search')?.addEventListener('click', () => (window as any).__openSearch?.());
+  // Стрілки галереї: гортаємо на ширину картки, кнопки гаснуть на краях
+  const gal = document.getElementById('gal');
+  const btns = document.querySelectorAll<HTMLButtonElement>('.gal-nav button');
+  if (gal) {
+    const step = () => (gal.querySelector('.rc') as HTMLElement).offsetWidth + 20;
+    btns.forEach((b) => b.addEventListener('click', () => gal.scrollBy({ left: step() * Number(b.dataset.dir), behavior: 'smooth' })));
+    const sync = () => {
+      btns[0].disabled = gal.scrollLeft < 4;
+      btns[1].disabled = gal.scrollLeft + gal.clientWidth > gal.scrollWidth - 4;
+    };
+    gal.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  }
 </script>

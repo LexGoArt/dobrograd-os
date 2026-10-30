@@ -28,7 +28,7 @@ const checklistId = { 'Д1': 'd1', 'Д2': 'd2', 'Д3': 'd3', 'Д4': 'd4' }[doc.i
       <DocChip index={doc.index} size="lg" />
       <div class="min-w-0">
         <div class="flex flex-wrap items-center gap-2.5">
-          <h1 class="text-2xl font-extrabold leading-tight text-(--color-brand) md:text-3xl">{doc.name}</h1>
+          <h1 class="text-[32px] leading-[1.1] font-extrabold text-(--color-brand) md:text-[44px] md:leading-[1.07]">{doc.name}</h1>
           <StatusBadge status={doc.status === 'ready' && !doc.drive ? 'nofile' : doc.status} lang={lang} size="lg" />
         </div>
         <p class="mt-2 text-[15px] leading-relaxed text-(--color-ink-2)">{doc.purpose}</p>

@@ -1,0 +1,86 @@
+<!doctype html><html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>B · Довідник</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff; --bg2:#f5f5f7; --ink:#1d1d1f; --ink2:#6e6e73; --ink3:#86868b; --line:rgba(0,0,0,.08);
+  --link:#0066cc; --accent:#0071e3; --gold:#b8963f;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,sans-serif;
+  --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.25,.1,.25,1);
+}
+*{box-sizing:border-box} html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.47 var(--sans);letter-spacing:-.022em;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1024px;margin:0 auto;padding:0 22px}
+.link{color:var(--link)} .link:hover{text-decoration:underline}
+/* translucent global nav */
+.gnav{position:sticky;top:0;z-index:50;height:48px;background:rgba(251,251,253,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+.gnav .in{max-width:1024px;margin:0 auto;padding:0 22px;height:100%;display:flex;align-items:center;gap:28px}
+.gnav .logo{display:flex;align-items:center;gap:9px;font:600 14px/1 var(--sans);letter-spacing:-.01em}
+.gnav .logo img{height:22px}
+.gnav nav{display:flex;gap:26px;margin:0 auto;font-size:12.5px;letter-spacing:-.01em;color:rgba(0,0,0,.8)}
+.gnav nav a:hover{color:#000}
+.gnav .tools{display:flex;align-items:center;gap:18px;font-size:12px;color:rgba(0,0,0,.8)}
+.gnav .lang b{font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 22px;border-radius:980px;background:var(--accent);color:#fff;font:400 17px/1 var(--sans);transition:background .2s var(--ease),transform .1s ease-out}
+.btn:hover{background:#0077ed} .btn:active{transform:scale(.97)}
+.btn.ghost{background:none;color:var(--link);border:1px solid var(--link)}
+.press{transition:transform .25s var(--ease),box-shadow .25s var(--ease)} .press:active{transform:scale(.98)}
+.foot{border-top:1px solid var(--line);background:var(--bg2);color:var(--ink3);font-size:12px;letter-spacing:-.01em;padding:18px 0 28px}
+.foot .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+@media (max-width:833px){ .gnav nav{display:none} .gnav .in{justify-content:space-between} }
+@media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important} }
+@media (prefers-reduced-transparency:reduce){ .gnav{background:#fbfbfd;backdrop-filter:none} }
+
+body{background:#f2f2f7}
+.shell{display:grid;grid-template-columns:268px 1fr;min-height:100vh}
+.side{position:sticky;top:0;height:100vh;overflow:auto;padding:18px 12px;background:rgba(246,246,248,.72);backdrop-filter:saturate(180%) blur(30px);-webkit-backdrop-filter:saturate(180%) blur(30px);border-right:1px solid var(--line)}
+.side .logo{display:flex;align-items:center;gap:10px;padding:6px 10px 16px;font:600 15px/1.2 var(--sans)}
+.side .logo img{height:26px}
+.side .logo small{display:block;font-weight:400;color:var(--ink3);font-size:12px}
+.side .s{display:flex;align-items:center;gap:8px;height:34px;margin:0 4px 14px;padding:0 10px;border-radius:9px;background:rgba(118,118,128,.12);color:var(--ink3);font-size:14px}
+.side h6{margin:16px 12px 6px;font:600 11px/1 var(--sans);letter-spacing:.02em;color:var(--ink3);text-transform:uppercase}
+.side a.it{display:flex;align-items:center;gap:10px;height:34px;padding:0 8px;border-radius:8px;font-size:14px;letter-spacing:-.01em}
+.side a.it:hover{background:rgba(0,0,0,.04)} .side a.it.on{background:rgba(0,0,0,.07);font-weight:500}
+.sq{width:24px;height:24px;border-radius:6px;display:grid;place-items:center;color:#fff;flex:none}
+.content{padding:56px 48px 80px;max-width:860px}
+.lt{font:700 40px/1.1 var(--display);letter-spacing:-.03em;margin:0}
+.lead{margin:10px 0 0;color:var(--ink2);font-size:19px;max-width:640px}
+.sb{margin-top:26px;display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:12px;background:rgba(118,118,128,.12);color:var(--ink3);font-size:17px;max-width:560px}
+.gh{margin:40px 16px 8px;font:400 13px/1 var(--sans);color:var(--ink2);text-transform:uppercase;letter-spacing:-.01em}
+.grp{background:#fff;border-radius:14px;overflow:hidden}
+.row{display:flex;align-items:center;gap:14px;min-height:60px;padding:10px 16px;position:relative;transition:background .15s ease}
+.row:hover{background:#f7f7f9} .row:active{background:#ececf0}
+.row + .row::before{content:"";position:absolute;top:0;left:60px;right:0;height:1px;background:var(--line)}
+.row .sq{width:30px;height:30px;border-radius:8px}
+.row .t{flex:1;min-width:0} .row .t b{display:block;font-weight:500;font-size:17px} .row .t span{display:block;color:var(--ink2);font-size:14px;line-height:1.35}
+.row .d{color:var(--ink3);font-size:15px}
+.row .cv{color:#c4c4c7}
+.row img{width:44px;height:44px;border-radius:50%;background:#eef3f8;object-fit:contain;flex:none}
+.row + .row.av::before{left:74px}
+.foot{display:none}
+@media (max-width:900px){.shell{grid-template-columns:1fr}.side{display:none}.content{padding:28px 16px 60px}.lt{font-size:34px}}
+</style></head><body><div class="shell">
+<aside class="side">
+  <div class="logo"><img src="img/dobrograd-mark.svg" alt=""><span>ОС будблоку<small>Iron Invest · Доброград</small></span></div>
+  <div class="s"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Пошук</div>
+  <h6>Робота</h6>
+  <a class="it on" href="#"><span class="sq" style="background:#8e8e93"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5M7 3h7l5 5v13H7z"/><path d="M10 12h5M10 16h5"/></svg></span>Головна</a>
+  <a class="it" href="#"><span class="sq" style="background:#0071e3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3.5 20c.5-3.5 2.8-5 5.5-5s5 1.5 5.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.5c2.3.2 3.7 1.6 4 4.5"/></svg></span>Ролі</a><a class="it" href="#"><span class="sq" style="background:#34a853"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5M7 3h7l5 5v13H7z"/><path d="M10 12h5M10 16h5"/></svg></span>Документи</a><a class="it" href="#"><span class="sq" style="background:#ff9500"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5"/></svg></span>Процеси</a><a class="it" href="#"><span class="sq" style="background:#ff3b30"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span>Календар</a><a class="it" href="#"><span class="sq" style="background:#5856d6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></span>Чек-листи</a>
+  <h6>База знань</h6>
+  <a class="it" href="#"><span class="sq" style="background:#8e8e93"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM19 17H8a3 3 0 0 0 0 6h11"/></svg></span>Положення</a>
+  <a class="it" href="#"><span class="sq" style="background:#30b0c7"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5"/></svg></span>Регламент коротко</a>
+  <a class="it" href="#"><span class="sq" style="background:#a2845e"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span>У розробці</a>
+</aside>
+<main class="content">
+  <h1 class="lt">Будівельний блок</h1>
+  <p class="lead">Усі регламенти, форми, строки і схеми взаємодії - в одному місці. Оберіть свою роль і одразу бачте, як працювати, що подавати і кому.</p>
+  <div class="sb"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Знайдіть роль, документ, форму або процес</div>
+  <div class="gh">З чого почнемо?</div>
+  <div class="grp"><a class="row" href="#"><span class="sq" style="background:#0071e3"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3.5 20c.5-3.5 2.8-5 5.5-5s5 1.5 5.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.5c2.3.2 3.7 1.6 4 4.5"/></svg></span><span class="t"><b>Я знаю свою роль</b><span>Подивитися обовʼязки, документи і строки.</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row" href="#"><span class="sq" style="background:#34a853"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5M7 3h7l5 5v13H7z"/><path d="M10 12h5M10 16h5"/></svg></span><span class="t"><b>Я шукаю документ</b><span>Знайти форму, регламент або шаблон.</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row" href="#"><span class="sq" style="background:#ff9500"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5"/></svg></span><span class="t"><b>Я хочу виконати задачу</b><span>Відкрити покроковий процес або чек-лист.</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a></div>
+  <div class="gh">Робота за ролями</div>
+  <div class="grp"><a class="row av" href="#"><img src="img/role-nachalnyk-dilnytsi.webp" alt=""><span class="t"><b>Начальник дільниці</b><span>Щоденна організація майданчика</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row av" href="#"><img src="img/role-prorab.webp" alt=""><span class="t"><b>Прораб</b><span>Безпосереднє керування роботами</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row av" href="#"><img src="img/role-vtv.webp" alt=""><span class="t"><b>Керівник ВТВ</b><span>Документація і фільтр перед грошима</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row av" href="#"><img src="img/role-kp.webp" alt=""><span class="t"><b>Керівник проєкту</b><span>Реалізація проєкту в межах бюджету</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row av" href="#"><img src="img/role-tehnahliad.webp" alt=""><span class="t"><b>Технічний нагляд</b><span>Контроль якості та обсягів на майданчику</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row av" href="#"><img src="img/role-koshtorysnyk.webp" alt=""><span class="t"><b>Кошторисник</b><span>Кошториси і ціновий контроль</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a>
+    <a class="row" href="#"><span class="t"><b class="link">Усі 14 ролей</b></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a></div>
+  <div class="gh">Швидкі дії</div>
+  <div class="grp"><a class="row" href="#"><span class="sq" style="background:#34a853"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5M7 3h7l5 5v13H7z"/><path d="M10 12h5M10 16h5"/></svg></span><span class="t"><b>Відкрити актуальну форму</b><span>Реєстр 34 документів з посиланнями на Диск</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row" href="#"><span class="sq" style="background:#5856d6"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></span><span class="t"><b>Мої чек-листи</b><span>Продовжити з того місця, де зупинилися</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row" href="#"><span class="sq" style="background:#ff3b30"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span><span class="t"><b>Перевірити календар</b><span>Хто, що і коли подає цього тижня</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a><a class="row" href="#"><span class="sq" style="background:#ff9500"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M9 6.5v5M7 8h4M16 8a6 6 0 1 1-7.7 7.7"/></svg></span><span class="t"><b>Шлях платежу</b><span>8 кроків від ініціації до оплати</span></span><span class="cv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></span></a></div>
+</main></div></body></html>

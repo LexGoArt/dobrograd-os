@@ -1,12 +1,39 @@
 ---
+// Підвал-каталог у стилі apple.com: дрібний сірий текст, колонки розділів.
 import { t } from '../lib/data.js';
 const { lang } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const L = (p = '') => `${base}${lang}/${p}`;
 const LOCALES = { uk: 'uk-UA', ru: 'ru-RU', en: 'en-GB' };
 const updated = new Date().toLocaleDateString(LOCALES[lang] ?? 'uk-UA', { day: 'numeric', month: 'long', year: 'numeric' });
+const COLS = [
+  { label: t(lang, 'nav.groupWork'), items: [
+    [L('roles/'), t(lang, 'nav.roles')], [L('processes/'), t(lang, 'nav.processes')],
+    [L('calendar/'), t(lang, 'nav.calendar')], [L('checklists/'), t(lang, 'nav.checklists')],
+  ]},
+  { label: t(lang, 'nav.groupBase'), items: [
+    [L('docs/'), t(lang, 'nav.docs')], [L('kernel/'), t(lang, 'nav.kernel')],
+    [L('regulation/'), t(lang, 'nav.regulation')], [L('roadmap/'), t(lang, 'nav.roadmap')],
+  ]},
+  { label: t(lang, 'aside.helpTitle'), items: [
+    [L('help/'), t(lang, 'home.howLink')], ['https://t.me/lexgo', t(lang, 'aside.tgButton')],
+  ]},
+];
 ---
-<footer class="mt-16 border-t border-(--color-line) bg-white">
-  <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 text-[12.5px] text-(--color-mute) md:flex-row md:items-center md:justify-between md:px-6">
-    <p>{t(lang, 'footer.disclaimer')}</p>
-    <p class="shrink-0">{t(lang, 'site.org')} · {t(lang, 'footer.updated')} {updated}</p>
+<footer class="gfoot">
+  <div class="gfoot-in">
+    <p class="gfoot-note">{t(lang, 'footer.disclaimer')}</p>
+    <div class="gfoot-cols">
+      {COLS.map((c) => (
+        <div>
+          <h3>{c.label}</h3>
+          <ul>{c.items.map(([h, l]) => <li><a href={h} target={h.startsWith('http') ? '_blank' : undefined} rel={h.startsWith('http') ? 'noopener' : undefined}>{l}</a></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    <div class="gfoot-bottom">
+      <span>{t(lang, 'site.org')}</span>
+      <span>{t(lang, 'footer.updated')} {updated}</span>
+    </div>
   </div>
 </footer>
